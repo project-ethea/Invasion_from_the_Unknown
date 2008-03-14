@@ -1,0 +1,573 @@
+===========================================
+Invasion from the Unknown Maintenance Guide
+===========================================
+by Ignacio Riquelme Morelle
+
+Table of Contents:
+
+0. Abstract
+1. The Maintenance Suite
+	1.1. For WesCamp-i18n maintenance
+		1.1.1. add-all-to-repo.sh
+		1.1.2. update-translations.sh
+		1.1.3. setup_env.inc
+		1.1.4. sanity_checks_from_wescamp.inc
+	1.2. For actual campaign's package maintenance
+		1.2.1. do-upload.sh
+		1.2.2. snapshot-cronjob.sh
+		1.2.3. build-external-archive.sh
+	1.3. Tag files and making the suite work for your custom UNIX setup
+2. The WML
+	2.1. Coding Style
+	2.2. Conventions
+	2.3. 
+3. The Graphics
+4. The Music
+
+
+===========
+0. ABSTRACT
+===========
+
+I wrote this special read-me file thinking that I might not live for enough time to maintain this
+campaign properly, or to assist new maintainers. I realized the need of a good guide for those who
+will replace me in my charge in the near or far future, and I decided to write it.
+
+Beware, though, that it might contain not-completely-good English, because I'm chilean and my native
+language is Spanish, and I am not good at expressing ideas properly, not even in Spanish. ;-)
+
+
+========================
+1. THE MAINTENANCE SUITE
+========================
+
+If you are a new maintainer, and are using a non-UNIX operating system such as MS Windows, BeOS or DOS
+(yeah, some people still use it), you might be out of luck.
+
+I wrote a complete set of maintenance shell scripts that help me do the most common maintenance tasks
+automatically and with minimal effort on my part. They can keep the WesCamp-i18n repository tree on-sync
+with the campaign's datadir, build user-contributed translations and copy their formatted catalogues (*.mo
+files) onto the appropiate locations on the campaign's datadir, optimize pictures, produce packages for
+HTTP web servers and the campaign server (separately), and possibly a thing or two more.
+
+They rely on certain programs I have installed on both my Linux machines, which run openSUSE 10.3 at the
+moment of this writing (one is 32-bit and the other 64-bit), but if you are relatively experienced with the
+task of maintaining a Wesnoth campaign both on the campaign server and WesCamp-i18n, odds are you have already
+installed them.
+
+If you don't run Linux, but still use some other UNIX flavor, it is still probable that the maintenance suite
+scripts will work for you. If you run Windows, odds are you can still make the maintenance suite work with
+a fair amount of modifications and the help of Cygwin or MSYS+MINGW. If you run other operating system not
+named here, well, odds are you know better than me. :-)
+
+In general, you need to have instaled:
+
+* The basic UNIX system utilities: cat, bash, $(echo "blahblahblah :-)")
+* Gettext tools, with msgunfmt if it isn't provided by default
+
+These instructions make the assumption that you have set a Bash environment and are familiarized with simple
+shell script calls (it isn't too difficult to learn, but I won't teach you in this document; instead, refer
+to your platform/UNIX provider's documentation).
+
+All maintenance tools are Bash scripts. I chose Bash to eliminate the need of compiling each tool for different
+target machines, therefore making them run with small (if not any at all) modifications on a broad platform
+spectrum. I also chose it to learn some advanced shell scripting. ;-)
+
+The scripts have the file extension ".sh", albeit possibly not compatible with the classic UNIX sh, so that
+users of Windows-based operating systems can associate them an icon and/or actions on the GUI shell (a.k.a.
+Windows Explorer), possibly useful for wrapping MINGW around them.
+
+
+1.1. For WesCamp-i18n maintenance
+=================================
+
+After submitting this campaign to WesCamp-i18n and updating several versions, I realized the hassle it was
+to update every file on every dir by hand, adding new files and directories if required. When I got more than 1
+translator, I realized how difficult was to keep track of every translation in progress for importing them
+onto the UMC dir, without letting blank (not made) translations in it that only waste precious bandwidth for the
+official campaign server.
+
+That is why I made these two maintenance scripts. I hope that they serve you in your task of maintaining this
+campaign when I'm gone.
+
+NOTE: throughout this section, / (root) stands for the WesCamp-i18n checkout's root, in which the directories
+po and <campaign name> should be found, along with the file campaign.def.
+
+1.1.1. add-all-to-repo.sh
+-------------------------
+
+USAGE:
+	add-all-to-repo.sh
+WORKING DIRECTORY:
+	/ or /bin on WesCamp-i18n checkout
+REQUIRES:
+	subversion (implementations with command-line capability), GNU coreutils, Bash
+DESCRIPTION:
+	This script detects updated WML files recursively across the campaign, from the UMC
+	dir (your home /.wesnoth/data/campaigns/<campaign name>, on UNIX) and imports them onto the WesCamp
+	repository checkout.
+BUGS:
+	It may not detect changes of the renamed-files/folders and deleted-files/folder sorts. Also, new folders
+	are not detected at root level, but it is not particularly annoying as such change is unlikely to happen
+	in this campaign. I.e. the only time it happened, at the moment, was when I moved /terrain/terrain.cfg to
+	/terrain.cfg, and /terrain/terrain-graphics to /terrain-graphics, which didn't exist before.
+
+	Hopefully I'll write a smarter update algorithm in the future.
+HACKING:
+	This script doesn't contain much stuff that you should hack in order to make it work on your system.
+	If it doesn't work because of file locations or other assumptions, you must hack the providers of which it
+	is client (see setup_env.inc, sanity_checks_from_wescamp.inc for more info).
+
+1.1.2. update-translations.sh
+-----------------------------
+
+USAGE:
+	update-translations.sh [--no-po-update]
+WORKING DIRECTORY:
+	/ or /bin on WesCamp-i18n checkout
+REQUIRES:
+	GNU coreutils, Bash, GNU sed, GNU gettext (with msgunfmt), make (tested with GNU Make), WML xgettext
+	(Wesnoth 1.3.x source code distribution /utils)
+DESCRIPTION:
+	This script builds and updates translations on the WesCamp checkout automatically, unless the
+	--no-po-update parameter is passed. This step is done in a normal manner, invoking make -s (silent)
+	on the checkout root. Since you may prefer to build translations manually, the --no-po-update
+	parameter skips rebuilding them, and makes the script skip directly to stage 2.
+	
+	On stage 2, the script invokes msgunfmt (1), a gettext tool which does the inverse process normally
+	done by WesCamp makefiles; unformats a compiled message catalogue file (.mo) onto a text message catalogue
+	(.po). This program is called on stage 2 for the sole purpose of probing each known translation (listed in
+	the file /po/LINGUAS) for the amount of translated strings they have; when 1 or more strings are detected
+	to be translated, the particular language is marked for stage 3 inclusion.
+	
+	On stage 3, the script uses the list of languages generate by stage 2 to copy their compiled catalogues (.mo
+	files) to the adequate dirs in the UMC directory.
+	
+	This complex system ensures that the UMC directory, from which the final release packages are generated,
+	contains only translations with at least 1 string translated, eliminating the need to keep track of each
+	translator or visit gettext.wesnoth.org whenever you are going to release to check if translation X has
+	translated strings or not. Note that catalogues with translated strings of which the 100% are fuzzy will be
+	ignored. This is intentional. Fuzzy strings are not written onto .mo files with the normal settings, and if
+	they were, it would make no sense for the purpose of Wesnoth internationalization.
+BUGS:
+	None known at the moment.	
+HACKING:
+	This script doesn't contain much stuff that you should hack in order to make it work on your system.
+	If it doesn't work because of file locations or other assumptions, you must hack the providers of which it
+	is client (see setup_env.inc, sanity_checks_from_wescamp.inc for more info).
+
+1.1.3. setup_env.inc
+--------------------
+
+USAGE:
+	N/A
+WORKING DIRECTORY:
+	N/A
+REQUIRES:
+	Bash, cat (tested with GNU coreutils implementation)
+DESCRIPTION:
+	This script is not intended to be invoked directly, but be called from inside the other scripts
+	internally. It doesn't have a magic line to specify the desired interpreter, either, and the executable
+	flag should be unset on UNIX filesystems for its file.
+	
+	This script sets up the environment variables used by client scripts, which at the moment are limited
+	to tag file names, suffixes and locations.
+HACKING:
+	TAG_PREFIX				Specifies the directory at the WesCamp checkout's root in which all tagfiles are
+							expected to be found.
+							
+	TAG_SUFFIX				Specifies the extension of tag files at /${TAG_PREFIX} on the WesCamp checkout;
+							it is usually a nil string, as there is no need for Windows file naming conventions
+							on subversion. Tag files will be found by the path /${TAG_PREFIX}/<tagfilename>${TAG_SUFFIX}.
+							Therefore, TAG_SUFFIX must include the period (.) of the extension when applicable.
+							
+	TAG_FILE_LIST_*			These contain the filenames of each tag file that describes a list (of files, of
+							patterns, etc.) . You should not need to change each variable's contents unless
+							you rename tag files (excluding their extensions).
+							
+	TAG_FILE_PACKAGE_VERSION This is the filename of the version tag file. You should not need to change its
+							contents unless you rename the version tag file (excluding its extension).
+							
+	*_ON_UMC_DIR			These variables serve for the same purpose of their WesCamp counterparts, but they
+							are used for file search on the UMC dir. In general, the only difference would be
+							TAG_SUFFIX, as in the UMC dir all files should have an extension so that they can
+							be caught by Wesnoth Campaign Server's rules or such, and by Windows Explorer
+							file associations manager.
+
+1.1.4. sanity_checks_from_wescamp.inc
+-------------------------------------
+
+USAGE:
+	N/A
+WORKING DIRECTORY:
+	N/A
+REQUIRES:
+	GNU coreutils, Bash, GNU sed
+DESCRIPTION:
+	This script is not intended to be invoked directly, but be called from inside the other scripts
+	internally. It doesn't have a magic line to specify the desired interpreter, either, and the executable
+	flag should be unset on UNIX filesystems for its file.
+
+	This script initializes other environment variables used both by update-translations.sh and add-all-to-repo.sh,
+	and does a fast sanity check and synchronization of tagfiles with the UMC. It is highly important that you
+	understand how it works so that you can hack it to make it work in your machine, as some assumptions are made
+	based on Shadow Master's /home/* directory(ies) layout.
+	
+	Stage 1: the script runs setup_env.inc if it hasn't been executed already; also, changes to the parent directory
+	when it detects itself to be running from a "bin" directory.
+	
+	Stage 2: the script ensures that the "po" dir is located in the CWD (curr. working dir), as a safety resource
+	to ensure that it is running from the WesCamp checkout, rather than from the UMC's bin dir. It reads directory
+	locations from the tagfiles.
+	
+	Stage 3: the script ensures that tagfiles, manifest (_main.cfg or campaignname.cfg) exist on the UMC dir.
+	If tagfiles are missing there, they are copied from the WesCamp checkout, and renamed according to the conventions
+	used there for file names.
+	
+	Stage 4: the script compares tagfiles on the WesCamp checkout and the UMC dir, to check which copy is the
+	newest available, and copies them around if necessary.
+	
+	Note that if anything fails at this stage, both WesCamp scripts won't work at all.
+HACKING:
+	This script makes very few assumptions on its own, as it relies on the tagfiles' contents to find
+	other files.
+	
+	Assumption 1: if list_IMPORTDIRS tagfile cannot be found, the script assumes that the Wesnoth preferences
+	dir is located at ${HOME}/.wesnoth . We have no way to detect Wesnoth preferences dir at run-time at the
+	moment. (lines 51 and 53) Note that there is a secondary assumption that should never be used, and is currently
+	buggy.
+
+	Assumption 2: assumes that from the Wesnoth preferences dir, campaigns are located at /data/campaigns/. From
+	there, it locates the working campaign by its list_BASEDIRS tagfile contents. (line 65)
+
+
+1.2. For actual campaign's package maintenance
+==============================================
+
+These are scripts that do several mundane duties, ranging from perodic backups (a.k.a. snapshots) of the
+campaign's inner datadir (on UMC dir), to the global optimizations and validations that must be done when
+doing an official release.
+
+1.2.1. do-upload.sh
+-------------------
+
+USAGE:
+	do-upload.sh [--invoke-i18n-suite]
+WORKING DIRECTORY:
+	/ or /bin on UMC dir
+REQUIRES:
+	GNU coreutils, Bash, GNU sed, Wesnoth 1.3.x source code distribution (/utils dir), OptiPNG, Python,
+	special tools in PATH (see NOTES), Subversion (optional), WesCamp-i18n tools set (optional):
+	add-all-to-repo.sh, update-translations.sh and their own requisites
+DESCRIPTION:
+	This script automates the process of publishing new releases of the campaign (except for the filthy
+	announcement on the forums :-) by making sure that maintainers and developers don't have to optimize PNG files
+	whenever they edit or add them; the script runs the wesnoth-pngcrush script, provided in Wesnoth source
+	code distributions to optimize all PNG images, which currently invokes OptiPNG. After that is done
+	(it takes quite a long amount of time, you might want to get some tea while it does its job), it runs
+	the Python-based CLI campaign client, provided by Wesnoth's source code distros, to finally upload the
+	campaign to the 1.3.x campaign server.
+	
+	If the --invoke-i18n-suite parameter is passed, it invokes the i18n tools on WesCamp repository
+	check out automatically. However, this is not recommended, because failure in that part will be ignored
+	and the campaign published right away; hence, it should be used only if you're in a hurry
+	and certain that no changes have ocurred since the last svn update.
+NOTES:
+	The following dirs must be in PATH for this tool to work properly:
+		* <directory where Wesnoth's source code distribution root is located>/utils
+			- provides campaigns_client.py, wesnoth-pngcrush
+HACKING:
+	Assumption 1: assumes that from the Wesnoth preferences dir, campaigns are located at /data/campaigns/. From
+	there, it locates the working campaign by its list_BASEDIRS tagfile contents. (line 25)
+	
+	Assumption 2: it assumes that the WesCamp checkout is located at ~/WesCamp-IftU, ~ standing for your home dir.
+	This assumption is made only at line 31, and you may edit it accordingly to your setup with ease.
+
+1.2.2. snapshot-cronjob.sh
+--------------------------
+
+USAGE:
+	snapshot-cronjob.sh
+WORKING DIRECTORY:
+	N/A (hardcoded)
+REQUIRES:
+	GNU tar, bzip2, cron daemon (optional) or similar, GNU coreutils, Bash
+DESCRIPTION:
+	This script automates the process of producing back-ups of the campaign's datadir in a regular basis
+	for security purposes. I realized that it was essential to keep track of various releases, and to have
+	a fallback in case my USB drive happened to be stolen. :-)
+	
+	It's best used as a cron daemon job. In my setup, it runs with my regular user privileges, thus it cannot
+	do much harm to the system if I happen to introduce a critical and nasty bug. In my crontab, written by the
+	handy KCron utility (for KDE), it has the command line:
+	
+	/home/shadowm/.wesnoth/data/campaigns/Invasion_from_the_Unknown/bin/snapshot-cronjob.sh >> /home/shadowm/backup/daily/wesnoth-UMC/Invasion_from_the_Unknown.cronjob.log
+
+	For Invasion_from_the_Unknown, of course. The redirection is there so that I can also keep track
+	of each backup task's success or failure(s). Many backups are made per-day, but that is my own taste; the
+	script doesn't force you to use cron at all, nor to choose a fixed run schedule in particular; you can schedule
+	it as you want by editing crontab (with a text editor or a GUI assistant), or not to be scheduled at all.
+HACKING:
+	The script, however, makes many assumptions on what you want and where you want. And where you are, of course.
+	
+	It doesn't require a particular working directory to be invoked from, as it changes to the proper directory
+	by itself, by using a hard-coded path.
+	
+	At line 22, SNAPSHOT_DIR may be set to "${HOME}/backup/daily/wesnoth-UMC" by default. That is the directory
+	where a subdirectory named as the campaign will be created. That subdirectory will be where the back-up
+	snapshots, which are BZip2 tarballs, are created.
+	
+	At line 24, the SOURCE_DIR variable contains the path to the UMC root for Wesnoth, which would usually be
+	"${HOME}/.wesnoth/data/campaigns". Change it as required.
+	
+	At line 26 you have the campaign name, which is the directory which shall be looked upon at $SOURCE_DIR,
+	the subdirectory created at $SNAPSHOT_DIR, and the base name of each snapshot tarball. You must change it
+	if you are working with a campaign other than the one written there.
+	
+	At line 35 there is a sanity check for a new-style manifest of campaign (campaigndir/_main.cfg). You
+	might need to remove or rewrite it if you use a campaign that uses the old style manifest (campaigndir.cfg),
+	but I recommend to switch to new-style manifest in case of anything.
+	
+	At line 47 the suffix added to the campaign snapshot files is declared. It is a timestamp, and I don't
+	see any reason for it to be anything else. However, you might want to change the date & time format used
+	to generate that timestamp, replacing the command line passed to "date" in the same line. For details on
+	date & time formats as handled by "date", see date (1) man page, of GNU coreutils.
+
+	Lines 49, 50, 51 assume you want BZip2 tarballs. If you want to use GZip tarballs, replace tar's commandline
+	on line 50 accordingly. Punctually, "tar -jcvf" would become "tar -zcvf". The other lines refer to the .tar.bz2
+	file extension for echo or file operations, which you might need to replace with .tar.gz or the extension of your
+	desired archive format. You might even reduce it to archive backups, but not compress it. As you already know,
+	tar doesn't compress anything on its own, and the tar format is not compressed on its own.
+
+1.2.3. build-external-archive.sh
+--------------------------------
+
+USAGE:
+	build-external-archive.sh {--help | [--force | -f] [{--xdelta | -x} <previous version>] <output dir>}
+WORKING DIRECTORY:
+	/ or /bin on UMC dir
+REQUIRES:
+	GNU tar, BZip2, Bash, GNU coreutils, xdelta (optional), md5sum and sha1sum (both strongly recommended
+	for Internet distribution, and usually part of GNU coreutils)
+DESCRIPTION:
+	I had to give to other co-maintainer the task of uploading the campaign to the campaign server. In the
+	process I realized how annoying it was to remove unwanted files from the package, publicly available on
+	a HTTP server, before uploading it, which was usually done automatically by the Wesnoth campaign server
+	and clients.
+	
+	Therefore, I crafted in small time a script that made this tedious task for me, and while I was at it,
+	extended its functionality.
+	
+	This script builds an external package of the campaign, which can be uploaded to a HTTP or FTP server
+	later, making sure that private information, such as .pbl files, are removed from the output.
+	
+	It merely tests for the existence of <output dir>, creates it if required, copies the UMC directory
+	on the temporary files path ($TMPDIR), and works there, producing a BZip2 tarball that is later copied
+	to the output directory. If the --xdelta or -x parameters are used, and a valid previous version is passed,
+	it is used to generate an XDelta patch of the previous versions' tar (uncompressed) to the generated
+	tar (uncompressed); useful for users of low bandwidth or to avoid downloading a huge package all over again.
+	
+	Note that --xdelta/-x require the xdelta tool to be installed and available in your PATH. The package
+	of the previous version to be analyzed with XDelta is looked for in the same output dir of the new
+	version. The tarballs are uncompressed on $TMPDIR.
+	
+	Created files and directories on $TMPDIR are removed when the script finishes
+	
+	The --force parameter is intended for overwriting a package of the same version in the output dir when it
+	exists.
+HACKING:
+	Assumption 1: at line 62 there is a sanity check for a new-style manifest of campaign (campaigndir/_main.cfg). You
+	might need to remove or rewrite it if you use a campaign that uses the old style manifest (campaigndir.cfg),
+	but I recommend to switch to new-style manifest in case of anything.
+	
+	Assumption 2: assumes that the invoker user has read and write privileges on $TMPDIR. openSUSE 10.3 configures that
+	dir to be accessible in such way by default when installing.
+	
+	Assumption 3: assumes throughout the script that the invoker wants BZip2 tarballs. Support for other formats
+	would be a waste of time and space, since .tar.bz2 produces light output, slow compression/uncompression but
+	good ratios. If you really want to use other format, be prepared for a hacking hell.
+
+
+1.3. Tag files and making the suite work for your custom UNIX setup
+===================================================================
+
+This suite uses certain special files located on campaigns to automatically
+detect their files' locations and other important locations.
+
+They are most of the time the files that you should edit to make the maintenance
+tools set work on your machine, as they are distributed with specific info to
+Shadow Master's machines.
+
+They should be located at /tags on the UMC directory, and at /tags on the
+WesCamp-i18n checkout. Both sets should have *exactly* the same contents.
+The file names do differ, however, as the UMC directory files are supposed
+to be checked by filters, or to be viewed in Windows Explorer; therefore they
+have the ".tag" extension. The WesCamp duplicates do not have any extension.
+
+The tagfiles are:
+
+list_BASEDIRS.tag:
+	Contains the unique id of the campaign, which should match its
+	UMC directory (at <wesnoth pref.>/data/campaigns on UNIX) name. For
+	Invasion from the Unknown by Shadow Master, for instance, it is
+	"Invasion_from_the_Unknown". It is recommended not to leave a trailing
+	newline at the file's end, but to leave the unique id alone
+	
+	The id is also used to generate tarballs.
+
+list_IMPORTDIRS.tag:
+	Contains the absolute path of the Wesnoth preferences directory. On
+	UNIX machines it would be ~/.wesnoth by default, unless --with-preferences-dir=x
+	was passed to the configure script before building Wesnoth.
+	
+	NOTE: don't use ~ as it might be interpreted as an invalid filename;
+	instead use your home directory's expanded form for the mean time, i.e.
+	/home/jperez/.wesnoth
+
+	This is used to locate the UMC directory.
+
+list_WMAPDIRS.tag
+	Contains a space-separated list of directories inside the campaign's dir
+	which contain Wesnoth Map Format files. They may include map (.map) files
+	or mask files (.mask).
+	
+	You shouldn't need to edit this file unless you decide to put maps and/or
+	masks on a exotic location inside the campaign dir.
+
+	NOTE: these files are still unused as the feature they are intended for has
+	not been implemented yet.
+
+list_WMLDIRS.tag
+	Contains a space-separated list of directory names inside the campaign's
+	dir on which WML scripts (*.cfg) will be scanned. It is *mandatory* to
+	include all base directories on which WML files with translatable strings
+	will be located. Note that each entry on the root is scanned recursively.
+	That is, for example, suppose this tag:
+	
+	scenarios macros units
+	
+	When the i18n maintenance tool set is executed, they will look for updated and
+	new WML files on /scenarios and its subdirectories, /macros and its subdirectories,
+	/units and its subdirectories.
+	
+	If you don't include all base directories on which WML files with translatable
+	strings will be located in this tagfile, they won't be submitted to WesCamp
+	and no .po catalog entries will be generated by wmlxgettext; this could
+	be useful to deliberately do only when you have WML files which are completely
+	included in an external textdomain in their own directories, i.e. if they
+	use a multiplayer era's translations.
+
+	I'm not even sure of that use, though. For safety, I include the themes WML
+	directory, even though all of its translatable strings are put under the
+	wesnoth and wesnoth-lib textdomains
+
+README.tag
+	This is a comment file that is not used by any script, and is generated
+	just to make sure that nobody deletes the tag directory thinking that it's
+	useless. ;-)
+
+VERSION.tag
+	This file contains the campaign release version. It is used for various purposes
+	at the moment. Please make sure that it is kept up to date before running the
+	release scripts so that the resultant package has not a broken version.
+	
+	NOTE: in the future the .pbl file and _main.cfg will be edited to match
+	this tagfile's contents
+
+
+==========
+2. THE WML
+==========
+
+In the process of making this campaign, I wrote the WML code using some of the mainline
+conventions, and other self-imposed conventions that come from my habits on C programming.
+This is specially important, as I try to make everything consistent for the point of view of
+a programmer.
+
+
+1.1. Coding Style
+=================
+
+A. Macros
+
+Most macros are defined once and expected to be available throughout the rest of the campaign,
+for the whole scope of the WML preprocessor. These *public macros*, as all other macros, use names that
+are uppercase to distinguish them from WML include files, as both use the same preprocessor syntax.
+
+However, other macros are defined once and expected to be out of scope at the end of the file
+where they are defined. These are the *private macros*.
+
+While forcing private macros to be scoped inside a particular preprocessed file only, by defining them
+and undefining them (#undef) after the last call, can be done on _main.cfg and most scenario files at the
+campaign's #ifdef scope, attempting to do so on the macro files (/macros/*, /utils/*) when they are called
+from the scope of #define blocks, invalidates all of their calls in #define blocks. Therefore, I had to
+invent my own naming convention to make sure that they would not conflict with public macros out of their
+intial definition file.
+
+All private macros' names are prefixed with a double underline, like:
+
+#define __MYMACRO
+	# dummy
+#enddef
+
+This makes sure that if someone wants to make a publc version of it, without removing the private macro,
+he or she just has to #define MYMACRO separately. I got this idea, curiously, from Microsoft C's conventions,
+which dictate that all keywords prefixed with double underline (i.e. __int32) were Microsoft C-specific extensions.
+I know it has little or no correlation, but... :-)
+
+There is another problem that can occur both with public and private macros: when they have a parameter list, it
+may happen that someone names a parameter the same way of an existing macro, i.e.
+
+#define MSG TEXT
+	[message]
+		message={TEXT}
+	[/message]
+#enddef
+
+#define PRINT MSG
+	[print]
+		text={MSG}
+		size=18
+	[/print]
+#enddef
+
+There is no documentation on the behavior of the WML preprocessor on this border case, so I may suppose that
+this code causes "undefined behavior", which is not good. A program, even in WML, must be written making sure
+that it always behaves properly, and not "unexpectedly".
+
+Apart from the fact that this behavior is not documented anywhere, this also brings an usability issue.
+We might have defined PRINT with the PMSG parameter to make sure it doesn't conflict with the MSG macro, but
+nobody assures that the global preprocessor cache doesn't have a PMSG macro declared by an odd UMC for some
+funky preloading task. It also may become each time more and more confuse for the maintainer to understand the
+meaning of funky abreviations that are written to avoid conflicts.
+
+For this issue, I decided to stick to a prefix that nobody (yet) has used in WML macro names, the underline.
+This solves both the visual hassle and the possibility of conflicts.
+
+#define MSG _TEXT
+	[message]
+		message={_TEXT}
+	[/message]
+#enddef
+
+#define PRINT _MSG
+	[print]
+		text={_MSG}
+		size=18
+	[/print]
+#enddef
+
+Anyone can recognize the purpose of that parameter by its letters, and can also tell it's used as parameter inside
+the #define, and not as a macro, because of the leading underline.
+
+
+B. Variables
+
+I did 
+
+
+
+
+
+
+

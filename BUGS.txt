@@ -1,0 +1,40 @@
+Known bugs:
+-----------
+
+* Scenario "Dawn of the Great War" causes the game to look like frozen after the initial
+  dialogue, just before the player regains control and the new objectives get displayed;
+  this is known to happen at least on openSUSE 10.3 x86_64 kernel 2.6.22.5-31-default
+  with Wesnoth 1.4+SVN, without optimizations. Possibly does not affect official binaries
+  or anything else that was compiled with optimizations.
+  The game seems to freeze for about 10 seconds.
+
+* Some units may not display properly if haloes are disabled in the game preferences;
+  this is due to the way they are extended over more space than it could fit one hex,
+  as a workaround to an engine limitation. I hope we can work it out in Wesnoth 1.5.x.
+  Affected units include: Faerie Spirit, Kagthanus Matrix Core, Kagthanus Matrix Flowsystem.
+
+* Damage floating labels ocassionally don't display over units of the Elvish Warrior Spirit
+  line when they result harmed during a fight. The cause is not known yet.
+
+* Story line is inconsistent, specially after "Bye and Behold" and before "Arrival of
+  the Battalion" (not really continuous). This is known and is caused by some scenarios
+  that are not yet enabled, but which should take place in-between.
+
+* Some Chaos faction units seem to "pop out" during fight; this is caused by a mixture of
+  both deprecated animation frames and a modern standing frame. Id est, those deprecated
+  animation frames must be updated.
+
+Note that here are listed only those bugs that are known by the author, and that have not been
+fixed in this release; usually there are still more bugs to be found, and most of them are fixed
+before a new release is made, thus don't get to be listed in this file.
+
+If you happen to find a new bug, please report it as soon as possible at www.wesnoth.org/forum/,
+Scenario & Campaign dev. subforum, thread "Invasion from the Unknown", with as much information
+as possible to help us find the cause and fix the bug.
+
+
+Please do not e-mail me for anything related to the campaign; I usually get my inbox filled with
+messages and cannot examine one by one. Therefore, forum personal messaging is preferred, but
+*ONLY* if you really need to talk with me directly. You should PM "Shadow Master" in such a case.
+
+-- Ignacio Riquelme Morelle

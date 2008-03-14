@@ -1,0 +1,362 @@
+Invasion from the Unknown / Armageddon Changelog
+------------------------------------------------
+
+Version 1.0.2:
+- General:
+    * Added BUGS.txt, which lists known bugs/by-design oddities and contains
+      instructions for reporting new ones.
+    * Initiated string-freeze on existing scenarios to allow ESR to work with them
+    * Ran wesnoth-pngcrush over inner root
+      > total saved: 2 KB, 2 files
+    * Set translation flag to 'true' on _server.pbl
+- Graphics:
+    * Restored animation frames:
+        + Chaos Invader
+        + Chaos Dark Knight
+        + Chaos Hell Knight
+    * Updated animation frames:
+        + Chaos Invader: defense, attack (1)
+    * Updated baseframes:
+        + Elvish Guard
+    * Updated place-holder portrait for Elynia (thanks Kitty for providing
+      a high-resolution PSD)
+- Music and sound effects:
+    * Added ambient_campfire.ogg from Blueblaze's [sound_source] test add-on
+    * Sad music (sad.ogg) gets played on character death events
+- Scenarios:
+    * Renamed character Analia to Anlindë (ESR's suggestion)
+    * Scenario 16 ("Arrival of the Battalion"):
+        + Added campfire continuous sound sources
+- Units:
+    * Changed Chaos Dark Knight's advanceto value to a valid unit type id
+    * Renamed units:
+        + Elvish Guard -> Elvish Protector
+        + Hell Knight -> Chaos Razerman
+
+Version 1.0.1:
+- General:
+    * Fixed {NPC ...} macro, which was not spawning units due to a call to
+      inexistent macro RANDOM_TRAIT_UNIT; this fixes, at least, missing NPCs in
+      scenario 14 (bye and behold)
+    * Ran wesnoth-pngcrush over inner root
+      > total saved: 0 KB, 3 files
+    * Solved the frequent problem of macro parameters order for once and for all
+      (caused by too many convention changes that occur from the night to the morning
+       in trunk pre 1.4.0 and related tagged releases)
+
+      LOYAL_UNIT -> EX_LOYAL_UNIT
+      UNDEAD_UNIT -> EX_LOYAL_UNDEAD_UNIT
+      UNIT -> EX_LOYAL_UNIT
+- Graphics:
+    * Changed Galas' portrait scale
+- Music and sound effects:
+    * Added track: (Northern Rebirth) Sad music - by West
+    * Merged music from IftU Soundtrack package into the campaign
+    * Removed wesnoth-battle-2.ogg (duplicate of mainline knalgan_theme.ogg)
+    * Removed the-city-falls.ogg (duplicate of mainline the_city_falls.ogg)
+    * Removed gameplay06.ogg (references replaced with mainline nunc_dimittis.ogg)
+- Scenario:
+    * Many scenarios now use "dynamic music"; suggested indirectly by West on IRC
+    * Made boss scenarios not to hardcode their music playlist
+    * Restored scenario 15 (placeholder)
+      This invalidates saved games of 1.0.0 >= versions > 0.11.0 in the range of scenarios
+      "The Aragwaithi" (cutscene) - Epilogue
+    * Scenario 14 ("Bye and Behold"):
+        + Balancing
+    * Undead rise-up system now takes advantage of 1.4.0's fix to bug #10926
+- Terrain WML:
+    * Campfire tiles are no longer impassable terrain aliases
+    * Fixed small typo which caused campfire animations not to display at all
+- Units:
+    * Mystic fire animations should match Extended Era x.33.0 now
+    * New units: Bear, Giant Boar
+
+Version 1.0.0:
+- General:
+    * Bump version
+
+Version 0.99.103 (1.0 RC 3 2008-03-03) <NOT PUBLISHED>:
+- General:
+    * Ran wesnoth-pngcrush over inner root
+      > total saved: 107 KB, 109 files
+      Wow, the GIMP seems to be spewing out piggy PNGs lately ;-)
+- Graphics:
+    * Fixed a TC glitch in Mechanical Goliath's melee attack frame
+    * Portraits (placeholders):
+        + Faerie Dryad (gen.): Copied kitty's Elvish Druid portrait (mainline) as of
+          trunk r23987, scaled down to 205x205, and added border
+    * Removed some deprecated animation frames of units which got their
+      baseframes dramatically modified; they must be redrawn from scratch;
+      the WML will not be updated yet and will not reflect this change
+
+Version 0.99.102 (1.0 RC 2 2008-03-02) <NOT PUBLISHED>:
+- General:
+    * Updated credits screen
+- Graphics:
+    * Maps:
+        + Increased quality (and size!) of episode-specific story maps
+    * Units:
+        + Updated baseframes: Hell Guardian
+- Music and sound effects:
+    * Added proper Vorbis tags to: gameplay06.ogg, the-city-falls.ogg, snowfall.ogg
+- Scenarios:
+    * Face your Fate (13):
+        + Balancing
+        + Modified some dialogues
+        + Updated map
+    * Bye and Behold (14):
+        + Balancing
+        + Due to popular demand, Woses are no longer a recruitment option for
+          player
+        + Modified some dialogues
+        + Updated map
+- Terrain:
+    * Fixed many glitches originated between Wesnoth 1.3.15 and 1.3.18 related
+      to our custom transitions and the predefined Chasm (Q*) graphics.
+    * Optimized, polished.
+
+Version 0.99.101 (1.0 RC 1) <NOT PUBLISHED>:
+- C++:
+    * Fixed a bug which caused portraits of units with different profiles for male and female
+      genders not to be updated properly on females (to be exported to trunk/1.4 branch)
+- General:
+    * Bump version to 1.0
+    * Ran wmllint on /
+    * Fixed issues caused by a change in the LOYAL_UNIT macro parameters' order
+      after Wesnoth 1.3.1
+      (reported by "Glass Pearl Player" et al)
+    * Made various floating labels' text unit gender-specific
+- Graphics:
+    * Portraits (placeholders):
+        + Elynia: Copied kitty's Elvish Shaman portrait (mainline) in order to ease later
+          replacement when a non-placeholder portrait is made; unit's WML updated accordingly
+        + Analia: Copied kitty's Elvish Lady portrait (mainline) to while we get a definitive portrait
+          that fits the character's profile
+        + Analia: Removed old JPEG placeholder
+    * Units:
+        + Updated baseframes: Minor Imp, Imp, Lady of Light/Sylvan Faerie, Chaos Soulhunter, Chaos Invader,
+          Demon Zephyr
+- Music and sound effects:
+    * Merged the /music directory for release 1.0
+- Scenarios:
+    * Fixed a flaw which didn't trigger defeat when King Asthorgar would die
+      (reported by docrock)
+    * Horrors from the Depths (3):
+        + Removed evil trap
+    * Over the Sands (4):
+        + Dehydration is back with a new, custom and simpler algorithm
+          (NOTE: there is no dehydration on Easy difficulty setting)
+        + Revised map
+    * Crossfire (5A):
+        + Allowed faeries to take the ring
+        + Allowed the player to regret and choose other unit to pick up the ring
+    * Cursed Plateau (5B):
+        + Remade map and finished coding
+    * Fixed a "map not found" bug with "The Aragwaithi", which seems to have been present since
+      before last official release
+    * Removed "Dealing with Orcs" (15-16)
+    * Interim (22A):
+        + Made all enemies significantly more aggressive towards the heroes
+    * Welcome to the Lair (22B):
+        + Refactored
+- Units:
+    * Attack animations for the Runesmith line should work now (attack
+      filter was not matching anything)
+    * Balancing:
+        + Elynia's AMLAs fully heal her
+        + Decreased Demon Zephyr's ranged attack strength from 8-3 to 7-3
+        + Gave Bone Knight a ranged 10-1 crossbow (pierce) attack
+        + Set resistances for non-winged demons:
+            fire: 0% (was 50%)
+        + Set resistances for winged demons:
+            fire: 20% (was 50%)
+        + Set resistances for all demons:
+            cold: -10% (was 50%)
+        + Tweaked resistances on the whole Imp line
+    * Elvish Civilian's advancements depend on the unit's gender:
+        + female: Elvish Shaman, Elvish Archer, Elvish Hunter
+        + male: Elvish Fighter, Elvish Archer, Elvish Hunter
+        (reported by masaber2)
+
+Version 0.11.990 <NOT PUBLISHED>:
+- Units:
+    * Fixed a flaw in the variable-cost units mechanism which caused Elvish
+      fighters and scouts not to receive the additional L2 advancement in later
+      scenarios when freshly-recruited
+      (reported by Xargon)
+
+Version 0.11.0 <unofficial release>:
+- Maintenance and framework:
+    * Code style:
+        + wmlindent was run; made sure blocks whose functionality would break
+          if indented are always ignored
+    * cron job will name backup archives according to the campaign's version tagfile contents
+    * Maintenance utilities moved to /bin directory, which shall be excluded from campaign server uploads
+    * New maintenance tools:
+        + build-external-archive.sh, which can automatically generate XDeltas between
+          versions, and strip down ignored files from packages
+          May be based on the assumption that the maintainer runs GNU sed, Bash and GNU coreutils
+    * Optimized all maintenance suite scripts
+    * Tag files moved to /tags directory
+    * Translations maintenance utilities moved to /bin directory, which shall be replicated at svn repository
+    * WesCamp-i18n tree won't use the automatic updates of the new campaign server to avoid overriding ESR's changes
+      on SVN
+- General:
+    * Added documentation:
+        + {SPAWN_BOSS_UNIT} (for future maintainers)
+    * Bump version:
+        + 0.10.1 -> 0.11.0
+    * Campaign menu entry:
+        + Set rank to 255 (Expert tier)
+        + Campaign's level is now "expert"
+    * Core macros:
+        + Implemented percentage calculation macros
+        + Implemented DO-WHILE block
+        + Moved TC/RC declarations to a top-level WML file, ensuring that they are preprocessed
+          early enough
+    * Engine requirement:
+        + 1.3.14 (mandatory, as it's the first beta for 1.4)
+    * NPC movement algorithms:
+        + {NPC_BIRD_BEHAVIOR} has been optimized in such way that it can be used
+          inside an event and not only at [scenario] top level (i.e. for modifying a side's
+          NPC behavior on the fly)
+    * Removed compatibility code for Wesnoth 1.3.11-1.3.13:
+        + /: {USE_L3_OUTLAWS} injection
+        + /utils/amla.cfg: {AMLA_DEFAULT}
+        + /utils/special_notes.cfg: {SPECIAL_NOTES}, {SPECIAL_NOTES_FEEDING}, {SPECIAL_NOTES_GROWTH}
+    * Time of Day schedules:
+        + Removed spurious textdomain= statements
+- Graphics:
+    * Added graphics:
+        + Standard terrain transitions for Dark Hive terrain class (Y*)
+        (GIMP's "lighten only" layer mode of dark hive base tile over
+        Uu cave transition graphics)
+        + Death Baron:
+            o death-baron-crossbow.png
+            o death-baron-crossbow-attack1.png
+            o death-baron-crossbow-attack2.png
+            o death-baron-defend.png
+        + Lady of Light:
+            o lady-of-light-defend.png
+            o lady-of-light-magic.png
+            o lady-of-light-attack1.png
+            o lady-of-light-attack2.png
+            o lady-of-light-attack3.png
+    * Removed graphics:
+        + Shaxthal Drone
+        + terrain/windmill-*.png (mainline duplicate)
+        + various deprecated Aragwaith units' animation frames that clashed with the new ones
+    * Updated graphics:
+        + Dread Bat (using Jetryl's Blood Bat anim. frames as placeholder)
+        + Obscures aura
+        + Death Baron
+        + Hell Knight
+        + Dark Hive pits (5 new variations)
+        + Dark Lair tile
+        + Aragwaith Captain (shadow upd. by Shadow Master, anim. frames by Wayfarer)
+        + Aragwaith Warlock <male, female> (shadow upd. by Shadow Master, anim. frames by Wayfarer)
+        + Aragwaith Wizard <male> (shadow upd. by Shadow Master, anim. frames by Wayfarer)
+        + Aragwaith Sorcerer <male> (shadow upd. by Shadow Master, anim. frames by Wayfarer)
+        + Aragwaith Swordsman (shadow upd. by Shadow Master, anim. frames by Wayfarer)
+        + Aragwaith Ancient Banner <male> (shadow upd. by Shadow Master, anim. frames by Wayfarer)
+        + Skeletal Rider
+        + Bone Knight
+        + Master of Darkness
+- Language, i18n and l10n:
+    * Did some textdomain layout optimization on /utils/items.cfg and /utils/glamour.cfg; in particular,
+      set wesnoth-lib textdomain for strings "Cancel", "Yes" and "No", instead of our own, so that they
+      are translated as standard GUI elements and not as part of this campaign
+    * Made all UtBS schedules on /utils/schedules.cfg be under this campaign's textdomain effect
+    * Updated translations:
+        + French (Zoltic):
+          (nil)
+        + Italian (Brivido):
+          (nil)
+        + Spanish (Shadow Master):
+          1956 translated messages, 0 fuzzy translations, 620 messages not translated yet
+- Scenarios:
+    * Implemented workaround on Analia's spawning code and Elynia's (scenario #10, and E4 boss)
+      that enforces gender= on them to be the correct one. Wesnoth 1.3.14+svn r23135 seems not to use unique gender=
+      statements in UnitsWML and copy them onto spawned single units unless explicitly asked. The result is pretty awkward
+      now that unit's race can be translated even for singular forms, and display on the unit stats panel ;)
+    * Reestructuration:
+        + Removed scenarios:
+            o (19) Infested Pass
+            o (21) E3 Boss (moved to 19)
+            o (23) Lands of Chaos
+    * Scenario 3:
+        + Fixed typo in a dialogue line
+    * Scenario 10:
+        + Elynia's name is translatable as it should have always been (i18n bug)
+    * Scenario 18 "The Dawn (...)":
+        + Fixed all legacy bugs:
+            o duplicated enemy leader identifiers
+        + Remade map and WML, embedding the plot of old scenario 19 inside
+    * Scenario 19:
+        + Replaced with scenario 21, made E3 Boss scenario
+    * Scenario 21:
+        + Elynia's hero icon is removed temporarily, to avoid overlapping the canrecruit=1 crown
+        + Now Elynia glows in a golden tone when she touches the special glyph
+        + Revised map
+        + Revised scenario's gameplay
+    * Scenario 21 - 22 Interlude:
+        + Fixed a map flaw which could cause a hero to be recalled on a water tile
+    * Scenario 23A (Innuendo):
+        + Fixed a bug which caused the dungeon prisoners to be spawned whenever an unit moved
+          onto their locations
+    * Scenario 23B (Gauntlet):
+        + Elyssa can't attack a second time when respawned during her own turn
+    * Scenario 24B:
+        + Fixed a bug which caused enemy waves to be spawned for the rest of eternity
+        + Modified Death Knight summoning logic
+- Shadow Master's standard macro infrastructure:
+    * Internal macros:
+        + Render WML:
+            o __RC_PALETTE should declare new palletes properly now
+- Terrain WML:
+    * Fixes to double terrain aliasing:
+        + Made campfire terrains be aliases of a root terrain, "Xu"
+          (they were aliases of "Mm^Xm formerly)
+        + Made phantom castle "Uu^Cd" be alias of a root terrain, "Ch" (was "Cud" formerly)
+        + Made phantom keep "Uu^Kd" be alias of a root terrain, "Ch" (was "Kud" formerly)
+        + Made road "Ryd" be alias of a root terrain, "Gg" (was "Rr" formerly)
+    * Rearranged some transitions order to produce a consistent appearance
+    * Removed Gg^Vwm (Windmill/Village) as per conversation with zookeeper
+    * Renamed campfire's string "^Fi" to "^Fy" to revent future conflicts with mainline
+- Units:
+    * Abilities:
+        + Glamour option is not offered on known "chasm" or "cavewall" terrains to
+          avoid "getting stuck" at the unit's location after changing to a status that
+          has no movement on those tiles
+    * Balancing:
+        + Increased required XP for advancement of Blood Bat to Dread Bat from 42 to 60
+        + Increased Tiger's resistance to arcane damage from 0% to 10%
+        + Decreased Cockatrice's resistance to arcane damage from 20% to -50%
+        + Decreased Chimera's resistance to arcane damage from 20% to -50%
+        + Decreased Shaxthal Drone's HP from 35 to 28
+        + Decreased Assault Drone's HP from 47 to 42
+        + Decreased Sentry Drone's HP from 51 to 46
+        + Removed Marksman special from Fire Spirit's ranged attack
+        + Decreased Fire Wisp's ranged damage from 6-2 to 4-2
+        + Changed Fire Spirit's ranged damage from 8-2 to 6-3
+        + Kagthanus Flow System Tube and Kagthanus Matrix Core can no longer receive random traits
+    * Gave Sleeping Gryphon the missing "awake" animations ;)
+    * Mainline conformance:
+        + Death Baron:
+            o Added a 5-2 ranged attack (pierce)
+            o Increased hitpoints from 54 to 55
+            o Increased required leveling experience from 90 to 100
+            o Reduced number of melee strikes by one
+            o Renamed melee attack from "sword" to "axe" (suggested by Jetryl and Eternal)
+            o Updated special notes conventions
+    * New or refactored units:
+        + Kagthanus Matrix Core (fixed all animation glitches except on-select by using a more
+          complex set of masked halo and baseframes; HP and XP bars should always display properly now
+        + Kagthanus Matrix Flow System
+    * Optimized filtering on variable-cost elvish units, therefore fixing a bug that caused them
+      to be excluded from certain Standard Unit Filter, specially those used for special objects
+    * Shaxthal datafiles have had their "alien" prefix removed for continuity
+    * Removed units:
+        + Shaxthal Drone
+    * Renamed units:
+        + Blood Knight -> Hell Knight

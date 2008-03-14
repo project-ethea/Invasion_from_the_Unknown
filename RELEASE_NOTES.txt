@@ -1,0 +1,34 @@
+Alright. Not much time has passed, but [b]release 1.0.2 is out[/b].
+
+It implicitly supersedes 1.0.1, the last release published through the campaign server; it also supersedes 1.0.0, the last release that was published in my website's UMC tree.
+
+There are very few changes, but one of them is essential enough to invalidate your saved games. Analia has been renamed to Anlindë, as per ESR's suggestion. I also restored some animation frames which Espreon considers vaguely different to the baseframes (I cannot understand his reasoning, though).
+
+There are also greater changes that were introduced with the legendary 1.0.1:
+
+* This campaign works on SVN branch 1.4; therefore you need release 1.4.0 or later to play it (no need for SVN if you don't know what it is).
+* [b]Many[/b] issues related to macro parameter orders have been fixed. They were introduced during the period between 1.3.19 and 1.4.0, in mainline; I consider this pure evilness, but it was beyond my control at that time.
+* [b]Musicpack is no longer required:[/b] most of the music included in it was added to mainline before releasing 1.4.0; therefore you just need to make sure you have Wesnoth's music tracks installed (which should be the default unless you use Debian GNU/Linux, according to the rumors).
+* Some cosmetic modifications were made to scenarios and portraits. They include, but aren't limited to, changing the background music according to the plot context; I did it based on West's suggestion on #wesnoth-dev.
+* "Dealing with Orcs" is being refactored; however, it is still hidden.
+* Walking Corpses are spawned in the same hex a player's unit died at; this requires Wesnoth 1.4.0 or later. Period. You cannot use Wesnoth 1.3.19 or earlier; attempting to do so may cause a crash.
+
+Therefore, you just need to download the campaign.
+
+* At the Wesnoth campaign server, for 1.4.x. Bandwidth seems to have been dramatically increased, thus you shouldn't worry much about it.
+* Additionally, you can download the campaign at [url=http://shadowm.nfshost.com/wesnoth-UMC/Invasion_from_the_Unknown/Invasion_from_the_Unknown-1.0.2.tar.bz2]my website[/url]; please note that I'm not providing installation instructions for it, and you should consult Wesnoth's wiki instead.
+
+Downloading from the campaign server is worth 11.6 MB aproximately; if you can't afford that much you might want to download and install it manually from my website; since that package is transferred in its compressed form you can save pretty more than half its size via that medium.
+
+I'd like to thank the following people for their help:
+
+* Mythological, for bug-fixing published releases during my absence, even though I didn't ask/force him to do so.
+* ESR, for his prose-doctoring work (although at the moment of this release it included just 3 scenarios).
+* Kitty, for providing me a high-res portrait that now serves as Elynia's placeholder.
+* An anonymous user who sent me a gettext patch to my e-mail address. Well, it wasn't anonymous, I just don't recall his or her name at this moment.
+* Hamish A., for web hosting.
+
+For translators: this campaign's .po and .pot files have not been updated properly in WesCamp yet; I'm aware of the problem and I shall fix it soon.
+
+Now, go to play and enjoy!
+

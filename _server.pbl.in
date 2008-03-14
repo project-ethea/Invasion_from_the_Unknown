@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+#  Invasion from the Unknown
+#  Copyright (C) 2007, 2008 by Ignacio R. Morelle "Shadow Master"
+#  <shadowm2006@gmail.com / igriquel@uc.cl>
+#
+#  This program is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation, either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+__PBL_AUTHOR="Shadow Master"
+__PBL_TITLE="Invasion from the Unknown"
+__PBL_ICON="scenery/village-human-burned1.png"
+__PBL_DESCRIPTION="Long after the Fall, the last forest elves struggle to survive in the outsides when they are forced to abandon their safe valley. May they finally free the Great Continent from its chaos, or perish in the attempt.\n\n(Intermediate level, 24 scenarios, requires Wesnoth 1.3.14 or later.)"
+__PBL_AUTO_TRANSLATE="no"
