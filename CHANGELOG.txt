@@ -13,6 +13,9 @@ Version 1.0.10:
     * Victory and defeat music also replace existing playlist with silence
 - Scenarios and gameplay:
     * All hive spawn points are aware of the surface-variation flag
+    * Scenario 10 (The Source of Light):
+        + Any unit can take the Berserker Potion (fixes a bug reported by Soliton)
+        + Mal Keshar is respawned with his real maximum HP
 - Units:
     * Removed units: Troll Shaman
 
