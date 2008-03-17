@@ -6,6 +6,8 @@ Version 1.0.10:
     * Added directory hierarchy for Python and Formula AI that might be written later
     * Moved from localhost (greycore) non-versioned storage to SourceForge.net
       (SVN)
+    * Ran wesnoth-pngcrush over inner root
+      > total saved: 3 KB, 3 files
     * Removed translator entries from about.cfg as suggested by Ivanovic
 - Graphics:
     * Updated place-holder portrait for Galas
@@ -13,8 +15,8 @@ Version 1.0.10:
     * Victory and defeat music also replace existing playlist with silence
 - Scenarios and gameplay:
     * All hive spawn points are aware of the surface-variation flag
-    * Scenario 10 (The Source of Light):
-        + Any unit can take the Berserker Potion (fixes a bug reported by Soliton)
+    * Scenario 10 (The Source of Light) (fixes a couple of bugs reported by Soliton):
+        + Any unit can take the Berserker Potion
         + Mal Keshar is respawned with his real maximum HP
 - Units:
     * Removed units: Troll Shaman
