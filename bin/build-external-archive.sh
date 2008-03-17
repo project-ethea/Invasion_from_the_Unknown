@@ -20,6 +20,8 @@
 #
 #    See the COPYING file for more details.
 #
+#   $Id$
+#
 # Changelog
 # ---------
 # 0.2.0

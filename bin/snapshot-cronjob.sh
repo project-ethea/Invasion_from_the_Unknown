@@ -14,6 +14,8 @@
 #
 #   See the COPYING file for more details.
 #
+#   $Id$
+#
 # NOTE! this script assumes the UMC I made uses the new-style manifest filenames! (i.e. /_main.cfg instead
 # of /../UMC_Name_Goes_Here.cfg)
 #

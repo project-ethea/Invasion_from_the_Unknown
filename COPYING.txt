@@ -1,22 +1,12 @@
-This user-made add-on for Battle for Wesnoth 1.3/1.4 is distributed under
-the same terms that apply to the game engine, be it the latest 1.4 branch release
-or the latest 1.3 branch release, whichever is the most recent and compatible with
-1.4.x at the moment; however with the sole exception of the copyright statement:
-
-----------------------------------------------------
 
    Invasion from the Unknown: Armageddon
 
    Copyright (C) 2006-2008 by Ignacio Riquelme Morelle <shadowm2006@gmail.com>
-   *NOT* integral part of the Battle for Wesnoth Project, http://www.wesnoth.org/
+   Add-on for the Battle for Wesnoth Project, http://www.wesnoth.org/
 
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License version 2
    or at your option any later version.
-
-   Exceptions (if any) are external files provided by this package, which
-   should contain their own license terms in the header when applicable (text files);
-   otherwise, a COPYING_<filename>.txt would be provided in the root directory.
 
    This program is distributed in the hope that it will be useful,
    but WITHOUT ANY WARRANTY.

@@ -15,6 +15,8 @@
 #
 #   See the COPYING file for more details.
 #
+#   $Id$
+#
 
 # Check whether we are running at the utilities directory or not
 if [ "`basename ${PWD}`" = "bin" ]; then

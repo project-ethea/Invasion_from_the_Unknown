@@ -1,6 +1,21 @@
 Invasion from the Unknown / Armageddon Changelog
 ------------------------------------------------
 
+Version 1.0.10:
+- General:
+    * Added directory hierarchy for Python and Formula AI that might be written later
+    * Moved from localhost (greycore) non-versioned storage to SourceForge.net
+      (SVN)
+    * Removed translator entries from about.cfg as suggested by Ivanovic
+- Graphics:
+    * Updated place-holder portrait for Galas
+- Music and sound effects:
+    * Victory and defeat music also replace existing playlist with silence
+- Scenarios and gameplay:
+    * All hive spawn points are aware of the surface-variation flag
+- Units:
+    * Removed units: Troll Shaman
+
 Version 1.0.2:
 - General:
     * Added BUGS.txt, which lists known bugs/by-design oddities and contains

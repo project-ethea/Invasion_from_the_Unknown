@@ -12,6 +12,8 @@
 #
 #   See the COPYING file for more details.
 #
+#   $Id$
+#
 TAG_PREFIX="tags"
 # NOTE: the TAG_SUFFIX here is for the svn side of the campaign; it is therefore nil as it was not
 # intended for Windows shell
