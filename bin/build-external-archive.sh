@@ -2,10 +2,10 @@
 #    Build external .tar.bz2 archive, used for HTTP webserver uploads, maintainers
 #    coordination and XDelta generation
 #
-#    Version 0.2.0
+#    Version 0.3.0
 #
 #    Run-time requirements: Bash, GNU tar, xdelta(*), GNU sed, GNU coreutils (prov.
-#    md5sum(*), cat, sha1sum(*)), GNU fileutils, BZip2
+#    md5sum(*), cat, sha1sum(*), GNU fileutils, BZip2
 #    (*): indicates an optional requirement
 #
 #    Copyright (C) 2008 by Ignacio Riquelme M. <shadowm2006@gmail.com>
@@ -24,6 +24,9 @@
 #
 # Changelog
 # ---------
+# 0.3.0
+# * 2008-03-17 (10:28 PM):
+#             - Added svn export capabilities and a related switch
 # 0.2.0
 # * 2008-03-09 (08:21 PM):
 #             - Script now computes MD5 and SHA1 checksums of both XDelta and generated package,
@@ -36,13 +39,21 @@
 if [ "$1" = "" ] || [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
 	cat <<- EOD
 		usage: build-external-archive.sh [--force | -f] [{--xdelta | -x} (older version)]  (output dir)
-		Use --force or -f to overwrite the target package, should it exist in the output dir.
+		
+		--force | -f               Overwrites the target package file, should it exist in the output dir.
+		--xdelta | -x              Generates a XDelta patch from 'older version'.
+		--no-svn-export | -E       Does not check whether the UMC directory is a SVN checkout, and skips
+		                           exporting it with the standard svn 'export' command; this may cause
+		                           unnecessary files to be included in the package; don't use it unless
+		                           you know what you are doing.
+		
 		Note that this script should be run from inside the UMC directory.
 	EOD
 	exit
 fi
 
 __P_FORCE="no"
+__P_SVN_EXPORT="yes"
 __P_XDELTA="no"
 __P_XDELTA_FROM_VERSION="0.0.0"
 OUTPUT_DIRECTORY="null"
@@ -56,6 +67,9 @@ while [ "${1}" != "" ]; do
 		__P_XDELTA="yes"
 		__P_XDELTA_FROM_VERSION="${2}"
 		shift
+	fi
+	if [ "${1}" = "--no-svn-export" ] || [ "${1}" = "-E" ]; then
+		__P_SVN_EXPORT="no"
 	fi
 	OUTPUT_DIRECTORY=${1}
 	shift
@@ -87,6 +101,13 @@ OUTPUT_EXT="${OUTPUT_ARCHIVE_FORMAT}.${OUTPUT_ARCHIVE_COMPRESSION_FORMAT}"
 
 mkdir -p $OUTPUT_DIRECTORY
 
+# Test early enough if this is a svn checkout
+if ! [ -d "./.svn" ]; then
+	__P_SVN_EXPORT="no"
+else
+	echo "detected svn checkout"
+fi
+
 # Check that target package doesn't exist in the output dir already
 if [ -f "${OUTPUT_DIRECTORY}/${OUTPUT_FILE_BASENAME}.${OUTPUT_EXT}" ]; then
 	if [ "${__P_FORCE}" != "yes" ]; then
@@ -102,8 +123,16 @@ fi
 echo "Creating fake root at ${TMPDIR}/${OUTPUT_FILE_BASENAME}.fakeroot.dir/..."
 mkdir -p ${TMPDIR}/${OUTPUT_FILE_BASENAME}.fakeroot.dir/
 rm -rf ${TMPDIR}/${OUTPUT_FILE_BASENAME}.fakeroot.dir/*
-# Do a complete copy of all files
-cp -a ${INITIAL_DIR} ${TMPDIR}/${OUTPUT_FILE_BASENAME}.fakeroot.dir/${UMC_NAME}
+
+if [ __P_SVN_EXPORT = "no" ]; then
+	# Do a complete copy of all files
+	echo "Exporting..."
+	cp -a ${INITIAL_DIR} ${TMPDIR}/${OUTPUT_FILE_BASENAME}.fakeroot.dir/${UMC_NAME}
+else
+	# Export svn checkout
+	echo "Exporting subversion checkout..."
+	svn export . ${TMPDIR}/${OUTPUT_FILE_BASENAME}.fakeroot.dir/${UMC_NAME}
+fi
 # Change to fake root before working on it
 cd ${TMPDIR}/${OUTPUT_FILE_BASENAME}.fakeroot.dir/
 

@@ -1,6 +1,19 @@
 Invasion from the Unknown / Armageddon Changelog
 ------------------------------------------------
 
+Version 1.0.11:
+- General:
+	* External archive packaging script gracefully handles svn checkouts now
+	  (update to version 0.3.0)
+- Graphics:
+    * Removed alternate signpost (no longer required since it was commited to
+      mainline trunk and branches/1.4
+    * Updated baseframes by Neoskel and Megane:
+    	+ Chaos Invader line except Overlord
+- Scenarios and gameplay:
+	* Scenario 10 (The Source of Light):
+		+ Make usage of southern touch-plates less confusing
+
 Version 1.0.10:
 - General:
     * Added directory hierarchy for Python and Formula AI that might be written later
