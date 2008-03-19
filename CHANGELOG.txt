@@ -1,6 +1,8 @@
 Invasion from the Unknown / Armageddon Changelog
 ------------------------------------------------
 
+Version 1.0.12:
+
 Version 1.0.11:
 - General:
 	* External archive packaging script gracefully handles svn checkouts now
