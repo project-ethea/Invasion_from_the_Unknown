@@ -2,19 +2,109 @@ Invasion from the Unknown / Armageddon Changelog
 ------------------------------------------------
 
 Version 1.0.12:
+- AIs:
+    * Decreased caution level for hostile nature players from 10% to 0%
+    * Shaxthal Wyrm can take on the Bird NPC behavior
+    * NPCs are killed to prevent going out of map bounds now triggering any
+      associated events; this should allow the respawn control algorithm to
+      respawn NPCs as desired
+- General:
+    * Mainline WML conventions / engine changes:
+        + Changed all usages of [terrain] letter= to use [terrain] terrain=, since the former
+          syntax will be deprecated in 1.5.x and makes little sense with the 1.3 terrain system
+- Graphics:
+    * Added graphics:
+        + 2 scenery tree variations by Meniou
+        + 2 new variations of scenery gibs
+        + Elvish Hunter - melee attack and defense animation frames (male, female)
+        + Elvish Hunter - ranged attack and defense animation frames (male, female)
+        + Generic camp
+        + Rain effect (previously removed)
+        + Shadow Courier
+        + Shadow Spawn
+        + Storyline "big warning" graphic (from Tango icon theme)
+    * Changed campaign menu entry's icon
+    * New campaign menu entry's splash screen (from kitty's story graphics)
+    * Updated unit graphics:
+        + Abomination
+        + Bone Knight
+        + Lady of Light
+        + Skeletal Rider
+        + Death Baron
+        + Loyalist Man at Arms (by Neoskel, for Blueblaze's secret RPG)
+    * Updated item graphics:
+        + Berries
+        + Bookshelves
+        + Touchplate
+    * Updated place-holder portraits:
+        + Elynia
+        + Erathon
+    * Updated terrain graphics:
+        + Dark Castle floor
+    * Updated storymap graphics
+- Scenarios and gameplay:
+    * Added a start-of-campaign warning message
+    * Replaced storymaps' player icon with a "generic" elven unit to avoid awkwardness
+      until variable substitution in Story WML can be done.
+    * Scenario 1 (Border Patrol):
+        + Balancing
+        + Minor visual improvements
+    * Scenario 2 (A Real Confrontation):
+        + Fixed a silent engine error, "audio: Tried to add duplicate track"
+    * Scenario 4 (Over the Sands):
+        + Fixed victory clean-up missing some variables
+    * Scenario 5a, 5b:
+        + Missing victory clean-up added to Scenario 6 as a prestart event
+    * Scenario 8a (Errand of Hope):
+        + Fixed typo which generated the 'unknown unit' error
+        + Fixed victory clean-up missing some variables
+    * Scenario 9 (The Library):
+        + Clarified objectives
+    * Scenario 10 (Source of Light):
+        + Fixed a bug which caused Mal Keshar to search for the glyphs continuously
+          (reported by Sky)
+    * Scenario 17 (Dawn of the Great War):
+        + Fixed victory clean-up missing some variables
+    * Scenario 20 (Under the Sands):
+        + The player now gets a bonus for finishing the scenario
+    * Scenario 22-A (Innuendo):
+        + Made AI significantly more aggressive towards the player
+        + Minor cosmetic improvements
+    * Scenario 22-B (Gauntlet):
+        + Added aggressive NPCs
+        + Elynia respawns in a known location to avoid respawning in lava hexes
+    * Scenario 23-A (Interim):
+        + Added aggressive NPCs
+    * Scenario 23-B (Welcome to the Lair):
+        + Added aggressive NPCs
+        + Fixed invalid reference to next scenario in cutscene
+    * Units killed by the Shadow Master now cannot be resurrected by Mal Keshar
+- Units:
+    * Added missing Obscure halo to Master of Darkness
+    * Balancing:
+        + Backported AMLA_DEFAULT fix to heal/unslow from mainline SVN trunk, for Elynia's AMLAs
+        + Increased cavewall defense for Shaxthal Wyrm from 40% to 50%
+        + Decreased Chaos Lore's "ethereal blast" from 11-4 to 9-4
+        + Decreased Chaos Lore's "infernal chill" from 17-2 to 13-2
+        + Changed Chaos Lore's melee attack from 8-1 to 7-2
+        + Changed default AMLA for Lady of Light and Sylvan Faerie from AMLA_DEFAULT to
+          AMLA_FULLHEAL_AND_ENHANCE_HP (just a cosmetic change to make AMLA icon consistent with
+          custom AMLAs, but it also backports a SVN trunk change for Wesnoth 1.4.x)
+    * New or refactored units: Shadow Spawn, Shadow Courier
+    * Optimized WML: alt. Dark Sorcerer, alt. Necromancer
 
 Version 1.0.11:
 - General:
-	* External archive packaging script gracefully handles svn checkouts now
-	  (update to version 0.3.0)
+    * External archive packaging script gracefully handles svn checkouts now
+      (update to version 0.3.0)
 - Graphics:
     * Removed alternate signpost (no longer required since it was commited to
       mainline trunk and branches/1.4
     * Updated baseframes by Neoskel and Megane:
-    	+ Chaos Invader line except Overlord
+        + Chaos Invader line except Overlord
 - Scenarios and gameplay:
-	* Scenario 10 (The Source of Light):
-		+ Make usage of southern touch-plates less confusing
+    * Scenario 10 (The Source of Light):
+        + Make usage of southern touch-plates less confusing
 
 Version 1.0.10:
 - General:

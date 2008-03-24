@@ -1,6 +1,17 @@
 Known bugs:
 -----------
 
+* The wmlindent and wmllint tools may mangle certain WML constructs; this is known, and the
+  author intends to make this campaign compatible with these mainline maintenance tools
+  in the close future. As a workaround for the time being, the maintainer should resist
+  to let wmllint run unattended, and keep backups before changes or use wmllint -d previously
+  to check the changes the tool wants to make for any possible side-effects.
+
+* Some scenarios, specially of the last part, contain enemies that may respawn indefinitely if you
+  try (mistakenly) to defeat them. Please, bear in mind that as a general rule for this campaign,
+  you are not supposed to defeat all enemies unless the objectives summary clearly states so.
+  Attempting to do so may get you stuck in some scenarios. Id est, this is *not* a bug.
+
 * Scenario "Dawn of the Great War" causes the game to look like frozen after the initial
   dialogue, just before the player regains control and the new objectives get displayed;
   this is known to happen at least on openSUSE 10.3 x86_64 kernel 2.6.22.5-31-default
@@ -28,10 +39,31 @@ Note that here are listed only those bugs that are known by the author, and that
 fixed in this release; usually there are still more bugs to be found, and most of them are fixed
 before a new release is made, thus don't get to be listed in this file.
 
-If you happen to find a new bug, please report it as soon as possible at www.wesnoth.org/forum/,
-Scenario & Campaign dev. subforum, thread "Invasion from the Unknown", with as much information
-as possible to help us find the cause and fix the bug.
 
+Reporting new bugs:
+-------------------
+
+Sometimes, you may come across an already reported bug, or a bug that was already fixed in a
+newer release of the campaign. To make sure you are not falling into the later case, please always
+download the latest version of this campaign and try to reproduce the bug.
+
+It is good practice, often ignored, to try to reproduce the bug in other campaigns, preferably
+mainline, or with an isolated case of WML code (if you know what it is). This can help us
+optimize the bug fixing procedure by discriminating bugs that are specific to this campaign
+or that are actually caused by the game engine.
+
+If you happen to find a new bug that is specific to this campaign, please report it as soon as
+possible at www.wesnoth.org/forum/, Scenario & Campaign dev. subforum, thread "Invasion from the
+Unknown", with as much information as possible to help us find the cause and fix the bug.
+
+In the case that the bug could be reproduced in other campaigns/with isolated and proper WML,
+you should report it with relevant information at www.wesnoth.org/forum/, Technical Support
+subforum; you might as well submit the issue to bugs.wesnoth.org, but only if you are certain
+that it is a real bug in the game engine itself.
+
+
+Contacting the Author:
+----------------------
 
 Please do not e-mail me for anything related to the campaign; I usually get my inbox filled with
 messages and cannot examine one by one. Therefore, forum personal messaging is preferred, but

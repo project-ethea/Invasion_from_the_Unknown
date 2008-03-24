@@ -29,27 +29,28 @@ UMC_INNER_ROOT="${UMC_OUTER_ROOT}/`cat ./tags/list_BASEDIRS.tag`"7
 
 L_OLD_DIR="${PWD}"
 
-if [ "$1" != "--invoke-i18n-suite" ]; then
-	UMC_WESCAMP_CHECKOUT_ROOT="${HOME}/wescamp-IftU"
-	echo "Exporting to WesCamp..."
-	cd ${UMC_WESCAMP_CHECKOUT_ROOT}
-	echo "> svn update"
-	svn up
-
-	echo "> running maintenance script: /bin/add-all-to-repo.sh"
-	./bin/add-all-to-repo.sh
-	test "$?" -eq "0" || exit $?
-
-	echo "> running maintenance script: /bin/update-translations.sh"
-	./bin/update-translations.sh
-	test "$?" -eq "0" || exit $?
-fi
+# -- SUPERSEDED BY CAMPAIGNS_CLIENT.PY BUILT-IN WESCAMP SUPPORT --
+# if [ "$1" != "--invoke-i18n-suite" ]; then
+# 	UMC_WESCAMP_CHECKOUT_ROOT="${HOME}/wescamp-IftU"
+# 	echo "Exporting to WesCamp..."
+# 	cd ${UMC_WESCAMP_CHECKOUT_ROOT}
+# 	echo "> svn update"
+# 	svn up
+# 
+# 	echo "> running maintenance script: /bin/add-all-to-repo.sh"
+# 	./bin/add-all-to-repo.sh
+# 	test "$?" -eq "0" || exit $?
+# 
+# 	echo "> running maintenance script: /bin/update-translations.sh"
+# 	./bin/update-translations.sh
+# 	test "$?" -eq "0" || exit $?
+# fi
 
 cd ${UMC_INNER_ROOT}
 
 echo "Optimizing PNG files on ${UMC_INNER_ROOT} (recursive)..."
 
-wesnoth-pngcrush
+wesnoth-optipng
 echo "Uploading via campaigns_client.py..."
 campaigns_client.py -p 1.3.x -c ${UMC_OUTER_ROOT} -u `cat ./tags/list_BASEDIRS.tag`
 cd ${L_OLD_DIR}
