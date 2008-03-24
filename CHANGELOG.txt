@@ -56,7 +56,8 @@ Version 1.0.12:
     * Scenario 5a, 5b:
         + Missing victory clean-up added to Scenario 6 as a prestart event
     * Scenario 8a (Errand of Hope):
-        + Fixed typo which generated the 'unknown unit' error
+        + Fixed typo which generated the 'unknown unit' error ('Troll Rcoklobber' should
+          be 'Troll Rocklobber')
         + Fixed victory clean-up missing some variables
     * Scenario 9 (The Library):
         + Clarified objectives
@@ -72,16 +73,20 @@ Version 1.0.12:
         + Minor cosmetic improvements
     * Scenario 22-B (Gauntlet):
         + Added aggressive NPCs
-        + Elynia respawns in a known location to avoid respawning in lava hexes
+        + Elyssa respawns in a known location to avoid respawning in lava hexes
     * Scenario 23-A (Interim):
         + Added aggressive NPCs
     * Scenario 23-B (Welcome to the Lair):
         + Added aggressive NPCs
+        + Addressed a minor grammatical issue
         + Fixed invalid reference to next scenario in cutscene
     * Units killed by the Shadow Master now cannot be resurrected by Mal Keshar
+- Terrain WML:
+    * Clean-up of code as suggested by MadMax
 - Units:
     * Added missing Obscure halo to Master of Darkness
     * Balancing:
+        + Removed Dread Bat's feeding ability; and increased HP from 36 to 43
         + Backported AMLA_DEFAULT fix to heal/unslow from mainline SVN trunk, for Elynia's AMLAs
         + Increased cavewall defense for Shaxthal Wyrm from 40% to 50%
         + Decreased Chaos Lore's "ethereal blast" from 11-4 to 9-4
