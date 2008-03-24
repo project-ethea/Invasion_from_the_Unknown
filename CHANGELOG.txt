@@ -1,6 +1,12 @@
 Invasion from the Unknown / Armageddon Changelog
 ------------------------------------------------
 
+Version 1.0.13:
+- Graphics:
+    * wesnoth-optipng ran on root; saved 53 KB on 70 files
+- i18n and l10n:
+    * Added missing translations (spanish, turkish, italian, french)
+
 Version 1.0.12:
 - AIs:
     * Decreased caution level for hostile nature players from 10% to 0%
