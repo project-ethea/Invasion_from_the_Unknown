@@ -1,0 +1,14 @@
+Invasion from the Unknown / Armageddon Changelog
+------------------------------------------------
+
+
+Version X.Y.Z-NNN
+- General:
+- Graphics:
+- Maintenance tool-chain:
+- Music and sound effects:
+- Python AIs:
+- Scenarios and gameplay:
+- Terrain WML:
+- Themes WML:
+- Units:

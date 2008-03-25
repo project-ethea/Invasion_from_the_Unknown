@@ -1,6 +1,21 @@
 Invasion from the Unknown / Armageddon Changelog
 ------------------------------------------------
 
+Version 1.0.14:
+- Graphics:
+    * Restored missing campaign menu entry's icon to SVN
+    * Updated place-holder portraits:
+        + Elynia (slight recoloring of LoW's Cleodil portrait)
+- i18n and l10n:
+    * Added to SVN
+- Scenarios:
+    * Minor cosmetic improvements to existing maps
+    * Scenario 23-C (Broken Heart part 1):
+        + Lédinor no longer gets lost; i.e. he gets teleported to the
+          second half of the map with the party
+    * Scenario 23-C cutscene (Broken Heart part 2):
+        + Map borders get replaced with abyss tiles too
+
 Version 1.0.13:
 - Graphics:
     * wesnoth-optipng ran on root; saved 53 KB on 70 files
