@@ -2,12 +2,23 @@ Invasion from the Unknown / Armageddon Changelog
 ------------------------------------------------
 
 Version 1.0.14:
+- General:
+    * Ran wmllint; the units/ directory is still begging for manual fixes. However, the
+      WML of the campaign overall should be now clean enough to allow for easy migration
+      to SVN trunk with wmllint
+    * Refactored item pick-up mechanism, making it easier to maintain, and easier
+      to use from the player's side; it is also guaranteed that all of them can be
+      used only once
+    * Removed unused macros:
+        + PLACE_IMAGE_WITH_HALO @ utils/items.cfg
 - Graphics:
     * Restored missing campaign menu entry's icon to SVN
     * Updated place-holder portraits:
-        + Elynia (slight recoloring of LoW's Cleodil portrait)
+        + Elynia (slight recoloring of LoW's new Cleodil portrait)
 - i18n and l10n:
-    * Added to SVN
+    * Added to SVN the translations directory
+    * Moved utils/mainline-strings.cfg to top-level and made it be included first in the
+      preprocessor chain
 - Scenarios:
     * Minor cosmetic improvements to existing maps
     * Scenario 23-C (Broken Heart part 1):
