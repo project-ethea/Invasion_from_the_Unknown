@@ -26,6 +26,9 @@ Version 1.0.14:
           second half of the map with the party
     * Scenario 23-C cutscene (Broken Heart part 2):
         + Map borders get replaced with abyss tiles too
+- Units:
+    * Fixed many units which were using inexisting macro WEAPON_SPECIAL_DRAINS
+      instead of WEAPON_SPECIAL_DRAIN
 
 Version 1.0.13:
 - Graphics:
