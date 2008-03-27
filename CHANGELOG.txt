@@ -29,6 +29,7 @@ Version 1.0.14:
 - Units:
     * Fixed many units which were using inexisting macro WEAPON_SPECIAL_DRAINS
       instead of WEAPON_SPECIAL_DRAIN
+    * Renamed the Kagthanii race to "Verlissh" (suggested by ESR, Aethaeryn)
 
 Version 1.0.13:
 - Graphics:
