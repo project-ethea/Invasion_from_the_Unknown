@@ -1,7 +1,7 @@
 Invasion from the Unknown / Armageddon Changelog
 ------------------------------------------------
 
-Version 1.0.14:
+Version 1.9.0:
 - General:
     * Ran wmllint; the units/ directory is still begging for manual fixes. However, the
       WML of the campaign overall should be now clean enough to allow for easy migration
