@@ -21,6 +21,8 @@ Version 1.0.14:
       preprocessor chain
 - Scenarios:
     * Minor cosmetic improvements to existing maps
+    * Scenario 2 (A Real Confrontation):
+        + Removed left-over time area
     * Scenario 23-C (Broken Heart part 1):
         + Lédinor no longer gets lost; i.e. he gets teleported to the
           second half of the map with the party
