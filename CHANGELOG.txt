@@ -22,6 +22,9 @@ Version 1.0.14:
 - Scenarios:
     * Minor cosmetic improvements to existing maps
     * Scenario 2 (A Real Confrontation):
+        + Enemies' gold reserves are increased whenever they drop below 30 at the beginning of
+          their turn
+        + Increased the amount of gold gained by enemies when they pillage villages
         + Removed left-over time area
     * Scenario 23-C (Broken Heart part 1):
         + Lédinor no longer gets lost; i.e. he gets teleported to the
