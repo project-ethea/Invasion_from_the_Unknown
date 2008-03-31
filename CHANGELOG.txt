@@ -1,8 +1,13 @@
 Invasion from the Unknown / Armageddon Changelog
 ------------------------------------------------
 
-Version 1.0.14:
+Version 1.9.0:
+- AIs:
+    * Added formula/darkhive-drone.ai (untested and not to be used on 1.4)
 - General:
+    * Bump version from 1.0.14 to 1.9.0
+    * Made it easier to update version numbers in the future, though it makes the presence
+      of file tags/VERSION.tag mandatory
     * Ran wmllint; the units/ directory is still begging for manual fixes. However, the
       WML of the campaign overall should be now clean enough to allow for easy migration
       to SVN trunk with wmllint
@@ -12,28 +17,101 @@ Version 1.0.14:
     * Removed unused macros:
         + PLACE_IMAGE_WITH_HALO @ utils/items.cfg
 - Graphics:
-    * Restored missing campaign menu entry's icon to SVN
-    * Updated place-holder portraits:
-        + Elynia (slight recoloring of LoW's new Cleodil portrait)
+    * New or updated portraits:
+        + Elynia, place-holder (slight recoloring of LoW's new Cleodil portrait) <kitty>
+        + Lédinor, place-holder (LoW's new Velon portrait) <kitty>
+    * New or updated unit graphics:
+        + Demon - level 1 <Shadow Master>
+        + Dread Bat baseframe <megane>
+        + Strongbow <Shadow/wayfarer>
 - i18n and l10n:
     * Added to SVN the translations directory
+    * Internationalized player team names in many scenarios
     * Moved utils/mainline-strings.cfg to top-level and made it be included first in the
       preprocessor chain
+- Maintenance toolchain:
+    * Moved from /branches/1.4/Invasion_from_the_Unknown/bin to /branches/maintenance-toolchain
 - Scenarios:
+    * Made it possible to play first 13 scenarios and/or last 13 scenarios independently:
+        + Playing Episode I allows player to select whether he or she desires to continue
+          playing with Episode II at the end
+        + Playing Episode II gives the player a default set of heroes
     * Minor cosmetic improvements to existing maps
+    * Scenario 1 (Border Patrol):
+        + Balancing
+        + Standard user_team_name added
     * Scenario 2 (A Real Confrontation):
         + Enemies' gold reserves are increased whenever they drop below 30 at the beginning of
           their turn
         + Increased the amount of gold gained by enemies when they pillage villages
         + Removed left-over time area
+        + Standard user_team_name added
+    * Scenario 3 (Memories from the Depths):
+        + Balancing
+        + Mal Keshar no longer has {TRAIT_FEARLESS}
+        + Renamed ("Horrors from the Depths")
+        + Standard user_team_name added
+    * Scenario 4 (Over the Sands)
+        + Balancing
+        + Dehydration enabled for lowest difficulty level
+        + Standard user_team_name added
+    * Scenario 5a (Crossfire)
+        + Balancing
+        + Fixed Ring of Regeneration's unit filter to allow humans (i.e. Dark Adepts)
+          to pick it up
+        + Reduced turn limit for balancing
+        + Standard user_team_name added
+    * Scenario 5b (Cursed Plateau)
+        + Added the missing scenario WML prestart commands, i.e. now player unit costs
+          get properly modified, and Dark Adepts are made recruitable
+        + Fixed Ring of Regeneration's unit filter to allow humans (i.e. Dark Adepts)
+          to pick it up
+        + Reduced turn limit for balancing
+        + Standard user_team_name added
+    * Scenario 6 (Moon Valley)
+        + Balancing
+        + Standard user_team_name added
+    * Scenario 7 (The Elf versus Goliath)
+        + Standard user_team_name added
+    * Scenario 8 (Errand of Hope)
+        + Death Knights can pick up the Magic Poisonous Bow too
+        + Reduced turn limit for balancing
+        + Standard user_team_name added
+    * Scenario 9 (The Library)
+        + Reduced turn limit for balancing
+        + Standard user_team_name added
+    * Scenario 10 (The Source of Light)
+        + Defined a turn limit for balancing
+        + Fixed (FOR REAL) a bug which caused Mal Keshar to search for the glyphs
+          continuously (reported by Sky)
+        + Standard user_team_name added
+    * Scenario 14 (Bye and Behold)
+        + Changed Erathan's level from L3 to L2
+        + Defined a turn limit for balancing
     * Scenario 23-C (Broken Heart part 1):
         + Lédinor no longer gets lost; i.e. he gets teleported to the
           second half of the map with the party
     * Scenario 23-C cutscene (Broken Heart part 2):
         + Map borders get replaced with abyss tiles too
 - Units:
+    * Balancing:
+        + Decreased Dread Bat's HP from 43 to 33
+        + Increased required XP to advance for Blood Bat from 60 to 70
+        + Gave {ABILITY_REGENERATES} to Dread Bat
+        + Gave mandatory {TRAIT_FEARLESS} to Elvish Warrior Spirit line
+        + Set Elvish Warrior Spirit line movement type to 'undeadspirit'
+          > override resistances: arcane -20% (def. -10%)
+          > override defenses: cave 60% (def. 50%)
+        + Increased Elvish Warrior Spirit's HP from 19 to 20
+        + Increased Elvish Forefather's HP from 36 to 38
+        + Set Faerie Spirit movement type to 'undeadspirit'
+          > override resistances: fire 0% (def. 10%), arcane -20% (def. -10%)
+          > override defenses: cave 60% (def. 50%)
+        + Gave mandatory {TRAIT_SPIRIT} to Faerie Spirit
+    * Fixed many level-1 units not switching to ZoC ellipse after advancing from level 0
     * Fixed many units which were using inexisting macro WEAPON_SPECIAL_DRAINS
       instead of WEAPON_SPECIAL_DRAIN
+    * Made Door unit clean-up after custom death event handler
     * Renamed the Kagthanii race to "Verlissh" (suggested by ESR, Aethaeryn)
 
 Version 1.0.13:

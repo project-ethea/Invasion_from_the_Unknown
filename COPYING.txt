@@ -11,7 +11,24 @@
    This program is distributed in the hope that it will be useful,
    but WITHOUT ANY WARRANTY.
 
-   The full license terms are described below.
+   This package contains parts that are distributed under their own
+   license terms; it has been ensured by all means that they are compatible
+   in redistribution terms. Exceptions:
+
+   * Miscellaneous props/tiles by Reiner Prokein
+     <http://www.reinerstileset.4players.de:1059/englisch.htm>
+     "The tilesets are freeware. Even for commercial Games. I just want my name in
+      the Credits in this case: Reiner 'Tiles' Prokein. You can modify my graphics
+      in every needed way: size, colour, fileformat , ..."
+   * The unit sprite art for Elynia is (C) 2007, 2008 by Ignacio Riquelme Morelle
+     (Shadow Master/ShikadiLord), and is redistributed under the terms of the GNU
+     GPL version 2, or at option of redistributers, any later version. However, only
+     a form that is resultant of a layered format conversion is distributed in this
+     campaign; the original layered form can be made available upon request by
+     non-public mediums, as it may include artistic content that could be deemed
+     offensive by certain people.
+
+   The full license terms for the package itself are described below.
 
 ----------------------------------------------------
 
