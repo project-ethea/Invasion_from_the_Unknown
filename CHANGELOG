@@ -9,6 +9,7 @@ Version 1.9.1:
 - Scenarios:
     * Standard user_team_name added on scenarios 11-24 player
       declarations
+    * Skeleton line and Skeleton rider lines can take the Void Armor too
 
 Version 1.9.0:
 - AIs:
