@@ -3,9 +3,12 @@ Invasion from the Unknown Changelog
 
 Version 1.9.1:
 - General:
+- Graphics:
+    * New or updated unit graphics:
+        + Psy Mindraider
 - Scenarios:
-    * Strike on New Knalga
-        + Standard user_team_name added
+    * Standard user_team_name added on scenarios 11-24 player
+      declarations
 
 Version 1.9.0:
 - AIs:
