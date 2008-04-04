@@ -4,12 +4,15 @@ Invasion from the Unknown Changelog
 Version 1.9.1:
 - General:
 - Graphics:
+    * Imported mesilliac's new stone wall terrain graphics from mainline SVN trunk
     * New or updated unit graphics:
         + Psy Mindraider
 - Scenarios:
     * Standard user_team_name added on scenarios 11-24 player
       declarations
     * Skeleton line and Skeleton rider lines can take the Void Armor too
+- Terrain WML:
+    * Back-ported mesilliac's new stone wall terrain from mainline SVN trunk
 
 Version 1.9.0:
 - AIs:
