@@ -13,6 +13,12 @@ Version 1.9.1:
     * Skeleton line and Skeleton rider lines can take the Void Armor too
 - Terrain WML:
     * Back-ported mesilliac's new stone wall terrain from mainline SVN trunk
+- Units:
+    * Balancing:
+        + Decreased Elvish Warrior Spirit's HP from 20 to 18
+        + Increased Elvish Warrior Spirit's recruitment cost from 21 to 22
+        + Decreased Elvish Ancestor's HP from 27 to 25
+        + Decreased Elvish Forefather's HP from 38 to 35
 
 Version 1.9.0:
 - AIs:
