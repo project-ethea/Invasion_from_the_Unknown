@@ -504,7 +504,7 @@ Version 0.11.0 <unofficial release>:
         + Removed Marksman special from Fire Spirit's ranged attack
         + Decreased Fire Wisp's ranged damage from 6-2 to 4-2
         + Changed Fire Spirit's ranged damage from 8-2 to 6-3
-        + Kagthanus Flow System Tube and Kagthanus Matrix Core can no longer receive random traits
+        + Verlisshi Flow System Tube and Verlisshi Matrix Core can no longer receive random traits
     * Gave Sleeping Gryphon the missing "awake" animations ;)
     * Mainline conformance:
         + Death Baron:
@@ -515,9 +515,9 @@ Version 0.11.0 <unofficial release>:
             o Renamed melee attack from "sword" to "axe" (suggested by Jetryl and Eternal)
             o Updated special notes conventions
     * New or refactored units:
-        + Kagthanus Matrix Core (fixed all animation glitches except on-select by using a more
+        + Verlisshi Matrix Core (fixed all animation glitches except on-select by using a more
           complex set of masked halo and baseframes; HP and XP bars should always display properly now
-        + Kagthanus Matrix Flow System
+        + Verlisshi Matrix Flow System
     * Optimized filtering on variable-cost elvish units, therefore fixing a bug that caused them
       to be excluded from certain Standard Unit Filter, specially those used for special objects
     * Shaxthal datafiles have had their "alien" prefix removed for continuity
