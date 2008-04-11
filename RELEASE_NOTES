@@ -1,36 +1,13 @@
-Last week I've been very busy with homework, but anyway I managed to make important changes in this campaign, changes that hopefully increase its playability:
+[b]Version 1.9.1 is out![/b]
 
-[list][*] All saved games of this campaign are now broken. I love to do this :/ No, seriously, there is a way to fix most of them (1).
-[*] The campaign has been splitted in two episodes, which can be selected from the campaign selection menu (2), or played altogether by selecting the appropiate option at the end of Episode I.
-[*] Many scenarios' gold amounts and turn limits have been balanced to make the campaign [b]harder[/b]. After all, it was, and has always been, supposed to be for "experts". ;)
-[*] Translations should be back from the death, both in the external tarball release and the campaign server release.
-[*] Defined a standard item pick-up system, that allows the user to decide whether to give it to a particular unit or not.
-[*] Mal Keshar has the Fearless trait no longer
-[*] Fixed [b]for real[/b] a bug which caused Mal Keshar to search for the glyphs on scenario 10 continuously (reported by Sky)
-[*] Renamed the Kagthanii to Verlisshi as per ESR and Aethaeryn's suggestions[/list]
+This one is mainly a polishment release. New sounds, graphics and an additional music track were added, yes; indeed. But that is not the focus of it. While ESR was busy revising the text for the campaign, I got enough spare time to revise many of my own artwork (and a few external ones) and WML. In fact, the most significant revision is the new fifteenth scenario, "Shadows of Time", which came to replace the long-ago-deprecated "Dealing with Orcs". Both the removal and creation of such deprecated scenario left a huge gap in the story line that "Shadows of Time" has come to fix up.
 
-Additionally, some foes and ally units were balanced, according to Shadow Master's wicked concept of "balance". [b]The result may be harmful to children; keep them away from this add-on![/b]
+Some terrains and decorations were updated too, but the changes are not very noticeable for the regular player - the real action took place under the hood, optimizing and fixing some terrain-graphics WML. Note however, that the changes invalidate current saved games that have a map_data associated; in other words, it is recommended to reload from the last start-of-scenario ([b]not[/b] first turn) saved game if you see any "unknown terrain" error messages.
 
-A greater change, but incredibly unnoticeable, was made too:
-[list][*] wmllint was run[/list]
+Ah well, there [b]is[/b] a big noticeable change. (Hint: thanks mesilliac).
 
-That's all there is to it. Now go bug hunting people! I'm by no means aware of all possible bugs of this campaign because I don't have the required time to play a single small scenario without resorting to :debug :n. Oops, perhaps I shouldn't have revealed the command.:D
+Some minor scenario balancing issues and/or bugs were fixed too.
 
-Regards
--- Ignacio
+Special thanks to Syntax_Error for terrain tiles and other stuff. Now go to download and have fun!
 
------------------------------------
-
-[b]1. Fixing old saved games[/b]
-[list][*] Get your most recent saved game, and uncompress it. The easiest way is executing the following command; this can be done in Windows or UNIX as well, but for the former case, you must call wesnoth from the directory where you installed it, or explicitly tell Windows where to locate wesnoth.exe in the command line. 
-[**]UNIX: [code]wesnoth --gunzip <fully qualified path to saved game>[/code]
-[**]Windows: [code]<path to wesnoth.exe>\wesnoth --gunzip <fully qualified path to saved game>[/code]; can be done from the Start Menu->Run dialog box, or from a command line interpreter (NT: cmd.exe; 9x: command.com)
-[*] Now, open the uncompressed with a text editor that is aware of UTF-8 encoding and UNIX line ends. For Windows, the built-in WordPad editor can do this (NOT Notepad; it may corrupt saved games); I recommend, though, using a third-party editor for Windows, such as Notepad++, which is the one I use. For GNU/Linux, most distributions are set-up so all applications are UTF-8-aware, and they support the UNIX line ending natively; therefore you can use pretty much any text editor there, although I personally use KDE's Kate for these tasks. Other operating systems: you probably know better than me. :(
-[*] Amongst the first few lines before the first WML node, you'll find a line stating [code]campaign="Invasion_from_the_Unknown"[/code]
-[*] If the saved game is of a scenario before Bye and Behold, you should change it to [code]campaign="Invasion_from_the_Unknown_I"[/code]
-[*] Otherwise, change it to [code]campaign="Invasion_from_the_Unknown_II"[/code]
-[*] You should now be able to load the saved game in Wesnoth.[/list]
-This is all there is to know about "upgrading" IftU saved games to 1.9.0. I noticed that old saved games may be loaded unmodified, but I'd recommend not to do it if you don't want a premature game end somewhere...
-
-[b]2. Regarding the Split-up of Episodes[/b]
-You can play the campaign's episodes one and two separately, by picking their respective entries from the campaign selection menu; I recommend players to play episode I first, or they won't understand the plot for Episode II. Nevertheless, after playing Episode I, at its end, you can choose whether end the game or continue straight to episode II.
+[b]Note:[/b] last version released through the campaign server was labeled "1.0.13" in the remote add-ons menu, but it was 1.9.0 actually. This time the new release is labeled 1.9.1.
