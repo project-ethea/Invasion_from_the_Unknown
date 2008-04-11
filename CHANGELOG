@@ -2,71 +2,93 @@ Invasion from the Unknown Changelog
 ------------------------------------------------
 
 Version 1.9.1:
-CHANGES MARKED WITH A @ WERE RECOVERED AFTER DESTRUCTIVE CAMPAIGND TEST RAN LOCALLY
-CHANGES MARKED WITH A ! WERE MADE AFTER DESTRUCTIVE CAMPAIGND TEST
-CHANGES MARKED WITH A # WERE ALREADY MADE BEFORE THE TEST
-
 - General:
-    *# Set correct file properties in SVN and release tarballs
+    * Set correct file properties in SVN for branches/1.4
 - Graphics:
-    *@ Imported mesilliac's new stone wall terrain graphics from mainline SVN trunk
-    *@ New or updated portraits:
+    * Imported mesilliac's new stone wall terrain graphics from mainline SVN trunk
+    * New or updated portraits:
         + Elynia [place-holder]
         + Erathan [place-holder]
         + Mal Hekuba [place-holder]
     * New or updated terrain graphics:
-        +@ Converted Dark Hive pit tiles into overlays
-        + Dark Hive@ (and transitions)
-        + Dark Hive@ - surface (and transitions)
-        + Dark Hive@ - boss lair (and transitions)
+        + Converted Dark Hive pit tiles into overlays
+        + Dark Hive (and transitions)
+        + Dark Hive - surface (and transitions)
+        + Dark Hive - boss lair (and transitions)
     * New or updated unit graphics:
-        + Chaos Invoker
-        +@ Chaos Lore
+        + Chaos Lore
         + Chaos Magus
-        +@ L1 Demon (female)
-        +@ Psy Mindraider
-        +@ Shaxthal Drone
-        +@ Shaxthal Larva
-        +@ Shaxthal Protector Drone
+        + Chaos Warlord
+        + L1 Demon
+        + Psy Crawler (new death animation)
+        + Psy Mindraider
+        + Shadow Courier
+        + Shaxthal Drone
+        + Shaxthal Larva
+        + Shaxthal Master Drone / Chaos Emperor
+        + Shaxthal Protector Drone
         + Shaxthal Runner Drone
-        +@ Shaxthal Wyrm
-    *@ Removed graphics:
+        + Shaxthal Wyrm
+    * Removed graphics:
         + Big Lizard
+    * Replaced Raelthyn landscape pictures with higher quality versions
 - Music and sound effects:
-    * New or updated sounds: union-spell.ogg, shaxthal-roam-1.ogg, bot-small-explosion-4.ogg
+    * New or updated music tracks:
+        + battle2.ogg ("Untitled", by Doug Kaufman)
+    * New or updated sounds:
+      union-[1-4].ogg, shaxthal-roam-[1-2].ogg, bot-small-explosion-4.ogg,
+      shaxthal-die-[1-4].ogg, gun-energy-huge-fire-prelude.ogg, shaxthal-hit-4.ogg
 - Scenarios:
-    * Added definitive scenario 15, "Shadows of Time"
-    *@ Fixed several glitches in the recruitment setup for scenarios 16 and 17
-    *# Prose-doctoring by ESR
-    *@ Scenario 22-A (Innuendo):
+    * Fixed several glitches in the recruitment setup for scenarios 16 and 17
+    * Prose-doctoring by ESR
+    * Scenario 7 (The Elf versus Goliath):
+        + Converted pick-up objects to use the new toolkit
+        + Don't spawn loyal undead units for player at start
+    * Scenario 14 (Bye and Behold):
+        + Balancing
+        + Fixed a wrong unit id in enemy recruitment list
+    * Scenario 15 (Shadows of Time):
+        + Added definitive scenario
+    * Scenario 22-A (Innuendo):
         + Added missing TC to one of the prisoners' icon
         + Balancing
+        + Converted pick-up objects to use the new toolkit
         + Fixed a glitch which would disallow continuing to next scenario
           if one of the prisoners (not Lédinor) died before setting free the
           other one
-        + Pick-up objects use the new mechanism now
-    *# Standard user_team_name added on scenarios 11-24 player
+    * Standard user_team_name added on scenarios 11-24 player
       declarations
-    *# Skeleton line and Skeleton rider lines can take the Void Armor too
+    * Skeleton line and Skeleton rider lines can take the Void Armor too
 - Terrain WML:
-    *# Back-ported mesilliac's new stone wall terrain from mainline SVN trunk
-    *@ Made Dark Hive pits an overlay instead of tile (affects both WML and graphics)
-    *@ New terrains:
+    * Back-ported mesilliac's new stone wall terrain from mainline SVN trunk
+    * Fixed the too-angular-hexes glitch in all custom terrains with transitions;
+      it was mistakenly setting custom precedence only for 1-tile transition, thus the
+      others were being opaqued by mainline terrain
+    * Made Dark Hive pits an overlay instead of tile (affects both WML and graphics)
+    * New terrains:
+        + Dark Hive - illuminated
         + Dark Hive - surface variation
         + Dark Hive pits - boss lair variation
         + Dark Hive pits - surface variation
-    *@ Renamed terrains:
+    * Optimized some transitions
+    * Renamed terrains:
         + Yrh -> Yr^Xp
 - Units:
     * Balancing:
-        +@ Reduced Union's damage from 42-3 to 24-2
-        +# Decreased Elvish Warrior Spirit's HP from 20 to 18
-        +# Increased Elvish Warrior Spirit's recruitment cost from 21 to 22
-        +# Decreased Elvish Ancestor's HP from 27 to 25
-        +# Decreased Elvish Forefather's HP from 38 to 35
-        +@ Changed Aragwaith Slayer's alignment from 'lawful' to 'neutral', HP from 39 to 45
-    * Fixed various animation glitches
-    *@ New or refactored units: Shaxthal Larva
+        + Reduced regular Drone's recruitment cost from 17g to 11g
+        + Reduced Runner Drone's recruitment cost from 18g to 15g
+        + Increased Shadow Master's resistances to various damage classes
+        + Balancing of variable costs for Elvish Shaman and Civilian
+          (i.e. made cheaper) 
+        + Reduced Union's damage from 42-3 to 24-2
+        + Decreased Elvish Warrior Spirit's HP from 20 to 18
+        + Increased Elvish Warrior Spirit's recruitment cost from 21 to 22
+        + Decreased Elvish Ancestor's HP from 27 to 25
+        + Decreased Elvish Forefather's HP from 38 to 35
+        + Changed Aragwaith Slayer's alignment from 'lawful' to 'neutral', HP from 39 to 45
+    * New or refactored units: Shaxthal Larva
+    * Refactored/optimized/fixed animation WML for all Aragwaith units except:
+        + Silver Shield, Shield Guard, Sorcerer
 
 Version 1.9.0:
 - AIs:

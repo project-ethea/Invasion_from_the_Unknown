@@ -1,3 +1,15 @@
+Known non-bugs:
+---------------
+
+* Story line is inconsistent, specially after "Bye and Behold" and before "Arrival of
+  the Battalion" (not really continuous). This is known and is caused by some scenarios
+  that are not yet enabled, but which should take place in-between.
+
+* Some scenarios, specially of the last part, contain enemies that may respawn indefinitely if you
+  try (mistakenly) to defeat them. Please, bear in mind that as a general rule for this campaign,
+  you are not supposed to defeat all enemies unless the objectives summary clearly states so.
+  Attempting to do so may get you stuck in some scenarios. Id est, this is *not* a bug.
+
 Known bugs:
 -----------
 
@@ -6,11 +18,6 @@ Known bugs:
   in the close future. As a workaround for the time being, the maintainer should resist
   to let wmllint run unattended, and keep backups before changes or use wmllint -d previously
   to check the changes the tool wants to make for any possible side-effects.
-
-* Some scenarios, specially of the last part, contain enemies that may respawn indefinitely if you
-  try (mistakenly) to defeat them. Please, bear in mind that as a general rule for this campaign,
-  you are not supposed to defeat all enemies unless the objectives summary clearly states so.
-  Attempting to do so may get you stuck in some scenarios. Id est, this is *not* a bug.
 
 * Scenario "Dawn of the Great War" causes the game to look like frozen after the initial
   dialogue, just before the player regains control and the new objectives get displayed;
@@ -27,10 +34,6 @@ Known bugs:
 * Damage floating labels ocassionally don't display over units of the Elvish Warrior Spirit
   line when they result harmed during a fight. The cause is not known yet.
 
-* Story line is inconsistent, specially after "Bye and Behold" and before "Arrival of
-  the Battalion" (not really continuous). This is known and is caused by some scenarios
-  that are not yet enabled, but which should take place in-between.
-
 * Some Chaos faction units seem to "pop out" during fight; this is caused by a mixture of
   both deprecated animation frames and a modern standing frame. Id est, those deprecated
   animation frames must be updated.
@@ -40,17 +43,22 @@ fixed in this release; usually there are still more bugs to be found, and most o
 before a new release is made, thus don't get to be listed in this file.
 
 
-Reporting new bugs:
--------------------
+Reporting new bugs on officially released versions:
+---------------------------------------------------
 
-Sometimes, you may come across an already reported bug, or a bug that was already fixed in a
-newer release of the campaign. To make sure you are not falling into the later case, please always
-download the latest version of this campaign and try to reproduce the bug.
+Sometimes, you may come across an already reported bug, a bug that was already fixed in a newer
+release of the campaign, or something that looks like a bug to you but actually is not, or at
+least not on the eyes of the author and maintainers. To make sure you are not falling into any
+of the later cases, please always download the latest version of this campaign, check if it is
+already mentioned in the BUGS file, and try to reproduce the bug.
 
 It is good practice, often ignored, to try to reproduce the bug in other campaigns, preferably
 mainline, or with an isolated case of WML code (if you know what it is). This can help us
 optimize the bug fixing procedure by discriminating bugs that are specific to this campaign
-or that are actually caused by the game engine.
+or that are actually caused by the game engine. The test scenario (/data/scenario-test.cfg) is
+also a good place for quick testing of bugs which are not related to the campaign mechanism
+(i.e. it doesn't depend on advancing scenarios, etc.). Debug-mode commands are a great help in
+any case (:debug).
 
 If you happen to find a new bug that is specific to this campaign, please report it as soon as
 possible at www.wesnoth.org/forum/, Scenario & Campaign dev. subforum, thread "Invasion from the
@@ -58,15 +66,42 @@ Unknown", with as much information as possible to help us find the cause and fix
 
 In the case that the bug could be reproduced in other campaigns/with isolated and proper WML,
 you should report it with relevant information at www.wesnoth.org/forum/, Technical Support
-subforum; you might as well submit the issue to bugs.wesnoth.org, but only if you are certain
-that it is a real bug in the game engine itself.
+subforum; you might as well submit the issue to bugs.wesnoth.org, but ONLY if you are certain
+that it is a real bug in the game engine itself; you should always contact the campaign author
+for checking it first, before posting in the Technical Support forum.
+
+
+Reporting new bugs on SVN non-release revisions:
+------------------------------------------------
+*** skip this section if you have no idea what SVN means and/or what it has to do in this
+    context ***
+
+Ah, you spotted a bug in a svn revision of the campaign! Good boy/girl, you always walking on
+the bleeding edge. There are several specific cave-ats to this situation:
+
+* Those who develop this campaign actively should never commit broken stuff to svn in the first
+  place, but if they inadvertely do, odds are that they'll shortly notice and commit a new
+  fixed revision.
+
+* The delay could be of a few hours, or a couple of days at most. If you notice that the bug is
+  not fixed after that time, you should notify Shadow Master or ESR by one of the following
+  media:
+
+  * By IRC: #wesnoth-umc-dev @ freenode.net (it is possible that neither of them are there
+    at certain hours)
+  * Via forum personal-messaging: "Shadow Master" at www.wesnoth.org/forum/
+
+* You could also post it in the relevant forum thread; the only problem with doing so is that
+  you could confuse causal players by spewing svn technicisms in there. :-) So avoid posting
+  it in the forums for everyone's knowledge if possible.
 
 
 Contacting the Author:
 ----------------------
 
 Please do not e-mail me for anything related to the campaign; I usually get my inbox filled with
-messages and cannot examine one by one. Therefore, forum personal messaging is preferred, but
-*ONLY* if you really need to talk with me directly. You should PM "Shadow Master" in such a case.
+many messages (not including the daily 500+ spam messages I get too) and cannot examine one by one.
+Therefore, forum personal messaging is preferred, but *ONLY* if you really need to talk with me
+directly. You should PM "Shadow Master" in such a case.
 
--- Ignacio Riquelme Morelle
+-- Ignacio R. Morelle
