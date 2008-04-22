@@ -1,0 +1,119 @@
+Invasion from the Unknown - Text Sources listing
+------------------------------------------------
+
+This file is intended to list and describe the purpose of several WML files that
+contain translatable strings that should be revised as soon as possible for English
+language consistency, grammar, spelling and style.
+
+Provided for people who are too lazy to take the main gettext .pot to check what strings
+are in the campaign and where they are located in the WML. :-)
+
+-- Ignacio "Shadow Master" Morelle
+
+
+1. FILES/DIRECTORIES TO BE IGNORED
+----------------------------------
+
+/mainline-strings.cfg
+    It contains simple macro definitions that reuse tstrings from mainline core/library
+    textdomains (NOT campaigns). If something is wrong there, odds are that it is/was
+    in mainline too, at some revision.
+/terrain-graphics/
+    It contains untranslatable string literals for use by the terrain system. See
+    /terrain.cfg for related translatable strings.
+    NOTE: if a translatable string ever appears in this directory it must be marked as
+    untranslatable as soon as possible.
+/ai
+    Contains WML-emulated AIs, formula AIs and Python AIs. No translatable strings should
+    be located in the inner WML files. There might be [message] tags with a non-translatable
+    'message' attribute, which is intentional.
+/_server.ign
+/bin/
+    These are files internally used by the release maintainers.
+/base-variables.cfg
+    Primary WML lexical shortcuts - no translatable strings should be in it.
+/base-utils.cfg
+    Primary WML - there are some user-interaction macros such as MSG_UNIT, but their
+    plain-text declarations should not contain any translatable strings - only the inclusions
+    in scenario files/preprocessor output.
+/base-rc.cfg
+    It contains recolor system declarations. The only present translatable strings are
+    in the CUSTOM_COLOR_RANGES table, and they are single names. It would be really weird
+    that those strings were bogus.
+/base-math.cfg
+    Primary WML lexical and functional shortcuts - there should be no translatable strings
+    here - ever.
+/base-loader.cfg
+    Only a lot of preprocessor babble and some top-level WML constructs - there should not be
+    any string literals in this file, translatable nor untranslatable.
+
+
+2. CRITICAL STRING SOURCES
+--------------------------
+
+/_main.cfg
+    Contains campaign episodes' descriptions and menu entry names, besides difficulty level aliases
+    and the saved games' prefixes. This should be always checked to ensure that users get a good
+    first impression of the campaign. ;-)
+/scenarios
+/macros/storytxt.cfg
+    The scenarios directory is pretty self descriptive. Please note that there are subdirectories in it,
+    and the WML source files in them should be revised *too*, as they are user-visible stuff related to the
+    storyline too. All WML in the /scenarios directory deserves revision of translatable strings.
+    The storytxt.cfg file declares macros included from each scenario as others from the storymap.cfg file.
+    The difference is that storymap.cfg contains just graphical instructions, whereas storytxt.cfg contains
+    narrator lines presented before entering a scenario. Therefore, it's essential that whenever a scenario
+    text is revised, the corresponding macro in storytxt.cfg is revised as well.
+/macros/scenario-deaths.cfg
+    Contains death speeches of characters. Essential.
+
+3. SECONDARY STRING SOURCES
+---------------------------
+
+/units
+    Contains the whole unit trees specific to the campaign. The text revision maintainer is free to revise unit_descriptions
+    and any possible event-specific strings. However, there are a few important points:
+
+- Revising an unit's translatable name requires to ensure that it is not referenced in a scenario or story dialogue; if it is,
+  the scenarios should be revised as well to avoid confussing players unless the new tstring name is a well-known synonym
+  of the former.
+- Revising an unit's internal id requires *permission* from the main maintainer, since only them can make sure any unit type
+  references in the WML are not broken by this special renaming.
+- The same applies to a unit's weapon identifier, but not to its translatable (player-visible) name. You are usually free to
+  do whatever you want with the later and forget about the weapon identifiers - the main maintainers will decide whether to
+  change it as well and fix any references to it in WML.
+
+/macros/abilities.cfg, /macros/union.cfg, /macros/glamour.cfg
+    Contains unit abilities: their WML and descriptions. You may modify translatable strings, but
+    never internal identifiers or macro names except with permission of the main maintainer.
+    glamour.cfg may contain dialogues as well.
+/macros/amla.cfg
+    Contains AMLA declarations used by characters' units. You may modify both translatable and
+    untranslatable identifiers as long as you don't rename macros - for the latter you need
+    permission of the main maintainer.
+/macros/weapon-specials.cfg
+    Contains weapon specials: their WML and descriptions. You may modify translatable strings, but
+    never internal identifiers or macro names except with permission of the main maintainer.
+/macros/special-notes.cfg
+    Translatable special note macros that are appended to each unit's description. You may change
+    the macro contents, but *not* the macro names except with permission of the main maintainer.
+/macros/traits.cfg
+    Contains unit traits: their WML and descriptions. You may modify translatable strings, but
+    never internal identifiers or macro names except with permission of the main maintainer.
+
+4. OTHER STRING SOURCES
+-----------------------
+
+/macros/schedules.cfg
+    Contains Time of Day display names. 
+/terrain.cfg
+    Contains terrain display names.
+/macros/items.cfg
+    Contains pick-up objects' descriptions, dialogues, names, etc., as well
+    for their effects.
+/macros/boss-utils.cfg
+/macros/scenario-utils.cfg
+    May contain a few user-interface texts that should be revised as well.
+/macros/extended.cfg
+    Contains anything intended to replace the lately ever-changing mainline macros and their
+    behavior.
