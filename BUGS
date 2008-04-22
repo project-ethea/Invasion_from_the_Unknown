@@ -1,14 +1,29 @@
 Known non-bugs:
 ---------------
 
-* Story line is inconsistent, specially after "Bye and Behold" and before "Arrival of
-  the Battalion" (not really continuous). This is known and is caused by some scenarios
-  that are not yet enabled, but which should take place in-between.
+* Secret scenario warp at the end of "The Elf versus Goliath" is disabled as the secret scenario
+  WML and map are still absent.
+
+* Secret scenario warp at the end of "Innuendo" is disabled as the secret scenario WML and map are
+  not finished yet.
 
 * Some scenarios, specially of the last part, contain enemies that may respawn indefinitely if you
   try (mistakenly) to defeat them. Please, bear in mind that as a general rule for this campaign,
   you are not supposed to defeat all enemies unless the objectives summary clearly states so.
   Attempting to do so may get you stuck in some scenarios. Id est, this is *not* a bug.
+
+Known engine bugs:
+------------------
+
+* Damage floating labels ocassionally don't display over units of the Elvish Warrior Spirit
+  line when they result harmed during a fight. It seems to be related with an unusual delay
+  pre- and post- attack animations when attacking units affected by these spirits' terror ability.
+  NOTE: the latter should be fixed in releases newer than 1.9.0.
+
+* Location-mapped sound sources in scenarios "Arrival..." and "Under the Sands" (amongst other
+  possible cases) are discarded after loading from a saved game that is not the scenario stub.
+  This is possibly because the sound source mappings are declared within prestart WML events,
+  which are by design discarded in saved games.
 
 Known bugs:
 -----------
@@ -30,9 +45,6 @@ Known bugs:
   this is due to the way they are extended over more space than it could fit one hex,
   as a workaround to an engine limitation. I hope we can work it out in Wesnoth 1.5.x.
   Affected units include: Faerie Spirit, Verlissh Matrix Core, Verlissh Matrix Flowsystem.
-
-* Damage floating labels ocassionally don't display over units of the Elvish Warrior Spirit
-  line when they result harmed during a fight. The cause is not known yet.
 
 * Some Chaos faction units seem to "pop out" during fight; this is caused by a mixture of
   both deprecated animation frames and a modern standing frame. Id est, those deprecated
@@ -76,7 +88,7 @@ Reporting new bugs on SVN non-release revisions:
 *** skip this section if you have no idea what SVN means and/or what it has to do in this
     context ***
 
-Ah, you spotted a bug in a svn revision of the campaign! Good boy/girl, you always walking on
+Aha, you spotted a bug in a svn revision of the campaign! Good boy/girl, you always walking on
 the bleeding edge. There are several specific cave-ats to this situation:
 
 * Those who develop this campaign actively should never commit broken stuff to svn in the first
@@ -93,7 +105,7 @@ the bleeding edge. There are several specific cave-ats to this situation:
 
 * You could also post it in the relevant forum thread; the only problem with doing so is that
   you could confuse causal players by spewing svn technicisms in there. :-) So avoid posting
-  it in the forums for everyone's knowledge if possible.
+  it in the forums for everyone's knowledge (and despair) if possible.
 
 
 Contacting the Author:

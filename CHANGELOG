@@ -3,6 +3,9 @@ Invasion from the Unknown Changelog
 
 Version 1.9.1:
 - General:
+    * Pick-up item toolkit:
+        + Allow a descriptive message about the item to be displayed before choosing whether
+          to take it or not with primary_unit; for the silent behavior, PICK_UP_QUIET is provided.
     * Set correct file properties in SVN for branches/1.4
 - Graphics:
     * Imported mesilliac's new stone wall terrain graphics from mainline SVN trunk
@@ -15,14 +18,18 @@ Version 1.9.1:
         + Dark Hive (and transitions)
         + Dark Hive - surface (and transitions)
         + Dark Hive - boss lair (and transitions)
+        + Wasteland
     * New or updated unit graphics:
         + Chaos Lore
         + Chaos Magus
         + Chaos Warlord
+        + Elvish Warrior Spirit
         + L1 Demon
+        + Lady of Light / Sylvan Faerie (baseframe, new stationary halos)
         + Psy Crawler (new death animation)
         + Psy Mindraider
         + Shadow Courier
+        + Shaxthal Assault Drone
         + Shaxthal Drone
         + Shaxthal Larva
         + Shaxthal Master Drone / Chaos Emperor
@@ -37,18 +44,61 @@ Version 1.9.1:
         + battle2.ogg ("Untitled", by Doug Kaufman)
     * New or updated sounds:
       union-[1-4].ogg, shaxthal-roam-[1-2].ogg, bot-small-explosion-4.ogg,
-      shaxthal-die-[1-4].ogg, gun-energy-huge-fire-prelude.ogg, shaxthal-hit-4.ogg
+      shaxthal-die-[1-4].ogg, gun-energy-huge-fire-prelude.ogg, shaxthal-hit-4.ogg,
+      lava.ogg, glyph-powerup.ogg
 - Scenarios:
+    * Allow player to undo last unit movement after reading most message glyphs
+    * Episode system when starting from episode 1:
+        + Gold is not ignored when entering episode 2. Instead, a fraction of it is
+          carried if that fraction's amount is larger than certain minimum values set
+          for scenario 14:
+
+          Easy:   95%, if it is greater than 300
+          Normal: 75%, if it is greater than 275
+          Hard:   50%, if it is greater than 250
+
+        + Recall list is no longer purged when entering episode 2
     * Fixed several glitches in the recruitment setup for scenarios 16 and 17
+    * Made all bosses leaders (canrecruit=yes)
+    * Made it possible for all Elvish Archers (L1-L3) to take the Enchanted Poisonous Bow.
+    * Many scenario/map cosmetic changes that are not listed here
+    * Many storyline/plot changes that are not listed here
     * Prose-doctoring by ESR
+    * Scenario 2 (A Real Confrontation):
+        + Increased ally's income and gold as suggested by players
+        + Increased turn limits for testing
+    * Scenario 4 (Over the Sands):
+        + Dehydration system should ignore Faerie Spirits or any unit with
+          the not_living status set to 'yes'.
+    * Scenario 5a (Crossfire):
+        + Made loyalists significantly more aggressive
     * Scenario 7 (The Elf versus Goliath):
         + Converted pick-up objects to use the new toolkit
         + Don't spawn loyal undead units for player at start
+        + Set a turn limit as suggested by players
+    * Scenario 8a (Errand of Hope):
+        + Changed internal id.
+    * Scenario 9 (The Library):
+        + Objective is now to go *STRAIGHT* south >:-/
+    * Scenario 11 (Strike on New Knalga):
+        + Increased turn limits
+        + New surprises added - made it harder
+    * Scenarios 12 and 13 (The Escape, Face your Fate):
+        + Fix a flaw which allowed to recruit/recall units in scenario 12
+          by moving some WML around
     * Scenario 14 (Bye and Behold):
         + Balancing
         + Fixed a wrong unit id in enemy recruitment list
     * Scenario 15 (Shadows of Time):
         + Added definitive scenario
+    * Scenario 18 (Voices of the Armageddon):
+        + Refactored and renamed; does not affect internal id.
+    * Scenario 19 (Legend of Wesmere):
+        + Renamed (was "Wesmere"); affects internal id.
+        + Workaround/fix a bug which caused shaxthal recruits not to have the surface
+          flag set
+    * Scenario 21 (The Heart):
+        + Cast eternal darkness in this map
     * Scenario 22-A (Innuendo):
         + Added missing TC to one of the prisoners' icon
         + Balancing
@@ -56,20 +106,37 @@ Version 1.9.1:
         + Fixed a glitch which would disallow continuing to next scenario
           if one of the prisoners (not Lédinor) died before setting free the
           other one
+        + Matrix parts are no longer idle NPCs
+    * Scenario 22-C (The Backyard):
+        + Started development of this secret scenario
+    * Scenario 23-A (Interim):
+        + Units are recalled since the beginning now
+    * Scenario 23-B (Welcome to the Lair):
+        + Balancing
+        + Give the player some gold and a minimal recruit list at the start,
+          but don't allow them to recall arbitrary units anyway
+    * Scenario 23-C (Broken Heart):
+        + Reduced turn limit by one unit
+    * Scenario 24 (Epilogue):
+        + Extended plot for sequel
     * Standard user_team_name added on scenarios 11-24 player
       declarations
     * Skeleton line and Skeleton rider lines can take the Void Armor too
 - Terrain WML:
     * Back-ported mesilliac's new stone wall terrain from mainline SVN trunk
+    * Dark road transitions should now behave very much like mainline road (Rr)
+      (i.e. no longer used over cave, snow, hills and other terrain tiles)
     * Fixed the too-angular-hexes glitch in all custom terrains with transitions;
       it was mistakenly setting custom precedence only for 1-tile transition, thus the
       others were being opaqued by mainline terrain
+    * Fixed glitches in abyss transitions
     * Made Dark Hive pits an overlay instead of tile (affects both WML and graphics)
     * New terrains:
         + Dark Hive - illuminated
         + Dark Hive - surface variation
         + Dark Hive pits - boss lair variation
         + Dark Hive pits - surface variation
+        + Water gate (SE and SW facing)
     * Optimized some transitions
     * Renamed terrains:
         + Yrh -> Yr^Xp
@@ -86,9 +153,19 @@ Version 1.9.1:
         + Decreased Elvish Ancestor's HP from 27 to 25
         + Decreased Elvish Forefather's HP from 38 to 35
         + Changed Aragwaith Slayer's alignment from 'lawful' to 'neutral', HP from 39 to 45
-    * New or refactored units: Shaxthal Larva
+        + Removed Shadow Spawn's ranged attack
+        + Removed poison special from Abomination's melee attack
+        + Fixed WML code preprocessing order so that {TRAIT_SPIRIT} exists by the
+          time it is included in Faerie Spirit's code
+        + As a result of the above, now Faerie Spirits receive the Spirit trait forcedfully
+          as intended (it was silently failing)
+    * Fixed animation glitches of Elvish Civilians
+    * New or refactored units: Shaxthal Larva, Shaxthal Rayblade
     * Refactored/optimized/fixed animation WML for all Aragwaith units except:
         + Silver Shield, Shield Guard, Sorcerer
+    * Work-around the animation interim delay caused by the Terror ability on the elvish
+      spirits line (note: this does not fix the missing damage labels - that is from the
+      engine side)
 
 Version 1.9.0:
 - AIs:
