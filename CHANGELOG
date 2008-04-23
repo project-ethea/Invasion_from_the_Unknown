@@ -80,6 +80,9 @@ Version 1.9.1:
         + Changed internal id.
     * Scenario 9 (The Library):
         + Objective is now to go *STRAIGHT* south >:-/
+    * Scenario 10 (The Source of Light):
+        + Mal Keshar's detection of glyphs requires 3 relax turns now
+        + Replaced map with a new and shorter one
     * Scenario 11 (Strike on New Knalga):
         + Increased turn limits
         + New surprises added - made it harder
