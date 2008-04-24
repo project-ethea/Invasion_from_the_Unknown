@@ -20,6 +20,9 @@ Known engine bugs:
   pre- and post- attack animations when attacking units affected by these spirits' terror ability.
   NOTE: the latter should be fixed in releases newer than 1.9.0.
 
+  NOTE2: the absent damage labels are fixed in Wesnoth 1.4.1+svn already. Thanks boucman for his
+  help.
+
 * Location-mapped sound sources in scenarios "Arrival..." and "Under the Sands" (amongst other
   possible cases) are discarded after loading from a saved game that is not the scenario stub.
   This is possibly because the sound source mappings are declared within prestart WML events,
