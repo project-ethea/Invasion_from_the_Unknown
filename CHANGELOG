@@ -18,6 +18,7 @@ Version 1.9.1:
         + Dark Hive (and transitions)
         + Dark Hive - surface (and transitions)
         + Dark Hive - boss lair (and transitions)
+        + Dark tile road transitions
         + Wasteland
     * New or updated unit graphics:
         + Chaos Lore
@@ -48,6 +49,7 @@ Version 1.9.1:
       lava.ogg, glyph-powerup.ogg
 - Scenarios:
     * Allow player to undo last unit movement after reading most message glyphs
+    * Elyssa's gender is forced to 'female' (mainline bug on 1.4.x workaround)
     * Episode system when starting from episode 1:
         + Gold is not ignored when entering episode 2. Instead, a fraction of it is
           carried if that fraction's amount is larger than certain minimum values set
@@ -78,6 +80,7 @@ Version 1.9.1:
         + Set a turn limit as suggested by players
     * Scenario 8a (Errand of Hope):
         + Changed internal id.
+        + Got rid of emulated attack animation, now we use [animate_unit] instead
     * Scenario 9 (The Library):
         + Objective is now to go *STRAIGHT* south >:-/
     * Scenario 10 (The Source of Light):
@@ -162,6 +165,8 @@ Version 1.9.1:
           time it is included in Faerie Spirit's code
         + As a result of the above, now Faerie Spirits receive the Spirit trait forcedfully
           as intended (it was silently failing)
+    * Changed some units' translatable names to avoid redundance now that races are displayed
+      in the sidebar
     * Fixed animation glitches of Elvish Civilians
     * New or refactored units: Shaxthal Larva, Shaxthal Rayblade
     * Refactored/optimized/fixed animation WML for all Aragwaith units except:
