@@ -1,5 +1,17 @@
 Invasion from the Unknown Changelog
-------------------------------------------------
+-----------------------------------
+
+Version 1.9.2:
+- Graphics:
+    * New or updated unit graphics:
+        + Lady of Light/Sylvan Faerie
+- Scenarios:
+    * Scenario 9 - The Library:
+        + Increased turn limits by 10
+    * Scenario 10 - The Source of Light:
+        + Added more villages for balancing
+- Units:
+    * Fixed death animation for Rock Golem
 
 Version 1.9.1/1.9.1a:
 - General:
