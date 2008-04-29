@@ -1,19 +1,1 @@
-[b]Version 1.9.1 is out![/b]
 
-This one is mainly a polishment release. New sounds, graphics and an additional music track were added, yes; indeed. But that is not the focus of it. While ESR was busy revising the text for the campaign, I got enough spare time to revise many of my own artwork (and a few external ones) and WML. In fact, the most significant revision is the new fifteenth scenario, "Shadows of Time", which came to replace the long-ago-deprecated "Dealing with Orcs". Both the removal and creation of such deprecated scenario left a huge gap in the story line that "Shadows of Time" has come to fix up. And to be honest, at last I have come up with a sequel concept, revealed henceforth at the last scenario of this campaign.
-
-Some terrains and decorations were updated too, but the changes are not very noticeable for the regular player - the real action took place under the hood, optimizing and fixing some terrain-graphics WML. Note however, that the changes invalidate current saved games that have a map_data associated; in other words, it is recommended to reload from the last start-of-scenario ([b]not[/b] first turn) saved game if you see any "unknown terrain" error messages.
-
-As per players' request, the recall list is no longer discarded when continuing to Episode II [b]from Episode I[/b] only. When starting the stand-alone episode II from the campaigns menu you'll still be left with default units and gold, however - sorry, but anyway I think I balanced scenario 14 and a few later to make sure it is still well playable.
-
-To note, however: your gold is not completely carried over from Episode I - see changelog for details.
-
-I started additional balancing of scenarios to comply with other player requests too.
-
-Some minor scenario balancing issues and/or bugs were fixed too. The Aragwaith faction units' animation WML was refactored to fix [b]many[/b] glitches left from Extended Era; the code should be more human-readable and easier to maintain too. I wonder if the EE people would like me to port them there too.
-
-Special thanks to Syntax_Error and Mesilliac for terrain tiles and other stuff. Now go to download and have fun!
-
-[b]Note:[/b] last version released through the campaign server was labeled "1.0.13" in the remote add-ons menu, but it was 1.9.0 actually. This time the new release is labeled 1.9.1.
-
-[b]Note 2:[/b] although many of you may be thinking that I'm gonna release version 2.0 after a few further releases, truth is that I shall not. I completely despise major version number changes after 1.0 in open source software in cases it does not deserve it; i.e. actually worth cases would be a major code base rewriting, like it has happened with KDE, GTK or Linux kernel during the time. For this particular case, I'll keep numbering releases 1.9.2 to 1.49.999 for the Wesnoth 1.4-compatible branch of this campaign, and reserve 1.50.0-1.99.999 for the Wesnoth 1.5-compatible one.
