@@ -4,16 +4,60 @@ Invasion from the Unknown Changelog
 Version 1.9.2:
 - Graphics:
     * New or updated unit graphics:
+        + Anlindë
+        + Demon Grunt
+        + Demon Warrior
         + Lady of Light/Sylvan Faerie
+        + Shaxthal Sentry Drone
 - Scenarios:
     * Scenario 9 - The Library:
         + Increased turn limits by 10
     * Scenario 10 - The Source of Light:
         + Added more villages for balancing
+    * Scenario 14 - Bye and Behold:
+        + Increased turn limit
+    * Scenario 16 - Arrival of the Battalion:
+        + Enemies recruit Rayblades instead of Regular Drones
+        + Gave player and allies additional base income
+          (this scenario was formerly supposed to be a gold-eater, but now scenario 15
+           is the gold-eater...)
 - Units:
-    * Fixed death animation for Rock Golem
+    * Balancing:
+        + Decreased Elvish Warrior Spirit's melee damage from 4-4 to 3-4
+        + Increased Elvish Warrior Spirit's required XP from 30 to 45
+        + Changed Elvish Warrior Spirit's AI usage from "fighter" to "scout"
+        + Decreased Elvish Ancestor's melee damage from 5-5 to 5-4
+        + Decreased Elvish Ancestor's ranged damage from 5-3 to 3-3
+        + Decreased Elvish Ancestor's required XP from 110 to 90
+        + Decreased Elvish Forefather's melee damage from 6-6 to 6-5
+        + Decreased Elvish Forefather's ranged damage from 7-3 to 5-3
+        + Decreased Shaxthal Rayblade's HP from 44 to 36
+        + Increased Elynia's resistance to fire damage from 0% to 10%
+        + Increased Forest Spirit's resistance to fire damage from 10% to 20%
+        + Increased Forest Spirit's defense ratio on forest terrain from 50% to 60%
+        + Increased Dryad's resistance to fire damage from 10% to 20%
+        + Increased Dryad's resistance to impact damage from -20% to -10%
+    * Fixed animation glitches on:
+        + Rock Golem (death)
+        + Shaxthal Rayblade (attack)
+    * Gave Chaos Invoker unit line explicit leadership animations, shorter than
+      the lengthy implicit default
+    * Made a custom unit_type for Anlindë
 
-Version 1.9.1/1.9.1a:
+Version 1.9.1a:
+- Graphics:
+    * Optimized - saved 286 KB on 203 files
+- i18n and l10n:
+    * Updated translations: French (fr)
+- Scenarios:
+    * Elyssa's gender is forced to 'female' (mainline bug on 1.4.x workaround)
+    * Scenario 8a (Errand of Hope):
+        + Got rid of emulated attack animation, now we use [animate_unit] instead
+- Units:
+    * Changed some units' translatable names to avoid redundance now that races are displayed
+      in the sidebar
+
+Version 1.9.1 (not released):
 - General:
     * Pick-up item toolkit:
         + Allow a descriptive message about the item to be displayed before choosing whether
@@ -61,7 +105,6 @@ Version 1.9.1/1.9.1a:
       lava.ogg, glyph-powerup.ogg
 - Scenarios:
     * Allow player to undo last unit movement after reading most message glyphs
-    * Elyssa's gender is forced to 'female' (mainline bug on 1.4.x workaround)
     * Episode system when starting from episode 1:
         + Gold is not ignored when entering episode 2. Instead, a fraction of it is
           carried if that fraction's amount is larger than certain minimum values set
@@ -92,7 +135,6 @@ Version 1.9.1/1.9.1a:
         + Set a turn limit as suggested by players
     * Scenario 8a (Errand of Hope):
         + Changed internal id.
-        + Got rid of emulated attack animation, now we use [animate_unit] instead
     * Scenario 9 (The Library):
         + Objective is now to go *STRAIGHT* south >:-/
     * Scenario 10 (The Source of Light):
@@ -177,8 +219,6 @@ Version 1.9.1/1.9.1a:
           time it is included in Faerie Spirit's code
         + As a result of the above, now Faerie Spirits receive the Spirit trait forcedfully
           as intended (it was silently failing)
-    * Changed some units' translatable names to avoid redundance now that races are displayed
-      in the sidebar
     * Fixed animation glitches of Elvish Civilians
     * New or refactored units: Shaxthal Larva, Shaxthal Rayblade
     * Refactored/optimized/fixed animation WML for all Aragwaith units except:
