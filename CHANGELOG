@@ -2,7 +2,11 @@ Invasion from the Unknown - changelog
 -------------------------------------
 
 Version 1.9.2:
+- General:
+    * Gave each episode a slightly different saved-game prefix
 - Graphics:
+    * New or updated portraits:
+        + Igor (placeholder by Girgistian)
     * New or updated unit graphics:
         + Anlindë
         + Demon Grunt
@@ -40,9 +44,11 @@ Version 1.9.2:
     * Fixed animation glitches on:
         + Rock Golem (death)
         + Shaxthal Rayblade (attack)
+        + Wose Shaman (standing)
     * Gave Chaos Invoker unit line explicit leadership animations, shorter than
       the lengthy implicit default
     * Made a custom unit_type for Anlindë
+    * Slowed-down Shadow Minion's death animation
 
 Version 1.9.1a:
 - Graphics:
