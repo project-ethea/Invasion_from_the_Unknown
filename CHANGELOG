@@ -11,6 +11,8 @@ Version 1.9.2:
         + Anlindë
         + Demon Grunt
         + Demon Warrior
+        + Elvish Prowler
+        + Elvish Trapper
         + Lady of Light/Sylvan Faerie (baseframe, ranged, melee, defense)
         + Shaxthal Sentry Drone
 - Scenarios:
@@ -50,6 +52,7 @@ Version 1.9.2:
     * Gave Chaos Invoker unit line explicit leadership animations, shorter than
       the lengthy implicit default
     * Made a custom unit_type for Anlindë
+    * Shadow Minions are undead rather than nature spirits
     * Slowed-down Shadow Minion's death animation
 
 Version 1.9.1a:
