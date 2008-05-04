@@ -16,12 +16,16 @@ Version 1.9.2:
         + Lady of Light/Sylvan Faerie (baseframe, ranged, melee, defense)
         + Shaxthal Sentry Drone
 - Scenarios:
+    * Revised many maps for visual improvements
     * Scenario 3 - Memories from the Depths:
+        + Revised map
+    * Scenario 5b - Cursed Plateau
         + Revised map
     * Scenario 9 - The Library:
         + Increased turn limits by 10
     * Scenario 10 - The Source of Light:
         + Added more villages for balancing
+        + Revised map
     * Scenario 14 - Bye and Behold:
         + Increased turn limit
     * Scenario 16 - Arrival of the Battalion:
@@ -29,6 +33,17 @@ Version 1.9.2:
         + Gave player and allies additional base income
           (this scenario was formerly supposed to be a gold-eater, but now scenario 15
            is the gold-eater...)
+    * Scenario 20 - Under the Sands; end cutscene:
+        + Added some fanciness to cutscene before dwarves appear
+        + Fixed Elynia's and Asthorgar's canrecruit flag adjustment so that it now
+          relies on boolean 'yes'/'no' rather than '0'/'1'
+        + Revised map
+- Terrains:
+    * Fixed a typo in Ryd adjacent graphics definition which caused a horribly
+      awkward (i.e. hard-edged) look due to missing (wrong) images
+    * Fixed Rp^Vhc terrain not being aliased to any tile type
+    * Moved mainline trunk 1.5 backports to their own files
+    * New cave path terrain
 - Units:
     * Balancing:
         + Decreased Elvish Warrior Spirit's melee damage from 4-4 to 3-4
