@@ -4,6 +4,7 @@ Invasion from the Unknown - changelog
 Version 1.9.2:
 - General:
     * Gave each episode a slightly different saved-game prefix
+    * Optimized filesystem wrapper macros
 - Graphics:
     * New or updated portraits:
         + Igor (placeholder by Girgistian)
@@ -861,3 +862,5 @@ Version 0.11.0 <unofficial release>:
         + Shaxthal Drone
     * Renamed units:
         + Blood Knight -> Hell Knight
+
+kate: indent-mode none; encoding utf-8; space-indent: on;
