@@ -4,6 +4,9 @@ Invasion from the Unknown - changelog
 Version 1.9.3:
 - General:
     * Fixed many incorrect file properties/metadata on SVN
+- Scenarios:
+    * 21 - The Heart:
+        + Refactored
 
 Version 1.9.2:
 - General:
