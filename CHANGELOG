@@ -1,6 +1,10 @@
 Invasion from the Unknown - changelog
 -------------------------------------
 
+Version 1.9.3:
+- General:
+    * Fixed many incorrect file properties/metadata on SVN
+
 Version 1.9.2:
 - General:
     * Gave each episode a slightly different saved-game prefix
