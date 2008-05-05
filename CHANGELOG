@@ -5,7 +5,12 @@ Version 1.9.2:
 - General:
     * Gave each episode a slightly different saved-game prefix
     * Optimized filesystem wrapper macros
+    * Ran wesnoth-optipng:
+        + (1st run) Total saved: 38 KB on 44 files
+        + (2nd run) Total saved: 3 KB on 10 files
 - Graphics:
+    * Backported JAP's dwarvish and loyalist flag sets from mainline
+      svn trunk.
     * New or updated portraits:
         + Igor (placeholder by Girgistian)
     * New or updated unit graphics:
@@ -16,6 +21,8 @@ Version 1.9.2:
         + Elvish Trapper
         + Lady of Light/Sylvan Faerie (baseframe, ranged, melee, defense)
         + Shaxthal Sentry Drone
+- Music and sound effects:
+    * Removed unused battle2.ogg from music dir
 - Scenarios:
     * Revised many maps for visual improvements
     * Scenario 3 - Memories from the Depths:
@@ -863,4 +870,4 @@ Version 0.11.0 <unofficial release>:
     * Renamed units:
         + Blood Knight -> Hell Knight
 
-kate: indent-mode none; encoding utf-8; space-indent: on;
+kate: indent-mode normal; encoding utf-8; space-indent: on;
