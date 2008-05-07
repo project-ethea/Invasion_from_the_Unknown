@@ -4,9 +4,18 @@ Invasion from the Unknown - changelog
 Version 1.9.3:
 - General:
     * Fixed many incorrect file properties/metadata on SVN
+- Graphics:
+    * New or updated graphics:
+        + Elvish Ancestor
+        + Goliath
+        + Lady of Light
+        + Shadow Minion
 - Scenarios:
     * 21 - The Heart:
         + Refactored
+- Units:
+    * Fixed Shadow Minion having wrong image paths (which rendered it
+      sort of invisible in-game)
 
 Version 1.9.2:
 - General:
@@ -877,4 +886,4 @@ Version 0.11.0 <unofficial release>:
     * Renamed units:
         + Blood Knight -> Hell Knight
 
-kate: indent-mode normal; encoding utf-8; space-indent: on;
+; kate: indent-mode normal; encoding utf-8; space-indent: on;
