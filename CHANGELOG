@@ -11,8 +11,14 @@ Version 1.9.3:
         + Lady of Light
         + Shadow Minion
 - Scenarios:
+    * 15 - Shadows of Time:
+        + Fixed stray off-map tile
     * 21 - The Heart:
         + Refactored
+    * 22A (Innuendo) to 24 (Epilogue):
+        + Erathan's death no longer causes player's defeat
+        + Rearranged some dialogues so they continue making sense after Erathan's
+          death
 - Units:
     * Fixed Shadow Minion having wrong image paths (which rendered it
       sort of invisible in-game)
