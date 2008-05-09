@@ -20,6 +20,7 @@ Version 1.9.3:
         + Rearranged some dialogues so they continue making sense after Erathan's
           death
 - Units:
+    * Fixed animation glitches on Sentry Tower
     * Fixed Shadow Minion having wrong image paths (which rendered it
       sort of invisible in-game)
 
