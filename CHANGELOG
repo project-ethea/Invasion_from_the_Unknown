@@ -8,13 +8,18 @@ Version 1.9.3:
     * New or updated graphics:
         + Elvish Ancestor
         + Goliath
-        + Lady of Light
+        + Lady of Light/Sylvan Faerie
         + Shadow Minion
 - Scenarios:
     * 15 - Shadows of Time:
         + Fixed stray off-map tile
     * 21 - The Heart:
         + Refactored
+    * 22A (Innuendo):
+        + Fixed a long-standing flaw which could cause prisoners
+          to be spawned in the walls of the dungeon, often allowing them
+          to enter still inaccessible areas of the scenario or ambush
+          enemies
     * 22A (Innuendo) to 24 (Epilogue):
         + Erathan's death no longer causes player's defeat
         + Rearranged some dialogues so they continue making sense after Erathan's
