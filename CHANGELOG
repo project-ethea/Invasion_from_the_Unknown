@@ -2,6 +2,11 @@ Invasion from the Unknown - changelog
 -------------------------------------
 
 Version 1.9.4:
+- Graphics:
+    * New or updated graphics:
+        + Demon Zephyr
+- Terrain:
+    * Made custom trees into their own terrain types, as suggested by cycholka
 
 Version 1.9.3:
 - General:
