@@ -5,8 +5,15 @@ Version 1.9.4:
 - Graphics:
     * New or updated graphics:
         + Demon Zephyr
+    * New or updated portraits:
+        + Dark Adepts (backported from trunk)
 - Terrain:
     * Made custom trees into their own terrain types, as suggested by cycholka
+- Units:
+    * Balancing:
+        + Elyssa/Chaos Warlord has L5 leadership rather than L4 now (this was a
+          bug possibly caused by the original unit design supposed to be L4)
+
 
 Version 1.9.3:
 - General:
