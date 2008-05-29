@@ -2,18 +2,54 @@ Invasion from the Unknown - changelog
 -------------------------------------
 
 Version 1.9.4:
+- General:
+    * Macro PLACE_UNITS_RANDOMLY fixed to cleanup internal variables
+    * Macro EX_SCATTER_IMAGE fixed to cleanup internal variables
+    * Macro EX_CAPTURE_VILLAGES fixed to cleanup internal variables
 - Graphics:
-    * New or updated graphics:
+    * New or updated unit graphics:
+        + Demon Warriors
         + Demon Zephyr
     * New or updated portraits:
         + Dark Adepts (backported from trunk)
+- Scenarios:
+    * 06 (The Moon Valley):
+        + Added missing variable cleanups
+    * 07 (The Elf versus the Goliath):
+        + Added missing variable cleanups
+    * 14 (Bye and Behold):
+        + Added missing variable cleanups
+    * 15 (Shadows of Time):
+        + Added missing variable cleanups
+    * 17 (Dawn of the Great War):
+        + Added missing variable cleanups
+    * 22A (Innuendo):
+        + Added missing variable cleanups
+        + Set turn limits
+    * 22B (The Gauntlet):
+        + Added a safety check, copied from scenario 22C, to ensure that
+          an internal counter can never get out of range and crash the game
+          (or not crash and just wrap around, which would be bad as well)
+        + Fixed a design flaw which caused the union event to trigger once
+          _for_every_side's_turn_, rather than only for the player's turn
+        + Set turn limits
+    * 22C (The Backyard):
+        + Fixed a design flaw which caused the union event to trigger once
+          _for_every_side's_turn_, rather than only for the player's turn
+        + Set turn limits
+    * 23A (Interim):
+        + Balancing
+        + Set turn limits
+    * 23B (Welcome to the Lair of the Shadow Master)
+        + Boss pals are spawned after terrain updates are applied
+        + Renamed side 4 leader for continuity
+        + Set turn limits
 - Terrain:
     * Made custom trees into their own terrain types, as suggested by cycholka
 - Units:
     * Balancing:
         + Elyssa/Chaos Warlord has L5 leadership rather than L4 now (this was a
           bug possibly caused by the original unit design supposed to be L4)
-
 
 Version 1.9.3:
 - General:
