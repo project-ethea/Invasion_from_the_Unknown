@@ -1,0 +1,122 @@
+Known non-bugs:
+---------------
+
+* Secret scenario warp at the end of "The Elf versus Goliath" is disabled as the secret scenario
+  WML and map are still absent.
+
+* Secret scenario warp at the end of "Innuendo" is disabled as the secret scenario WML and map are
+  not finished yet.
+
+* Some scenarios, specially of the last part, contain enemies that may respawn indefinitely if you
+  try (mistakenly) to defeat them. Please, bear in mind that as a general rule for this campaign,
+  you are not supposed to defeat all enemies unless the objectives summary clearly states so.
+  Attempting to do so may get you stuck in some scenarios. Id est, this is *not* a bug.
+
+Known engine bugs:
+------------------
+
+* Damage floating labels ocassionally don't display over units of the Elvish Warrior Spirit
+  line when they result harmed during a fight. It seems to be related with an unusual delay
+  pre- and post- attack animations when attacking units affected by these spirits' terror ability.
+  NOTE: the latter should be fixed in releases newer than 1.9.0.
+
+  NOTE2: the absent damage labels are fixed in Wesnoth 1.4.1+svn already. Thanks boucman for his
+  help.
+
+* Location-mapped sound sources in scenarios "Arrival..." and "Under the Sands" (amongst other
+  possible cases) are discarded after loading from a saved game that is not the scenario stub.
+  This is possibly because the sound source mappings are declared within prestart WML events,
+  which are by design discarded in saved games.
+
+Known bugs:
+-----------
+
+* The wmlindent and wmllint tools may mangle certain WML constructs; this is known, and the
+  author intends to make this campaign compatible with these mainline maintenance tools
+  in the close future. As a workaround for the time being, the maintainer should resist
+  to let wmllint run unattended, and keep backups before changes or use wmllint -d previously
+  to check the changes the tool wants to make for any possible side-effects.
+
+* Scenario "Dawn of the Great War" causes the game to look like frozen after the initial
+  dialogue, just before the player regains control and the new objectives get displayed;
+  this is known to happen at least on openSUSE 10.3 x86_64 kernel 2.6.22.5-31-default
+  with Wesnoth 1.4+SVN, without optimizations. Possibly does not affect official binaries
+  or anything else that was compiled with optimizations.
+  The game seems to freeze for about 10 seconds.
+
+* Some units may not display properly if haloes are disabled in the game preferences;
+  this is due to the way they are extended over more space than it could fit one hex,
+  as a workaround to an engine limitation. I hope we can work it out in Wesnoth 1.5.x.
+  Affected units include: Faerie Spirit, Verlissh Matrix Core, Verlissh Matrix Flowsystem.
+
+* Some Chaos faction units seem to "pop out" during fight; this is caused by a mixture of
+  both deprecated animation frames and a modern standing frame. Id est, those deprecated
+  animation frames must be updated.
+
+Note that here are listed only those bugs that are known by the author, and that have not been
+fixed in this release; usually there are still more bugs to be found, and most of them are fixed
+before a new release is made, thus don't get to be listed in this file.
+
+
+Reporting new bugs on officially released versions:
+---------------------------------------------------
+
+Sometimes, you may come across an already reported bug, a bug that was already fixed in a newer
+release of the campaign, or something that looks like a bug to you but actually is not, or at
+least not on the eyes of the author and maintainers. To make sure you are not falling into any
+of the later cases, please always download the latest version of this campaign, check if it is
+already mentioned in the BUGS file, and try to reproduce the bug.
+
+It is good practice, often ignored, to try to reproduce the bug in other campaigns, preferably
+mainline, or with an isolated case of WML code (if you know what it is). This can help us
+optimize the bug fixing procedure by discriminating bugs that are specific to this campaign
+or that are actually caused by the game engine. The test scenario (/data/scenario-test.cfg) is
+also a good place for quick testing of bugs which are not related to the campaign mechanism
+(i.e. it doesn't depend on advancing scenarios, etc.). Debug-mode commands are a great help in
+any case (:debug).
+
+If you happen to find a new bug that is specific to this campaign, please report it as soon as
+possible at www.wesnoth.org/forum/, Scenario & Campaign dev. subforum, thread "Invasion from the
+Unknown", with as much information as possible to help us find the cause and fix the bug.
+
+In the case that the bug could be reproduced in other campaigns/with isolated and proper WML,
+you should report it with relevant information at www.wesnoth.org/forum/, Technical Support
+subforum; you might as well submit the issue to bugs.wesnoth.org, but ONLY if you are certain
+that it is a real bug in the game engine itself; you should always contact the campaign author
+for checking it first, before posting in the Technical Support forum.
+
+
+Reporting new bugs on SVN non-release revisions:
+------------------------------------------------
+*** skip this section if you have no idea what SVN means and/or what it has to do in this
+    context ***
+
+Aha, you spotted a bug in a svn revision of the campaign! Good boy/girl, you always walking on
+the bleeding edge. There are several specific cave-ats to this situation:
+
+* Those who develop this campaign actively should never commit broken stuff to svn in the first
+  place, but if they inadvertely do, odds are that they'll shortly notice and commit a new
+  fixed revision.
+
+* The delay could be of a few hours, or a couple of days at most. If you notice that the bug is
+  not fixed after that time, you should notify Shadow Master or ESR by one of the following
+  media:
+
+  * By IRC: #wesnoth-umc-dev @ freenode.net (it is possible that neither of them are there
+    at certain hours)
+  * Via forum personal-messaging: "Shadow Master" at www.wesnoth.org/forum/
+
+* You could also post it in the relevant forum thread; the only problem with doing so is that
+  you could confuse causal players by spewing svn technicisms in there. :-) So avoid posting
+  it in the forums for everyone's knowledge (and despair) if possible.
+
+
+Contacting the Author:
+----------------------
+
+Please do not e-mail me for anything related to the campaign; I usually get my inbox filled with
+many messages (not including the daily 500+ spam messages I get too) and cannot examine one by one.
+Therefore, forum personal messaging is preferred, but *ONLY* if you really need to talk with me
+directly. You should PM "Shadow Master" in such a case.
+
+-- Ignacio R. Morelle

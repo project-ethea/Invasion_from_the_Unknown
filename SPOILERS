@@ -1,0 +1,88 @@
+				===============================================
+				INVASION FROM THE UNKNOWN / ARMAGEDDON SPOILERS
+				===============================================
+Author: Shadow Master (Ignacio Riquelme Morelle)
+
+This is the Spoilers file for version 0.10.0. This file is a.k.a. "Changelog in a nutshell",
+for people who suffer bad headaches when reading the messy changelogs I write. ;)
+
+The main focus of it are the easter-eggs and oddities that I hid throughout this campaign's
+scenarios. There are historical notes on development of scenarios too.
+
+EPISODE 1: INTO THE DARKNESS
+============================
+
+Scenario 2: A Real Confrontation
+--------------------------------
+This scenario was a polemic one since the beginning of this campaign, and probably
+caused it to sink into forgottendom at that time, until Aethaeryn, on #wesnoth IRC told
+me his opinions on it, which was the first scenario at that time. I remade it and moved
+it to be scenario 2, but it didn't happen until version 0.9.2, that I noticed that most
+of the players that like this campaign's plot would like to see this scenario replaced
+with something sane. I tried balancing the map and objectives, but I decided that the
+scenario's plot overall was shit, and rewrote it, keeping just some dialogues. The result
+is something that pleases me, a beautiful map and a beautiful battle, which becomes
+interesting due to the mountains and clear grasslands near the enemies.
+
+
+Scenario 3: Horrors from the Depths
+-----------------------------------
+- At 2,46 there's a hidden sign-post. The only way to reach it is to move a faerie
+  along the subterranean river.
+- At 24,39 there's a hidden village. The only way to reach it is to cheat, creating
+  a bat or other proper flying unit, and moving it to that location across the surrounding
+  chasm. The result is a nice easter-egg that makes you lose the scenario. Partly a joke
+  at the www.wesnoth.org forum people, and partly a trap for cheaters.
+
+Scenario 4: Over the Sands
+--------------------------
+- If you send an unit to the gryphon's nest at 11,32, you'll open a secret passage that
+  leads to a secret level, "Cursed Plateau", skipping "Crossfire".
+
+Scenario 5A: Crossfire
+----------------------
+- If you spare the fugitive's life, you'll see him again on scenario 23, but in a different
+  form.
+
+Scenario 6: Moon Valley
+-----------------------
+- A Yeti hides in the mountains at valley's SW border
+
+Scenario 7: E1 Boss
+-------------------
+- If you kill the boss while Galas is in the opposite side of the chamber (i.e. looking at the
+  eastern walls, he'll discover a secret tunnel that leads to the Secret City, a scenario 8
+  replacement that, anyway, converges into the same dwarves-vs-trolls-and-loyalists battle.
+
+Scenario 8A: Errand of Hope
+---------------------------
+- You can convince Eela and her companions to join your cause by offering them "fun".
+
+Scenario 9: The Library
+-----------------------
+- If you step on the hex at 20,2, you'll unlock a secret area of this level, that contains
+  the complete prophecy of the Union, guarded, though, by many shaxthal foes. However, they
+  will attack your other enemies too. The touchplate and everything will be enabled at the start
+  if you went through scenario 8B (Secret City) and found the same secret area.
+
+Scenario 10: The Source of Light
+--------------------------------
+- The scenario's design is a partial replica of a scenario on my never-published-nor-finished
+  campaign for Wesnoth 1.0.2. The only difference is that in that version you had to find a way
+  to open the chamber of the Ruby of Fire, not Elynia.
+
+Scenario 11: Strike on New Knalga
+---------------------------------
+- The scenario was originally designed to be smaller and worse for claustrophobic people.
+
+Scenario 12: The Escape
+-----------------------
+- The scenario was originally designed to be on the surface, not underground
+
+Scenario 13: E2 Boss
+--------------------
+- The scenario was originally designed to be on the surface, not underground
+
+
+
+
