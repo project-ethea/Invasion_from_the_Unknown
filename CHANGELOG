@@ -1,7 +1,11 @@
 Invasion from the Unknown - changelog
 -------------------------------------
 
-Version 1.9.4:
+Version 1.10.0-svn:
+- Ported from 1.4 branch to trunk. Cycholka ran wmllint on it for
+  making it compatible with Wesnoth 1.5.1 and later.
+
+Version 1.9.3+svn:
 - General:
     * Macro PLACE_UNITS_RANDOMLY fixed to cleanup internal variables
     * Macro EX_SCATTER_IMAGE fixed to cleanup internal variables
