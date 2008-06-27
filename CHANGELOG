@@ -8,6 +8,8 @@ Version 1.10.0-svn:
 - Scenarios:
     - 10 (The Source of Light):
         - Made berserk potion have effect only until the end of this scenario.
+        - Fixed some awkward grammar
+          (http://www.wesnoth.org/forum/viewtopic.php?p=305960#p305960)
 
 - Units:
     - Removed some engine bug workarounds that we don't need on 1.5.x.
