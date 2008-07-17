@@ -5,13 +5,31 @@ Version 1.10.0-svn:
 - Ported from 1.4 branch to trunk. Cycholka ran wmllint on it for
   making it compatible with Wesnoth 1.5.1 and later.
 
+- Language and i18n:
+    - Changed unit race text for female Demons from "race+female^Demon"
+      to "race+female^Demoness".
+    - Changed female unit_type names for the Demon tree to contain be of the
+      "Demoness" form rather than "Demon".
+
 - Scenarios:
+    - Sanitized many event unit filters.
     - 10 (The Source of Light):
         - Made berserk potion have effect only until the end of this scenario.
         - Fixed some awkward grammar
           (http://www.wesnoth.org/forum/viewtopic.php?p=305960#p305960)
+    - 16 (Arrival of the Battalion):
+        - Fixed a bug which made Quogar Ratham always speak a line that Erathan
+          is supposed to speak otherwise.
 
 - Units:
+    - Balancing:
+        - Gave most units adequate movement costs and defense
+          on Reef terrain.
+        - Increased Worker Droid's movement costs as follows:
+            - Shallow Water: 3 -> 4
+            - Swamp Water: 3 -> 4
+    - Fixed WEAPON_SPECIAL_DRAINS -> WEAPON_SPECIAL_DRAIN typo on Giant Leech.
+    - Removed inclusion of inexistent macro BIRD_NAMES.
     - Removed some engine bug workarounds that we don't need on 1.5.x.
 
 Version 1.9.3+svn:
