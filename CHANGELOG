@@ -5,6 +5,9 @@ Version 1.10.0-svn:
 - Ported from 1.4 branch to trunk. Cycholka ran wmllint on it for
   making it compatible with Wesnoth 1.5.1 and later.
 
+- Graphics:
+    - Updated baseframes: Elynia
+
 - Language and i18n:
     - Changed unit race text for female Demons from "race+female^Demon"
       to "race+female^Demoness".
