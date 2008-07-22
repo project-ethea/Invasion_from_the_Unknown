@@ -4,9 +4,6 @@ Known non-bugs:
 * Secret scenario warp at the end of "The Elf versus Goliath" is disabled as the secret scenario
   WML and map are still absent.
 
-* Secret scenario warp at the end of "Innuendo" is disabled as the secret scenario WML and map are
-  not finished yet.
-
 * Some scenarios, specially of the last part, contain enemies that may respawn indefinitely if you
   try (mistakenly) to defeat them. Please, bear in mind that as a general rule for this campaign,
   you are not supposed to defeat all enemies unless the objectives summary clearly states so.
@@ -15,14 +12,6 @@ Known non-bugs:
 Known engine bugs:
 ------------------
 
-* Damage floating labels ocassionally don't display over units of the Elvish Warrior Spirit
-  line when they result harmed during a fight. It seems to be related with an unusual delay
-  pre- and post- attack animations when attacking units affected by these spirits' terror ability.
-  NOTE: the latter should be fixed in releases newer than 1.9.0.
-
-  NOTE2: the absent damage labels are fixed in Wesnoth 1.4.1+svn already. Thanks boucman for his
-  help.
-
 * Location-mapped sound sources in scenarios "Arrival..." and "Under the Sands" (amongst other
   possible cases) are discarded after loading from a saved game that is not the scenario stub.
   This is possibly because the sound source mappings are declared within prestart WML events,
@@ -30,19 +19,6 @@ Known engine bugs:
 
 Known bugs:
 -----------
-
-* The wmlindent and wmllint tools may mangle certain WML constructs; this is known, and the
-  author intends to make this campaign compatible with these mainline maintenance tools
-  in the close future. As a workaround for the time being, the maintainer should resist
-  to let wmllint run unattended, and keep backups before changes or use wmllint -d previously
-  to check the changes the tool wants to make for any possible side-effects.
-
-* Scenario "Dawn of the Great War" causes the game to look like frozen after the initial
-  dialogue, just before the player regains control and the new objectives get displayed;
-  this is known to happen at least on openSUSE 10.3 x86_64 kernel 2.6.22.5-31-default
-  with Wesnoth 1.4+SVN, without optimizations. Possibly does not affect official binaries
-  or anything else that was compiled with optimizations.
-  The game seems to freeze for about 10 seconds.
 
 * Some units may not display properly if haloes are disabled in the game preferences;
   this is due to the way they are extended over more space than it could fit one hex,
@@ -99,11 +75,9 @@ the bleeding edge. There are several specific cave-ats to this situation:
   fixed revision.
 
 * The delay could be of a few hours, or a couple of days at most. If you notice that the bug is
-  not fixed after that time, you should notify Shadow Master or ESR by one of the following
-  media:
+  not fixed after that time, you should notify Shadow Master by one of the following media:
 
-  * By IRC: #wesnoth-umc-dev @ freenode.net (it is possible that neither of them are there
-    at certain hours)
+  * By IRC: #wesnoth-umc-dev @ freenode.net
   * Via forum personal-messaging: "Shadow Master" at www.wesnoth.org/forum/
 
 * You could also post it in the relevant forum thread; the only problem with doing so is that
@@ -115,8 +89,7 @@ Contacting the Author:
 ----------------------
 
 Please do not e-mail me for anything related to the campaign; I usually get my inbox filled with
-many messages (not including the daily 500+ spam messages I get too) and cannot examine one by one.
-Therefore, forum personal messaging is preferred, but *ONLY* if you really need to talk with me
-directly. You should PM "Shadow Master" in such a case.
+many messages (not including the daily 500+ spam messages I get too) and examining them one by one
+takes a good amount of time. Therefore, forum personal messaging is preferred.  
 
 -- Ignacio R. Morelle

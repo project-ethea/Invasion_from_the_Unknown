@@ -29,9 +29,9 @@ Scenario 3: Horrors from the Depths
 -----------------------------------
 - At 2,46 there's a hidden sign-post. The only way to reach it is to move a faerie
   along the subterranean river.
-- At 24,39 there's a hidden village. The only way to reach it is to cheat, creating
-  a bat or other proper flying unit, and moving it to that location across the surrounding
-  chasm. The result is a nice easter-egg that makes you lose the scenario. Partly a joke
+- At 24,39 there's a hidden village. The only way to reach it is to cheat by
+  trespassing the surrounding walls and moving a flying unit across the chasm. The
+  result is a nice easter-egg that makes you lose the scenario. Partly a joke
   at the www.wesnoth.org forum people, and partly a trap for cheaters.
 
 Scenario 4: Over the Sands
@@ -41,12 +41,16 @@ Scenario 4: Over the Sands
 
 Scenario 5A: Crossfire
 ----------------------
-- If you spare the fugitive's life, you'll see him again on scenario 23, but in a different
-  form.
+- If you spare the fugitive's life, he'll give you a useful object.
+
+Scenario 5B: Cursed Plateau
+---------------------------
+- Hidden in this scenario is a useful object, identical to the one
+  you may obtain in "Crossfire".
 
 Scenario 6: Moon Valley
 -----------------------
-- A Yeti hides in the mountains at valley's SW border
+- A Yeti hides in the mountains at the valley's SW border
 
 Scenario 7: E1 Boss
 -------------------
@@ -82,6 +86,103 @@ Scenario 12: The Escape
 Scenario 13: E2 Boss
 --------------------
 - The scenario was originally designed to be on the surface, not underground
+
+Scenario 14: Bye and Behold
+---------------------------
+- This scenario was always intended to be a gold-recovery area. This became
+  however specially important after IftU was split into two episode.
+
+Scenario 15: Shadows of Time
+----------------------------
+- This scenario suffered from a very tragic accident during its early
+  development. It did not exist in the beginning anyway, instead of this one
+  was a very boring scenario called "Dealing with Orcs". When this replacement
+  was written, the author decided to go on campaignd crash-testing, accidentally
+  wiping out all the changes he had made since the last released version of IftU,
+  including this scenario's code. The map was salvaged from a saved game,
+  fortunately, but the dialogs had to be rewritten. Anyway, he doesn't think
+  it was much of a loss for the players, at the end.
+
+Scenario 16: Arrival of the Battalion
+-------------------------------------
+
+Scenario 17: Dawn of the Great War
+----------------------------------
+- Originally named just "the Dawn", this scenario also went through many changes
+  since its original incarnation.
+
+Scenario 18: Voices of the Armageddon
+-------------------------------------
+- Originally named just "Armageddon", this scenario originally involved a simple
+  fight against a lone boss L5 Imp. However, since it contributed little to the
+  plot, it was replaced with its current incarnation, mostly thanks to Scenario
+  15's creation.
+
+Scenario 19: Legend of Wesmere
+------------------------------
+- Its name was originally just "Wesmere", but it was renamed to this play of
+  words on Santi's campaign, "Legend of Wesmere". It didn't make much sense to
+  me at the beginning, but now I love it. ;)
+- This scenario will reappear (but with a more detailed map) in the sequel to
+  this campaign.
+
+Scenario 20: Under the Sands
+----------------------------
+- The dramatic sequence at the beginning and end of this scenario are nothing
+  but a mere taste of what will happen next. (Hint!)
+- The attached dark hive in this scenario is optional - you can destroy some
+  matrices in it, which will slightly affect the economy of the foes in
+  scenario 21.
+- There is a secret glyph in the top-right corner of the map, which can grant
+  Elynia a new ability.
+
+Scenario 21: The Heart
+----------------------
+- This scenario was remade from a much larger (and boring) version.
+
+Scenario 22
+-----------
+The short names used in this sequence are actually intended, referencing some
+weird levels in the "Ecco the Dolphin: Tides of Time" game for the Sega Genesis
+console, which had similar internal names (not ever displayed to the user,
+except via debug/cheat menu).
+
+A: Innuendo
+    - There is a glyph at the end of this scenario which can be activated only
+      by Elynia. For her to get there, it is necessary to have found and used
+      the "Glamour" spell that can be obtained in scenario 20.
+    - The glyph mentioned above opens the path to scenario 22C.
+    - The location of the touchgem in the dungeon, which opens the path to the
+      antechamber of Hell, is determined at scenario's start from a list of
+      possible locations.
+
+B: Gauntlet
+    - There is a secret message hidden in a shaxthal's "nest".
+
+C: The Backyard
+    - Probably the largest map ever made for a single-player campaign.
+
+Scenario 23
+-----------
+
+A: Interim
+    - This scenario is actually a mix of three scenarios - each section has
+      its own Time-of-Day assigned, and very different enemy layout/behavior.
+B: Welcome to the Lair
+    - Its real name is "Welcome to the Lair of the Shadow Master". It had to be
+      remade several times for balancing and story design.
+    - The Shadow Master here is an incarnation of the author of this campaign,
+      just with a different name ("Argan" rather than "Ignacio"). This was
+      intended to be so since the very beginning of development.
+C: Broken Heart
+    - Puntastic name time! :D This scenario is obviously a play on words of
+      "The Heart" and the earthquake-y sequence that is taking place. It also
+      references Elynia's own heart's state at this point of the plot.
+
+Scenario 24: Epilogue
+---------------------
+
+
 
 
 
