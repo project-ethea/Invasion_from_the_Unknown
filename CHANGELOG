@@ -1,18 +1,27 @@
 Invasion from the Unknown - changelog
 -------------------------------------
+[p]: placeholder | [t]: testing | [u]: unstable
 
 Version 1.10.0-svn:
 - Ported from 1.4 branch to trunk. Cycholka ran wmllint on it for
   making it compatible with Wesnoth 1.5.1 and later.
 
 - Graphics:
+    - Removed now unnecessary generic portraits: Lich, Dark Adept,
+      female Dark Adept
     - Updated baseframes: Elynia
+    - Updated portraits: Dryad [p], Elynia [p]
 
 - Language and i18n:
     - Changed unit race text for female Demons from "race+female^Demon"
       to "race+female^Demoness".
     - Changed female unit_type names for the Demon tree to contain be of the
       "Demoness" form rather than "Demon".
+
+- Music and sound effects:
+    - Added battle7.ogg, a work-in-progress music piece by Rain that I liked. :)
+    - Removed West's "sad.ogg" since its mainline original, "nr-sad.ogg" is
+      being moved to a public location reachable by this campaign.
 
 - Scenarios:
     - Sanitized many event unit filters.
@@ -23,6 +32,10 @@ Version 1.10.0-svn:
     - 16 (Arrival of the Battalion):
         - Fixed a bug which made Quogar Ratham always speak a line that Erathan
           is supposed to speak otherwise.
+
+- Terrains:
+    - Renamed many terrain types, rendering some old saved games unusable.
+    - Revised most of the terrain graphics layout code to be 1.5.x-compatible.
 
 - Units:
     - Balancing:
