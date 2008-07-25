@@ -7,9 +7,10 @@ Version 1.10.0-svn:
   making it compatible with Wesnoth 1.5.1 and later.
 
 - Graphics:
+    - Added baseframes: Elvish Civilian (bow attack)
     - Removed now unnecessary generic portraits: Lich, Dark Adept,
       female Dark Adept
-    - Updated baseframes: Elynia
+    - Updated baseframes: Elynia, Elvish Civilian
     - Updated portraits: Dryad [p], Elynia [p]
 
 - Language and i18n:
@@ -34,6 +35,7 @@ Version 1.10.0-svn:
           is supposed to speak otherwise.
 
 - Terrains:
+    - Made Dark Road terrain play better with castle/keep terrain types (C*, K*).
     - Renamed many terrain types, rendering some old saved games unusable.
     - Revised most of the terrain graphics layout code to be 1.5.x-compatible.
 
@@ -44,7 +46,10 @@ Version 1.10.0-svn:
         - Increased Worker Droid's movement costs as follows:
             - Shallow Water: 3 -> 4
             - Swamp Water: 3 -> 4
+    - Fixed a bug which caused Anlindë to lose her portrait after advancing to
+      level 4.
     - Fixed WEAPON_SPECIAL_DRAINS -> WEAPON_SPECIAL_DRAIN typo on Giant Leech.
+    - Removed an extra, obsolete defense animation from Elvish Hunter.
     - Removed inclusion of inexistent macro BIRD_NAMES.
     - Removed some engine bug workarounds that we don't need on 1.5.x.
 
