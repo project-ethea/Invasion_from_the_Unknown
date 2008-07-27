@@ -8,6 +8,8 @@ Version 1.10.0-svn:
 
 - Graphics:
     - Added baseframes: Elvish Civilian (bow attack)
+    - Gave Elynia a separate standing frame when she's over water, impassable or
+      unwalkable terrains - she also uses this frame while flying.
     - Removed now unnecessary generic portraits: Lich, Dark Adept,
       female Dark Adept
     - Updated baseframes: Elynia, Elvish Civilian
@@ -48,6 +50,8 @@ Version 1.10.0-svn:
             - Swamp Water: 3 -> 4
     - Fixed a bug which caused Anlindë to lose her portrait after advancing to
       level 4.
+    - Fixed references to inexistent images (actually typos) in Dwarvish Runesmith's
+      attack animation.
     - Fixed WEAPON_SPECIAL_DRAINS -> WEAPON_SPECIAL_DRAIN typo on Giant Leech.
     - Removed an extra, obsolete defense animation from Elvish Hunter.
     - Removed inclusion of inexistent macro BIRD_NAMES.
