@@ -1,5 +1,5 @@
 Invasion from the Unknown - changelog
--------------------------------------
+--------------------------------------------------------------------------------
 [p]: placeholder | [t]: testing | [u]: unstable
 
 Version 1.10.0-svn:
@@ -12,7 +12,7 @@ Version 1.10.0-svn:
       unwalkable terrains - she also uses this frame while flying.
     - Removed now unnecessary generic portraits: Lich, Dark Adept,
       female Dark Adept
-    - Updated baseframes: Elynia, Elvish Civilian
+    - Updated baseframes: Elynia, Elvish Civilian, Blood Imp
     - Updated portraits: Dryad [p], Elynia [p]
 
 - Language and i18n:
@@ -28,6 +28,7 @@ Version 1.10.0-svn:
 
 - Scenarios:
     - Sanitized many event unit filters.
+    - Some dialogs were improved.
     - 10 (The Source of Light):
         - Made berserk potion have effect only until the end of this scenario.
         - Fixed some awkward grammar
@@ -35,9 +36,13 @@ Version 1.10.0-svn:
     - 16 (Arrival of the Battalion):
         - Fixed a bug which made Quogar Ratham always speak a line that Erathan
           is supposed to speak otherwise.
+    - 22B (Gauntlet):
+        - Added #undefs to avoid conflicting macros screwing up scenario
+          23C's ("The Backyard") logic.
 
 - Terrains:
-    - Made Dark Road terrain play better with castle/keep terrain types (C*, K*).
+    - Made Dark Road terrain play better with castle/keep terrain types
+      (C*, K*).
     - Renamed many terrain types, rendering some old saved games unusable.
     - Revised most of the terrain graphics layout code to be 1.5.x-compatible.
 
@@ -50,61 +55,11 @@ Version 1.10.0-svn:
             - Swamp Water: 3 -> 4
     - Fixed a bug which caused Anlindë to lose her portrait after advancing to
       level 4.
-    - Fixed references to inexistent images (actually typos) in Dwarvish Runesmith's
-      attack animation.
+    - Fixed references to inexistent images (actually typos) in Dwarvish
+      Runesmith's attack animation.
     - Fixed WEAPON_SPECIAL_DRAINS -> WEAPON_SPECIAL_DRAIN typo on Giant Leech.
     - Removed an extra, obsolete defense animation from Elvish Hunter.
     - Removed inclusion of inexistent macro BIRD_NAMES.
     - Removed some engine bug workarounds that we don't need on 1.5.x.
-
-Version 1.9.3+svn:
-- General:
-    * Macro PLACE_UNITS_RANDOMLY fixed to cleanup internal variables
-    * Macro EX_SCATTER_IMAGE fixed to cleanup internal variables
-    * Macro EX_CAPTURE_VILLAGES fixed to cleanup internal variables
-- Graphics:
-    * New or updated unit graphics:
-        + Demon Warriors
-        + Demon Zephyr
-    * New or updated portraits:
-        + Dark Adepts (backported from trunk)
-- Scenarios:
-    * 06 (The Moon Valley):
-        + Added missing variable cleanups
-    * 07 (The Elf versus the Goliath):
-        + Added missing variable cleanups
-    * 14 (Bye and Behold):
-        + Added missing variable cleanups
-    * 15 (Shadows of Time):
-        + Added missing variable cleanups
-    * 17 (Dawn of the Great War):
-        + Added missing variable cleanups
-    * 22A (Innuendo):
-        + Added missing variable cleanups
-        + Set turn limits
-    * 22B (The Gauntlet):
-        + Added a safety check, copied from scenario 22C, to ensure that
-          an internal counter can never get out of range and crash the game
-          (or not crash and just wrap around, which would be bad as well)
-        + Fixed a design flaw which caused the union event to trigger once
-          _for_every_side's_turn_, rather than only for the player's turn
-        + Set turn limits
-    * 22C (The Backyard):
-        + Fixed a design flaw which caused the union event to trigger once
-          _for_every_side's_turn_, rather than only for the player's turn
-        + Set turn limits
-    * 23A (Interim):
-        + Balancing
-        + Set turn limits
-    * 23B (Welcome to the Lair of the Shadow Master)
-        + Boss pals are spawned after terrain updates are applied
-        + Renamed side 4 leader for continuity
-        + Set turn limits
-- Terrain:
-    * Made custom trees into their own terrain types, as suggested by cycholka
-- Units:
-    * Balancing:
-        + Elyssa/Chaos Warlord has L5 leadership rather than L4 now (this was a
-          bug possibly caused by the original unit design supposed to be L4)
 
 ; kate: indent-mode normal; encoding utf-8; space-indent: on;
