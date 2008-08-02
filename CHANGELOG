@@ -33,6 +33,8 @@ Version 1.9.4:
         + Added a safety check, copied from scenario 22C, to ensure that
           an internal counter can never get out of range and crash the game
           (or not crash and just wrap around, which would be bad as well)
+        + Added #undefs to avoid conflicting macros screwing up scenario
+          23C's ("The Backyard") logic.
         + Fixed a design flaw which caused the union event to trigger once
           _for_every_side's_turn_, rather than only for the player's turn
         + Set turn limits
