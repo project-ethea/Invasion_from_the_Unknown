@@ -1,6 +1,11 @@
 Invasion from the Unknown - changelog
 -------------------------------------
 
+Version 1.9.4+svn:
+- Units:
+    * Balancing:
+        + Removed 'magical' weapon special from Elynia's staff.
+
 Version 1.9.4:
 - General:
     * Macro PLACE_UNITS_RANDOMLY fixed to cleanup internal variables
