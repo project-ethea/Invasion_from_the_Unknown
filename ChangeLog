@@ -53,6 +53,7 @@ Version 1.10.0-svn:
         - Increased Worker Droid's movement costs as follows:
             - Shallow Water: 3 -> 4
             - Swamp Water: 3 -> 4
+        - Removed 'magical' weapon special from Elynia's staff.
     - Fixed a bug which caused Anlindë to lose her portrait after advancing to
       level 4.
     - Fixed references to inexistent images (actually typos) in Dwarvish
