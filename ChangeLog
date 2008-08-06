@@ -62,5 +62,6 @@ Version 1.10.0-svn:
     - Removed an extra, obsolete defense animation from Elvish Hunter.
     - Removed inclusion of inexistent macro BIRD_NAMES.
     - Removed some engine bug workarounds that we don't need on 1.5.x.
+    - Simplified Shaxthal's unit_type variation WML
 
 ; kate: indent-mode normal; encoding utf-8; space-indent: on;
