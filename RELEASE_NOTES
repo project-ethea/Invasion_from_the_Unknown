@@ -1,1 +1,22 @@
+Hello, Wesnoth community.
+
+As a team effort of Cycholka/Mist and yours truly, we have finally ported Invasion from the Unknown to Wesnoth 1.5.x. As usual, there may be many bugs and glitches waiting for witty players to find and report before it is too late to save the world. ;) In fact, this release may be one of the buggiest ones since the original 0.0.1 one. However, with your time and patience (and ours too), we hope to improve this campaign and make it even better than it was in its last installment for Wesnoth 1.4.x.
+
+Of course, to encourage players to play-test it, there must be something bonus added to this not-so-stable development series. And they are new graphics by Shadow Master, improved graphics by Shadow Master, improved dialogue by Shadow Master and improved improvement by Shadow Master. I also hope to clean-up the WML of the campaign so that in the future it should serve as a good basis of what a "heavy" campaign should be made of (i.e. terrain WML, terrain-graphics layout WML, advanced stuff with units, etc.), and be another good example of [b]what can be done with WML[/b] besides what has already been done in mainline.
+
+Special thanks to our guest play-testers, Elvish Pillager and Loonycyborg, who made it possible to fix several bugs timely. Also thanks to Mica for convincing me of returning to this campaign's maintenance and development. :P Thanks to Shadow Master and AI0867 (a.k.a. "AI") for their support and effort in making the IRC channel #wesnoth-umc-dev @ freenode.net a better meeting-place for User Made Content development. And last, but not least, thanks to the Coordinated Wesnoth UMC Development repository and Sourceforge.net for the Subversion repository services.
+
+Thanks to all the Wesnoth developers too for making such a shiny new series of development releases with Improved Improving Improvements (I^3 (tm)) for WML authors!
+
+Em... thanks to myself, of course. I made some of those improvements. I don't want to be selfish, but... ^_^
+
+***
+
+Now, all this means that the 1.9.x series of IftU releases is restricted to bugfixing. I won't be doing any work there besides backporting some bugs that may be present in this release series (1.10.x) and updating translations from WesCamp-i18n. If you want to complain of why scenario X is too easy/hard/impossible-to-win, why unit Y is so ridiculously powerful or why feature Z is missing, do complain, but only here, not on the other thread. Also, please don't make duplicate posts to the other thread or I'll be seriously annoyed, and also the forum admins, since that would qualify as spam.
+
+------------------- END ------------------------
+
+Since release 1.10.0 is out, this thread is outliving its usefulness. Basically only bug reports should be posted here. Wishes, balance complaints and suchlike should go to the 1.10.x series' thread. I for one will ignore anything else that gets posted here.*
+
+* yeah, I'm such a nice guy that most likely I'll end up not really ignoring them...
 
