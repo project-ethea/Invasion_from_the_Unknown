@@ -39,6 +39,7 @@ Version 1.10.0-svn:
     - 22B (Gauntlet):
         - Added #undefs to avoid conflicting macros screwing up scenario
           23C's ("The Backyard") logic.
+        - Drones now use Formula AI rules.
 
 - Terrains:
     - Made Dark Road terrain play better with castle/keep terrain types
@@ -48,6 +49,7 @@ Version 1.10.0-svn:
 
 - Units:
     - Balancing:
+        - Added farmland to vegetated terrains list
         - Gave most units adequate movement costs and defense
           on Reef terrain.
         - Increased Worker Droid's movement costs as follows:
@@ -62,6 +64,7 @@ Version 1.10.0-svn:
     - Removed an extra, obsolete defense animation from Elvish Hunter.
     - Removed inclusion of inexistent macro BIRD_NAMES.
     - Removed some engine bug workarounds that we don't need on 1.5.x.
+    - Simplified rules for vegetated terrain recognition on unit specials
     - Simplified Shaxthal's unit_type variation WML
 
 ; kate: indent-mode normal; encoding utf-8; space-indent: on;
