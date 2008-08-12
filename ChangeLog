@@ -37,8 +37,8 @@ Version 1.10.0-svn:
         - Fixed a bug which made Quogar Ratham always speak a line that Erathan
           is supposed to speak otherwise.
     - 22B (Gauntlet):
-        - Added #undefs to avoid conflicting macros screwing up scenario
-          23C's ("The Backyard") logic.
+        - Did significant clean-ups, removing most variables and all macros
+          that were used before.
         - Drones now use Formula AI rules.
 
 - Terrains:
