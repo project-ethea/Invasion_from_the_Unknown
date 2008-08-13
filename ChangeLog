@@ -1,6 +1,6 @@
 Invasion from the Unknown - changelog
 --------------------------------------------------------------------------------
-[p]: placeholder | [t]: testing | [u]: unstable
+[P]: placeholder | [T]: testing | [U]: unstable
 
 Version 1.10.0-svn:
 - Ported from 1.4 branch to trunk. Cycholka ran wmllint on it for
@@ -13,7 +13,7 @@ Version 1.10.0-svn:
     - Removed now unnecessary generic portraits: Lich, Dark Adept,
       female Dark Adept
     - Updated baseframes: Elynia, Elvish Civilian, Blood Imp
-    - Updated portraits: Dryad [p], Elynia [p]
+    - Updated portraits: Dryad [P], Elynia [P]
 
 - Language and i18n:
     - Changed unit race text for female Demons from "race+female^Demon"
@@ -39,6 +39,14 @@ Version 1.10.0-svn:
     - 22B (Gauntlet):
         - Did significant clean-ups, removing most variables and all macros
           that were used before.
+          <self_propaganda>
+            As a result of these changes being made by Shadow Master, these
+            will require a recent revision of Wesnoth 1.5.x trunk, or 1.5.3
+            release, due to a small engine bugfix he made in mainline so
+            that attacker and defender weapons are passed to 'die' and
+            'last breath' events. No other dev could possibly be bothered
+            to fix it... ;-)
+          </self_propaganda>
         - Drones now use Formula AI rules.
 
 - Terrains:
