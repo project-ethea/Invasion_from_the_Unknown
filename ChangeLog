@@ -48,6 +48,11 @@ Version 1.10.0-svn:
             to fix it... ;-)
           </self_propaganda>
         - Drones now use Formula AI rules.
+    - 23A (Interim):
+        - Clean-ups.
+    - 23B (Welcome to the Lair of the Shadow Master):
+        - Increased turn limit by 100.
+        - Start at the turn that Interim was finished plus one.
 
 - Terrains:
     - Made Dark Road terrain play better with castle/keep terrain types
