@@ -68,6 +68,10 @@ Version 1.10.0-svn:
         - Increased Worker Droid's movement costs as follows:
             - Shallow Water: 3 -> 4
             - Swamp Water: 3 -> 4
+        - Reduced Elvish Hunter's HP from 30 to 29.
+        - Reduced Elvish Prowler's HP from 66 to 62.
+        - Reduced Elvish Trapper's HP from 44 to 43.
+        - Reduced Elvish Warrior Spirit's HP from 18 to 16.
         - Removed 'magical' weapon special from Elynia's staff.
     - Fixed a bug which caused Anlindë to lose her portrait after advancing to
       level 4.
