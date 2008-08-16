@@ -4,6 +4,10 @@ Invasion from the Unknown - changelog
 Version 1.9.4+svn:
 - Units:
     * Balancing:
+        + Reduced Elvish Hunter's HP from 30 to 29.
+        + Reduced Elvish Prowler's HP from 66 to 62.
+        + Reduced Elvish Trapper's HP from 44 to 43.
+        + Reduced Elvish Warrior Spirit's HP from 18 to 16.
         + Removed 'magical' weapon special from Elynia's staff.
 
 Version 1.9.4:
