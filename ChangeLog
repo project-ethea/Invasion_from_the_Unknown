@@ -3,16 +3,18 @@ Invasion from the Unknown - changelog
 [P]: placeholder | [T]: testing | [U]: unstable
 
 Version 1.10.0-svn:
-- Ported from 1.4 branch to trunk. Cycholka ran wmllint on it for
+- Ported from 1.4 branch to trunk. Cycholka/Mist ran wmllint on it for
   making it compatible with Wesnoth 1.5.1 and later.
+- Removed many unused macros.
 
 - Graphics:
     - Added baseframes: Elvish Civilian (bow attack)
     - Gave Elynia a separate standing frame when she's over water, impassable or
-      unwalkable terrains - she also uses this frame while flying.
+      unwalkable terrains - she also uses this frame while moving.
     - Removed now unnecessary generic portraits: Lich, Dark Adept,
       female Dark Adept
-    - Updated baseframes: Elynia, Elvish Civilian, Blood Imp
+    - Updated baseframes: Elynia, Elvish Civilian, Blood Imp, Shaxthal Drone,
+                          Shaxthal Assault Drone
     - Updated portraits: Dryad [P], Elynia [P]
 
 - Language and i18n:
@@ -51,8 +53,15 @@ Version 1.10.0-svn:
     - 23A (Interim):
         - Clean-ups.
     - 23B (Welcome to the Lair of the Shadow Master):
-        - Increased turn limit by 100.
-        - Start at the turn that Interim was finished plus one.
+        - Attacking the boss with the union does not make him
+          vulnerable to other kinds of attacks.
+        - Boss can now recruit units.
+        - Changed controller for side of door units from 'ai'
+          to 'null'.
+        - Increased turn limit by 100; scenario starts at the
+          turn that "Interim" was finished plus one
+        - Miscellaneous balancing tweaks.
+        - Refactored boss fight code, fixing some old bugs.
 
 - Terrains:
     - Made Dark Road terrain play better with castle/keep terrain types
