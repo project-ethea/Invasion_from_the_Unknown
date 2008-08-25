@@ -5,7 +5,12 @@ Invasion from the Unknown - changelog
 Version 1.10.0-svn:
 - Ported from 1.4 branch to trunk. Cycholka/Mist ran wmllint on it for
   making it compatible with Wesnoth 1.5.1 and later.
+- Prevented past-the-end WML array access using new macros,
+  VARIABLE_RANDOM_SUBSCRIPT and RANDOM_SUBSCRIPT.
+  All WML found with the regular expression /\.\.\$[a-zA-Z0-9_]*\.length/
+  was fixed to use this method.
 - Removed many unused macros.
+    - Ditch IS_ON_MAP in favor of mainline NOT_ON_RECALL_LIST.
 
 - Graphics:
     - Added baseframes: Elvish Civilian (bow attack)
@@ -52,6 +57,7 @@ Version 1.10.0-svn:
         - Drones now use Formula AI rules.
     - 23A (Interim):
         - Clean-ups.
+        - Reduced turn limit.
     - 23B (Welcome to the Lair of the Shadow Master):
         - Attacking the boss with the union does not make him
           vulnerable to other kinds of attacks.
@@ -84,6 +90,7 @@ Version 1.10.0-svn:
         - Removed 'magical' weapon special from Elynia's staff.
     - Fixed a bug which caused Anlindë to lose her portrait after advancing to
       level 4.
+    - Fixed cockatrice and chimera not being immune to plaguing
     - Fixed references to inexistent images (actually typos) in Dwarvish
       Runesmith's attack animation.
     - Fixed WEAPON_SPECIAL_DRAINS -> WEAPON_SPECIAL_DRAIN typo on Giant Leech.
