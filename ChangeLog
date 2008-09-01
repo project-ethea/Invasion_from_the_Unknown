@@ -34,8 +34,13 @@ Version 1.10.0-svn:
       being moved to a public location reachable by this campaign.
 
 - Scenarios:
+    - Changed all instances of "alright" to more formal expressions as
+      suggested by Espreon.
     - Sanitized many event unit filters.
     - Some dialogs were improved.
+    - 9 (The Library):
+        - Galas movement costs in cave terrains don't get reduced on hardest
+          difficulty.
     - 10 (The Source of Light):
         - Made berserk potion have effect only until the end of this scenario.
         - Fixed some awkward grammar
