@@ -37,12 +37,14 @@ Version 1.10.0-svn:
     - Changed all instances of "alright" to more formal expressions as
       suggested by Espreon.
     - Sanitized many event unit filters.
-    - Some dialogs were improved.
+    - Some dialogs were improved (Shadow Master alone, with nobody's help!
+                                  mwahahahahahhaaa!!!)
     - 9 (The Library):
         - Galas movement costs in cave terrains don't get reduced on hardest
           difficulty.
     - 10 (The Source of Light):
         - Made berserk potion have effect only until the end of this scenario.
+        - Mal Keshar explains why Elynia hid herself in this cave.
         - Fixed some awkward grammar
           (http://www.wesnoth.org/forum/viewtopic.php?p=305960#p305960)
     - 16 (Arrival of the Battalion):
@@ -51,28 +53,18 @@ Version 1.10.0-svn:
     - 22B (Gauntlet):
         - Did significant clean-ups, removing most variables and all macros
           that were used before.
-          <self_propaganda>
-            As a result of these changes being made by Shadow Master, these
-            will require a recent revision of Wesnoth 1.5.x trunk, or 1.5.3
-            release, due to a small engine bugfix he made in mainline so
-            that attacker and defender weapons are passed to 'die' and
-            'last breath' events. No other dev could possibly be bothered
-            to fix it... ;-)
-          </self_propaganda>
         - Drones now use Formula AI rules.
     - 23A (Interim):
         - Clean-ups.
         - Reduced turn limit.
     - 23B (Welcome to the Lair of the Shadow Master):
-        - Attacking the boss with the union does not make him
-          vulnerable to other kinds of attacks.
         - Boss can now recruit units.
         - Changed controller for side of door units from 'ai'
           to 'null'.
         - Increased turn limit by 100; scenario starts at the
           turn that "Interim" was finished plus one
-        - Miscellaneous balancing tweaks.
-        - Refactored boss fight code, fixing some old bugs.
+        - Made many changes to this scenario, making the boss fight
+          far harder, fixing old bugs, and changing the former balance.
 
 - Terrains:
     - Made Dark Road terrain play better with castle/keep terrain types
@@ -102,6 +94,7 @@ Version 1.10.0-svn:
     - Removed an extra, obsolete defense animation from Elvish Hunter.
     - Removed inclusion of inexistent macro BIRD_NAMES.
     - Removed some engine bug workarounds that we don't need on 1.5.x.
+    - Removed units: Wose Shaman
     - Simplified rules for vegetated terrain recognition on unit specials
     - Simplified Shaxthal's unit_type variation WML
 
