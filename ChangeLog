@@ -1,6 +1,10 @@
-Invasion from the Unknown - changelog
---------------------------------------------------------------------------------
-[P]: placeholder | [T]: testing | [U]: unstable
+________________________________________________________________________________
+
+                    INVASION FROM THE UNKNOWN - CHANGELOG
+________________________________________________________________________________
+
+     [D]: definitive | [P]: placeholder | [T]: testing | [U]: unstable
+________________________________________________________________________________
 
 Version 1.10.0-svn:
 - Ported from 1.4 branch to trunk. Cycholka/Mist ran wmllint on it for
@@ -14,8 +18,10 @@ Version 1.10.0-svn:
 
 - Graphics:
     - Added baseframes: Elvish Civilian (bow attack)
-    - Gave Elynia a separate standing frame when she's over water, impassable or
-      unwalkable terrains - she also uses this frame while moving.
+    - Added portraits: Elvish Civilian male [P] and female [P]
+    - Gave Elynia a separate standing animation when she's over water,
+      impassable or unwalkable terrains - she also uses this animation while
+      moving.
     - Removed now unnecessary generic portraits: Lich, Dark Adept,
       female Dark Adept
     - Updated baseframes: Elynia, Elvish Civilian, Blood Imp, Shaxthal Drone,
@@ -25,7 +31,7 @@ Version 1.10.0-svn:
 - Language and i18n:
     - Changed unit race text for female Demons from "race+female^Demon"
       to "race+female^Demoness".
-    - Changed female unit_type names for the Demon tree to contain be of the
+    - Changed female unit_type names for the Demon tree to be of the
       "Demoness" form rather than "Demon".
 
 - Music and sound effects:
@@ -34,11 +40,22 @@ Version 1.10.0-svn:
       being moved to a public location reachable by this campaign.
 
 - Scenarios:
+    - Added first-time description for Elynia, Erathan and Althurin.
+    - Character first-time descriptions and the option to skip them are enabled
+      when starting straight from episode II.
     - Changed all instances of "alright" to more formal expressions as
       suggested by Espreon.
+    - Player can choose Galas initial unit type when starting straight from
+      episode II.
+    - Revised glamour ability WML and enabled HP changes (still quirky due to
+      engine bugs on arithmetic with WML variables containing real numbers)
     - Sanitized many event unit filters.
     - Some dialogs were improved (Shadow Master alone, with nobody's help!
                                   mwahahahahahhaaa!!!)
+    - 2 (A Real Confrontation):
+        - A few dialogue improvements at the start - they also involve changes
+          on the free recall mechanics.
+        - Other balancing changes.
     - 9 (The Library):
         - Galas movement costs in cave terrains don't get reduced on hardest
           difficulty.
@@ -73,6 +90,9 @@ Version 1.10.0-svn:
     - Revised most of the terrain graphics layout code to be 1.5.x-compatible.
 
 - Units:
+    - Added units: Chaos Raider, Chaos Cavalier, Chaos Cataphract,
+                   Chaos Bowman, Chaos Longbowman, Chaos Crossbowman,
+                   Chaos Heavy Longbowman, Chaos Advanced Crossbowman
     - Balancing:
         - Added farmland to vegetated terrains list
         - Gave most units adequate movement costs and defense
@@ -80,10 +100,20 @@ Version 1.10.0-svn:
         - Increased Worker Droid's movement costs as follows:
             - Shallow Water: 3 -> 4
             - Swamp Water: 3 -> 4
+        - Reduced Chaos Razerman's axe attack strength from 25-2 (!) to 18-2.
+        - Reduced Dark Knight's axe attack strength from 17-2 to 14-2.
+        - Reduced Dark Knight's cost from 36g to 32g.
+        - Reduced Doom Guard's cost from 40g to 35g.
         - Reduced Elvish Hunter's HP from 30 to 29.
         - Reduced Elvish Prowler's HP from 66 to 62.
         - Reduced Elvish Trapper's HP from 44 to 43.
         - Reduced Elvish Warrior Spirit's HP from 18 to 16.
+        - Reduced Hell Overlord's axe attack strength from 31-2 (!) to 20-2.
+        - Reduced Sylvan Faerie's HP from 68 to 67.
+        - Increased Sylvan Faerie's melee attack strength from 8-3 to 7-5.
+        - Reduced Sylvan Faerie's ensnare attack strength from 7-4 to 6-3.
+        - Reduced Sylvan Faerie's thorns attack strength from 9-3 to 8-3.
+        - Reduced Sylvan Faerie's mystic fire attack strength from 8-6 to 5-5.
         - Removed 'magical' weapon special from Elynia's staff.
     - Fixed a bug which caused Anlindë to lose her portrait after advancing to
       level 4.
@@ -97,5 +127,7 @@ Version 1.10.0-svn:
     - Removed units: Wose Shaman
     - Simplified rules for vegetated terrain recognition on unit specials
     - Simplified Shaxthal's unit_type variation WML
+________________________________________________________________________________
 
-; kate: indent-mode normal; encoding utf-8; space-indent: on;
+; $Id$
+; kate: indent-mode normal; encoding utf-8; space-indent on;
