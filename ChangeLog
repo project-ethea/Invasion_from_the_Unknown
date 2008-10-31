@@ -15,6 +15,10 @@ Version 1.10.0-svn:
   was fixed to use this method.
 - Removed many unused macros.
     - Ditch IS_ON_MAP in favor of mainline NOT_ON_RECALL_LIST.
+- Switched back from ~ preprocessor includes to @, which allows IftU to be
+  loaded from a mainline datadir if present. This is completely absurd IMO, but
+  users of our SVN trunk have the weird habit of making the checkout in such
+  exotic locations...
 
 - Graphics:
     - Added baseframes: Elvish Civilian (bow attack)
