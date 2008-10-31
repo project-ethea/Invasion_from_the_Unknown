@@ -17,6 +17,8 @@ MASSIVE SPOILERS WARNING!
 Don't come back crying and shouting that no one warned you before.
 
 NOTE: this text is optimized for view in VT100-like terminals with 80 columns.
+If you are using a graphical user interface to view this file, make sure word
+wrapping is disabled or the text will be laid out in a really awkward fashion.
 
 
 1. THE GOOD
@@ -81,10 +83,10 @@ Details available from:
 She enters the group after scenario 10, and has a secondary role in dialogues
 although her importance to the mission is the highest.
 
-Nobody knows where or why she came to Wesnoth, but her arrival should have taken
-place around 750 YW, when Elves, Dwarves and Orcs allied to defeat a Wesfolk
-Lich Lord that invaded the Great Continent. Therefore, she probably witnessed
-the arrival of the Aragwaithi as well.
+Nobody knows whence or why she came to Wesnoth, but her arrival should have
+taken place around 750 YW, when Elves, Dwarves and Orcs allied to defeat a
+Wesfolk Lich Lord that invaded the Great Continent. Therefore, she probably
+witnessed the arrival of the Aragwaithi as well.
 
 It's very little what is known about her past; she probably was an elvish maiden
 before, who achieved the status of Elvish Shyde, and got blessed by the Union(1)
@@ -151,6 +153,41 @@ past, the Crown may have been defeated in a Civil War and she salvaged the
 Scepter of Fire, hiding its power away by removing the Ruby from inside and
 attaching it to her staff (of course, with help from dwarvish crafters).
 
+1.2.2. Elynia's curse
+
+Not mentioned in IftU, Elynia once fought against a powerful necromancer, who
+almost destroyed northern Wesnoth (FIXME: Gwiti Ha'atel???). When she defeated
+him, the necromancer casted a curse upon her.
+
+She would live forever until the world dried up and no more creatures would
+inhabit it. Until that would occur, she'd see her beloved ones either turn
+against her, or perish in tragic manners.
+
+An unexpected consequence of the curse and death of the necromancer was that she
+gained the power of necromancy, which she has secretly put in practice ever
+since.
+
+The first one to be affected by her curse is Argan - after hundreds of years of
+being her husband, Argan is corrupted and enslaved by Uria, and forced to fight
+Elynia. At the end, to "save the world" (geez...), she slays him.
+
+The second one is Galas, her fianceé after IftU. Galas is willing to sacrifice
+himself to protect his friends, and her beloved Elynia, so he distracts the evil
+members of the Iron Triad so the rest of the group can escape the fortress.
+Later on, Elynia has to fight Galas' corpse, devoid of soul and mind.
+
+The third one is Mal Keshar, her friend. After they defeat Ivyel, they go to try
+to defeat Mal Hekuba. They accidentally unstabilize the reactors powering the
+shaxthal hive, so Mal Keshar stops Hekuba from escaping, so that the ensuing
+explosion destroys them, and the Ruby of Fire, permanently. He orders Elynia to
+escape, reminding her that Kri'tan needs her protection. Elynia escapes the hive
+badly harmed, and Mal Keshar is definitively and permanently anihilated.
+
+1.2.3. Origins
+
+It is not known where she came from, but it is probable that she was born in the
+Aethenwood from an elvish wayfarer (FIXME: Kalenz???) and a respected shaman of
+the region, Deniéth-Isal, and separated from them early during her childhood.
 
 
 1.3. Mal Keshar (VeryVery Ancient Lich)
@@ -161,7 +198,7 @@ mercenary; he was willing to help them find Elynia, but never thought that their
 journey would remind him of his difficult past. At the start his power was
 superseded by Anlindë's, but later he would had many oportunities of slaying the
 elves, which he didn't use. Soon he would find himself taking care of Galas as a
-frined, situation which probably neither ever imagined. It is very likely that
+friend, situation which probably neither ever imagined. It is very likely that
 Galas reminded him of the times he was a small and unsecure child - see Malin
 Keshar in Descent into Darkness.
 
@@ -290,6 +327,17 @@ Darkness, was proved to be the Shadow Master." [...]
   decay and foul consequences of necromancy?
 
 He is the last major enemy boss.
+
+2.1.1. Origins
+
+Unknown. Evidence indicates he does not pertain to any race of the Great
+Continent.
+
+2.1.2. Relation to Elynia
+
+They met for the first time when Elynia commanded a group of wisemen to defeat a
+necromancer who threatened to take over the kingdom of Wesnoth (FIXME: TDH?). He
+saved her when she was badly injured by the necromancer who she pursued.
 
 
 2.2. Elyssa (Chaos Warlord, Shaxthal Warlord)
