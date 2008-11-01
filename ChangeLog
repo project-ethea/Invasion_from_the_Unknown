@@ -26,12 +26,12 @@ Version 1.10.0-svn:
     - Gave Elynia a separate standing animation when she's over water,
       impassable or unwalkable terrains - she also uses this animation while
       moving.
-    - New original portraits: Galas [D]
+    - New original portraits by Kitty: Galas [D], Anlindë [D], Elynia [D]
     - Removed now unnecessary generic portraits: Lich, Dark Adept,
       female Dark Adept
     - Updated baseframes: Elynia, Elvish Civilian, Blood Imp, Shaxthal Drone,
                           Shaxthal Assault Drone, Shaxthal Wyrm
-    - Updated portraits: Dryad [P], Elynia [P]
+    - Updated portraits: Dryad [P]
 
 - Language and i18n:
     - Changed unit race text for female Demons from "race+female^Demon"
