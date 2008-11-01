@@ -26,6 +26,7 @@ Version 1.10.0-svn:
     - Gave Elynia a separate standing animation when she's over water,
       impassable or unwalkable terrains - she also uses this animation while
       moving.
+    - New original portraits: Galas [D]
     - Removed now unnecessary generic portraits: Lich, Dark Adept,
       female Dark Adept
     - Updated baseframes: Elynia, Elvish Civilian, Blood Imp, Shaxthal Drone,
@@ -71,6 +72,8 @@ Version 1.10.0-svn:
     - 16 (Arrival of the Battalion):
         - Fixed a bug which made Quogar Ratham always speak a line that Erathan
           is supposed to speak otherwise.
+    - 17 (Dawn of the Great War):
+        - Fixed insane music fade-out delay after the initial character dialog.
     - 22B (Gauntlet):
         - Did significant clean-ups, removing most variables and all macros
           that were used before.
@@ -101,6 +104,13 @@ Version 1.10.0-svn:
         - Added farmland to vegetated terrains list
         - Gave most units adequate movement costs and defense
           on Reef terrain.
+        - Imps may receive the traits Weak, Slow or Dim.
+        - Increased Shaxthal Razorbird's resistance to damage as follows:
+            - Blade: 0% -> 10% <base>
+            - Pierce: 0% -> 10%
+        - Increased Shaxthal Thunderbird's resistance to damage as follows:
+            - Blade: 0% -> 10% <base>
+            - Pierce: 0% -> 20%
         - Increased Worker Droid's movement costs as follows:
             - Shallow Water: 3 -> 4
             - Swamp Water: 3 -> 4
