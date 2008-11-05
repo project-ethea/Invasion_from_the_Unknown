@@ -78,6 +78,10 @@ Version 1.10.0-svn:
         - Did significant clean-ups, removing most variables and all macros
           that were used before.
         - Drones now use Formula AI rules.
+    - 22C (The Backyard):
+        - This scenario is no longer enabled. The code will be left around for
+          two more releases, but it will be disabled unless the WML preprocessor
+          symbol HAVE_BACKYARD is defined.
     - 23A (Interim):
         - Clean-ups.
         - Reduced turn limit.
@@ -145,4 +149,4 @@ Version 1.10.0-svn:
 ________________________________________________________________________________
 
 ; $Id$
-; kate: indent-mode normal; encoding utf-8; space-indent on;
+; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;
