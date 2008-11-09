@@ -21,7 +21,7 @@ Version 1.10.0-svn:
   exotic locations...
 
 - Graphics:
-    - Added baseframes: Elvish Civilian (bow attack)
+    - Added baseframes: Elvish Civilian (bow attack), Anlindë L2/L3
     - Added portraits: Elvish Civilian male [P] and female [P]
     - Gave Elynia a separate standing animation when she's over water,
       impassable or unwalkable terrains - she also uses this animation while
