@@ -109,6 +109,14 @@ Version 1.10.0-svn:
                    Chaos Heavy Longbowman, Chaos Advanced Crossbowman
     - Balancing:
         - Added farmland to vegetated terrains list
+        - Elynia's AMLAs:
+            - AMLA 0 (unbound): new attack (thorns, ranged, pierce,
+              magic) -> (removed)
+            - AMLA 1: melee +1D, HP +5 <FH> , XP +20% -> HP +5, XP +30%
+            - AMLA 2: melee +1S, HP <FH>, XP +30% -> melee +1D, XP +45%
+            - AMLA 3: melee +1D, HP <FH>, XP +40% -> melee +1S, XP +60%
+            - AMLA 4: melee +1S, HP <FH>, XP +50% -> ranged +
+              thorns <ranged, pierce> [magic] 7-3, XP +75%.
         - Gave most units adequate movement costs and defense
           on Reef terrain.
         - Imps may receive the traits Weak, Slow or Dim.
@@ -131,10 +139,11 @@ Version 1.10.0-svn:
         - Reduced Elvish Trapper's HP from 44 to 43.
         - Reduced Elvish Warrior Spirit's HP from 18 to 16.
         - Reduced Hell Overlord's axe attack strength from 31-2 (!) to 20-2.
-        - Reduced Sylvan Faerie's HP from 68 to 67.
-        - Increased Sylvan Faerie's melee attack strength from 8-3 to 7-5.
+        - Increased Lady of Light's XP from 65 to 90.
+        - Reduced Sylvan Faerie's HP from 68 to 61.
+        - Increased Sylvan Faerie's melee attack strength from 8-3 to 6-5.
         - Reduced Sylvan Faerie's ensnare attack strength from 7-4 to 6-3.
-        - Reduced Sylvan Faerie's thorns attack strength from 9-3 to 8-3.
+        - Reduced Sylvan Faerie's thorns attack strength from 9-3 to 7-3.
         - Reduced Sylvan Faerie's mystic fire attack strength from 8-6 to 5-5.
         - Removed 'magical' weapon special from Elynia's staff.
     - Fixed a bug which caused Anlindë to lose her portrait after advancing to
