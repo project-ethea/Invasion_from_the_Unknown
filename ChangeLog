@@ -57,6 +57,7 @@ Version 1.10.0-svn:
     - Sanitized many event unit filters.
     - Some dialogs were improved (Shadow Master alone, with nobody's help!
                                   mwahahahahahhaaa!!!)
+    - Turned Anlindë from Elvish Sorceress into Elvish Ascetic.
     - 1 (Border Patrol):
         - Map balancing.
     - 2 (A Real Confrontation):
@@ -106,7 +107,9 @@ Version 1.10.0-svn:
 - Units:
     - Added units: Chaos Raider, Chaos Cavalier, Chaos Cataphract,
                    Chaos Bowman, Chaos Longbowman, Chaos Crossbowman,
-                   Chaos Heavy Longbowman, Chaos Advanced Crossbowman
+                   Chaos Heavy Longbowman, Chaos Advanced Crossbowman,
+                   Elvish Ascetic (character), Elvish Mystic (character),
+                   Elvish Avatar (character).
     - Balancing:
         - Added farmland to vegetated terrains list
         - Elynia's AMLAs:
