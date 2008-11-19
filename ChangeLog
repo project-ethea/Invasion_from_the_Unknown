@@ -65,6 +65,8 @@ Version 1.10.0-svn:
           on the free recall mechanics.
         - Add an explanation for the Elvish civilians.
         - Other balancing changes.
+    - 4 (Over the Sands)
+        - New dehydration logic from Under the Burning Suns.
     - 9 (The Library):
         - Galas movement costs in cave terrains don't get reduced on hardest
           difficulty.
