@@ -134,6 +134,7 @@ Version 1.10.0-svn:
         - Increased Worker Droid's movement costs as follows:
             - Shallow Water: 3 -> 4
             - Swamp Water: 3 -> 4
+        - Reduced Chaos Hound line's movement cost on swamp from 3 to 2.
         - Reduced Chaos Razerman's axe attack strength from 25-2 (!) to 18-2.
         - Reduced Dark Knight's axe attack strength from 17-2 to 14-2.
         - Reduced Dark Knight's cost from 36g to 32g.
