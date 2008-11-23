@@ -26,7 +26,8 @@ Version 1.10.0-svn:
     - Gave Elynia a separate standing animation when she's over water,
       impassable or unwalkable terrains - she also uses this animation while
       moving.
-    - New original portraits by Kitty: Galas [D], Anlindë [D], Elynia [D]
+    - New original portraits by Kitty: Galas [D], Anlindë [D], Elynia [D],
+                                       Erathan [D]
     - Removed now unnecessary generic portraits: Lich, Dark Adept,
       female Dark Adept
     - Updated baseframes: Elynia, Elvish Civilian, Blood Imp, Shaxthal Drone,
