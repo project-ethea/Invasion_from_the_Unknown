@@ -21,7 +21,8 @@ Version 1.10.0-svn:
   exotic locations...
 
 - Graphics:
-    - Added baseframes: Elvish Civilian (bow attack), Anlindë L2/L3
+    - Added baseframes: Elvish Civilian (bow attack), Elvish Avatar,
+                        Elvish Ascetic
     - Added portraits: Elvish Civilian male [P] and female [P]
     - Gave Elynia a separate standing animation when she's over water,
       impassable or unwalkable terrains - she also uses this animation while
@@ -31,7 +32,8 @@ Version 1.10.0-svn:
     - Removed now unnecessary generic portraits: Lich, Dark Adept,
       female Dark Adept
     - Updated baseframes: Elynia, Elvish Civilian, Blood Imp, Shaxthal Drone,
-                          Shaxthal Assault Drone, Shaxthal Wyrm
+                          Shaxthal Assault Drone, Shaxthal Wyrm, Elvish Prowler,
+                          Elvish Trapper
     - Updated portraits: Dryad [P]
 
 - Language and i18n:
