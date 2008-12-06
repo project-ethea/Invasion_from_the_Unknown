@@ -68,13 +68,20 @@ Version 1.10.0-svn:
           on the free recall mechanics.
         - Add an explanation for the Elvish civilians.
         - Other balancing changes.
-    - 4 (Over the Sands)
+    - 4 (Over the Sands):
         - New dehydration logic from Under the Burning Suns.
-    - 5a (Crossfire)
+    - 5a (Crossfire):
         - Added more gold income to some enemy sides.
         - Status balancing.
         - Map balancing.
         - Units can no longer move to the "green side" of the map.
+    - 6 (The Moon Valley):
+        - Yeti is not a blocker for victory.
+    - 7 (The Elf versus Goliath):
+        - Added Fog of War.
+        - Increased overall difficulty.
+        - Increased level of demon enemies.
+        - Strength potion's filter is more strict regarding non-living beings.
     - 9 (The Library):
         - Galas movement costs in cave terrains don't get reduced on hardest
           difficulty.
