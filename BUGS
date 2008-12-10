@@ -6,9 +6,6 @@ Release-critical bugs (1.10.0-svn):
 * An automated tool for bringing back translations for releases should be
   written [critical].
 
-* The campaign is too easy nowadays. No first 1.10 release can be made in this
-  status. [immediate]
-
 * Anlindë's unit line is missing two baseframes and all animations [high]
 
 * Text revisions required [high]
