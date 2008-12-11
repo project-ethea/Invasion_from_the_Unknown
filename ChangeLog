@@ -6,6 +6,8 @@ ________________________________________________________________________________
      [D]: definitive | [P]: placeholder | [T]: testing | [U]: unstable
 ________________________________________________________________________________
 
+Version 1.10.0+svn:
+
 Version 1.10.0:
 - Ported from 1.4 branch to trunk. Cycholka/Mist ran wmllint on it for
   making it compatible with Wesnoth 1.5.1 and later.
