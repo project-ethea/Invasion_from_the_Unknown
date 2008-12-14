@@ -7,6 +7,10 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 Version 1.10.0+svn:
+- Graphics:
+    - Updated unit graphics: Elynia.
+- Units:
+    - Fixed Elvish Avatar's ranged arcane attack animation.
 
 Version 1.10.0:
 - Ported from 1.4 branch to trunk. Cycholka/Mist ran wmllint on it for
