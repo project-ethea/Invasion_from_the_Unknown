@@ -9,6 +9,9 @@ ________________________________________________________________________________
 Version 1.10.0+svn:
 - Graphics:
     - Updated unit graphics: Elynia.
+- Scenarios:
+    - 8 - Errand of Hope:
+        - Fixed some invalid WML warnings
 - Units:
     - Fixed Elvish Avatar's ranged arcane attack animation.
 
