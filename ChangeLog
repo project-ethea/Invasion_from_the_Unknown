@@ -8,14 +8,54 @@ ________________________________________________________________________________
 
 Version 1.10.0+svn:
 - Graphics:
-    - Updated unit graphics: Elynia.
-- Scenarios:
-    - 8 - Errand of Hope:
-        - Fixed some invalid WML warnings
-- Units:
-    - Fixed Elvish Avatar's ranged arcane attack animation.
+    - Updated unit graphics: Elynia, Elvish Mystic, Elvish Avatar, Blood Imp,
+                             Demon, Demon Zephyr
 
-Version 1.10.0:
+- Scenarios:
+    - Subtle storyline changes since 1.10.0 (applies HISTORY and CHARACTERS,
+      which are not distributed officially yet)
+    - 8 (Errand of Hope):
+        - Balancing changes.
+        - Fixed some invalid WML warnings
+    - 10 (The Source of Light):
+        - Balancing changes.
+        - Dialog revisions.
+    - 11 (Strike on New Knalga):
+        - Balancing changes.
+        - Dialog revisions.
+        - Fixed an Unknown-Unit-Type schroedinbug (i.e. improbably triggered in
+          practice - which is still a Bad Thing since it was part of an
+          enemy's recruit list).
+    - 12 (The Escape):
+        - Balancing changes.
+    - 14 (Bye and Behold):
+        - Balancing changes.
+    - 15 (Shadows of Time):
+        - Cosmetic/balancing changes: the enemy recruits random Walking Corpse
+          variations from a set that seems to fit the map.
+    - 16 (Arrival of the Battalion):
+        - Balancing changes.
+    - 17 (Dawn of the Great War):
+        - Removed reference to Wose recruitment in a dialog (a left-over from
+          ancient releases).
+    - 19 (Legend of Wesmere):
+        - Fixed a typo in one of Erathan's lines.
+    - 20.5 (The Plot):
+        - Althurin no longer "kills" King Asthorgar.
+    - 21 (The Heart):
+        - Make Althurin's first-time description available when starting
+          straight from episode II.
+
+- Units:
+    - Balancing:
+        - Player's Dark Adepts can advance to Liches.
+          THIS CHANGE BREAKS OLD SAVED GAMES.
+    - Fixed Elvish Avatar's ranged arcane attack animation.
+    - Removed Elvish Protector for not fitting the quality requirement for this
+      series.
+________________________________________________________________________________
+
+Version 1.10.0 (interim release):
 - Ported from 1.4 branch to trunk. Cycholka/Mist ran wmllint on it for
   making it compatible with Wesnoth 1.5.1 and later.
 - Prevented past-the-end WML array access using new macros,
