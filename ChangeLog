@@ -6,11 +6,21 @@ ________________________________________________________________________________
      [D]: definitive | [P]: placeholder | [T]: testing | [U]: unstable
 ________________________________________________________________________________
 
-Version 1.10.1+svn:
+Version 1.10.1a:
 - Graphics:
     - New portraits: Althurin [D]
+
+- Scenarios:
+    - 12 (The Escape):
+        - Balancing changes.
+    - 21 (The Heart):
+        - Balancing changes.
+        - Fixed an "invalid WML" warning
+
 - Units:
-    - Refactoring of Elynia's unit code
+    - Fixed all instances of UNREACHABLE with the macro of the same name.
+    - Refactoring of Elynia's unit code.
+    - Removed units: City Guard.
 ________________________________________________________________________________
 
 Version 1.10.1:
