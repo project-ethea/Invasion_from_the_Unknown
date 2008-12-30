@@ -6,6 +6,9 @@ ________________________________________________________________________________
      [D]: definitive | [P]: placeholder | [T]: testing | [U]: unstable
 ________________________________________________________________________________
 
+Version 1.10.2+svn:
+________________________________________________________________________________
+
 Version 1.10.2:
 - Maintenance toolchain:
     - Made build-external-archive.sh use uname instead of GNU distribution-
