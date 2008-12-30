@@ -7,6 +7,24 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 Version 1.10.1a+svn:
+- Maintenance toolchain:
+    - Made build-external-archive.sh use uname instead of GNU distribution-
+      specific environment variables. Also, fill the PUBLISH tag with a bit more
+      of information. In the future I'll probably use GnuPG to sign packages.
+    - Updated the WMLDIRS and IMPORTDIRS tags.
+
+- Scenarios:
+    - 3 (Memories from the Depths):
+        - Cosmetic and consistency fixes on the map.
+        - Erase a duplicated 'not' in the initial dialogue.
+    - 4 (Over the Sands):
+        - http://www.wesnoth.org/forum/viewtopic.php?p=328014#p328014:
+            - Force dehydration/hydration to operate only on units located
+              on the gamemap.
+            - Removed an accidentally copy & pasted unit filter that
+              hydrated on victory only those units that would have been
+              hydrated on the next turn (stepping on water hexes, blah blah).
+
 - Units:
     - Fix a small mistake in Galas' character description text.
 ________________________________________________________________________________
