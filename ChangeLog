@@ -8,7 +8,12 @@ ________________________________________________________________________________
 
 Version 1.10.2+svn:
 - EXPERIMENTAL [U]:
-    - Make Galas, Althurin and Igor use kitty's transparent portraits in 1.5.7.
+    - Make Galas, Erathan Althurin and Igor use kitty's transparent portraits in
+      1.5.7.
+
+- Scenarios:
+    - 14 (Bye and Behold):
+        - Make Igor available when starting episode II on HARD.
 ________________________________________________________________________________
 
 Version 1.10.2:
