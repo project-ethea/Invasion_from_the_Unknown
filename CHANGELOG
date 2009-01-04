@@ -1,16 +1,29 @@
 Invasion from the Unknown - changelog
 -------------------------------------
+[B]: backport from trunk
+
+THIS BRANCH IS OBSOLETE. FOR THE LATEST STABLE WORK ON IFTU YOU
+SHOULD USE THE TRUNK VERSION, OR 1.6 BRANCH, WHEN IT BECOMES
+AVAILABLE.
 
 Version 1.9.4+svn:
-- Units:
-    * Balancing:
-        + Reduced Elvish Hunter's HP from 30 to 29.
-        + Reduced Elvish Prowler's HP from 66 to 62.
-        + Reduced Elvish Trapper's HP from 44 to 43.
-        + Reduced Elvish Warrior Spirit's HP from 18 to 16.
-        + Removed 'magical' weapon special from Elynia's staff.
+- Scrapped Wose Shaman unit entirely.
 
-Version 1.9.4:
+- Scenarios:
+    - 23B (Welcome to the Lair of the Shadow Master):
+        - Fixed Argan's dead image being put at a more-often-than-not
+          invalid location (X=argan's x : Y=attacker's x)       [B]
+
+- Units:
+    - Balancing:
+        - Reduced Elvish Hunter's HP from 30 to 29.             [B]
+        - Reduced Elvish Prowler's HP from 66 to 62.            [B]
+        - Reduced Elvish Trapper's HP from 44 to 43.            [B]
+        - Reduced Elvish Warrior Spirit's HP from 18 to 16.     [B]
+        - Removed 'magical' weapon special from Elynia's staff. [B]
+    - Fixed Cockatrice and Chimera not being immune to plague.  [B]
+
+Version 1.9.4 (divergence point -> trunk):
 - General:
     * Macro PLACE_UNITS_RANDOMLY fixed to cleanup internal variables
     * Macro EX_SCATTER_IMAGE fixed to cleanup internal variables
