@@ -24,6 +24,8 @@ Version 1.10.2+svn:
               (Wed Dec 31 18:16:45 2008 +0000)
     - 14 (Bye and Behold):
         - Make Igor available when starting episode II on HARD.
+    - 22A (Innuendo), 22C (The Backyard):
+        - Remove unbalanced and unmaintained scenario, "The Backyard".
 ________________________________________________________________________________
 
 Version 1.10.2:
