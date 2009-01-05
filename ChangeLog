@@ -19,12 +19,12 @@ Version 1.10.2+svn:
 - Scenarios:
     - 4 (Over the Sands):
         - Merged from upstream (/trunk/data/campaigns/Under_the_Burning_Suns):
-            * revision 31828 <zookeeper> Added a little overlay icon to
+            - revision 31828 <zookeeper> Added a little overlay icon to
               dehydrated units.
               (Tue Dec 30 21:38:13 2008 +0000)
-            * revision 31840 <zookeeper> Allowed villages to rehydrate units.
+            - revision 31840 <zookeeper> Allowed villages to rehydrate units.
               (Wed Dec 31 17:55:05 2008 +0000)
-            * revision 31841 <zookeeper> Fixed rehydration screwing up attack
+            - revision 31841 <zookeeper> Fixed rehydration screwing up attack
               stats of units that leveled up after getting dehydrated.
               (Wed Dec 31 18:16:45 2008 +0000)
     - 10 (The Source of Light):
