@@ -11,6 +11,11 @@ Version 1.10.2+svn:
     - Make Galas, Erathan Althurin and Igor use kitty's transparent portraits in
       1.5.7.
 
+- Administration and maintenance:
+    - Removed unused, deprecated and/or unmaintained files:
+        - SPOILERS
+        - TEXT_SOURCES
+
 - Scenarios:
     - 4 (Over the Sands):
         - Merged from upstream (/trunk/data/campaigns/Under_the_Burning_Suns):
@@ -22,6 +27,9 @@ Version 1.10.2+svn:
             * revision 31841 <zookeeper> Fixed rehydration screwing up attack
               stats of units that leveled up after getting dehydrated.
               (Wed Dec 31 18:16:45 2008 +0000)
+    - 10 (The Source of Light):
+        - Text revisions, including a few English variant fixes (e.g. UK
+          English in middle of US English). Also gave Igor more stuff to say.
     - 14 (Bye and Behold):
         - Make Igor available when starting episode II on HARD.
     - 22A (Innuendo), 22C (The Backyard):
