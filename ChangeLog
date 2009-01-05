@@ -34,6 +34,10 @@ Version 1.10.2+svn:
         - Make Igor available when starting episode II on HARD.
     - 22A (Innuendo), 22C (The Backyard):
         - Remove unbalanced and unmaintained scenario, "The Backyard".
+
+- Units:
+    - Removed units: Captain, Commander, Dark General, Swordsman (mainline
+                     override), Man at Arms, Champion.
 ________________________________________________________________________________
 
 Version 1.10.2:
