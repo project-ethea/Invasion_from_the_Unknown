@@ -34,6 +34,7 @@ Version 1.10.2+svn:
         - Make Igor available when starting episode II on HARD.
     - 21 (The Heart):
         - Fix graphic glitches.
+        - Fix an "invalid WML" warning.
     - 22A (Innuendo), 22C (The Backyard):
         - Remove unbalanced and unmaintained scenario, "The Backyard".
 
