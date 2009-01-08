@@ -35,8 +35,16 @@ Version 1.10.2+svn:
     - 21 (The Heart):
         - Fix graphic glitches.
         - Fix an "invalid WML" warning.
-    - 22A (Innuendo), 22C (The Backyard):
-        - Remove unbalanced and unmaintained scenario, "The Backyard".
+    - 22A (Innuendo):
+        - Blocked entrance to secret scenario.
+        - Fixed spelling mistakes.
+        - Made the filters for objects that may be applied only to living
+          beings exclude Faerie Spirits as well.
+        - Revised dialog and objectives text.
+    - 22B (The Gauntlet):
+        - Revised dialog text.
+    - 22C (The Backyard):
+        - Removed unbalanced and unmaintained scenario, "The Backyard".
 
 - Units:
     - Removed units: Captain, Commander, Dark General, Swordsman (mainline
