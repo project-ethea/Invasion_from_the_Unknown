@@ -8,13 +8,16 @@ ________________________________________________________________________________
 
 Version 1.10.2+svn:
 - EXPERIMENTAL [U]:
-    - Make Galas, Erathan Althurin and Igor use kitty's transparent portraits in
-      1.5.7.
+    - Make Galas, Mal Keshar, Erathan Althurin and Igor use kitty's transparent
+      portraits in 1.5.7.
 
 - Administration and maintenance:
     - Removed unused, deprecated and/or unmaintained files:
         - SPOILERS
         - TEXT_SOURCES
+
+- Graphics:
+    - New portraits: Mal Keshar [D]
 
 - Scenarios:
     - 4 (Over the Sands):
