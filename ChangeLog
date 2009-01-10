@@ -20,6 +20,9 @@ Version 1.10.3:
     - New portraits: Mal Keshar [D]
 
 - Scenarios:
+    - 3 (Memories from the Depths):
+        - Faerie spirits aren't supposed to be able to take the Ring of
+          Switftness.
     - 4 (Over the Sands):
         - Merged from upstream (/trunk/data/campaigns/Under_the_Burning_Suns):
             - revision 31828 <zookeeper> Added a little overlay icon to
@@ -30,9 +33,14 @@ Version 1.10.3:
             - revision 31841 <zookeeper> Fixed rehydration screwing up attack
               stats of units that leveled up after getting dehydrated.
               (Wed Dec 31 18:16:45 2008 +0000)
+    - 5a (Crossfire), 5b (Cursed Plateau):
+        - Faerie spirits aren't supposed to be able to take the Ring of
+          Regeneration.
     - 9 (The Library):
         - Fixed enemy respawn points.
     - 10 (The Source of Light):
+        - Faerie and elvish spirits aren't supposed to be able to take the
+          Draining potion.
         - Text revisions, including a few English variant fixes (e.g. UK
           English in middle of US English). Also gave Igor more stuff to say.
     - 14 (Bye and Behold):
