@@ -52,6 +52,7 @@ Version 1.10.3:
         - Removed unbalanced and unmaintained scenario, "The Backyard".
 
 - Units:
+    - Made Anlindë's unit line visible in the help engine again.
     - Removed units: Captain, Commander, Dark General, Swordsman (mainline
                      override), Man at Arms, Champion, Crossbowman, High Guard,
                      Deathguard.
