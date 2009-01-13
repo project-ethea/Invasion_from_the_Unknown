@@ -9,6 +9,9 @@ ________________________________________________________________________________
 Version 1.10.3+svn:
 - Graphics:
     - Updated portraits: Igor, Galas, Mal Keshar, Anlindë.
+
+- Language and i18n:
+    - Cleaned up usage of textdomains.
 ________________________________________________________________________________
 
 Version 1.10.3:
