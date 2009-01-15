@@ -12,6 +12,15 @@ Version 1.10.3+svn:
 
 - Language and i18n:
     - Cleaned up usage of textdomains.
+
+- Scenarios:
+    - 1 (Border Patrol):
+        - Fixed a text overflow issue in the story screens.
+    - 22A (Innuendo):
+        - Some "minor" revisions.
+
+- Units:
+    - Gave the Dwarvish Runesmith proper attack icons.
 ________________________________________________________________________________
 
 Version 1.10.3:
