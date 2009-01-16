@@ -20,6 +20,38 @@ Version 1.10.3+svn:
         - Some "minor" revisions.
 
 - Units:
+    - Balancing, including changes after mainline revision 32126:
+        - Reduced Shaxthal Rayblade's movement costs:
+            - Deep water: 4 -> 3
+            - Shallow water: 3 -> 2
+            - Swamp water: 3 -> 2
+        - Increased Shaxthal Rayblade's defense on deep water from 10% to 20%.
+        - Reduced Shaxthal Rayblade's defense on reef terrain from 40% to 30%.
+        - Reduced Shaxthal Runner and Protector's defense on reef terrain from
+          40% to 30%.
+        - Reduced 'aragwaithfoot' movetype defense on reef and swamp
+          water terrains from 40% to 30%.
+        - Reduced 'aragwaithmounted' movetype defense on reef terrain from 40%
+          to 30%.
+        - Reduced Doom Guard's line defense on reef terrain from 30% to 20%.
+        - Reduced 'impfoot' movetype defense on reef terrain from 50% to 40%.
+        - Reduced 'impfoot' movetype defense on shallow water from 40% to 30%.
+        - Reduced 'impfoot' movetype defense on swamp water from 60% to 40%.
+        - Reduced 'demon' movetype defense on reef terrain from 50% to 40%.
+        - Reduced 'demon' movetype defense on shallow water from 40% to 30%.
+        - Reduced 'demon' movetype defense on swamp water from 60% to 50%.
+        - Reduced 'undeadmountedfoot' movetype defense on reef terrain from 40%
+          to 30%.
+        - Reduced 'steppebasic' movetype defense on reef terrain from 40% to
+          30%.
+        - Reduced 'steppelusive' movetype defense on reef terrain from 50% to
+          40%.
+        - Reduced 'steppescout' movetype defense on reef terrain from 40% to
+          30%.
+        - Reduced 'mutantfoot' movetype defense on reef terrain from 50% to 40%.
+        - Removed unused movetype, 'crawlerfoot'.
+        - Reduced Steppe Savage's defense on reef terrain from 50% to 40%.
+        - Reduced Elynia's defense on reef terrain from 50% to 40%.
     - Gave the Dwarvish Runesmith proper attack icons.
 ________________________________________________________________________________
 
