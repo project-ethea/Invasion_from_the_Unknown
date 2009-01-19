@@ -15,8 +15,12 @@ Version 1.10.3+svn:
     - Cleaned up usage of textdomains.
 
 - Scenarios:
+    - Fixed a few typos or removed inexisting words.
     - 1 (Border Patrol):
         - Fixed a text overflow issue in the story screens.
+    - 5 (Crossfire, Cursed Plateau):
+        - Gave a more visible indication that Dark Adepts are recruitable in
+          these scenarios.
     - 22A (Innuendo):
         - Removed a coffin that was floating over abyss.
         - Some "minor" revisions.
