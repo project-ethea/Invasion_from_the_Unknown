@@ -13,6 +13,8 @@ Version 1.10.4:
 
 - Language and i18n:
     - Cleaned up usage of textdomains.
+    - Brought back translations from WesCamp-i18n into the official
+      distribution.
 
 - Scenarios:
     - Fixed a few typos or removed inexisting words.
