@@ -9,7 +9,7 @@ ________________________________________________________________________________
 Version 1.10.3+svn:
 - Graphics:
     - Updated portraits: Igor [D], Galas [D], Mal Keshar [D], Anlindë [D],
-                         Elynia [D], Lédinor [P].
+                         Elynia [D], Lédinor [P], Mal Hekuba [P].
 
 - Language and i18n:
     - Cleaned up usage of textdomains.
@@ -18,6 +18,7 @@ Version 1.10.3+svn:
     - 1 (Border Patrol):
         - Fixed a text overflow issue in the story screens.
     - 22A (Innuendo):
+        - Removed a coffin that was floating over abyss.
         - Some "minor" revisions.
     - 23C (Broken Heart):
         - Some "minor" revisions.
