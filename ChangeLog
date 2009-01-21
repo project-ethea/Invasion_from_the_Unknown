@@ -7,6 +7,20 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 Version 1.10.4+svn:
+- Scenarios:
+    - 22A, 22B, 23A, 23B:
+        - Fixed WML that invoked undefined behavior from the vconfig engine.
+          This change means you've got to restart "Innuendo" or the last turn
+          of The Heart to update your saves, since otherwise the recall list
+          for the last scenarios will be unusable.
+        - Prohibited plagued units (Walking Corpses, Soullesses, Ghouls) from
+          being carried over to next scenarios.
+    - 22A (Innuendo):
+        - Removed one recall/recruitment hex for the player.
+
+- Units:
+    - Balancing:
+        - Increased Aragwaith Sorcerer's total movement from 5 to 6.
 
 ________________________________________________________________________________
 
