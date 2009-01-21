@@ -17,11 +17,15 @@ Version 1.10.4+svn:
           being carried over to next scenarios.
     - 22A (Innuendo):
         - Removed one recall/recruitment hex for the player.
+    - 22B (Gauntlet):
+        - Major map revisions.
 
 - Units:
     - Balancing:
         - Increased Aragwaith Sorcerer's total movement from 5 to 6.
-
+    - Removed unused units:
+        - Bear
+        - Giant Boar
 ________________________________________________________________________________
 
 Version 1.10.4:
