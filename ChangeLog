@@ -29,6 +29,8 @@ Version 1.10.4+svn:
 - Units:
     - Balancing:
         - Increased Aragwaith Sorcerer's total movement from 5 to 6.
+        - Increased Chaos Hound's HP from 21 to 22.
+        - Increased Hellhound's HP from 44 to 47.
     - Removed unused units:
         - Bear
         - Giant Boar
