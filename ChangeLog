@@ -7,7 +7,13 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 Version 1.10.4+svn:
+- Graphics:
+    - Updated baseframes: Elynia.
+
 - Scenarios:
+    - 10 (The Source of Light):
+        - Removed the possibility of giving the draining potion to faerie
+          beings and undead spirits (reported by TheJM).
     - 22A, 22B, 23A, 23B:
         - Fixed WML that invoked undefined behavior from the vconfig engine.
           This change means you've got to restart "Innuendo" or the last turn
