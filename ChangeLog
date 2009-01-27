@@ -7,6 +7,11 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 Version 1.10.4+svn:
+- Administration and maintenance:
+    - Began to use inline formulas in WML to decrease code complexity. This
+      means that this campaign will not work properly in Wesnoth 1.5.6 or
+      earlier.
+
 - Graphics:
     - Updated baseframes: Elynia, Master of Darkness.
 
