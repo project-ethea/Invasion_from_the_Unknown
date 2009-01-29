@@ -16,6 +16,8 @@ Version 1.10.4+svn:
     - Updated baseframes: Elynia, Master of Darkness.
 
 - Scenarios:
+    - 8 (Errand of Hope):
+        - Slight improvements to the initial custscene.
     - 10 (The Source of Light):
         - Removed the possibility of giving the draining potion to faerie
           beings and undead spirits (reported by TheJM).
