@@ -19,6 +19,9 @@ Version 1.10.4+svn:
 - Scenarios:
     - 8 (Errand of Hope):
         - Slight improvements to the initial custscene.
+    - 8 - final cutscene (A Royal Meeting):
+        - Fixed probably the most half-assed dialog sequence in this campaign's
+          history. Damnit, there were even a few plot contradictions in it.
     - 10 (The Source of Light):
         - Removed the possibility of giving the draining potion to faerie
           beings and undead spirits (reported by TheJM).
@@ -39,6 +42,8 @@ Version 1.10.4+svn:
         - Increased Aragwaith Sorcerer's total movement from 5 to 6.
         - Increased Chaos Hound's HP from 21 to 22.
         - Increased Hellhound's HP from 44 to 47.
+    - Fixed glitchy animations:
+        - Bone Knight
     - Removed unused units:
         - Bear
         - Giant Boar
