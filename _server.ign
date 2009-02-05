@@ -32,3 +32,9 @@ etc/
 HISTORY
 CHARACTERS
 
+#*#
+*.swp
+_info.cfg
+*.scr
+*.o
+Thumbs.db
