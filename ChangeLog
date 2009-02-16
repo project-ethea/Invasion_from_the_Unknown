@@ -7,11 +7,22 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 Version 1.10.5+svn:
+- Continuity and Storyline:
+    - Elynia spares the life of one of the major enemy bosses.
+
 - Graphics:
     - Updated baseframes:
-    - Updated portraits:
+    - Updated portraits: Elyssa (masked and unmasked) [D].
+
+- Scenarios:
+    - New scenarios:
+        - 22C (The Dark Hive)
+        - 23A (Frozen Hell)
+    - Removed scenarios
+        - 23A (Interim)
 
 - Units:
+    - Merged Elynia's union attack animation into her unit.
     - Removed Elvish Horseman unit due to artwork requirements and balancing.
 ________________________________________________________________________________
 
