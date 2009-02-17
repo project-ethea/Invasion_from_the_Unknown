@@ -18,8 +18,11 @@ Version 1.11.0-svn:
     - New scenarios:
         - 22C (The Dark Hive)
         - 23A (Frozen Hell)
-    - Removed scenarios
+    - Removed scenarios:
         - 23A (Interim)
+    - Scenario 14 (Bye and Behold):
+        - Fixed King Asthorgar not getting his portrait when starting
+          Episode II from scratch.
 
 - Units:
     - Merged Elynia's union attack animation into her unit.
