@@ -12,7 +12,7 @@ Version 1.11.0-svn:
 
 - Graphics:
     - Updated baseframes: Shaxthal Rayblade, Shaxthal Master Drone (masked and
-                          unmasked).
+                          unmasked), Water Serpent.
     - Updated portraits: Elyssa (masked and unmasked) [D].
 
 - Scenarios:
@@ -26,6 +26,8 @@ Version 1.11.0-svn:
           Episode II from scratch.
 
 - Units:
+    - Balancing:
+        - Made the Water Serpent a level 2 unit. 'nuff said.
     - Merged Elynia's union attack animation into her unit.
     - Removed Elvish Horseman unit due to artwork requirements and balancing.
 ________________________________________________________________________________
