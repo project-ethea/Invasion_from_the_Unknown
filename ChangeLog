@@ -12,7 +12,8 @@ Version 1.11.0-svn:
 
 - Graphics:
     - Updated baseframes: Shaxthal Rayblade, Shaxthal Master Drone (masked and
-                          unmasked), Shaxthal Warlord, Water Serpent.
+                          unmasked), Shaxthal Warlord (masked and unmasked),
+                          Water Serpent.
     - Updated portraits: Elyssa (masked and unmasked) [D].
 
 - Scenarios:
@@ -28,6 +29,11 @@ Version 1.11.0-svn:
 - Units:
     - Balancing:
         - Gave real shaxthal stats to Elyssa.
+            - Replaced "infernal chill" (cold, ranged, magical 15-2) with the
+              more powerful "burning inferno" (fire, ranged, magical 14-3).
+            - Gave her the Submerges ability.
+            - Reduced her "sword" attack strength (melee, blade, drains 12-4) to
+              11-4.
         - Made the Water Serpent a level 2 unit. 'nuff said.
     - Merged Elynia's union attack animation into her unit.
     - Removed Elvish Horseman unit due to artwork requirements and balancing.
