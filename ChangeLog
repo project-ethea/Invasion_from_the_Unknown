@@ -11,6 +11,10 @@ Version 1.11.0+svn:
     - Bumped minimum Wesnoth version requirement to 1.5.10.
     - Dropped compatibility with IftU 1.10.3 and earlier, and Wesnoth 1.5.9 and
       earlier.
+
+- Units:
+    - Balancing:
+        - Reduced Elvish Prowler's HP from 62 to 54.
 ________________________________________________________________________________
 
 Version 1.11.0:
