@@ -1,21 +1,12 @@
-Release-critical bugs (1.10.0-svn):
+Release-critical bugs (1.11.0+svn):
 -----------------------------------
-
-* Translations must be brought back to the release package [critical].
 
 * An automated tool for bringing back translations for releases should be
   written [critical].
 
-* Anlindë's unit line is missing two baseframes and all animations [high]
+* Anlindë's unit line is missing all animations [high]
 
 * Text revisions required [high]
-
-* Some scenarios still use the custom lawful loyalists which are scheduled for
-  removal. [high]
-
-* Elynia's sprites don't match the portrait [low]
-
-* Erathan's and Galas' new-style portraits cannot be used [low]
 
 * Most trivial macros, including the {MSG_*} family, should be expanded into
   valid WML for wmlxgettext. [low]
