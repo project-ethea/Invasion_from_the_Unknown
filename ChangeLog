@@ -11,6 +11,12 @@ Version 1.11.0+svn:
     - Bumped minimum Wesnoth version requirement to 1.5.10, and dropped
       compatibility with IftU 1.10.3 and earlier, and Wesnoth 1.5.9 and earlier.
 
+- Scenarios:
+    - The Ring of Regeneration may not be used by faeries, units of the Elvish
+      Shaman line, or Anlindë.
+    - The Berserk Potion may not be used by faeries, units of the Elvish Shaman
+      line, Anlindë, Mal Keshar, or units of the Walking Corpse or Ghoul lines.
+
 - Units:
     - Balancing:
         - Force Cockatrices to use only their ranged attack on offensive
