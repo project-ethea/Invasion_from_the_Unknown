@@ -13,6 +13,8 @@ Version 1.11.0+svn:
 
 - Units:
     - Balancing:
+        - Force Cockatrices to use only their ranged attack on offensive
+          strikes.
         - Reduced Elvish Prowler's HP from 62 to 54.
         - Replaced Elvish Trapper's skirmishing ability with ambush.
 ________________________________________________________________________________
