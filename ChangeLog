@@ -15,6 +15,8 @@ Version 1.11.0+svn:
     - Removed portraits: Murlin.
 
 - Scenarios:
+    - Fixed some plot holes.
+    - Applied a user-contributed patch to the English text (from Solsword).
     - The Ring of Regeneration may not be used by faeries, units of the Elvish
       Shaman line, or Anlindë.
     - The Berserk Potion may not be used by faeries, units of the Elvish Shaman
