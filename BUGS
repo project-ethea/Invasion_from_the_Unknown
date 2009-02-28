@@ -11,6 +11,9 @@ Release-critical bugs (1.11.0+svn):
 * Most trivial macros, including the {MSG_*} family, should be expanded into
   valid WML for wmlxgettext. [low]
 
+* Apply solsword's patch. All scenarios edited by ESR are pending. Scenario
+  10 is pending too.
+
 Known non-bugs:
 ---------------
 
