@@ -6,6 +6,9 @@ ________________________________________________________________________________
      [D]: definitive | [P]: placeholder | [T]: testing | [U]: unstable
 ________________________________________________________________________________
 
+Version 1.11.1+svn:
+________________________________________________________________________________
+
 Version 1.11.1:
 - Administration and maintenance:
     - Bumped minimum Wesnoth version requirement to 1.5.10, and dropped
