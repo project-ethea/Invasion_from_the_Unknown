@@ -23,6 +23,7 @@ Version 1.11.0+svn:
       Shaman line, or Anlindë.
     - The Berserk Potion may not be used by faeries, units of the Elvish Shaman
       line, Anlindë, Mal Keshar, or units of the Walking Corpse or Ghoul lines.
+    - Re-enabled custom AI formulas for dark hive guardians in final scenarios.
     - 24 (Epilogue):
         - Fixed a map size issue that caused Wesnoth 1.5.11+ to abort.
 
