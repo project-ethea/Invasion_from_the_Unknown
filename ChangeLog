@@ -17,11 +17,14 @@ Version 1.11.0+svn:
 
 - Scenarios:
     - Fixed some plot holes.
+    - Revised some maps.
     - Applied a user-contributed patch to the English text (from Solsword).
     - The Ring of Regeneration may not be used by faeries, units of the Elvish
       Shaman line, or Anlindë.
     - The Berserk Potion may not be used by faeries, units of the Elvish Shaman
       line, Anlindë, Mal Keshar, or units of the Walking Corpse or Ghoul lines.
+    - 24 (Epilogue):
+        - Fixed a map size issue that caused Wesnoth 1.5.11+ to abort.
 
 - Units:
     - Balancing:
