@@ -6,7 +6,7 @@ ________________________________________________________________________________
      [D]: definitive | [P]: placeholder | [T]: testing | [U]: unstable
 ________________________________________________________________________________
 
-Version 1.11.0+svn:
+Version 1.11.1:
 - Administration and maintenance:
     - Bumped minimum Wesnoth version requirement to 1.5.10, and dropped
       compatibility with IftU 1.10.3 and earlier, and Wesnoth 1.5.9 and earlier.
