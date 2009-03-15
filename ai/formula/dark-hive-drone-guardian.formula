@@ -1,4 +1,4 @@
-faifile 'dark-hive-drone-guardian.formula'
+fai 'dark-hive-drone-guardian.formula'
 
 if( target_location, attack(me.loc, target_location, choose( units_of_side[0], -distance_between(self.loc, me.loc)).loc) , 0 )
     where target_location = find( [me.loc] + unit_moves(me.loc), distance_between(choose( units_of_side[0], -distance_between(self.loc, me.loc)).loc, self) = 1 )
