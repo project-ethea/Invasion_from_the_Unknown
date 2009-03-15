@@ -7,6 +7,9 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 Version 1.12.0-svn:
+- Administration and maintenance:
+    - Minimum Wesnoth version requirement is 1.5.14 (1.6 RC3).
+
 - Scenarios:
     - 22B (The Gauntlet):
         - Made it possible for matrix components to attack the player.
