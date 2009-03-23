@@ -17,6 +17,11 @@ Version 1.12.0-svn:
 - Terrains:
     - Fixed awkward lack of Dirt <-> dark-tile Road transitions.
     - Fixed some transition issues with gates and brick walls.
+
+- Units:
+    - Balancing:
+        - The player cannot recruit Ghouls anymore - however, they are still
+          available as an alternate advancement for Walking Corpses.
 ________________________________________________________________________________
 
 Version 1.11.1.1:
