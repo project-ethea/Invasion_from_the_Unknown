@@ -11,6 +11,8 @@ Version 1.12.0-svn:
     - Minimum Wesnoth version requirement is 1.5.14 (1.6 RC3).
 
 - Scenarios:
+    - 03 (Memories from the Depths):
+        - Do not offer loyal undead on any difficulty level.
     - 22B (The Gauntlet):
         - Made it possible for matrix components to attack the player.
     - Alien units are not available until scenario 19.
