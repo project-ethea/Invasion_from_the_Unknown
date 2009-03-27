@@ -8,6 +8,11 @@ ________________________________________________________________________________
 
 Version 2.0.0-svn:
 - Administration and maintenance:
+    - Minimum Wesnoth version requirement is <trunk>
+________________________________________________________________________________
+
+Version 1.12.0:
+- Administration and maintenance:
     - Minimum Wesnoth version requirement is 1.5.14 (1.6 RC3).
 
 - Scenarios:
