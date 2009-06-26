@@ -12,6 +12,9 @@ Version 1.12.0+svn:
       Mystic.
 
 - Scenarios:
+    - 12 (The Escape):
+        - Fixed objectives reset code not being executed again after the first
+          enemy leader is defeated.
     - 23C (Broken Heart):
         - Fixed a WML/Formula syntax problem that made an essential event not
           trigger until the end of the scenario.
