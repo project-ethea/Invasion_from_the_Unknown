@@ -16,6 +16,12 @@ Version 2.0.0-svn:
 
 - Plot, storyline and background:
     - Renamed Yanqui to Zhangor (reflects mainline change).
+
+- Scenarios:
+    - 23C (Broken Heart):
+        - Fixed a WML/Formula syntax problem that made an essential event not
+          trigger until the end of the scenario.
+          (http://www.wesnoth.org/forum/viewtopic.php?p=363314#p363314)
 ________________________________________________________________________________
 
 Version 1.12.0:
