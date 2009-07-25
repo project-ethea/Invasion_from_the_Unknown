@@ -14,6 +14,9 @@ Version 1.12.1+svn:
 - Language and i18n:
     - Applied SouthernOracle's revisions of scenarios 1-8 and both episodes'
       story text.
+
+- Terrains:
+    - Fixed more transition issues with gates and walls of any kind.
 ________________________________________________________________________________
 
 Version 1.12.1:
