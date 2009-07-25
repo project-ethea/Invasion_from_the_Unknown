@@ -30,6 +30,9 @@ Version 2.0.0-svn:
         - Fixed a WML/Formula syntax problem that made an essential event not
           trigger until the end of the scenario.
           (http://www.wesnoth.org/forum/viewtopic.php?p=363314#p363314)
+
+- Terrains:
+    - Fixed more transition issues with gates and walls of any kind.
 ________________________________________________________________________________
 
 Version 1.12.0:
