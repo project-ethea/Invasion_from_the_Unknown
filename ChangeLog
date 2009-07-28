@@ -17,6 +17,10 @@ Version 1.12.1+svn:
 
 - Terrains:
     - Fixed more transition issues with gates and walls of any kind.
+
+- Units:
+    - Balancing:
+        - Reduced Sylvan Warden's melee attack strength from 6-5 to 6-3.
 ________________________________________________________________________________
 
 Version 1.12.1:
