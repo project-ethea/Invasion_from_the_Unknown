@@ -37,6 +37,8 @@ Version 2.0.0-svn:
 - Units:
     - Balancing:
         - Reduced Sylvan Warden's melee attack strength from 6-5 to 6-3.
+    - Removed units:
+        - Caravan
 ________________________________________________________________________________
 
 Version 1.12.0:
