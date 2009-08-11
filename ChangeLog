@@ -33,6 +33,7 @@ Version 2.0.0-svn:
 
 - Terrains:
     - Fixed more transition issues with gates and walls of any kind.
+    - Fixed base terrain issues with the campfire overlay.
 
 - Units:
     - Balancing:
