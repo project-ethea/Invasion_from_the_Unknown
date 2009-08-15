@@ -10,6 +10,11 @@ Version 1.14.0+svn:
 - Graphics:
     - New or updated unit graphics: Demon Grunt
 
+- Scenarios:
+    - 15 (Shadows of Time):
+        - Fix potential crashes/lock-ups during the initial dialogue
+	  with Wesnoth versions < 1.6.1.
+
 ________________________________________________________________________________
 
 Version 1.14.0:
