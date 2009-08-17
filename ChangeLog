@@ -15,6 +15,9 @@ Version 1.14.0+svn:
         - Fix potential crashes/lock-ups during the initial dialogue
           with Wesnoth versions < 1.6.1.
 
+- Units:
+    - Fix animation filter issues with Chaos Longbowmen.
+
 ________________________________________________________________________________
 
 Version 1.14.0:
