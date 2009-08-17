@@ -43,6 +43,7 @@ Version 2.0.0-svn:
         - Reduced Lady of Light/Sylvan Warden's movement points from 7 to 6.
         - Reduced Lady of Light/Sylvan Warden's movement cost over deep water
           from 5 to 4.
+    - Fix animation filter issues with Chaos Longbowmen.
     - Removed units:
         - Caravan
 ________________________________________________________________________________
