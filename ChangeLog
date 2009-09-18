@@ -6,12 +6,14 @@ ________________________________________________________________________________
      [D]: definitive | [P]: placeholder | [T]: testing | [U]: unstable
 ________________________________________________________________________________
 
-Version 1.14.0+svn:
+Version 1.14.1:
 - Graphics:
     - New or updated unit graphics: Demon, Demon Grunt, Demon Zephyr, Demon
       Warrior, Skeleton Rider
 
 - Scenarios:
+    - 9 (The Library):
+        - New backstoriffic information.
     - 15 (Shadows of Time):
         - Fix potential crashes/lock-ups during the initial dialogue
           with Wesnoth versions < 1.6.1.
