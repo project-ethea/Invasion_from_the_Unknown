@@ -26,6 +26,7 @@ Version 2.0.0-svn:
 - Scenarios:
     - 4 (Over the Sands):
         - Apply dehydration/hydration over the human player's units only.
+        - Completely rewrote this scenario.
     - 12 (The Escape):
         - Fixed objectives reset code not being executed again after the first
           enemy leader is defeated.
