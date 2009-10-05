@@ -27,6 +27,10 @@ Version 2.0.0-svn:
     - 4 (Over the Sands):
         - Apply dehydration/hydration over the human player's units only.
         - Completely rewrote this scenario.
+    - 6 (The Moon Valley):
+        - Made some changes in the scenario design for balancing
+        - Fix long delay when loading saved games of a different scenario or
+          start menu when music is enabled.
     - 12 (The Escape):
         - Fixed objectives reset code not being executed again after the first
           enemy leader is defeated.
