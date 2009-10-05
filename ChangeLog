@@ -9,6 +9,7 @@ ________________________________________________________________________________
 Version 1.14.1+svn:
 - Graphics:
     - New or updated unit graphics: Skeleton Rider
+    - New portrait: Shadow Master [D]
 
 - Scenarios:
     - Fix infinite loop/crash with Wesnoth 1.6.x on the episode II prelude
