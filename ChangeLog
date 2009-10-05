@@ -3,9 +3,6 @@ ________________________________________________________________________________
                     INVASION FROM THE UNKNOWN - CHANGELOG
 ________________________________________________________________________________
 
-     [D]: definitive | [P]: placeholder | [T]: testing | [U]: unstable
-________________________________________________________________________________
-
 Version 1.70.0-svn:
 - Administration and maintenance:
     - Minimum Wesnoth version requirement is 1.7.6
@@ -15,6 +12,7 @@ Version 1.70.0-svn:
       Mystic, Shaxthal Sentry Drone, Shaxthal Warlord, Shaxthal Protector Drone,
       Shaxthal Runner Drone, Shaxthal Master Drone, Elvish Avatar, Demon
       Grunt, Demon Warrior, Skeleton Rider
+    - New portraits: Shadow Master
 
 - Language and i18n:
     - Applied SouthernOracle's revisions of all scenarios and both episodes'
