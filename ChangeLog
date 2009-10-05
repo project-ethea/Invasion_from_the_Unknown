@@ -11,6 +11,9 @@ Version 1.14.1+svn:
     - New or updated unit graphics: Skeleton Rider
 
 - Scenarios:
+    - 6 (The Moon Valley):
+        - Fix long delay when loading saved games of a different scenario or
+          start menu when music is enabled.
     - 18 (Voices of the Armageddon):
         - Fix typo.
 ________________________________________________________________________________
