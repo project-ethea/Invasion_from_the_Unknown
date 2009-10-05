@@ -11,6 +11,8 @@ Version 1.14.1+svn:
     - New or updated unit graphics: Skeleton Rider
 
 - Scenarios:
+    - Fix infinite loop/crash with Wesnoth 1.6.x on the episode II prelude
+      scenario.
     - 6 (The Moon Valley):
         - Fix long delay when loading saved games of a different scenario or
           start menu when music is enabled.
