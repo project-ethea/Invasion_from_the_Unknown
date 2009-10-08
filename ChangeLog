@@ -9,6 +9,7 @@ Version 1.70.0+svn:
         - Fix extremely coward boss AI.
     - 8 (Errand of Hope):
         - Got rid of the nagas.
+        - Made several changes in the initial dialog sequence.
 
 - Units:
     - Removed units: Sand Troll line
