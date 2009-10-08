@@ -7,6 +7,8 @@ Version 1.70.0+svn:
 - Scenarios:
     - 7 (The Elf and Goliath):
         - Fix extremely coward boss AI.
+    - 8 (Errand of Hope):
+        - Got rid of the nagas.
 
 - Units:
     - Removed units: Sand Troll line
