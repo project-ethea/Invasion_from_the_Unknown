@@ -7,6 +7,9 @@ Version 1.70.0+svn:
 - Scenarios:
     - 7 (The Elf and Goliath):
         - Fix extremely coward boss AI.
+
+- Units:
+    - Removed units: Sand Troll line
 ________________________________________________________________________________
 
 Version 1.70.0:
