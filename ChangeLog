@@ -12,7 +12,9 @@ Version 1.14.2+svn:
         - Made several changes in the initial dialog sequence.
 
 - Units:
-    - Eyestalk are no longer affected by plague.
+    - The following units are no longer affected by plague: Fungoid, Giant Ant,
+      Lesser Giant Spider, Leech, Giant Leech, Brain Drainer Leech, Crow,
+      Falcon, Rabbit, Eyestalk.
 ________________________________________________________________________________
 
 Version 1.14.2:
