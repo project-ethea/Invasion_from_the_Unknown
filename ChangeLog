@@ -13,7 +13,9 @@ Version 1.70.0+svn:
 
 - Units:
     - Removed units: Sand Troll line
-    - Eyestalk are no longer affected by plague.
+    - The following units are no longer affected by plague: Fungoid, Giant Ant,
+      Lesser Giant Spider, Leech, Giant Leech, Brain Drainer Leech, Crow,
+      Falcon, Rabbit, Eyestalk.
 ________________________________________________________________________________
 
 Version 1.70.0:
