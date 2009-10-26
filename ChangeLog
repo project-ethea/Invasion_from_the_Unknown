@@ -10,6 +10,10 @@ Version 1.14.2+svn:
 - Scenarios:
     - 8 (Errand of Hope):
         - Made several changes in the initial dialog sequence.
+    - 10 (Source of Light):
+        - Set a sensible minimum amount of gold for the player.
+    - 11 (Strike on New Knalga):
+        - Set a sensible minimum amount of gold for the player.
 
 - Units:
     - The following units are no longer affected by plague: Fungoid, Giant Ant,
