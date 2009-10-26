@@ -10,6 +10,10 @@ Version 1.70.0+svn:
     - 8 (Errand of Hope):
         - Got rid of the nagas.
         - Made several changes in the initial dialog sequence.
+    - 10 (Source of Light):
+        - Set a sensible minimum amount of gold for the player.
+    - 11 (Strike on New Knalga):
+        - Set a sensible minimum amount of gold for the player.
 
 - Units:
     - Removed units: Sand Troll line
