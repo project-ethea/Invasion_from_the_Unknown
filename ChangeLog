@@ -16,6 +16,45 @@ Version 1.70.1:
         - Set a sensible minimum amount of gold for the player.
 
 - Units:
+    - Balancing:
+        - Increased imps' resistances to arcane damage from -50% to -10%
+        - Increased Armageddon Imp's resistance to impact damage from 10% to 20%
+        - Increased Minor Imp's resistance to impact damage from -50% to -20%
+        - Reset Regular Imp's resistances to the base values for the impfoot
+          movetype
+        - Changed Demon Zephyr's resistances as follows:
+            - Blade: 20% -> 0%
+            - Impact: 10% -> 0%
+            - Arcane: -50% -> -10%
+            - Cold: -10% -> 0%
+        - Changed Demon unit tree resistances as follows:
+            - Blade:
+                - Base: 20% -> 0%
+                - Grunt: 40% -> 20%
+                - Warrior: 50% -> 20%
+            - Pierce:
+                - Grunt: 20% -> base
+                - Warrior: 40% -> 10%
+            - Impact:
+                - Base: 10% -> 0%
+                - Grunt: 20% -> 10%
+                - Warrior: 30% -> 20%
+            - Arcane: -50% -> -10%
+            - Cold:
+                - Base: -10% -> 0%
+                - Grunt, Warrior: base -> 10%
+        - Changed Shaxthal Warlord's resistances as follows:
+            - Blade: 30% -> 20%
+            - Fire: base -> 30%
+            - Arcane: -50% -> -10%
+        - Increased Shaxthal Warlord's hitpoints from 190 to 196
+        - Changed Master of Darkness' resistances as follows:
+            - Impact: 20% -> 30%
+            - Pierce: 40% -> 30%
+            - Arcane: 20% -> -10%
+        - Increased Mechanical Goliath's base hitpoints from 58 to 61
+        - Increased Automaton's hitpoints from 36 to 38
+        - Increased Worker Droid's hitpoints from 17 to 20
     - Removed units: Sand Troll line
     - The following units are no longer affected by plague: Fungoid, Giant Ant,
       Lesser Giant Spider, Leech, Giant Leech, Brain Drainer Leech, Crow,
