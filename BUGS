@@ -1,37 +1,11 @@
-Release-critical bugs (1.11.0+svn):
------------------------------------
-
-* An automated tool for bringing back translations for releases should be
-  written [critical].
-
-* Anlindë's unit line is missing all animations [high]
-
-* Text revisions required [high]
-
-* Most trivial macros, including the {MSG_*} family, should be expanded into
-  valid WML for wmlxgettext. [low]
-
-* Apply solsword's patch. All scenarios edited by ESR are pending. Scenario
-  10 is pending too.
-
 Known non-bugs:
 ---------------
 
-* Secret scenario warp at the end of "The Elf versus Goliath" is disabled as the secret scenario
-  WML and map are still absent.
-
-* Some scenarios, specially of the last part, contain enemies that may respawn indefinitely if you
+* Some scenarios, specially the last handful, contain enemies that may respawn indefinitely if you
   try (mistakenly) to defeat them. Please, bear in mind that as a general rule for this campaign,
   you are not supposed to defeat all enemies unless the objectives summary clearly states so.
   Attempting to do so may get you stuck in some scenarios. Id est, this is *not* a bug.
 
-Known engine bugs:
-------------------
-
-* Location-mapped sound sources in scenarios "Arrival..." and "Under the Sands" (amongst other
-  possible cases) are discarded after loading from a saved game that is not the scenario stub.
-  This is possibly because the sound source mappings are declared within prestart WML events,
-  which are by design discarded in saved games.
 
 Known bugs:
 -----------
@@ -80,32 +54,33 @@ for checking it first, before posting in the Technical Support forum.
 
 Reporting new bugs on SVN non-release revisions:
 ------------------------------------------------
-*** skip this section if you have no idea what SVN means and/or what it has to do in this
-    context ***
 
-Aha, you spotted a bug in a svn revision of the campaign! Good boy/girl, you always walking on
-the bleeding edge. There are several specific cave-ats to this situation:
+*** SKIP THIS SECTION IF YOU HAVE NO IDEA WHAT SVN MEANS AND/OR WHAT IT HAS TO DO IN THIS
+*** CONTEXT
 
 * Those who develop this campaign actively should never commit broken stuff to svn in the first
   place, but if they inadvertely do, odds are that they'll shortly notice and commit a new
   fixed revision.
 
-* The delay could be of a few hours, or a couple of days at most. If you notice that the bug is
-  not fixed after that time, you should notify Shadow Master by one of the following media:
+* The delay could be of a few hours, or a week at most. If you notice that the bug is not fixed
+  after that time, you should notify the campaign maintainers using one of the following methods:
 
-  * By IRC: #wesnoth-umc-dev @ freenode.net
-  * Via forum personal-messaging: "Shadow Master" at www.wesnoth.org/forum/
+  * By IRC: #wesnoth-umc-dev on irc.freenode.net
+  * Via forum personal-messaging: "shadowmaster" at http://forums.wesnoth.org
 
 * You could also post it in the relevant forum thread; the only problem with doing so is that
-  you could confuse causal players by spewing svn technicisms in there. :-) So avoid posting
-  it in the forums for everyone's knowledge (and despair) if possible.
+  you could confuse causal players by spewing technicisms in there. :-) So avoid posting it in
+  the forums for everyone's knowledge (and confusion) if possible.
 
 
 Contacting the Author:
 ----------------------
 
-Please do not e-mail me for anything related to the campaign; I usually get my inbox filled with
-many messages (not including the daily 500+ spam messages I get too) and examining them one by one
-takes a good amount of time. Therefore, forum personal messaging is preferred.  
+I recommend you to use forum personal messaging as described above. You can also drop me an
+e-mail at shadowm@wesnoth.org, but make sure you put something meaningful in the subject
+line or it may get flagged as spam. I'd personally prefer if you prefix it with "[Wesnoth]".
+
+If you don't get a reply within a few days, try contacting me on IRC (#wesnoth-umc-dev at
+irc.freenode.net) or by forum PM instead.
 
 -- Ignacio R. Morelle
