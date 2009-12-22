@@ -4,6 +4,9 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 Version 1.70.1+svn:
+- i18n and l10n:
+    - Updated translations from WesCamp-i18n: es, fr, hu, it, nl, ru, tr
+
 - Units:
     - Balancing:
         - Decreased Shaxthal Razordbird's HP from 32 to 26
