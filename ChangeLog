@@ -3,7 +3,7 @@ ________________________________________________________________________________
                     INVASION FROM THE UNKNOWN - CHANGELOG
 ________________________________________________________________________________
 
-Version 1.70.2+svn:
+Version 1.80.0:
 - General:
     - Expanded all instances of the WML macros ALLOW_UNDO, DELAY, REDRAW,
       MSG_NARRATOR, MSG_UNIT, MSG_SUF and MSG_SPEAKER for code readibility
