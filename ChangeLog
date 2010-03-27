@@ -3,6 +3,12 @@ ________________________________________________________________________________
                     INVASION FROM THE UNKNOWN - CHANGELOG
 ________________________________________________________________________________
 
+Version 1.80.0.1:
+
+(Absolutely nothing note-worthy, move on.)
+
+________________________________________________________________________________
+
 Version 1.80.0:
 - General:
     - Expanded all instances of the WML macros ALLOW_UNDO, DELAY, REDRAW,
