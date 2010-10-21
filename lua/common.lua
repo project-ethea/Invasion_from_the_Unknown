@@ -1,5 +1,13 @@
 local helper = wesnoth.require "lua/helper.lua"
 
+---
+-- Installs mechanical "Door" units on *^Z\ and *^Z/ hexes
+-- using the given owner side.
+--
+-- [setup_doors]
+--     side=3
+-- [/setup_doors]
+---
 function wesnoth.wml_actions.setup_doors(cfg)
 	local locs = wesnoth.get_locations {
 		terrain = "*^Z\\",
@@ -15,6 +23,14 @@ function wesnoth.wml_actions.setup_doors(cfg)
 	end
 end
 
+---
+-- Sets up the standard recruits' costs across IftU scenarios. This
+-- is really a campaign-specific function (might be reusable in UtBS).
+--
+-- [setup_recruitment_cost]
+--     scenario_number=123
+-- [/setup_recruitment_cost]
+---
 function wesnoth.wml_actions.setup_recruitment_cost(cfg)
 	local sid = cfg.scenario_number
 
