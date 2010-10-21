@@ -50,3 +50,29 @@ function wesnoth.wml_actions.setup_recruitment_cost(cfg)
 	end
 end
 
+---
+-- Stores a list of unit ids matching a certain filter.
+--
+-- [store_unit_ids]
+--     [filter]
+--         ...
+--     [/filter]
+--     variable=ids_store
+-- [/store_unit_ids]
+---
+function wesnoth.wml_actions.store_unit_ids(cfg)
+	local filter = helper.get_child(cfg, "filter") or
+		helper.wml_error "[store_unit_ids] missing required [filter] tag"
+	local varid = cfg.variable or "units"
+	local idx = 0
+	if cfg.mode == "append" then
+		idx = wesnoth.get_variable(var .. ".length")
+	else
+		wesnoth.set_variable(var)
+	end
+
+	for i, u in ipairs(wesnoth.get_units(filter)) do
+		wesnoth.set_variable(string.format("%s[%d].id", varid, idx), u.id)
+		idx = idx + 1
+	end
+end
