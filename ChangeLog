@@ -3,10 +3,13 @@ ________________________________________________________________________________
                     INVASION FROM THE UNKNOWN - CHANGELOG
 ________________________________________________________________________________
 
-Version 1.80.1:
+Version 1.80.2:
 - Graphics:
     - New or updated unit animations: Death Baron
     - New unit portraits: L1 Demon (male), L1 Demon (female).
+
+- i18n and l10n:
+    - Updated translations from WesCamp-i18n: es, fr, hu, it, ja, nl, ru, tr
 
 ________________________________________________________________________________
 
