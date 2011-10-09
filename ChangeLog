@@ -12,6 +12,7 @@ Version 2.0.0-svn:
 - Units:
     - Balancing:
         - Removed Skirmisher ability from Elynia.
+    - New NPC bird behavior code.
 ________________________________________________________________________________
 
 Version 1.70.2:
