@@ -6,12 +6,16 @@ ________________________________________________________________________________
 Version 1.90.0-svn:
 - Ported to Wesnoth 1.9.2+.
 
+- i18n and l10n:
+    - New translations from WesCamp-i18n: ja
+
 - Graphics:
     - New unit portraits: L1 Demon (male), L1 Demon (female).
 
 - Units:
     - Balancing:
-        - Removed Skirmisher ability from Elynia.
+        - Removed Skirmisher from Elynia.
+        - Removed Glamour
     - New NPC bird behavior code.
 ________________________________________________________________________________
 
