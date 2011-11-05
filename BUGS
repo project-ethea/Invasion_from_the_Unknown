@@ -13,7 +13,7 @@ Known bugs:
 * Some units may not display properly if haloes are disabled in the game preferences;
   this is due to the way they are extended over more space than it could fit one hex,
   as a workaround to an engine limitation. I hope we can work it out in Wesnoth 1.5.x.
-  Affected units include: Faerie Spirit, Verlissh Matrix Core, Verlissh Matrix Flowsystem.
+  Affected units include: Faerie Spirit.
 
 * Some Chaos faction units seem to "pop out" during fight; this is caused by a mixture of
   both deprecated animation frames and a modern standing frame. Id est, those deprecated
