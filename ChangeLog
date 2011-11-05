@@ -4,6 +4,18 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 Version 1.90.1+svn:
+- Graphics:
+    - New or updated unit graphics: Shaxthal Drone, Shaxthal Runner Drone,
+      Shaxthal Sentry Drone.
+    - Removed the old Elvish Fighter and female Elvish Archer portraits;
+      wired the new ones into the Elvish Civilian.
+
+- Scenarios:
+    - Added bonus/gold carryover notes
+
+- Terrains:
+    - Improved wasteland-water transitions
+
 - User interface:
     - Fixed glitches at the start of scenario 14, Bye and Behold, when starting
       Episode II from the campaigns menu.
