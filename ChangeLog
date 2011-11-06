@@ -12,6 +12,9 @@ Version 1.90.1+svn:
 
 - Scenarios:
     - Added bonus/gold carryover notes
+    - 8
+        - Anlindë and Mal Keshar are properly recalled at the start of the
+          scenario
 
 - Terrains:
     - Improved wasteland-water transitions
