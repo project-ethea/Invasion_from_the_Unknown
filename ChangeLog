@@ -20,6 +20,10 @@ Version 1.90.1+svn:
     - Fixed glitches at the start of scenario 14, Bye and Behold, when starting
       Episode II from the campaigns menu.
     - Removed map borders overlay from fullscreen cutscene UI.
+
+- Units:
+    - The following units are no longer affected by plague: Spearbearer,
+      Light Assault Tropper, Heavy Assault Trooper.
 ________________________________________________________________________________
 
 Version 1.90.1:
