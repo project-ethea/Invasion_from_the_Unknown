@@ -3,7 +3,7 @@ ________________________________________________________________________________
                     INVASION FROM THE UNKNOWN - CHANGELOG
 ________________________________________________________________________________
 
-Version 1.90.1+svn:
+Version 1.90.2:
 - Graphics:
     - New or updated unit graphics: Shaxthal Drone, Shaxthal Runner Drone,
       Shaxthal Sentry Drone.
@@ -13,7 +13,7 @@ Version 1.90.1+svn:
 - Scenarios:
     - Added bonus/gold carryover notes
     - 8
-        - Anlindë and Mal Keshar are properly recalled at the start of the
+        - Anlindë and Mal Keshar are now properly recalled at the start of the
           scenario
 
 - Terrains:
