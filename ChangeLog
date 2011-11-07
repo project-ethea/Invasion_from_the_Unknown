@@ -15,7 +15,7 @@ Version 1.90.2+svn:
     - Brought back the old Falcon unit since it will no longer be in mainline
       starting with 1.9.10.
     - Made use of image_icon= in the Verlissh Matrix Core and the Verlissh
-      Matrix Flow System to enhance experience in 1.9.10 and beyond.
+      Matrix Flow System units to enhance experience in 1.9.10 and beyond.
 
 Version 1.90.2:
 - Graphics:
