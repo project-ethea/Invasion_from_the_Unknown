@@ -5,6 +5,15 @@ ________________________________________________________________________________
 
 Version 1.90.2+svn:
 
+- Graphics:
+    - Introduced Elynia's sprite from After the Storm.
+
+- Scenarios:
+    - Recall Rurhló and Garg in non-cutscene scenarios after Innuendo.
+
+- Units
+    - Brought back the old Falcon unit since it will no longer be in mainline
+      starting with 1.9.10.
 
 Version 1.90.2:
 - Graphics:
