@@ -15,6 +15,12 @@ Known bugs:
   as a workaround to an engine limitation. I hope we can work it out in Wesnoth 1.5.x.
   Affected units include: Faerie Spirit.
 
+* Some units may not display properly if standing animations are disabled in the game
+  preferences; this is due to a workaround that prevents these units' images from being
+  distorted in various places. This problem is nonexistent on 1.9.10, but note that when these
+  units are sometimes idle, they may get horizontally flipped after fighting.
+  Affected units include: Matrix Core, Matrix Flow System.
+
 * Some Chaos faction units seem to "pop out" during fight; this is caused by a mixture of
   both deprecated animation frames and a modern standing frame. Id est, those deprecated
   animation frames must be updated.
