@@ -4,16 +4,17 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 Version 1.90.4+svn:
-
+- Units:
+    - Updated AMLA XP requirements to match mainline on 1.9.10 and later.
+________________________________________________________________________________
 
 Version 1.90.4:
-
 - Scenarios
     - 23C
          - Made it so that Rurhló and Garg aren't recalled.
+________________________________________________________________________________
 
 Version 1.90.3:
-
 - Graphics:
     - Introduced Elynia's sprite from After the Storm.
 
@@ -25,6 +26,7 @@ Version 1.90.3:
       starting with 1.9.10.
     - Made use of image_icon= in the Verlissh Matrix Core and the Verlissh
       Matrix Flow System units to enhance experience in 1.9.10 and beyond.
+________________________________________________________________________________
 
 Version 1.90.2:
 - Graphics:
