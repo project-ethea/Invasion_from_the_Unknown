@@ -5,6 +5,20 @@ ________________________________________________________________________________
 
 Version 1.90.5+svn:
 
+- Scenarios
+    - Various language fixes.
+    - 23B
+         - Worked around an engine bug to ensure that the Shadow Master
+           appearance event and the aggressive shaxthal respawn event trigger.
+    - 23Cx
+         - Fixed syntax errors in a [color_adjust] block.
+    - 24
+         - Fixed syntax errors in a [color_adjust] block.
+
+- Units
+    - Sprite tree: made it so that the ring haloes do not get vertically flipped
+      when attacking in the southern directions.
+
 ________________________________________________________________________________
 
 Version 1.90.5:
