@@ -16,7 +16,8 @@ Version 1.90.5+svn:
          - Fixed syntax errors in a [color_adjust] block.
 
 - Units
-    - Sprite tree: made it so that the ring haloes do not get vertically flipped
+    - Sprite tree, Lady of Light, and Sylvan Warden: made it so that the ring
+      haloes in the mystic fire animation do not get vertically flipped
       when attacking in the southern directions.
 
 ________________________________________________________________________________
