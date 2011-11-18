@@ -5,8 +5,10 @@ ________________________________________________________________________________
 
 Version 1.90.5+svn:
 
+- Language and i18n
+    - Various fixes
+
 - Scenarios
-    - Various language fixes.
     - 23B
          - Worked around an engine bug to ensure that the Shadow Master
            appearance event and the aggressive shaxthal respawn event trigger.
