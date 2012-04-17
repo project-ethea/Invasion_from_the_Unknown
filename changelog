@@ -10,19 +10,21 @@ Version 1.90.6+svn:
 
 - Scenarios
     - 5A
-        - More terain variety 
+        - More terrain variety 
     - 10
         - Removed deprecated Ggf terrain (changed to Gg^Efm)
     - 14
         - Made is so that when Galas gets the dwarven chainmail armor, he also
           gets a special trait to remind the player of the resistance bonuses
           the armor gives.
+    -15
+        - More terrain variety
     - 16
-        - More terain variety
+        - More terrain variety
     - 18
-        - More terain variety
+        - More terrain variety
     - 19
-        - More terain variety
+        - More terrain variety
 
 - Units
     - Made it so that the Aragwaithi Captain line's protection ability doesn't
