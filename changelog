@@ -32,6 +32,8 @@ Version 1.90.6+svn:
 - Units
     - Made it so that the Aragwaithi Captain line's protection ability doesn't
       interfere with resistances higher than 50%.
+    - Removed references to non-existent images in the Elvish Ascetic's defense
+      animation
 
 ________________________________________________________________________________
 Version 1.90.6:
