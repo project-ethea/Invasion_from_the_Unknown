@@ -1,9 +1,9 @@
-________________________________________________________________________________
-
-                    INVASION FROM THE UNKNOWN - CHANGELOG
-________________________________________________________________________________
+=====================================
+INVASION FROM THE UNKNOWN - CHANGELOG
+=====================================
 
 Version 1.90.6+svn:
+-------------------
 
 - Language and i18n
     - Various fixes
@@ -35,8 +35,9 @@ Version 1.90.6+svn:
     - Removed references to non-existent images in the Elvish Ascetic's defense
       animation
 
-________________________________________________________________________________
+
 Version 1.90.6:
+---------------
 
 - Language and i18n
     - Various fixes
@@ -55,20 +56,25 @@ Version 1.90.6:
       haloes in the mystic fire animation do not get vertically flipped
       when attacking in the southern directions.
 
-________________________________________________________________________________
 
 Version 1.90.5:
+---------------
+
 - Units:
     - Updated AMLA XP requirements to match mainline on 1.9.10 and later.
-________________________________________________________________________________
+
 
 Version 1.90.4:
+---------------
+
 - Scenarios
     - 23C
          - Made it so that Rurhló and Garg aren't recalled.
-________________________________________________________________________________
+
 
 Version 1.90.3:
+---------------
+
 - Graphics:
     - Introduced Elynia's sprite from After the Storm.
 
@@ -80,9 +86,11 @@ Version 1.90.3:
       starting with 1.9.10.
     - Made use of image_icon= in the Verlissh Matrix Core and the Verlissh
       Matrix Flow System units to enhance experience in 1.9.10 and beyond.
-________________________________________________________________________________
+
 
 Version 1.90.2:
+---------------
+
 - Graphics:
     - New or updated unit graphics: Shaxthal Drone, Shaxthal Runner Drone,
       Shaxthal Sentry Drone.
@@ -106,14 +114,18 @@ Version 1.90.2:
 - Units:
     - The following units are no longer affected by plague: Spearbearer,
       Light Assault Tropper, Heavy Assault Trooper.
-________________________________________________________________________________
+
 
 Version 1.90.1:
+---------------
+
 - User interface:
     - Improved custom themes for use in cutscenes, from AtS.
-________________________________________________________________________________
+
 
 Version 1.90.0:
+---------------
+
 - Ported to Wesnoth 1.9.2+.
 
 - i18n and l10n:
@@ -127,9 +139,11 @@ Version 1.90.0:
         - Removed Skirmisher from Elynia.
         - Removed Glamour
     - New NPC bird behavior code.
-________________________________________________________________________________
+
 
 Version 1.70.2:
+---------------
+
 - i18n and l10n:
     - Updated translations from WesCamp-i18n: es, fr, hu, it, nl, ru, tr
 
@@ -137,9 +151,11 @@ Version 1.70.2:
     - Balancing:
         - Decreased Shaxthal Razordbird's HP from 32 to 26
         - Decreased Shaxthal Thunderbird's HP from 44 to 39
-________________________________________________________________________________
+
 
 Version 1.70.1:
+---------------
+
 - Scenarios:
     - 7 (The Elf and Goliath):
         - Fix extremely coward boss AI.
@@ -195,9 +211,11 @@ Version 1.70.1:
     - The following units are no longer affected by plague: Fungoid, Giant Ant,
       Lesser Giant Spider, Leech, Giant Leech, Brain Drainer Leech, Crow,
       Falcon, Rabbit, Eyestalk.
-________________________________________________________________________________
+
 
 Version 1.70.0:
+---------------
+
 - Administration and maintenance:
     - Minimum Wesnoth version requirement is 1.7.6
 
@@ -246,9 +264,11 @@ Version 1.70.0:
     - Fix animation filter issues with Chaos Longbowmen.
     - Removed units:
         - Caravan
-________________________________________________________________________________
+
 
 Version 1.12.0:
+---------------
+
 - Administration and maintenance:
     - Minimum Wesnoth version requirement is 1.5.14 (1.6 RC3).
 
@@ -267,18 +287,22 @@ Version 1.12.0:
     - Balancing:
         - The player cannot recruit Ghouls anymore - however, they are still
           available as an alternate advancement for Walking Corpses.
-________________________________________________________________________________
+
 
 Version 1.11.1.1:
+-----------------
+
 - Scenarios:
     - Applied some more text revisions from Solsword.
     - Revised some maps.
 
 - Terrains:
     - Fixed awkward lack of Dirt <-> Hive transitions.
-________________________________________________________________________________
+
 
 Version 1.11.1:
+---------------
+
 - Administration and maintenance:
     - Bumped minimum Wesnoth version requirement to 1.5.10, and dropped
       compatibility with IftU 1.10.3 and earlier, and Wesnoth 1.5.9 and earlier.
@@ -305,9 +329,11 @@ Version 1.11.1:
           strikes.
         - Reduced Elvish Prowler's HP from 62 to 54.
         - Replaced Elvish Trapper's skirmishing ability with ambush.
-________________________________________________________________________________
+
 
 Version 1.11.0:
+---------------
+
 - Graphics:
     - Updated baseframes: Shaxthal Rayblade, Shaxthal Master Drone (masked and
                           unmasked), Shaxthal Warlord (masked and unmasked),
@@ -335,9 +361,11 @@ Version 1.11.0:
         - Made the Water Serpent a level 2 unit. 'nuff said.
     - Merged Elynia's union attack animation into her unit.
     - Removed Elvish Horseman unit due to artwork requirements and balancing.
-________________________________________________________________________________
+
 
 Version 1.10.5:
+---------------
+
 - Administration and maintenance:
     - Began to use inline formulas in WML to decrease code complexity. This
       means that this campaign will not work properly in Wesnoth 1.5.6 or
@@ -382,9 +410,11 @@ Version 1.10.5:
         - Giant Boar
     - Renamed units:
         - Sylvan Faerie -> Sylvan Warden
-________________________________________________________________________________
+
 
 Version 1.10.4:
+---------------
+
 - Graphics:
     - Updated portraits: Igor [D], Galas [D], Mal Keshar [D], Anlindë [D],
                          Elynia [D], Lédinor [P], Mal Hekuba [P].
@@ -445,9 +475,11 @@ Version 1.10.4:
         - Reduced Steppe Savage's defense on reef terrain from 50% to 40%.
         - Reduced Elynia's defense on reef terrain from 50% to 40%.
     - Gave the Dwarvish Runesmith proper attack icons.
-________________________________________________________________________________
+
 
 Version 1.10.3:
+---------------
+
 - EXPERIMENTAL [U]:
     - Make Galas, Mal Keshar, Erathan Althurin and Igor use kitty's transparent
       portraits in 1.5.7.
@@ -505,9 +537,11 @@ Version 1.10.3:
     - Removed units: Captain, Commander, Dark General, Swordsman (mainline
                      override), Man at Arms, Champion, Crossbowman, High Guard,
                      Deathguard.
-________________________________________________________________________________
+
 
 Version 1.10.2:
+---------------
+
 - Maintenance toolchain:
     - Made build-external-archive.sh use uname instead of GNU distribution-
       specific environment variables. Also, fill the PUBLISH tag with a bit more
@@ -528,9 +562,11 @@ Version 1.10.2:
 
 - Units:
     - Fix a small mistake in Galas' character description text.
-________________________________________________________________________________
+
 
 Version 1.10.1a:
+----------------
+
 - Graphics:
     - New portraits: Althurin [D]
 
@@ -545,9 +581,11 @@ Version 1.10.1a:
     - Fixed all instances of UNREACHABLE with the macro of the same name.
     - Refactoring of Elynia's unit code.
     - Removed units: City Guard.
-________________________________________________________________________________
+
 
 Version 1.10.1:
+---------------
+
 - Graphics:
     - New portraits: Igor [D]
     - Updated unit graphics: Elynia, Elvish Mystic, Elvish Avatar, Blood Imp,
@@ -595,9 +633,11 @@ Version 1.10.1:
     - Fixed Elvish Avatar's ranged arcane attack animation.
     - Removed Elvish Protector for not fitting the quality requirement for this
       series.
-________________________________________________________________________________
+
 
 Version 1.10.0 (interim release):
+---------------------------------
+
 - Ported from 1.4 branch to trunk. Cycholka/Mist ran wmllint on it for
   making it compatible with Wesnoth 1.5.1 and later.
 - Prevented past-the-end WML array access using new macros,
@@ -770,7 +810,7 @@ Version 1.10.0 (interim release):
     - Removed units: Wose Shaman, Dread Bat [mainlined]
     - Simplified rules for vegetated terrain recognition on unit specials
     - Simplified Shaxthal's unit_type variation WML
-________________________________________________________________________________
+
 
 ; $Id$
 ; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;
