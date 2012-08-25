@@ -43,11 +43,11 @@ function wesnoth.wml_actions.character_descriptions_prompt(cfg)
 				grow_factor = 1,
 				T.column {
 					horizontal_alignment = "right",
-					border = "all",
-					border_size = 5,
 					T.grid {
 						T.row {
 							T.column {
+								border = "all",
+								border_size = 5,
 								horizontal_alignment = "right",
 								T.button {
 									id = "yes_button",
@@ -56,9 +56,8 @@ function wesnoth.wml_actions.character_descriptions_prompt(cfg)
 								}
 							},
 							T.column {
-								T.spacer { width = 10 }
-							},
-							T.column {
+								border = "all",
+								border_size = 5,
 								horizontal_alignment = "right",
 								T.button {
 									id = "no_button",
