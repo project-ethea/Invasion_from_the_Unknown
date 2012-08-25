@@ -31,4 +31,3 @@ function wesnoth.wml_actions.character_descriptions_prompt(cfg)
 
 	wesnoth.show_dialog(main_window, preshow, nil)				
 end
- 
