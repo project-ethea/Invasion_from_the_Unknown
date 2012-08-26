@@ -72,14 +72,8 @@ function wesnoth.wml_actions.character_descriptions_prompt(cfg)
 		}
 	}
 
-	local function set_var(var)
-		wesnoth.set_variable("character_1st_time_help", var)
-	end
+	-- 1 on Yes, -1 on [Enter], 2 on No, -2 on [Escape].
+	local result = math.abs(wesnoth.show_dialog(main_window))
 
-	local function preshow()
-		wesnoth.set_dialog_callback(function() set_var("true") end, "yes_button")
-		wesnoth.set_dialog_callback(function() set_var("false") end, "no_button")
-	end
-
-	wesnoth.show_dialog(main_window, preshow, nil)				
+	wesnoth.set_variable("character_1st_time_help", (result == 1))
 end
