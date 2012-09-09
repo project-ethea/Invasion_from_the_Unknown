@@ -33,6 +33,8 @@ Version 1.90.6+svn:
     - Balancing:
       - Farmland no longer applies for the effects of the Sylvan Spark and
         Sylvan Essence abilities.
+    - Fixed flickering during Elynia's ranged pierce attack animation caused by
+      references to removed images.
     - Made it so that the Aragwaithi Captain line's protection ability doesn't
       interfere with resistances higher than 50%.
     - Removed references to non-existent images in the Elvish Ascetic's defense
