@@ -30,6 +30,9 @@ Version 1.90.6+svn:
         - More terrain variety.
 
 - Units
+    - Balancing:
+      - Farmland no longer applies for the effects of the Sylvan Spark and
+        Sylvan Essence abilities.
     - Made it so that the Aragwaithi Captain line's protection ability doesn't
       interfere with resistances higher than 50%.
     - Removed references to non-existent images in the Elvish Ascetic's defense
