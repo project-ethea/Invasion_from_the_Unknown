@@ -1,5 +1,6 @@
 --#textdomain wesnoth-Invasion_from_the_Unknown
 _ = wesnoth.textdomain "wesnoth-Invasion_from_the_Unknown"
+wlib = wesnoth.textdomain "wesnoth-lib"
 
 helper = wesnoth.require "lua/helper.lua"
 T = helper.set_wml_tag_metatable {}
@@ -52,7 +53,7 @@ function wesnoth.wml_actions.character_descriptions_prompt(cfg)
 								T.button {
 									id = "yes_button",
 									return_value = 1,
-									label = _"Yes"
+									label = wlib "Yes"
 								}
 							},
 							T.column {
@@ -62,7 +63,7 @@ function wesnoth.wml_actions.character_descriptions_prompt(cfg)
 								T.button {
 									id = "no_button",
 									return_value = 2,
-									label = _"No"
+									label = wlib "No"
 								}
 							}
 						}
