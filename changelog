@@ -5,22 +5,39 @@ INVASION FROM THE UNKNOWN - CHANGELOG
 Version 1.90.6+svn:
 -------------------
 
-- Language and i18n
-    - Various fixes
+- Increased minimum Wesnoth version requirement from 1.9.6 to 1.9.10; dropped
+  support for 1.9.9 and earlier.
+
+- Various internal code improvements and clean-up.
+
+- Graphics:
+    - New or updated unit graphics: most Aragwaith units (wayfarer).
+
+- Language and i18n:
+    - Various fixes.
     - Updated translations from WesCamp-i18n: fr, it, ru
 
-- Scenarios
+- Scenarios:
+    - Minor cosmetic changes on various maps.
+    - Replaced character descriptions prompt on startup with a custom GUI2
+      dialog.
+    - Updated maps for compatibility with Wesnoth 1.11.x.
+    - Various grammar, style, and punctuation fixes or changes.
     - 4
         - Allowed units to be hydrated on water terrains with overlays.
     - 5A
         - More terrain variety.
     - 10
         - Removed deprecated Ggf terrain (changed to Gg^Efm).
+    - 13
+        - Minor dialog changes.
     - 14
-        - Made is so that when Galas gets the dwarven chainmail armor, he also
+        - Fixed the dwarven chainmail armor resistances so it has the advertised
+          effect.
+        - Made it so that when Galas gets the dwarven chainmail armor, he also
           gets a special trait to remind the player of the resistance bonuses
           the armor gives.
-    -15
+    - 15
         - More terrain variety.
     - 16
         - More terrain variety.
@@ -28,26 +45,105 @@ Version 1.90.6+svn:
         - More terrain variety.
     - 19
         - More terrain variety.
+    - 22B
+        - Minor dialog changes.
+    - 22C
+        - Minor dialog changes.
 
-- Units
+- Units:
     - Balancing:
       - Farmland no longer applies for the effects of the Sylvan Spark and
         Sylvan Essence abilities.
+    - Fixed AMLA XP requirement for the Psy Crawler and Shadow Courier unit
+      types.
     - Fixed flickering during Elynia's ranged pierce attack animation caused by
       references to removed images.
+    - Fixed flickering during Anlindë's defense animation caused by references
+      to non-existent images.
     - Made it so that the Aragwaithi Captain line's protection ability doesn't
       interfere with resistances higher than 50%.
-    - Removed references to non-existent images in the Elvish Ascetic's defense
-      animation
+    - Ported some animation code, description, and stat changes from AtS.
+    - Replaced Shaxthal Wyrm unit type with AtS' Shaxthal Worm.
+    - Several unit type descriptions rewritten.
+    - Updated Aragwaith units to match the faction from bumbadadabum's
+      "The Aragwaithi" add-on. This has resulted in the following changes:
+      - Protection only affects allied L1 and L0 units instead of any allied
+        lower level unit
+      - Ancient Banner abilities: +leadership, -protection, -steadfast
+      - Ancient banner resistances: impact 10% -> 20%
+      - Ancient banner stats: HP 55 -> 58, MP 4 -> 5
+      - Ancient banner attacks: sword renamed to scythe
+      - Archer attacks: melee 6-3 -> 4-3
+      - Captain abilities: +leadership, -protection, -steadfast
+      - Captain resistances: blade 20% -> 10%, fire 10% -> 0%, cold 10% -> 0%,
+        pierce 20% -> 10%
+      - Captain stats: HP 43 -> 55, MP 4 -> 5
+      - Captain attacks: spear renamed to glaive, 17-2 -> 18-2; sword renamed to
+        glaive, 9-4 -> 10-4
+      - Eagle Master stats: HP 48 -> 45, MP 7 -> 9
+      - Eagle Master attacks: blade 9-3 -> 10-3, impact 15-2 -> 16-2
+      - Eagle Rider defense: mountain 60% -> 50%
+      - Eagle Rider stats: HP 36 -> 34, MP 7 -> 9, cost 21 -> 23
+      - Eagle Rider attacks: impact 10-2 -> 12-2
+      - Flagbearer abilities: +leadership, -protection, -steadfast
+      - Flagbearer resistances: blade 20% -> 10%, fire 10% -> 0%, cold 10% ->
+        0%, pierce 20% -> 0%, impact 10% -> 0%
+      - Flagbearer stats: HP 34 -> 45, MP 4 -> 5
+      - Flagbearer attacks: spear renamed to glaive, sword renamed to glaive
+      - Greatbow stats: HP 43 -> 46, MP 5 -> 6
+      - Greatbow attacks: melee 13-3 -> 10-3
+      - Guard abilities: +steadfast
+      - Guard resistances: pierce 20% -> 10%, impact 20% -> 10%, blade 30% ->
+        10%
+      - Guard stats: HP 40 -> 54, XP 78 -> 64, cost 27 -> 28
+      - Guard attacks: melee 12-3 -> 11-3
+      - Guardian resistances: fire 10% -> 0%, cold 10% -> 0%
+      - Guardian stats: HP 51 -> 62
+      - Lancer now has a female variation
+      - Lancer stats: HP 40 -> 48, cost 38 -> 34
+      - Longswordsman stats: HP 38 -> 46, MP 5 -> 6, XP 78 -> 88, cost 24 -> 27
+      - Pikeman resistances: blade 20% -> 10%, impact 10% -> 0%, fire 10% -> 0%,
+        cold 10% -> 0%
+      - Pikeman stats: HP 44 -> 50, XP 94 -> 70
+      - Pikeman attacks: melee 17-2 -> 16-2
+      - Scout now has a female variation
+      - Scout stats: HP 31 -> 36, XP 36 -> 40
+      - Scout attacks: melee 10-2 -> 11-2
+      - Shield Guard abilities: +protection, +steadfast
+      - Shield Guard resistances: pierce 30% -> 10%, impact 30% -> 10%, blade
+        40% -> 10%
+      - Shield Guard stats: HP 54 -> 66
+      - Shield Guard attacks: melee 16-3 -> 15-3
+      - Silver Shield now has a female variation
+      - Silver Shield stats: HP 54 -> 62, MP 8 -> 9, cost 38 -> 48
+      - Silver Shield attacks: melee 13-4 -> 12-4
+      - Slayer stats: HP 45 -> 53, MP 5 -> 6, cost 46 -> 62
+      - Slayer attacks: melee 12-4 -> 11-4
+      - Sorcerer renamed to Sorceress, no longer has a male variation
+      - Spearman resistances: blade 20% -> 0%, pierce 20% -> 10%, impact 10% ->
+        0%, fire 10% -> 0%, cold 10% -> 0%
+      - Spearman stats: HP 30 -> 34, XP 38 -> 43
+      - Spearman attacks: 11-2 -> 12-2
+      - Strongbow stats: HP 35 -> 38, MP 5 -> 6, XP 80 -> 85, cost 31 -> 38
+      - Strongbow attacks: melee 9-3 -> 7-3, ranged 8-4 -> 9-4
+      - Swordsmaster id changed, breaking old saved games with the unit
+      - Swordsmaster stats: MP 5 -> 6
+      - Swordsman resistances: blade 10% -> 0%
+      - Swordsman stats: HP 28 -> 32, XP 32 -> 39, cost 13 -> 14
+      - Warlock renamed to Witch, no longer has a male variation
+      - Witch stats: XP 44 -> 54, cost 18 -> 22
+      - Witch attacks: staff renamed to kick, 6-2 -> 7-1
+      - Wizard no longer has a male variation
+      - Wizard attacks: melee 10-2 -> 7-2, ranged 11-3 -> 10-3
 
 
 Version 1.90.6:
 ---------------
 
-- Language and i18n
-    - Various fixes
+- Language and i18n:
+    - Various fixes.
 
-- Scenarios
+- Scenarios:
     - 23B
          - Worked around an engine bug to ensure that the Shadow Master
            appearance event and the aggressive shaxthal respawn event trigger.
@@ -56,7 +152,7 @@ Version 1.90.6:
     - 24
          - Fixed syntax errors in a [color_adjust] block.
 
-- Units
+- Units:
     - Sprite tree, Lady of Light, and Sylvan Warden: made it so that the ring
       haloes in the mystic fire animation do not get vertically flipped
       when attacking in the southern directions.
