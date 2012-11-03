@@ -54,6 +54,9 @@ Version 1.90.6+svn:
     - Balancing:
       - Farmland no longer applies for the effects of the Sylvan Spark and
         Sylvan Essence abilities.
+      - Increased Sprite's impact resistance from -20% to 0%.
+      - Increased Fire Faerie's impact resistance from -20% to 0%.
+      - Increased Dryad's impact resistance from -10% to 0%.
     - Fixed AMLA XP requirement for the Psy Crawler and Shadow Courier unit
       types.
     - Fixed flickering during Elynia's ranged pierce attack animation caused by
