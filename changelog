@@ -70,8 +70,10 @@ Version 1.90.6+svn:
     - Made it so that the Aragwaithi Captain line's protection ability doesn't
       interfere with resistances higher than 50%.
     - Ported some animation code, description, and stat changes from AtS.
-    - Replaced Shaxthal Wyrm unit type with AtS' Shaxthal Worm.
-    - Several unit type descriptions rewritten.
+    - Replaced Shaxthal Wyrm unit type with AtS's Shaxthal Worm.
+    - Made it so that the Runner Drone can advance to the Rayblade instead of
+      the Assault Drone.
+    - Rewrote several unit descriptions.
     - Updated Aragwaith units to match the faction from bumbadadabum's
       "The Aragwaithi" add-on. This has resulted in the following changes:
       - Protection only affects allied L1 and L0 units instead of any allied
