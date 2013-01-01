@@ -47,6 +47,9 @@ Version 1.90.6+svn:
         - More terrain variety.
     - 19
         - More terrain variety.
+    - 22A
+        - The Amulet of the Arcane Flows should now actually boost its owner's
+          arcane resistance.
     - 22B
         - Minor dialog changes.
     - 22C
