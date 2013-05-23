@@ -7,6 +7,7 @@
 *.log
 *.pbl
 *.ign
+*.pot
 *.tmp
 *~
 *-bak
@@ -26,11 +27,6 @@
 *.js
 *.a
 music.raw
-bin/
-sbin/
-etc/
-HISTORY
-CHARACTERS
 #*#
 *.swp
 _info.cfg
@@ -40,3 +36,7 @@ _info.cfg
 *.wesnoth
 Thumbs.db
 __MACOSX/
+Makefile
+*.kate-swp
+*.orig
+*.rej
