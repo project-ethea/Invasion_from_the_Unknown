@@ -5,6 +5,11 @@ INVASION FROM THE UNKNOWN - CHANGELOG
 Version 1.90.7+svn:
 -------------------
 
+
+
+Version 1.90.7:
+---------------
+
 - Increased minimum Wesnoth version requirement from 1.9.6 to 1.9.10; dropped
   support for 1.9.9 and earlier.
 
