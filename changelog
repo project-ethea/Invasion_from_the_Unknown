@@ -4,6 +4,8 @@ INVASION FROM THE UNKNOWN - CHANGELOG
 
 Version 1.90.7+svn:
 -------------------
+* General:
+  * Removed remaining code implementing/referencing the glamour ability.
 
 
 
