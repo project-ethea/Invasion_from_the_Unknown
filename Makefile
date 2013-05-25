@@ -26,6 +26,8 @@ packs := \
 	CAMPAIGN_INVASION_FROM_THE_UNKNOWN_EPISODE_I \
 	CAMPAIGN_INVASION_FROM_THE_UNKNOWN_EPISODE_II
 
+extrasyms := __TEST_SUITE__
+
 textdomain = wesnoth-Invasion_from_the_Unknown
 
 all: defscope lint
@@ -47,7 +49,7 @@ test:
 
 	@for p in $(packs); do for d in $(difficulties); do \
 		echo "    TEST    $$p -> $$d"; \
-		$(WML_PREPROCESS) $(targetdir) .preprocessor.out --preprocess-defines __TEST_SUITE__,$(campaignsym),$$d,$$p 2>&1 | tail -n +5 ; \
+		$(WML_PREPROCESS) $(targetdir) .preprocessor.out --preprocess-defines $(extrasyms),$(campaignsym),$$d,$$p 2>&1 | tail -n +5 ; \
 		rm -rf .preprocessor.out; \
 	done; done
 
@@ -59,7 +61,7 @@ stats:
 
 	@for p in $(packs); do for d in $(difficulties); do \
 		echo "    WML     $$p -> $$d"; \
-		$(WML_PREPROCESS) $(targetdir) .preprocessor.out --preprocess-defines __TEST_SUITE__,$(campaignsym),$$d,$$p 2>&1 2> /dev/null; \
+		$(WML_PREPROCESS) $(targetdir) .preprocessor.out --preprocess-defines $(extrasyms),$(campaignsym),$$d,$$p 2>&1 2> /dev/null; \
 		wc -l .preprocessor.out/_main.cfg | sed -E 's/^([0-9]+).*/            \1 lines/'; \
 		rm -rf .preprocessor.out; \
 	done; done
