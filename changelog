@@ -6,6 +6,8 @@ Version 1.90.7+svn:
 -------------------
 * General:
   * Removed remaining code implementing/referencing the glamour ability.
+  * Removed code for story maps that's gone unused for who knows how many years
+    due to the campaign's chronic lack of proper story map artwork.
 
 
 
