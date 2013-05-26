@@ -9,6 +9,9 @@ Version 1.90.7+svn:
   * Removed code for story maps that's gone unused for who knows how many years
     due to the campaign's chronic lack of proper story map artwork.
 
+* Units:
+  * Replaced old bird NPC behavior code with the newer Lua-based implementation
+    from AtS.
 
 
 Version 1.90.7:
