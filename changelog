@@ -9,6 +9,9 @@ Version 1.90.7+svn:
   * Removed code for story maps that's gone unused for who knows how many years
     due to the campaign's chronic lack of proper story map artwork.
 
+* Graphics:
+  * New or updated unit graphics: Anlindë.
+
 * Units:
   * Fixed "Terrain '**' has evaluated to 100 (cost) [...]" warnings on Wesnoth
     1.11.x caused by Aragwaith units.
