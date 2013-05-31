@@ -13,6 +13,8 @@ Version 1.90.7+svn:
   * New or updated unit graphics: Anlindë.
 
 * Units:
+  * Fixed multiple "Descriptions should no longer include the name as the first
+    line" warnings on 1.11.1 and later.
   * Fixed "Terrain '**' has evaluated to 100 (cost) [...]" warnings on Wesnoth
     1.11.x caused by Aragwaith units.
   * Replaced old bird NPC behavior code with the newer Lua-based implementation
