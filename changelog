@@ -28,6 +28,8 @@ Version 1.90.7+svn:
     from AtS.
   * Removed help markup from the Sylvan Essence ability special notes to avoid
     issues in Pango contexts (e.g. sidebar tooltips).
+  * Removed units:
+    * Tiger
 
 
 Version 1.90.7:
