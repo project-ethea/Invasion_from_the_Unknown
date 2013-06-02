@@ -12,6 +12,13 @@ Version 1.90.7+svn:
 * Graphics:
   * New or updated unit graphics: Anlindë.
 
+* Scenarios:
+  * 02 - A Real Confrontation:
+    * Removed Sprite recruitment.
+
+  * 14 - Bye and Behold:
+    * Added initial Sprite recruitment.
+
 * Units:
   * Fixed multiple "Descriptions should no longer include the name as the first
     line" warnings on 1.11.1 and later.
