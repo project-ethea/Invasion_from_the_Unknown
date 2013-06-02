@@ -1,11 +1,12 @@
 --#textdomain wesnoth-Invasion_from_the_Unknown
-_ = wesnoth.textdomain "wesnoth-Invasion_from_the_Unknown"
-wlib = wesnoth.textdomain "wesnoth-lib"
 
-helper = wesnoth.require "lua/helper.lua"
-T = helper.set_wml_tag_metatable {}
+local helper = wesnoth.require "lua/helper.lua"
+local T = helper.set_wml_tag_metatable {}
 
 function wesnoth.wml_actions.character_descriptions_prompt(cfg)
+	local _ = wesnoth.textdomain "wesnoth-Invasion_from_the_Unknown"
+	local wlib = wesnoth.textdomain "wesnoth-lib"
+
 	local main_window = {
 		maximum_height = 400,
 		maximum_width = 500,
@@ -21,7 +22,7 @@ function wesnoth.wml_actions.character_descriptions_prompt(cfg)
 					border_size = 5,
 					T.label {
 						definition = "title",
-						label = _"Character Descriptions"
+						label = _ "Character Descriptions"
 					}
 				}
 			},
@@ -31,7 +32,7 @@ function wesnoth.wml_actions.character_descriptions_prompt(cfg)
 					border = "all",
 					border_size = 5,
 					T.scroll_label {
-						label = _"Do you wish to see brief descriptions of the characters when you select them on the map for the first time?"
+						label = _ "Do you wish to see brief descriptions of the characters when you select them on the map for the first time?"
 					}
 				}
 			},
