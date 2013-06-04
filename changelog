@@ -30,6 +30,10 @@ Version 1.90.7+svn:
     * Gave feeding ability to Psy Mindraider.
     * Decreased Demon Zephyr's movement cost on deep water terrains from 2 to 1.
     * Decreased Demon Zephyr's movement cost on unwalkable terrains from 3 to 1.
+    * Increased arcane damage resistance for most Shaxthal units from -50% to
+      -20%.
+    * Decreased Shaxthal elusivefoot defense on Deep Water from 20% to 10%
+      (Shaxthal Rayblade, Shaxthal Stormblade, Elyssa).
   * Fixed Chaos Arbalestier ranged attack animation failing to trigger.
   * Fixed unit types with missing faction prefixes in their names:
     * Arbalestier -> Chaos Arbalestier
