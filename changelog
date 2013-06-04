@@ -13,6 +13,8 @@ Version 1.90.7+svn:
   * New or updated unit graphics: Anlindë, Chaos Arbalestier.
 
 * Scenarios:
+  * Fixed several instances of sighted events taking place prematurely on
+    Wesnoth 1.11.x.
   * 02 - A Real Confrontation:
     * Removed Sprite recruitment.
 
