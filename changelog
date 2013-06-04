@@ -10,7 +10,7 @@ Version 1.90.7+svn:
     due to the campaign's chronic lack of proper story map artwork.
 
 * Graphics:
-  * New or updated unit graphics: Anlindë.
+  * New or updated unit graphics: Anlindë, Chaos Arbalestier.
 
 * Scenarios:
   * 02 - A Real Confrontation:
@@ -20,6 +20,17 @@ Version 1.90.7+svn:
     * Added initial Sprite recruitment.
 
 * Units:
+  * Removed units:
+    * Tiger
+    * Verlissh Prong Bug
+    * Verlissh Spearbearer line
+  * Renamed Chaos Advanced Crossbowman to Chaos Arbalestier.
+  * Fixed Chaos Arbalestier ranged attack animation failing to trigger.
+  * Fixed unit types with missing faction prefixes in their names:
+    * Arbalestier -> Chaos Arbalestier
+    * Cataphract -> Chaos Cataphract
+    * Crossbowman -> Chaos Crossbowman
+    * Heavy Longbowman -> Chaos Heavy Longbowman
   * Fixed multiple "Descriptions should no longer include the name as the first
     line" warnings on 1.11.1 and later.
   * Fixed "Terrain '**' has evaluated to 100 (cost) [...]" warnings on Wesnoth
@@ -28,10 +39,6 @@ Version 1.90.7+svn:
     from AtS.
   * Removed help markup from the Sylvan Essence ability special notes to avoid
     issues in Pango contexts (e.g. sidebar tooltips).
-  * Removed units:
-    * Tiger
-    * Verlissh Prong Bug
-    * Verlissh Spearbearer line
 
 
 Version 1.90.7:
