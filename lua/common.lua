@@ -38,6 +38,9 @@ end
 ---
 -- Stores a list of unit ids matching a certain filter.
 --
+-- To store ids from recall lists, x and y must be either absent
+-- or set to "recall" in the base filter (not subfilters!).
+--
 -- [store_unit_ids]
 --     [filter]
 --         ...
@@ -48,7 +51,7 @@ end
 function wesnoth.wml_actions.store_unit_ids(cfg)
 	local filter = helper.get_child(cfg, "filter") or
 		helper.wml_error "[store_unit_ids] missing required [filter] tag"
-	local varid = cfg.variable or "units"
+	local var = cfg.variable or "units"
 	local idx = 0
 	if cfg.mode == "append" then
 		idx = wesnoth.get_variable(var .. ".length")
@@ -57,7 +60,14 @@ function wesnoth.wml_actions.store_unit_ids(cfg)
 	end
 
 	for i, u in ipairs(wesnoth.get_units(filter)) do
-		wesnoth.set_variable(string.format("%s[%d].id", varid, idx), u.id)
+		wesnoth.set_variable(string.format("%s[%d].id", var, idx), u.id)
 		idx = idx + 1
+	end
+
+	if (not filter.x or filter.x == "recall") and (not filter.y or filter.y == "recall") then
+		for i, u in ipairs(wesnoth.get_recall_units(filter)) do
+			wesnoth.set_variable(string.format("%s[%d].id", var, idx), u.id)
+			idx = idx + 1
+		end
 	end
 end
