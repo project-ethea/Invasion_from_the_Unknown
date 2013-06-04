@@ -28,6 +28,8 @@ Version 1.90.7+svn:
   * Balancing:
     * Increased Psy Mindraider's HP from 58 to 59.
     * Gave feeding ability to Psy Mindraider.
+    * Decreased Demon Zephyr's movement cost on deep water terrains from 2 to 1.
+    * Decreased Demon Zephyr's movement cost on unwalkable terrains from 3 to 1.
   * Fixed Chaos Arbalestier ranged attack animation failing to trigger.
   * Fixed unit types with missing faction prefixes in their names:
     * Arbalestier -> Chaos Arbalestier
