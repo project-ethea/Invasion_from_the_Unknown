@@ -17,7 +17,8 @@ Version 1.90.7+svn:
     Wesnoth 1.11.x.
   * 02 - A Real Confrontation:
     * Removed Sprite recruitment.
-
+  * 03 - Memories from the Depths:
+    * The Ring of Swiftness now increases movement points by one instead of two.
   * 14 - Bye and Behold:
     * Added initial Sprite recruitment.
 
