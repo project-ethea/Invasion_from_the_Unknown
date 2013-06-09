@@ -54,6 +54,10 @@ Version 1.90.7+svn:
   * Removed help markup from the Sylvan Essence ability special notes to avoid
     issues in Pango contexts (e.g. sidebar tooltips).
 
+* User interface:
+  * Made sure cutscene theme with menu bar works on Wesnoth 1.11.5 and later
+    (affecting S8x, S14xA, S14xB, S16x, S20x, S23By).
+
 
 Version 1.90.7:
 ---------------
