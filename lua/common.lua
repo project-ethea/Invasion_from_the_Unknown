@@ -87,3 +87,19 @@ function wesnoth.wml_actions.remove_terrain_overlays(cfg)
 		wesnoth.set_terrain(loc[1], loc[2], string.gsub(locstr, "%^.*$", ""))
 	end
 end
+
+---
+-- Creates a unit that's initially hidden from view as if [hide_unit]
+-- was used on it.
+--
+-- This is necessary since [unit] followed by [hide_unit] allows the unit
+-- to be displayed for an instant.
+--
+-- The syntax is identical to [unit].
+---
+
+function wesnoth.wml_actions.hidden_unit(cfg)
+	local u = wesnoth.create_unit(cfg)
+	u.hidden = true
+	wesnoth.put_unit(u)
+end
