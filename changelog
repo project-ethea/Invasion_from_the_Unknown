@@ -58,6 +58,12 @@ Version 1.90.7+svn:
     female Elvish Trapper and Elvish Prowler units.
   * Fixed recruited elvish units from scenario 4 onwards belonging to hidden 
     unit types.
+  * New unit type descriptions:
+    * Demon
+    * Demon Zephyr
+    * Demon Grunt
+    * Demon Warrior
+    * Demoness Messenger
 
 * User interface:
   * Made sure cutscene theme with menu bar works on Wesnoth 1.11.5 and later
