@@ -24,6 +24,7 @@ Version 1.90.7+svn:
     * Added initial Sprite recruitment.
 
 * Units:
+  * Walking Corpses no longer can advance to Ghouls.
   * Removed units:
     * Tiger
     * Verlissh Prong Bug
