@@ -24,13 +24,13 @@ stories, characters, and historical events presented in *Descent into Darkness*
 and  *Under the Burning Suns* before playing this campaign.
 
 
-Installing After the Storm
+Installing Invasion from the Unknown
 --------------------------------------------------------------------------------
 
 Requirements:
  * Battle for Wesnoth 1.10.x, 1.12.x, or 1.11.2 and later 1.11.x versions
- * *AtS Music* add-on from the Wesnoth add-ons server (optional, includes
-   additional music used throughout the campaign).
+ * *After the Storm Music* add-on from the Wesnoth add-ons server (optional,
+   includes additional music used throughout the campaign).
 
 Released versions of IftU may be obtained from the Battle for Wesnoth add-ons
 server using the game’s built-in client. Alternatively, players who know how to
