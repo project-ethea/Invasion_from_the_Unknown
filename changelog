@@ -64,6 +64,8 @@ Version 1.90.7+svn:
     * Elvish Civilian
     * Elvish Hunter, Elvish Trapper, Elvish Prowler
     * Sylvan Warden
+  * Fixed a minor inaccuracy at the beginning of the Terror ability
+    description.
 
 * User interface:
   * Made sure cutscene theme with menu bar works on Wesnoth 1.11.5 and later
