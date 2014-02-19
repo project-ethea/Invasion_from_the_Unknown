@@ -71,6 +71,8 @@ Version 1.90.7+svn:
 * User interface:
   * Made sure cutscene theme with menu bar works on Wesnoth 1.11.5 and later
     (affecting S8x, S14xA, S14xB, S16x, S20x, S23By).
+  * Cutscene themes now use the 1.11.10 [theme] id attribute on 1.11.10 and
+    later.
 
 
 Version 1.90.7:
