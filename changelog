@@ -5,6 +5,7 @@ INVASION FROM THE UNKNOWN - CHANGELOG
 Version 1.90.7+svn:
 -------------------
 * General:
+  * Raised minimum Wesnoth version requirement from 1.9.10 to 1.11.10.
   * Removed remaining code implementing/referencing the glamour ability.
   * Removed code for story maps that's gone unused for who knows how many years
     due to the campaign's chronic lack of proper story map artwork.
