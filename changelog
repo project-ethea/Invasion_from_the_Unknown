@@ -36,6 +36,8 @@ Version 1.90.7+svn:
   * Balancing:
     * The Protection ability affects own units of any lower level again instead
       of only level 0 and 1.
+    * Granted the new 'precision' weapon special to the Greatbow's ranged
+      attack.
     * Increased Psy Mindraider's HP from 58 to 59.
     * Gave feeding ability to Psy Mindraider.
     * Decreased Demon Zephyr's movement cost on deep water terrains from 2 to 1.
@@ -45,6 +47,20 @@ Version 1.90.7+svn:
     * Decreased Shaxthal elusivefoot defense on Deep Water from 20% to 10%
       (Shaxthal Rayblade, Shaxthal Stormblade, Elyssa).
     * Increased Errant Soul's ranged attack strength from 2-1 to 2-2.
+  * Applied changes from bumbadadabum's "The Aragwaithi" add-on, versions 1.0.6
+    through 1.0.9, and "Era of Chaos" version 1.3.1+dev up to commit
+    9dedeba7cddc2a027745c9994a917fdcb78ed341:
+    * Archer HP increased from 26 to 28.
+    * Granted the new 'precision' weapon special to the Greatbow's ranged
+      attack.
+    * Increased Guard's blade resistance from 10% to 20%.
+    * Increased Guard's XP from 64 to 74.
+    * Decreased Guard's cost from 28 to 27.
+    * Decreased Pikeman's cost from 38 to 28.
+    * Increased Shield Guard's cost from 37 to 45.
+    * Increased Shield Guard's blade and pierce resistances from 10% to 20%.
+    * Granted the 'marksman' weapon special to the Swordsmaster.
+    * Renamed the Aragwaith Witch's image files.
   * Fixed Chaos Arbalestier ranged attack animation failing to trigger.
   * Fixed unit types with missing faction prefixes in their names:
     * Arbalestier -> Chaos Arbalestier
@@ -70,6 +86,7 @@ Version 1.90.7+svn:
     * Sylvan Warden
   * Fixed a minor inaccuracy at the beginning of the Terror ability
     description.
+  * New or improved unit animations: multiple Aragwaith units.
 
 * User interface:
   * Made sure cutscene theme with menu bar works on Wesnoth 1.11.5 and later
