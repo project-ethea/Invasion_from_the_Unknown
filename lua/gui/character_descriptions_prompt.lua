@@ -1,6 +1,5 @@
 --#textdomain wesnoth-Invasion_from_the_Unknown
 
-local helper = wesnoth.require "lua/helper.lua"
 local T = helper.set_wml_tag_metatable {}
 
 function wesnoth.wml_actions.character_descriptions_prompt(cfg)

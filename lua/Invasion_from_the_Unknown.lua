@@ -1,4 +1,3 @@
-local helper = wesnoth.require "lua/helper.lua"
 
 ---
 -- Sets up the standard recruits' costs across IftU scenarios. This

@@ -1,4 +1,3 @@
-local helper = wesnoth.require "lua/helper.lua"
 
 function safe_random(arg)
 	wesnoth.fire("set_variable", {
