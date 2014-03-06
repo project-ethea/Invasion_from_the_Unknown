@@ -15,6 +15,37 @@ function safe_random(arg)
 end
 
 ---
+-- Assigns a given variable (presumed to be a direction value)
+-- the opposite of its current contents. If the variable doesn't
+-- seem to be a direction value, SE is used, setting it to NW.
+--
+-- [invert_direction]
+--     variable="direction"
+-- [/invert_direction]
+---
+function wesnoth.wml_actions.invert_direction(cfg)
+	local variable = cfg.variable or "direction"
+
+	local dir = wesnoth.get_variable(variable)
+
+	if dir == "s" then
+		dir = "n"
+	elseif dir == "sw" then
+		dir = "ne"
+	elseif dir == "nw" then
+		dir = "se"
+	elseif dir == "n" then
+		dir = "n"
+	elseif dir == "ne" then
+		dir = "sw"
+	else -- if dir == "se" then
+		dir = "nw"
+	end
+
+	wesnoth.set_variable(variable, dir)
+end
+
+---
 -- Installs mechanical "Door" units on *^Z\ and *^Z/ hexes
 -- using the given owner side.
 --
