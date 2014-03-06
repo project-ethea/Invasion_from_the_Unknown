@@ -46,6 +46,54 @@ function wesnoth.wml_actions.invert_direction(cfg)
 end
 
 ---
+-- Gets the relative direction of a source hex to a target hex.
+-- Useful to determine in which direction a unit should be facing
+-- (from the source) to look at another unit (at the target).
+--
+-- [store_direction]
+--     from_x,from_y= ...
+--     to_x,to_y= ...
+--     variable="direction"
+-- [/store_direction]
+--
+-- Or:
+--
+-- [store_direction]
+--     [from]
+--         ... SLF ...
+--     [/from]
+--     [to]
+--         ... SLF ...
+--     [/to]
+--     variable="direction"
+-- [/store_direction]
+---
+function wesnoth.wml_actions.store_direction(cfg)
+	local from_slf = helper.get_child(cfg, "from")
+	local to_slf = helper.get_child(cfg, "to")
+
+	local a = { x = cfg.from_x, y = cfg.from_y }
+	local b = { x = cfg.to_x  , y = cfg.to_y   }
+
+	if from_slf then
+		a.x = wesnoth.get_locations(from_slf)[1][1]
+		a.y = wesnoth.get_locations(from_slf)[1][2]
+	end
+	if to_slf then
+		b.x = wesnoth.get_locations(to_slf)[1][1]
+		b.y = wesnoth.get_locations(to_slf)[1][2]
+	end
+
+	if not a.x or not a.y or not b.x or not b.y then
+		helper.wml_error "[store_direction] missing coordinate!"
+	end
+
+	local variable = cfg.variable or "direction"
+
+	wesnoth.set_variable(variable, hex_facing(a, b))
+end
+
+---
 -- Installs mechanical "Door" units on *^Z\ and *^Z/ hexes
 -- using the given owner side.
 --
