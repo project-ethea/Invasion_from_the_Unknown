@@ -1,3 +1,7 @@
+---
+-- Lua WML actions that are intended specifically for use in the Invasion from
+-- the Unknown campaign.
+---
 
 ---
 -- Sets up the standard recruits' costs across IftU scenarios. This

@@ -1,3 +1,6 @@
+---
+-- General-purpose Lua WML actions.
+---
 
 function safe_random(arg)
 	wesnoth.fire("set_variable", {
