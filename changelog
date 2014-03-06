@@ -34,6 +34,8 @@ Version 1.90.7+svn:
   * Renamed Chaos Advanced Crossbowman to Chaos Arbalestier.
   * Renamed Errant Spirit to Errant Soul.
   * Balancing:
+    * The Protection ability affects own units of any lower level again instead
+      of only level 0 and 1.
     * Increased Psy Mindraider's HP from 58 to 59.
     * Gave feeding ability to Psy Mindraider.
     * Decreased Demon Zephyr's movement cost on deep water terrains from 2 to 1.
