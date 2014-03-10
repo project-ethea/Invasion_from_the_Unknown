@@ -48,6 +48,10 @@ Version 1.90.7+svn:
     * Decreased Shaxthal elusivefoot defense on Deep Water from 20% to 10%
       (Shaxthal Rayblade, Shaxthal Stormblade, Elyssa).
     * Increased Errant Soul's ranged attack strength from 2-1 to 2-2.
+    * Changed Leech's alignment from 'lawful' to 'neutral'.
+    * Decreased Leech's HP from 62 to 42.
+    * Decreased Leech's melee damage from 11-2 to 9-2.
+    * Decreased Leech's unit level from 3 to 1.
   * Applied changes from bumbadadabum's "The Aragwaithi" add-on, versions 1.0.6
     through 1.0.9, and "Era of Chaos" version 1.3.1+dev up to commit
     9dedeba7cddc2a027745c9994a917fdcb78ed341:
