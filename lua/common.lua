@@ -392,6 +392,21 @@ function wesnoth.wml_actions.fade_in_sound_effects(cfg)
 end
 
 ---
+-- Sets the sound volume to "zero" (actually 1%, see the implementation of
+-- wml_sfx_volume_fade_internal() for an explanation).
+---
+function wesnoth.wml_actions.mute_sound_effects(cfg)
+	wesnoth.fire("volume", { sound = 1 })
+end
+
+---
+-- Resets the main sound volume back to normal.
+---
+function wesnoth.wml_actions.reset_sound_effects(cfg)
+	wesnoth.fire("volume", { sound = 100 })
+end
+
+---
 -- Highlights a given set of target locations at once as a hint for the
 -- player.
 --
