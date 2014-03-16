@@ -15,6 +15,12 @@ Version 1.90.7+svn:
     Demon, Demon Zephyr, Demon Grunt, Demon Warrior, Sprite, Fire Faerie,
     Forest Spirit, Dryad.
 
+* Music:
+  * All music tracks have been moved to a separate add-on, named "IftU Music".
+    This add-on is now an optional dependency for those who can't afford
+    downloading it or don't play with music enabled. When absent, the IftU
+    campaign menu entries for each episode will include a notice stating so.
+
 * Scenarios:
   * Fixed several instances of sighted events taking place prematurely on
     Wesnoth 1.11.x.
