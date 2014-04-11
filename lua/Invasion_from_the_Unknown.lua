@@ -99,3 +99,26 @@ function wesnoth.wml_actions.unserialize_and_activate_sides(cfg)
 		end
 	end
 end
+
+---------
+-- S12 --
+---------
+
+function wesnoth.wml_actions.update_escape_objectives(cfg)
+	local id = cfg.id or helper.wml_error("[update_escape_objectives]: Missing id")
+	local completed = cfg.completed
+	if completed == nil then completed = false end
+
+	local objs = helper.get_variable_array("escape_objectives")
+
+	for k, obj in ipairs(objs) do
+		if id == obj.id then
+			obj.active = true
+			obj.completed = completed
+			wesnoth.set_variable(("escape_objectives[%d]"):format(k - 1), obj)
+			break
+		end
+	end
+
+	wesnoth.fire_event("reset objectives")
+end
