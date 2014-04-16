@@ -33,6 +33,7 @@ Version 1.90.7+svn:
 
 * Units:
   * Walking Corpses no longer can advance to Ghouls.
+  * Elynia's alternate AMLAs heal her.
   * Imps are now immune to the plague weapon special.
   * Removed units:
     * Tiger
