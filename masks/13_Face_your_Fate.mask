@@ -1,0 +1,10 @@
+border_size=1
+usage=map
+
+_f, _f, _f, _f, _f, _f, _f, _f, _f, _f
+_f, _f, _f, _f, Uu, _f, _f, _f, _f, _f
+_f, _f, Uu, Uu^Edt, Uu, Uu^Edt, Ur, _f, _f, _f
+_f, _f, Uu^Edt, Ur, Uu^Edt, Ur, Uu, Uu, _f, _f
+_f, _f, _f, Ur, Uu^Edt, Uu^Edt, _f, _f, _f, _f
+_f, _f, _f, _f, _f, Uu, _f, _f, _f, _f
+_f, _f, _f, _f, _f, _f, _f, _f, _f, _f
