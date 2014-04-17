@@ -41,7 +41,7 @@ function wesnoth.wml_actions.bug(cfg)
 
 	wesnoth.fire("wml_message", {
 		logger = "error",
-		message = "[AtS] BUG: " .. log_notice
+		message = "[IftU] BUG: " .. log_notice
 	})
 
 	local alert_dialog = {
