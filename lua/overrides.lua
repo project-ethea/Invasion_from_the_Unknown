@@ -5,6 +5,13 @@
 -- C++ actions) also belong here.
 ---
 
+local function override_alert(msg)
+	wesnoth.fire("wml_message", {
+		logger = "info",
+		message= "[IftU] overrides.lua: " .. msg
+	})
+end
+
 ---
 -- Extend [remove_sound_source] to take a comma-separated list of sound
 -- sources to remove.
