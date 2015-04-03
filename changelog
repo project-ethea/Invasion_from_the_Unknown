@@ -2,10 +2,23 @@
 INVASION FROM THE UNKNOWN - CHANGELOG
 =====================================
 
-Version 1.90.7+svn:
--------------------
+Version 1.99.0.9001 (2015 Next-gen 6G Cloud-Responsive April Fools Edition):
+----------------------------------------------------------------------------
+* tl;dr:
+  * 20% more awesome!
+  * Improved work ethics!
+  * Hardcore randomly-generated boss enemies which drop ultra-rare loot to be
+    used in crafting totally OP endgame weapons!
+  * Modern UI!
+  * Web-scale friendly animals!
+  * Serendipituous librarians!
+  * Prong Bug is still included! Can you believe this!?
+  * Fat and glamour-free!
+  * Why are you still reading this!
+  * Seriously!
+
 * General:
-  * Raised minimum Wesnoth version requirement from 1.9.10 to 1.11.11.
+  * Raised minimum Wesnoth version requirement from 1.9.10 to 1.11.17.
   * Removed remaining code implementing/referencing the glamour ability.
   * Removed code for story maps that's gone unused for who knows how many years
     due to the campaign's chronic lack of proper story map artwork.
