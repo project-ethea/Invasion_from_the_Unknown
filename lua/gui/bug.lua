@@ -200,7 +200,7 @@ function wesnoth.wml_actions.bug(cfg)
 		wesnoth.wml_actions.inspect {}
 	end
 
-	if dialog_result == 2 then
+	if dialog_result == 2 or not may_ignore then
 		wesnoth.fire("endlevel", {
 			result = "defeat",
 			linger_mode = false
