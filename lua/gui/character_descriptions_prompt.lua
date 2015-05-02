@@ -4,7 +4,6 @@ local T = helper.set_wml_tag_metatable {}
 
 function wesnoth.wml_actions.character_descriptions_prompt(cfg)
 	local _ = wesnoth.textdomain "wesnoth-Invasion_from_the_Unknown"
-	local wlib = wesnoth.textdomain "wesnoth-lib"
 
 	local main_window = {
 		maximum_height = 400,
@@ -53,7 +52,7 @@ function wesnoth.wml_actions.character_descriptions_prompt(cfg)
 								T.button {
 									id = "yes_button",
 									return_value = 1,
-									label = wlib "Yes"
+									label = wgettext("Yes", "wesnoth-lib")
 								}
 							},
 							T.column {
@@ -63,7 +62,7 @@ function wesnoth.wml_actions.character_descriptions_prompt(cfg)
 								T.button {
 									id = "no_button",
 									return_value = 2,
-									label = wlib "No"
+									label = wgettext("No", "wesnoth-lib")
 								}
 							}
 						}
