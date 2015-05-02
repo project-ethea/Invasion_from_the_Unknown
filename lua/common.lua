@@ -2,18 +2,6 @@
 -- General-purpose Lua WML actions.
 ---
 
-function safe_random(arg)
-	wesnoth.fire("set_variable", {
-		name = "temp_iftu_lua_random",
-		rand = arg,
-	})
-
-	local r = wesnoth.get_variable("temp_iftu_lua_random")
-	wesnoth.set_variable("temp_iftu_lua_random")
-
-	return r
-end
-
 ---
 -- Assigns a given variable (presumed to be a direction value)
 -- the opposite of its current contents. If the variable doesn't
