@@ -26,15 +26,23 @@ function wesnoth.wml_actions.npc_bird_behavior(cfg)
 		return (x > 0 and x <= map_w) and (y > 0 and y <= map_h)
 	end
 
+	local function default(value, default_value)
+		if value == nil or value == "" then
+			return default_value
+		else
+			return value
+		end
+	end
+
 	local types = cfg.types or do_error("no unit types specified")
 
 	local side_num = cfg.side or wesnoth.current.side
 
-	local x1 = cfg.x1 or 1
-	local y1 = cfg.y1 or 1
+	local x1 = default(cfg.x1, 1)
+	local y1 = default(cfg.y1, 1)
 
-	local x2 = cfg.x2 or map_w
-	local y2 = cfg.y2 or map_h
+	local x2 = default(cfg.x2, map_w)
+	local y2 = default(cfg.y2, map_h)
 
 	if not on_board(x1,y1) then
 		do_error(string.format("(x1, y1) is (%d, %d), which is not on map (%d x %d)", x1, y1, map_w, map_h))
