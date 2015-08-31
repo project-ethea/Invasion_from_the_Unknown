@@ -122,3 +122,15 @@ function wesnoth.wml_actions.update_escape_objectives(cfg)
 
 	wesnoth.fire_event("reset objectives")
 end
+
+----------
+-- S21+ --
+----------
+
+function wesnoth.wml_actions.recall_all(cfg)
+	local units = wesnoth.get_recall_units(cfg)
+
+	for i, u in ipairs(units) do
+		wesnoth.wml_actions.recall({ id = u.id })
+	end
+end
