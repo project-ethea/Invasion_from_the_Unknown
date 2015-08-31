@@ -468,3 +468,37 @@ function wesnoth.wml_actions.highlight_goal(cfg)
 		wesnoth.delay(300)
 	end
 end
+
+---
+-- Scatters random images from a list over a number of locations matched by the
+-- specified SLF.
+--
+-- [scatter_images]
+--     ... SLF ...
+--     image=(image list)
+--     limit=(number, default -1 to scatter on all matched locations)
+-- [/scatter_images]
+---
+function wesnoth.wml_actions.scatter_images(cfg)
+	local locs = wesnoth.get_locations(cfg) or
+		helper.wml_error("[scatter_images] No suitable locations found.")
+
+	local count = cfg.limit
+	if count == nil or count == -1 then
+		count = #locs
+	end
+
+	for i = 1, count do
+		local loc = locs[helper.rand(("1..%d"):format(#locs))]
+		local img = helper.rand(cfg.image)
+
+		wesnoth.wml_actions.item {
+			x = loc[1],
+			y = loc[2],
+			image = img,
+			redraw = false,
+		}
+	end
+
+	wesnoth.wml_actions.redraw {}
+end
