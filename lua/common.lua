@@ -171,24 +171,32 @@ function wesnoth.wml_actions.set_facing(cfg)
 end
 
 ---
--- Installs mechanical "Door" units on *^Z\ and *^Z/ hexes
--- using the given owner side.
+-- Spawns mechanical "Door" units on gate terrain hexes.
 --
 -- [setup_doors]
---     side=3
+--     side=(side number)
+--     terrain=(optional terrain filter string, default "*^Z\,*^Z/")
+--     ... optional SLF ...
 -- [/setup_doors]
 ---
 function wesnoth.wml_actions.setup_doors(cfg)
-	local locs = wesnoth.get_locations {
-		terrain = "*^Z\\",
-		{ "or", { terrain = "*^Z/" } },
-	}
+	local owner_side = cfg.side or
+		helper.wml_error("[setup_doors] No owner side= specified")
+
+	cfg = helper.parsed(cfg)
+
+	if cfg.terrain == nil then
+		cfg["terrain"] = "*^Z\\,*^Z/"
+	end
+
+	cfg.side = nil
+	local locs = wesnoth.get_locations(cfg)
 
 	for k, loc in ipairs(locs) do
 		wesnoth.put_unit(loc[1], loc[2], {
 			type = "Door",
-			side = cfg.side,
-			id = string.format("__door_X%dY%d", loc[1], loc[2]),
+			side = owner_side,
+			id = ("__door_X%dY%d"):format(loc[1], loc[2]),
 		})
 	end
 end
