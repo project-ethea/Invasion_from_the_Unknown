@@ -3,6 +3,13 @@
 ---
 
 ---
+-- TODO: use utils.split() on 1.13.x instead
+---
+function split(s)
+	return tostring(s):gmatch("[^%s,][^,]*")
+end
+
+---
 -- Returns a pseudorandom value from a set.
 --
 -- This uses the same format and implementation as WML [set_variable], so that
