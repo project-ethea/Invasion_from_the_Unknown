@@ -134,3 +134,25 @@ function wesnoth.wml_actions.recall_all(cfg)
 		wesnoth.wml_actions.recall({ id = u.id })
 	end
 end
+
+----------
+-- S23B --
+----------
+
+function wesnoth.wml_actions.quake_heavy(cfg)
+	local function scroll(x, y)
+		wesnoth.wml_actions.scroll { x = x, y = y }
+	end
+
+	local sound = cfg.sound
+
+	if sound then
+		wesnoth.play_sound(sound)
+	end
+
+	scroll( 20,   0)
+	scroll(-40,   0)
+	scroll( 20,  20)
+	scroll(  0, -40)
+	scroll(  0,  20)
+end
