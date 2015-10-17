@@ -139,6 +139,43 @@ end
 -- S23B --
 ----------
 
+function wesnoth.wml_actions.store_relative_location(cfg)
+	local from_slf = helper.get_child(cfg, "from")
+	local variable = cfg.variable or "location"
+	local direction = cfg.direction or
+		helper.wml_error "[store_relative_location] no direction specified!"
+	local distance = math.max(1, (cfg.distance or 1))
+
+	local p = wesnoth.get_locations(from_slf)[1] or
+		helper.wml_error "[store_relative_location] missing or bad SLF!"
+
+	local mapw, maph = wesnoth.get_map_size()
+
+	for i = 1, distance do
+		local q = wesnoth.get_locations({
+			{ "filter_adjacent_location", {
+				adjacent = "-" .. direction,
+				x = p[1],
+				y = p[2]
+			} },
+			-- Must exclude map borders since we want to use this information
+			-- to place units.
+			x = ("1-%d"):format(mapw),
+			y = ("1-%d"):format(maph)
+		})[1]
+
+		-- Stop walking if we go off-map.
+		if not q then
+			break
+		end
+
+		p = q
+	end
+
+	wesnoth.set_variable(variable .. ".x", p[1])
+	wesnoth.set_variable(variable .. ".y", p[2])
+end
+
 function wesnoth.wml_actions.quake_heavy(cfg)
 	local function scroll(x, y)
 		wesnoth.wml_actions.scroll { x = x, y = y }
