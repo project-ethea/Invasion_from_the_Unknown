@@ -97,4 +97,11 @@ function safe_shuffle(t)
 	end
 end
 
+---
+-- Returns a value restricted to a range [minval, maxval].
+---
+function in_range(value, minval, maxval)
+	return math.max(minval, math.min(value, maxval))
+end
+
 wprintf(W_INFO, "Version %s initializing", PROJECT_Y_RECONSTRUCTION_VERSION)
