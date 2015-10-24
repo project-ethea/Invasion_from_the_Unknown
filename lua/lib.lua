@@ -28,6 +28,19 @@ function safe_random(arg)
 end
 
 ---
+-- Returns a pseudorandom value from a set without syncing replays/MP.
+--
+-- This will use the same format as WML [set_variable] in the future, maybe,
+-- but for now it's just a trivial wrapper around math.random with the added
+-- requirement of providing both arguments.
+--
+-- Do NOT use this for gamestate-altering actions. You've been warned.
+---
+function unsynced_random(a, b)
+	return math.random(a, b)
+end
+
+---
 -- Log levels for wput and wprintf.
 ---
 
