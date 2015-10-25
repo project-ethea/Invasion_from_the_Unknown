@@ -176,11 +176,11 @@ function wesnoth.wml_actions.store_relative_location(cfg)
 	wesnoth.set_variable(variable .. ".y", p[2])
 end
 
-function wesnoth.wml_actions.quake_heavy(cfg)
-	local function scroll(x, y)
-		wesnoth.wml_actions.scroll { x = x, y = y }
-	end
+local function scroll(x, y)
+	wesnoth.wml_actions.scroll { x = x, y = y }
+end
 
+function wesnoth.wml_actions.quake_heavy(cfg)
 	local sound = cfg.sound
 
 	if sound then
@@ -192,4 +192,22 @@ function wesnoth.wml_actions.quake_heavy(cfg)
 	scroll( 20,  20)
 	scroll(  0, -40)
 	scroll(  0,  20)
+end
+
+-----------
+-- S23Cx --
+-----------
+
+function wesnoth.wml_actions.quake_heavier(cfg)
+	local sound = cfg.sound
+
+	if sound then
+		wesnoth.play_sound(sound)
+	end
+
+	scroll( 40,   0)
+	scroll(-70,   0)
+	scroll( 40,  40)
+	scroll(  0, -80)
+	scroll(  0,  40)
 end
