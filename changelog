@@ -2,10 +2,10 @@
 INVASION FROM THE UNKNOWN - CHANGELOG
 =====================================
 
-Version 1.90.7+svn:
--------------------
+Version 1.99.0 (codename Reconstruction RC 1):
+----------------------------------------------
 * General:
-  * Raised minimum Wesnoth version requirement from 1.9.10 to 1.11.11.
+  * Raised minimum Wesnoth version requirement from 1.9.10 to 1.12.0.
   * Removed remaining code implementing/referencing the glamour ability.
   * Removed code for story maps that's gone unused for who knows how many years
     due to the campaign's chronic lack of proper story map artwork.
@@ -16,7 +16,7 @@ Version 1.90.7+svn:
   * New or improved unit animations: Elynia (melee).
   * New or updated unit graphics: Anlindë, Chaos Arbalestier, Chaos Warlord,
     Demon, Demon Zephyr, Demon Grunt, Demon Warrior, Sprite, Fire Faerie,
-    Forest Spirit, Dryad.
+    Forest Spirit, Dryad, Rabbit.
 
 * Music:
   * All music tracks have been moved to a separate add-on, named "IftU Music".
@@ -25,14 +25,18 @@ Version 1.90.7+svn:
     campaign menu entries for each episode will include a notice stating so.
 
 * Scenarios:
+  * Rewritten or revised all scenarios, including maps. As a result, there are
+    too many changes that will not be listed here.
   * Fixed several instances of sighted events taking place prematurely on
     Wesnoth 1.11.x.
-  * 02 - A Real Confrontation:
-    * Removed Sprite recruitment.
-  * 03 - Memories from the Depths:
+  * S2 - A Real Confrontation:
+    * Removed Sprites from recruit list.
+  * S3 - Memories from the Depths:
     * The Ring of Swiftness now increases movement points by one instead of two.
-  * 14 - Bye and Behold:
-    * Added initial Sprite recruitment.
+  * S4 - Over the Sands:
+    * Removed Ghouls from recruit list.
+  * S14 - Bye and Behold:
+    * Sprites are now added to the recruit list here instead of S2.
 
 * Units:
   * Walking Corpses no longer can advance to Ghouls.
