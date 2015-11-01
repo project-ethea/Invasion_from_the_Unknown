@@ -28,9 +28,9 @@ Installing Invasion from the Unknown
 --------------------------------------------------------------------------------
 
 Requirements:
- * Battle for Wesnoth 1.12.x, or 1.11.11 and later 1.11.x versions
- * *After the Storm Music* add-on from the Wesnoth add-ons server (optional,
-   includes additional music used throughout the campaign).
+ * Battle for Wesnoth 1.12.0 or later 1.12.x versions
+ * *Invasion from the Unknown Music* add-on from the Wesnoth add-ons server
+   (optional, includes additional music used throughout the campaign).
 
 Released versions of IftU may be obtained from the Battle for Wesnoth add-ons
 server using the game’s built-in client. Alternatively, players who know how to
