@@ -1,0 +1,19 @@
+title="Invasion from the Unknown"
+type="campaign"
+version="@VERSION@
+dependencies="IftU_Music"
+
+translate="true"
+
+author="shadowm (Ignacio R. Morelle)"
+email="shadowm@wesnoth.org"
+
+icon="items/bones.png"
+
+description="FIXME CAMPAIGN DESCRIPTION HERE"
+
+passphrase="@PASSPHRASE@"
+
+[feedback]
+    topic_id=0
+[/feedback]
