@@ -10,10 +10,21 @@ email="shadowm@wesnoth.org"
 
 icon="items/bones.png"
 
-description="FIXME CAMPAIGN DESCRIPTION HERE"
+description="Long after the Fall, the last forest elves on the Great Continent are forced to abandon their secluded home and forge an unprecedented alliance in hopes of retaliating against the great evil that has befallen Irdya. But even then, they will require more than one ancient power to aid them in their quest...
+
+(Intermediate level, 24 scenarios.)
+
+Although not strictly required, players are advised to become familiar with the stories, characters, and historical events presented in Descent into Darkness and Under the Burning Suns before playing this campaign.
+
+Wesnoth 1.12.0 or later 1.12.x versions are required.
+
+Discussion threads in the Wesnoth.org forums:
+
+ • Main discussion thread: ‹http://r.wesnoth.org/t00000›
+ • Feedback thread: ‹http://r.wesnoth.org/t00000›"
 
 passphrase="@PASSPHRASE@"
 
 [feedback]
-    topic_id=0
+    topic_id=00000
 [/feedback]
