@@ -30,13 +30,13 @@ Version 1.99.0-dev (codename Reconstruction RC 1):
   * Fixed several instances of sighted events taking place prematurely on
     Wesnoth 1.11.x.
   * S2 - A Real Confrontation:
-    * Removed Sprites from recruit list.
+    * Removed Sprites from the player's recruit list.
   * S3 - Memories from the Depths:
     * The Ring of Swiftness now increases movement points by one instead of two.
   * S4 - Over the Sands:
-    * Removed Ghouls from recruit list.
+    * Removed Ghouls and Elvish Warrior Spirits from the player's recruit list.
   * S14 - Bye and Behold:
-    * Sprites are now added to the recruit list here instead of S2.
+    * Sprites are now added to the player's recruit list here instead of S2.
 
 * Units:
   * Walking Corpses no longer can advance to Ghouls.
@@ -47,6 +47,7 @@ Version 1.99.0-dev (codename Reconstruction RC 1):
     * Verlissh Prong Bug
     * Verlissh Spearbearer line
     * Steppe Orcs faction
+    * Aragwaith Peasant
     * Dwarvish Gyrocopter and Dwarvish Steamcopter
   * Renamed Chaos Advanced Crossbowman to Chaos Arbalestier.
   * Renamed Errant Spirit to Errant Soul.
