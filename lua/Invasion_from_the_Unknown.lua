@@ -211,3 +211,29 @@ function wesnoth.wml_actions.quake_heavier(cfg)
 	scroll(  0, -80)
 	scroll(  0,  40)
 end
+
+-------------------
+-- GLOBAL EVENTS --
+-------------------
+
+function wesnoth.wml_actions.hook_elvish_enchantress_adv_override(cfg)
+	local ecx = wesnoth.current.event_context
+	local u = wesnoth.get_unit(ecx.x1, ecx.y1) or
+		helper.wml_error("[hook_elvish_enchantress_adv_override] No unit at x1,y1 on post advance!")
+
+	wesnoth.transform_unit(u, "Elvish Enchantress 2")
+
+	wprintf(W_INFO, "Sylph advancement disabled for Enchantress '%s' at %d,%d", u.id, u.x, u.y)
+end
+
+wesnoth.fire("event", {
+	id = "enchantress adv override",
+	name = "post advance",
+	first_time_only = false,
+	{ "filter", {
+		side = 1,
+		type = "Elvish Enchantress"
+	} },
+
+	{ "hook_elvish_enchantress_adv_override", {} }
+})
