@@ -226,7 +226,7 @@ function wesnoth.wml_actions.hook_elvish_enchantress_adv_override(cfg)
 	wprintf(W_INFO, "Sylph advancement disabled for Enchantress '%s' at %d,%d", u.id, u.x, u.y)
 end
 
-wesnoth.fire("event", {
+wesnoth.wml_actions.event {
 	id = "enchantress adv override",
 	name = "post advance",
 	first_time_only = false,
@@ -236,4 +236,4 @@ wesnoth.fire("event", {
 	} },
 
 	{ "hook_elvish_enchantress_adv_override", {} }
-})
+}
