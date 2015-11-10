@@ -240,7 +240,7 @@ end
 -- GLOBAL EVENTS --
 -------------------
 
-function wesnoth.wml_actions.hook_elvish_enchantress_adv_override(cfg)
+function hook_elvish_enchantress_adv_override(cfg)
 	local ecx = wesnoth.current.event_context
 	local u = wesnoth.get_unit(ecx.x1, ecx.y1) or
 		helper.wml_error("[hook_elvish_enchantress_adv_override] No unit at x1,y1 on post advance!")
@@ -259,5 +259,5 @@ wesnoth.wml_actions.event {
 		type = "Elvish Enchantress"
 	} },
 
-	{ "hook_elvish_enchantress_adv_override", {} }
+	{ "lua", { code = "hook_elvish_enchantress_adv_override()" } }
 }
