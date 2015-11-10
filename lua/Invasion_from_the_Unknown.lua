@@ -46,6 +46,30 @@ function wesnoth.wml_actions.setup_recruitment_cost(cfg)
 	end
 end
 
+---
+-- Plays incidental mood music.
+--
+-- Equivalent to mainline {INCIDENTAL_MUSIC}, except it doesn't play during
+-- boss sequences.
+---
+function wesnoth.wml_actions.mood_music(cfg)
+	local mus = cfg.name or
+		helper.wml_error("[mood_music] No track specified!")
+
+	-- NOTE: Hardcoded for performance.
+	if #wesnoth.get_units({
+		id = "Goliath,Chaos Warlord,Mal Hekuba,Kalazar,Elyssa,Chaos Emperor,Argan"
+	}) > 0 then
+		return
+	end
+
+	wesnoth.wml_actions.music {
+		name = mus,
+		immediate = true,
+		play_once = true
+	}
+end
+
 --------
 -- S4 --
 --------
