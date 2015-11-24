@@ -76,9 +76,18 @@ function wesnoth.wml_actions.message(cfg)
 	local minisuf = {
 		x = cfg.x,
 		y = cfg.y,
-		id = cfg.id,
-		speaker = cfg.speaker
+		id = cfg.id
 	}
+
+	if cfg.speaker == "unit" then
+		minisuf.x = wesnoth.current.event_context.x1
+		minisuf.y = wesnoth.current.event_context.y1
+	elseif cfg.speaker == "second_unit" then
+		minisuf.x = wesnoth.current.event_context.x2
+		minisuf.y = wesnoth.current.event_context.y2
+	elseif cfg.speaker ~= nil then
+		minisuf.speaker = cfg.speaker
+	end
 
 	local u = wesnoth.get_units(minisuf)[1]
 
