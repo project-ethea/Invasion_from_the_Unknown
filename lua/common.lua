@@ -520,7 +520,7 @@ if wesnoth.wml_actions.remove_event == nil then
 		local id = cfg.id or helper.wml_error("[remove_event] missing required id= key")
 
 		for w in split(id) do
-			wesnoth.wml_actions.event { id = w }
+			wesnoth.wml_actions.event { id = w, remove = true }
 		end
 	end
 end
