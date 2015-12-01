@@ -1,6 +1,6 @@
 title="Invasion from the Unknown"
 type="campaign"
-version="@VERSION@
+version="@VERSION@"
 dependencies="IftU_Music"
 
 translate="true"
