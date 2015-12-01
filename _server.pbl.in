@@ -20,11 +20,11 @@ Requires Wesnoth 1.12.x. Development versions (1.13.x) are NOT supported.
 
 Discussion threads in the Wesnoth.org forums:
 
- • Main discussion thread: ‹http://r.wesnoth.org/t00000›
- • Feedback thread: ‹http://r.wesnoth.org/t00000›"
+ • Main discussion thread: ‹http://r.wesnoth.org/t43309›
+ • Feedback thread: ‹http://r.wesnoth.org/t43307›"
 
 passphrase="@PASSPHRASE@"
 
 [feedback]
-    topic_id=00000
+    topic_id=43309
 [/feedback]
