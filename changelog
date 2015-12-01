@@ -2,13 +2,15 @@
 INVASION FROM THE UNKNOWN - CHANGELOG
 =====================================
 
-Version 1.99.0-dev (codename Reconstruction RC 1):
---------------------------------------------------
+Version 1.99.0 (codename Reconstruction RC 1):
+----------------------------------------------
 * General:
   * Raised minimum Wesnoth version requirement from 1.9.10 to 1.12.0.
   * Removed remaining code implementing/referencing the glamour ability.
   * Removed code for story maps that's gone unused for who knows how many years
     due to the campaign's chronic lack of proper story map artwork.
+  * Many changes are missing in this changelog, either because they were
+    forgotten or because they constitute spoilers.
 
 * Graphics:
   * New or updated terrain graphics: Dark Hive, Dark Hive Surface, Dark Hive
