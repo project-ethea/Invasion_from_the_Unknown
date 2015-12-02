@@ -4,7 +4,10 @@ INVASION FROM THE UNKNOWN - CHANGELOG
 
 Version 1.99.0+dev (codename Reconstruction RC 2):
 --------------------------------------------------
-
+* Scenarios:
+  * S2 - A Real Confrontation:
+    * Fixed pre-captured elven villages not being counted for the scenario
+      defeat condition.
 
 
 Version 1.99.0 (codename Reconstruction RC 1):
