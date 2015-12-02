@@ -8,6 +8,8 @@ Version 1.99.0+dev (codename Reconstruction RC 2):
   * S2 - A Real Confrontation:
     * Fixed pre-captured elven villages not being counted for the scenario
       defeat condition.
+  * S3 - Memories from the Depths:
+    * Fixed Mal Keshar not speaking one of his lines.
 
 
 Version 1.99.0 (codename Reconstruction RC 1):
