@@ -12,6 +12,10 @@ Version 1.99.0+dev (codename Reconstruction RC 2):
       defeat condition.
   * S3 - Memories from the Depths:
     * Fixed Mal Keshar not speaking one of his lines.
+* Units:
+  * Door units now clear terrain beneath them on 'last breath' rather than
+    'die' events, in order to ensure shroud is correctly cleared before
+    scenario-specific event handlers are run.
 
 
 Version 1.99.0 (codename Reconstruction RC 1):
