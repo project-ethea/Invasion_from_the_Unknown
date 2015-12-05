@@ -15,6 +15,11 @@ Version 1.99.0+dev (codename Reconstruction RC 2):
   * S20 - The Heart:
     * Fixed alternate victory by defeating all enemy leaders never triggering
       without using cheats.
+
+* Terrains:
+  * Ported gate fix from AtS 0.9.1 meant to solve clipping issues for gates
+    adjacent to (convex) stone wall corners.
+
 * Units:
   * Door units now clear terrain beneath them on 'last breath' rather than
     'die' events, in order to ensure shroud is correctly cleared before
