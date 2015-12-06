@@ -17,6 +17,8 @@ Version 1.99.0+dev (codename Reconstruction RC 2):
       without using cheats.
   * S21 - Innuendo:
     * Increased turn limit.
+  * S23B - Until Death:
+    * Fixed an oversight so that player recruits no longer require upkeep.
 
 * Terrains:
   * Ported gate fix from AtS 0.9.1 meant to solve clipping issues for gates
