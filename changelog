@@ -5,6 +5,8 @@ INVASION FROM THE UNKNOWN - CHANGELOG
 Version 1.99.1+dev (codename Reconstruction RC 3):
 --------------------------------------------------
 * Scenarios:
+  * S7 - Goliath:
+    * Removed all healing glyphs.
   * S14 - Bye and Behold:
     * Added a bare-bones attack animation to the Explosive Arrows item
       (issue #17).
