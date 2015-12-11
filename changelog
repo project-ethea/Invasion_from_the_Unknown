@@ -2,8 +2,8 @@
 INVASION FROM THE UNKNOWN - CHANGELOG
 =====================================
 
-Version 1.99.1+dev (codename Reconstruction RC 3):
---------------------------------------------------
+Version 1.99.2 (codename Reconstruction RC 3):
+----------------------------------------------
 * Scenarios:
   * Fixed boss AI engine breaking when AtS is not installed.
   * Changed the savegame prefix for both episodes to "IftU", dropping the
