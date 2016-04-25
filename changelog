@@ -6,6 +6,10 @@ Version 1.99.2+dev (codename Reconstruction RC 4):
 --------------------------------------------------
 * Scenarios:
   * Fixed a few typos reported on the forum thread.
+  * S1 - Border Patrol:
+    * Fixed late objectives claiming there is no early finish bonus.
+  * S10 - The Source of Light
+    * Fixed objectives claiming there is an early finish bonus.
 
 
 Version 1.99.2 (codename Reconstruction RC 3):
