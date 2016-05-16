@@ -6,6 +6,9 @@ Version 1.99.2+dev (codename Reconstruction RC 4):
 --------------------------------------------------
 * Scenarios:
   * Fixed a few typos reported on the forum thread.
+  * Auto-recalled speaking units in scenarios 2, 3, 4, 5a/5b, 6 and 8 no longer
+    require upkeep for the duration of the scenario in which they were
+    auto-recalled.
   * S1 - Border Patrol:
     * Fixed late objectives claiming there is no early finish bonus.
   * S10 - The Source of Light
