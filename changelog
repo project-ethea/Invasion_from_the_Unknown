@@ -11,6 +11,10 @@ Version 1.99.2+dev (codename Reconstruction RC 4):
     auto-recalled.
   * S1 - Border Patrol:
     * Fixed late objectives claiming there is no early finish bonus.
+  * S4 - Over the Sands:
+    * Re-enabled option to advance to S5b.
+  * S5b - Cursed Plateau:
+    * Revised scenario.
   * S10 - The Source of Light
     * Fixed objectives claiming there is an early finish bonus.
 
