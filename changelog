@@ -21,6 +21,12 @@ Version 1.99.2+dev (codename Reconstruction RC 4):
     * Very minor balancing changes to the boss fight.
   * S10 - The Source of Light:
     * Fixed objectives claiming there is an early finish bonus.
+  * S11 - Strike on Herthgar:
+    * Removed gold carryover and bonus carryover for this scenario, and changed
+      the bonus objective to be a bonusless alternative instead.
+  * S12 - The Escape:
+    * Adjusted initial settings to permit the most inefficient recruitment
+      pattern even without gold carryover from S11.
   * S13 - Face your Fate:
     * Ensured there isn't any gold carried over to S14.
 
