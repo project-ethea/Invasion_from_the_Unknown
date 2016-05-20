@@ -4,6 +4,11 @@ INVASION FROM THE UNKNOWN - CHANGELOG
 
 Version 1.99.3+dev (codename Reconstruction RC 5):
 --------------------------------------------------
+* Scenarios:
+  * S8 - Errand of Hope:
+    * Clear Althurin's statuses at the end if necessary, so that he does not
+      reappear poisoned or slowed in the subsequent cutscene scenario.
+
 * Units:
   * New unit type descriptions:
     * Chaos Arbalestier, Chaos Crossbowman.
