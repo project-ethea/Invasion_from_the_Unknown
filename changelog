@@ -29,6 +29,8 @@ Version 1.99.2+dev (codename Reconstruction RC 4):
       pattern even without gold carryover from S11.
   * S13 - Face your Fate:
     * Ensured there isn't any gold carried over to S14.
+  * S23B - Until Death:
+    * Balancing changes to make the fight slightly less of an uphill battle.
 
 * Units:
   * New unit type descriptions:
