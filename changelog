@@ -5,6 +5,8 @@ INVASION FROM THE UNKNOWN - CHANGELOG
 Version 1.99.3+dev (codename Reconstruction RC 5):
 --------------------------------------------------
 * Scenarios:
+  * S2 - A Real Confrontation:
+    * Negligible dialogue tweaks.
   * S8 - Errand of Hope:
     * Clear Althurin's statuses at the end if necessary, so that he does not
       reappear poisoned or slowed in the subsequent cutscene scenario.
