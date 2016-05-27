@@ -10,6 +10,9 @@ Version 1.99.3+dev (codename Reconstruction RC 5):
   * S8 - Errand of Hope:
     * Clear Althurin's statuses at the end if necessary, so that he does not
       reappear poisoned or slowed in the subsequent cutscene scenario.
+  * S23B - Until Death:
+    * Make the final boss able to spawn units when damaged during stage 3
+      (accidentally disabled in RC 1).
 
 * Units:
   * New unit type descriptions:
