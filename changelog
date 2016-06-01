@@ -10,6 +10,9 @@ Version 1.99.4+dev (codename Reconstruction RC 6):
 * Scenarios:
   * S2 - A Real Confrontation:
     * Forbid Lédinor from abandoning his keep to do something stupid.
+  * S7 - Goliath:
+    * Force the enemy boss to engage the player by enabling the
+      leader_ignores_keep aspect.
 
 * Units:
   * New unit type descriptions:
