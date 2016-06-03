@@ -13,6 +13,8 @@ Version 1.99.4+dev (codename Reconstruction RC 6):
   * S7 - Goliath:
     * Force the enemy boss to engage the player by enabling the
       leader_ignores_keep aspect.
+  * S9 - The Library:
+    * Minor map layout tweaks.
   * S14 - Bye and Behold:
     * Mudcrawlers and Water Serpents are not supposed to speak when encountered
       by the player.
