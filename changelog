@@ -16,6 +16,7 @@ Version 1.99.4+dev (codename Reconstruction RC 6):
   * S9 - The Library:
     * Minor map layout tweaks.
   * S10 - The Source of Light:
+    * Auto-recalled units no longer require upkeep for this scenario.
     * Minor map layout tweaks.
   * S14 - Bye and Behold:
     * Mudcrawlers and Water Serpents are not supposed to speak when encountered
