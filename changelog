@@ -23,6 +23,22 @@ Version 1.99.4+dev (codename Reconstruction RC 6):
   * S14 - Bye and Behold:
     * Mudcrawlers and Water Serpents are not supposed to speak when encountered
       by the player.
+  * S19 - Under the Sands:
+    * Minor prose tweaks.
+  * S20 - The Heart:
+    * Minor prose tweaks.
+  * S21 - Innuendo:
+    * Minor prose tweaks.
+  * S22A - Face of the Enemy:
+    * Minor prose tweaks.
+  * S22B - Dark Hive:
+    * Minor prose tweaks.
+  * S23A - Into the Lair:
+    * Minor prose tweaks.
+  * S23B - Until Death:
+    * Minor prose tweaks.
+  * S23Bx/S23By - Do Us Part:
+    * Major prose changes by vultraz.
 
 * Units:
   * New unit type descriptions:
