@@ -10,6 +10,8 @@ Version 1.99.5+dev (codename Reconstruction RC 7):
       every turn.
 
 * Units:
+  * Balancing:
+    * Increased base Union damage from 28-3 to 29-3.
   * Merged Orcish Nightblade unit description from mainline Wesnoth 1.13.2.
 
 
