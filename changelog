@@ -4,6 +4,11 @@ INVASION FROM THE UNKNOWN - CHANGELOG
 
 Version 1.99.5+dev (codename Reconstruction RC 7):
 --------------------------------------------------
+* Scenarios:
+  * S22A - Face of the Enemy:
+    * Fixed boss escape countdown in Objectives not updating at the start of
+      every turn.
+
 * Units:
   * Merged Orcish Nightblade unit description from mainline Wesnoth 1.13.2.
 
