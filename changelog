@@ -15,7 +15,8 @@ Version 1.99.5+dev (codename Reconstruction RC 7):
   * Balancing:
     * Increased base Union damage from 28-3 to 29-3.
   * New unit type descriptions:
-    * Faerie Sprite, Fire Faerie, Faerie Dryad, Faerie Forest Spirit.
+    * Faerie Sprite, Fire Faerie, Faerie Dryad, Faerie Forest Spirit,
+      Shaxthal Rayblade.
     * Merged Orcish Nightblade unit description from mainline Wesnoth 1.13.2.
   * Minor tweaks to unit type descriptions:
     * Shaxthal Drone.
