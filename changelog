@@ -8,6 +8,11 @@ Version 1.99.6+dev (codename Reconstruction RC 8):
   * S14 - Bye and Behold:
     * Fixed incorrect secondary damage amount in the Explosive Runic Arrows'
       description (50% instead of the actual 80%).
+  * S15 - Shadows of Time:
+    * Fixed typo in prose.
+
+* Units:
+  * Fixed typo in the Chaos Invoker's description.
 
 
 Version 1.99.6 (codename Reconstruction RC 7):
