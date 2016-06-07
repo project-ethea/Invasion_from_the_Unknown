@@ -4,7 +4,10 @@ INVASION FROM THE UNKNOWN - CHANGELOG
 
 Version 1.99.6+dev (codename Reconstruction RC 8):
 --------------------------------------------------
-
+* Scenarios:
+  * S14 - Bye and Behold:
+    * Fixed incorrect secondary damage amount in the Explosive Runic Arrows'
+      description (50% instead of the actual 80%).
 
 
 Version 1.99.6 (codename Reconstruction RC 7):
