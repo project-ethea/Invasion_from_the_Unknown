@@ -14,7 +14,9 @@ Version 1.99.5+dev (codename Reconstruction RC 7):
 * Units:
   * Balancing:
     * Increased base Union damage from 28-3 to 29-3.
-  * Merged Orcish Nightblade unit description from mainline Wesnoth 1.13.2.
+  * New unit type descriptions:
+    * Faerie Sprite, Fire Faerie, Faerie Dryad, Faerie Forest Spirit.
+    * Merged Orcish Nightblade unit description from mainline Wesnoth 1.13.2.
 
 
 Version 1.99.5 (codename Reconstruction RC 6):
