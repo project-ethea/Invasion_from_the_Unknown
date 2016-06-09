@@ -10,6 +10,9 @@ Version 1.99.6+dev (codename Reconstruction RC 8):
       description (50% instead of the actual 80%).
   * S15 - Shadows of Time:
     * Fixed typo in prose.
+  * S21 - Innuendo:
+    * Make sure the Shaxthal Sentry Drone miniboss doesn't run off to the
+      nearest keep.
 
 * Units:
   * Fixed typo in the Chaos Invoker's description.
