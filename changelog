@@ -18,6 +18,8 @@ Version 1.99.6+dev (codename Reconstruction RC 8):
       a late event trigger filter.
 
 * Units:
+  * New unit type descriptions:
+    * Shaxthal Sentry Drone.
   * Fixed typo in the Chaos Invoker's description.
 
 
