@@ -13,6 +13,9 @@ Version 1.99.6+dev (codename Reconstruction RC 8):
   * S21 - Innuendo:
     * Make sure the Shaxthal Sentry Drone miniboss doesn't run off to the
       nearest keep.
+    * Fix an inexplicable issue where a radial SLF gets doubled when [or]'d,
+      resulting in the first chamber near the starting area being matched by
+      a late event trigger filter.
 
 * Units:
   * Fixed typo in the Chaos Invoker's description.
