@@ -5,6 +5,11 @@ INVASION FROM THE UNKNOWN - CHANGELOG
 Version 1.99.7+dev (codename Reconstruction RC 9):
 --------------------------------------------------
 * Scenarios:
+  * Rolled back change from versions 1.99.3 and 1.99.5 that causes auto-recalls
+    to become loyal for the remainder of the campaign due to an engine bug in
+    the implementation of [object] duration=scenario with certain effects. This
+    causes auto-recalls to cost upkeep again in scenarios 2, 3, 4, 5a, 5b, 6,
+    8, and 10.
   * S21 - Innuendo:
     * Cleaner (but functionally-equivalent) fix for the SLF issue fixed
       in RC 8.
