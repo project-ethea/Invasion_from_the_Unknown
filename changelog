@@ -2,8 +2,8 @@
 INVASION FROM THE UNKNOWN - CHANGELOG
 =====================================
 
-Version 1.99.7+dev (codename Reconstruction RC 9):
---------------------------------------------------
+Version 1.99.8 (codename Reconstruction RC 9):
+----------------------------------------------
 * Scenarios:
   * Rolled back change from versions 1.99.3 and 1.99.5 that causes auto-recalls
     to become loyal for the remainder of the campaign due to an engine bug in
