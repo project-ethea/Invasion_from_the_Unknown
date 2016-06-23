@@ -4,6 +4,10 @@ INVASION FROM THE UNKNOWN - CHANGELOG
 
 Version 1.99.8+dev (codename Reconstruction RC 10):
 ---------------------------------------------------
+* Scenarios:
+  * 22A - Face of the Enemy:
+    * Lift shroud prior to highlighting the exit gate during the boss fight.
+
 * Units:
   * New unit type descriptions
     * Shaxthal Assault Drone.
