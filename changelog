@@ -15,6 +15,8 @@ Version 2.0.0+dev:
 * Units:
   * Fixed a cutscene unit type used for Anlindë being always visible in the
     help browser and unit tree.
+  * Made it so the full list of advancements for the Elvish Civilian display
+    in the help browser/unit tree instead of only the male advancements.
 
 
 Version 2.0.0:
