@@ -12,6 +12,10 @@ Version 2.0.0+dev:
     * Replaced the beginning of a pivotal line by Elynia with a rephrased
       version provided by vultraz.
 
+* Units:
+  * Fixed a cutscene unit type used for Anlindë being always visible in the
+    help browser and unit tree.
+
 
 Version 2.0.0:
 --------------
