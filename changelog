@@ -21,6 +21,13 @@ Version 2.0.0+dev:
   * Elvish Avatar (Anlindë) now has AMLAs:
     * Add drains special to melee attack (+25% XP)
     * Increase gossamer strikes by 1 (+25% XP)
+  * Redone Lady of Light (Elynia) AMLA tree:
+    * Strength I: +5 HP (+25% XP)
+    * Strength II: melee damage +1 (+25% XP)
+      * Thorns I: 8-3 ranged pierce, magical (+30% XP)
+      * Thorns II: thorns damage +1, drains (+35% XP)
+    * Strength III: melee strikes +1 (+25% XP)
+    * Strength IV: +10 HP, melee damage +1 (+30% XP)
   * Fixed a cutscene unit type used for Anlindë being always visible in the
     help browser and unit tree.
   * Made it so the full list of advancements for the Elvish Civilian display
