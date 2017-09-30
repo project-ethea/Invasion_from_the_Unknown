@@ -31,6 +31,7 @@ Version 2.0.0+dev:
     * Strength IV: +10 HP, melee damage +1 (+30% XP)
   * Fixed a cutscene unit type used for Anlindë being always visible in the
     help browser and unit tree.
+  * New unit type descriptions: Chaos Cataphract.
   * Made it so the full list of advancements for the Elvish Civilian display
     in the help browser/unit tree instead of only the male advancements.
 
