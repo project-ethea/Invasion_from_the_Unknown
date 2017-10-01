@@ -27,8 +27,11 @@ Version 2.0.0+dev:
     * Strength II: melee damage +1 (+25% XP)
       * Thorns I: 8-3 ranged pierce, magical (+30% XP)
       * Thorns II: thorns damage +1, drains (+35% XP)
+      * Focus I: faerie fire damage +1 (+40% XP)
     * Strength III: melee strikes +1 (+25% XP)
+      * Focus II: faerie fire strikes +1 (+50% XP)
     * Strength IV: +10 HP, melee damage +1 (+30% XP)
+      * Focus III: ensnare strikes +1 (+50% XP)
   * Fixed a cutscene unit type used for Anlindë being always visible in the
     help browser and unit tree.
   * New unit type descriptions: Chaos Cataphract, Hound of Chaos, Demonic
