@@ -47,6 +47,7 @@ Version 2.0.0+dev:
     Hound, Hellhound.
   * Made it so the full list of advancements for the Elvish Civilian display
     in the help browser/unit tree instead of only the male advancements.
+  * Rabbits can no longer move into village tiles.
 
 
 Version 2.0.0:
