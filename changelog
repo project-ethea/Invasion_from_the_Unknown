@@ -15,6 +15,8 @@ Version 2.0.0+dev:
   * S5b - Cursed Plateau:
     * Increased turn limit.
     * Remove gold piles when acquired.
+  * S14 - Bye and Behold:
+    * Increased enemy gold.
   * S22B - The Dark Hive:
     * Replaced the beginning of a pivotal line by Elynia with a rephrased
       version provided by vultraz.
