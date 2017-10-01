@@ -32,6 +32,7 @@ Version 2.0.0+dev:
       * Focus II: faerie fire strikes +1 (+50% XP)
     * Strength IV: +10 HP, melee damage +1 (+30% XP)
       * Focus III: ensnare strikes +1 (+50% XP)
+  * Increased Lady of Light's base XP from 90 to 110.
   * Fixed a cutscene unit type used for Anlindë being always visible in the
     help browser and unit tree.
   * New unit type descriptions: Chaos Cataphract, Hound of Chaos, Demonic
