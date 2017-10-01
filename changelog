@@ -19,6 +19,8 @@ Version 2.0.0+dev:
       version provided by vultraz.
 
 * Units:
+  * Reworked description and WML for the Intimidates ability granted by the
+    special Shardia's Meteor item from S5b.
   * Elvish Avatar (Anlindë) now has AMLAs:
     * Add drains special to melee attack (+25% XP)
     * Increase gossamer strikes by 1 (+25% XP)
