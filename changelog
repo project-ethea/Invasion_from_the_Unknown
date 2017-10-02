@@ -37,9 +37,9 @@ Version 2.0.0+dev:
       * Focus II: faerie fire strikes +1 (+50% XP)
     * Strength IV: +10 HP, melee damage +1 (+30% XP)
       * Focus III: ensnare strikes +1 (+50% XP)
-    * Shielding I: +10% arcane resistance (+40% XP), requires both Focus III
-      and Strength III
-    * Shielding II: +20% arcane resistance (+60% XP)
+    * Shielding I: +10% arcane resistance (+40% XP), requires both Focus I and
+      Strength III
+    * Shielding II: +20% arcane resistance (+60% XP), requires Focus II
   * Increased base Shaxthal resistances to arcane from -20% to -10%.
   * Increased boss Shaxthal resistances to arcane from -10% to 0%.
   * Fixed a cutscene unit type used for Anlindë being always visible in the
