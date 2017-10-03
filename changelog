@@ -17,6 +17,8 @@ Version 2.0.0+dev:
     * Remove gold piles when acquired.
   * S14 - Bye and Behold:
     * Increased enemy gold.
+  * S21 - Innuendo:
+    * Increased turn limit.
   * S22B - The Dark Hive:
     * Replaced the beginning of a pivotal line by Elynia with a rephrased
       version provided by vultraz.
