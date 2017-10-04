@@ -22,6 +22,8 @@ Version 2.0.0+dev:
   * S22B - The Dark Hive:
     * Replaced the beginning of a pivotal line by Elynia with a rephrased
       version provided by vultraz.
+  * S23A - Into the Lair:
+    * Increased turn limit.
 
 * Units:
   * Reworked description and WML for the Intimidates ability granted by the
