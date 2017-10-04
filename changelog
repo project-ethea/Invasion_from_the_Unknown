@@ -26,6 +26,14 @@ Version 2.0.0+dev:
     * Increased turn limit.
   * S23B - Until Death:
     * Decreased base HP for the boss from 217 to 208.
+    * Shifted boss guards around to delay them engaging in combat with player
+      units.
+    * Removed most Shaxthal spawners around the entrance sentry keeps.
+    * The boss can now only recruit up to one Goliath on Hard instead of two.
+    * Possessed units regenerate less health.
+    * Reduced frequency of Psy Crawler spawns.
+    * The boss can only spawn Shaxthal Worms when hit during the last stage on
+      Easy difficulty. Also reduced the chance for spawns on all difficulties.
     * The boss can no longer remove negative effects (which is to say, the
       slowed effect) while absorbing damage during the second stage of the
       boss fight. The justification is that this boss does not have the same
