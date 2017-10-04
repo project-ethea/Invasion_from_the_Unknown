@@ -58,7 +58,7 @@ function wesnoth.wml_actions.mood_music(cfg)
 
 	-- NOTE: Hardcoded for performance.
 	if #wesnoth.get_units({
-		id = "Goliath,Chaos Warlord,Mal Hekuba,Kalazar,Elyssa,Chaos Emperor,Argan"
+		id = "Goliath,Chaos Warlord,Mal Hekuba,Kalazar,Elyssa,Chaos Emperor,Argan,Tux"
 	}) > 0 then
 		return
 	end
