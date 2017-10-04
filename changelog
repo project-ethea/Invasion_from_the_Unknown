@@ -57,6 +57,7 @@ Version 2.0.0+dev:
     * Shielding I: +10% arcane resistance (+40% XP), requires both Focus I and
       Strength III
     * Shielding II: +20% arcane resistance (+60% XP), requires Focus II
+  * Removed Thorns attack from the unit type used for Elynia after S23B.
   * Increased base Shaxthal resistances to arcane from -20% to -10%.
   * Increased Chaos Warlord's resistances to arcane from -10% to 0%.
   * Shadow Spawn resistances changed and HP reduced from 29 to 26:
