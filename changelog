@@ -25,6 +25,7 @@ Version 2.0.0+dev:
   * S23A - Into the Lair:
     * Increased turn limit.
   * S23B - Until Death:
+    * Decreased base HP for the boss from 217 to 208.
     * The boss can no longer remove negative effects (which is to say, the
       slowed effect) while absorbing damage during the second stage of the
       boss fight. The justification is that this boss does not have the same
