@@ -13,7 +13,7 @@ PACKS                := \
 	CAMPAIGN_INVASION_FROM_THE_UNKNOWN_EPISODE_I \
 	CAMPAIGN_INVASION_FROM_THE_UNKNOWN_EPISODE_II
 
-include ../naia/tools/Makefile.wmltools
+include ../Naia/tools/Makefile.wmltools
 
 pot: local-pot
 
