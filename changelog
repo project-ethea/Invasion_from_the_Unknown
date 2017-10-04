@@ -52,6 +52,10 @@ Version 2.0.0+dev:
     * Shielding II: +20% arcane resistance (+60% XP), requires Focus II
   * Increased base Shaxthal resistances to arcane from -20% to -10%.
   * Increased Chaos Warlord's resistances to arcane from -10% to 0%.
+  * Shadow Spawn resistances changed and HP reduced from 29 to 26:
+    * Blade/pierce/impact 50% -> 20%
+    * Fire 10% -> -20%
+    * Cold 70% -> 50%
   * Fixed a cutscene unit type used for Anlindë being always visible in the
     help browser and unit tree.
   * New unit type descriptions: Chaos Cataphract, Hound of Chaos, Demonic
