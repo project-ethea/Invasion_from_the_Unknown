@@ -46,17 +46,17 @@ Version 2.0.0+dev:
     * Increase gossamer strikes by 1 (+25% XP)
   * Redone Lady of Light (Elynia) AMLA tree:
     * Strength I: +5 HP (+25% XP)
+      * Thorns I: 8-3 ranged pierce, magical (+25% XP)
     * Strength II: melee damage +1 (+25% XP)
-      * Thorns I: 8-3 ranged pierce, magical (+30% XP)
+      * Focus I: faerie fire damage +1 (+35% XP)
       * Thorns II: thorns damage +1, drains (+35% XP)
-      * Focus I: faerie fire damage +1 (+40% XP)
     * Strength III: melee strikes +1 (+25% XP)
-      * Focus II: faerie fire strikes +1 (+50% XP)
+      * Focus II: faerie fire strikes +1 (+40% XP)
     * Strength IV: +10 HP, melee damage +1 (+30% XP)
-      * Focus III: ensnare strikes +1 (+50% XP)
-    * Shielding I: +10% arcane resistance (+40% XP), requires both Focus I and
+      * Focus III: ensnare strikes +1 (+40% XP)
+    * Shielding I: +10% arcane resistance (+30% XP), requires both Focus I and
       Strength III
-    * Shielding II: +20% arcane resistance (+60% XP), requires Focus II
+    * Shielding II: +20% arcane resistance (+50% XP), requires Focus II
   * Removed Thorns attack from the unit type used for Elynia after S23B.
   * Increased base Shaxthal resistances to arcane from -20% to -10%.
   * Increased Chaos Warlord's resistances to arcane from -10% to 0%.
