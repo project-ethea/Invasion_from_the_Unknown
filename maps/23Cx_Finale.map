@@ -1,8 +1,5 @@
-border_size=1
-usage=map
-
-Md, Hhd, Hd, Hd, Hd, Dd, Dd, Dd, Dd, Dd, Cud, Ds, Ds, Ds, Re, Yhs, Yhs, Ds, Ds, Re, Ds, Cud, Ds, Ds, Re, Yhs, Ds^Edb, Dd, Hd, Dd, Dd, Hd, Hd, Hd, Dd, Dd, Hd, Hd, Dd^Edb, Dd, Dd, Rd, Rd, Dd
-Hd, Hhd, Hhd, Hd, Dd, Dd, Dd, Dd^Edpp, Dd, Ds, Ds, Qxu, Ds, Ds, Yhs, Yhs, Ds, Ds^Es, Ds^Edb, Qxu, Qxu, Ds, Ds, Ds, Qxu, Ds^Edb, Dd^Edb, Dd, Hd, Dd, Dd^Edb, Hd, Hd, Hd, Dd, Hd, Hd, Dd^Edb, Dd^Edb, Dd^Edb, Rd, Rd, Rd^Edb, Dd^Edb
+Mdd, Hd, Hd, Hd, Hd, Dd, Dd, Dd, Dd, Dd, Cud, Ds, Ds, Ds, Re, Yhs, Yhs, Ds, Ds, Re, Ds, Cud, Ds, Ds, Re, Yhs, Ds^Edb, Dd, Hd, Dd, Dd, Hd, Hd, Hd, Dd, Dd, Hd, Hd, Dd^Edb, Dd, Dd, Rd, Rd, Dd
+Hd, Hd, Hd, Hd, Dd, Dd, Dd, Dd^Edpp, Dd, Ds, Ds, Qxu, Ds, Ds, Yhs, Yhs, Ds, Ds^Es, Ds^Edb, Qxu, Qxu, Ds, Ds, Ds, Qxu, Ds^Edb, Dd^Edb, Dd, Hd, Dd, Dd^Edb, Hd, Hd, Hd, Dd, Hd, Hd, Dd^Edb, Dd^Edb, Dd^Edb, Rd, Rd, Rd^Edb, Dd^Edb
 Hd, Hd, Hd, Hd, Qxu, Dd, Ds^Edb, Dd^Edb, Qxu, Ds, Qxu, Qxu, Qxu, Qxu, Ds, Yhs^Xp, Ds, Ds^Edb, Yhs, Qxu, Re, Qxu, Qxu, Yhs, Qxu, Qxu, Dd^Edb, Dd^Edb, Dd^Vdt, Hd, Dd^Edb, Dd, Dd, Dd, Co, Dd, Dd, Dd, Dd^Edb, Dd, Dd, Dd^Edb, Dd^Edb, Dd^Edb
 Hd, Hd, Ds, Qxu, Qxu, Dd^Edb, Dd^Edb, Dd^Edb, Ds, Qxu, Qxu, Qxu, Yhs, Qxu, Qxu, Ds, Cud, Ds, Re^Es, Re^Es, Qxu, Qxu, Qxu, Re, Re, Ds^Edb, Dd, Hd, Dd, Dd^Edb, Dd^Edb, Co, Dd^Edb, Dd, Dd, Co, Dd, Dd^Vda, Rd, Rd, Dd^Edb, Dd^Edb, Dd^Edb, Dd^Edb
 Dd, Dd, Co, Dd^Edb, Dd^Edb, Dd^Edb, Dd^Edb, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Yhs, Qxu, Ds, Qxu, Ds, Re, Re, Qxu, Ds, Qxu, Qxu, Ds, Ds, Dd, Qxu, Ds, Dd^Edb, Dd, Dd, Ds^Edb, Dd^Edb, Dd^Vda, Dd, Dd^Edb, Rd, Dd, Rd, Dd^Edb, Hd, Dd^Edb, Dd^Edb
