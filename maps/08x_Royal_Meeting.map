@@ -1,25 +1,22 @@
-border_size=1
-usage=map
-
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos^Zok, Xos^Zok, Xos^Zok, Xos^Zok, Xos^Zok, Xos^Zok, Xos^Zok, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos^Zok, Cud^Zok, Xos^Zok, Cud^Zok, Xos^Zok, Cud^Zok, Xos^Zok, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos^Zok, Cud^Zok, Cud^Zok, Cud^Zok, Cud^Zok, Cud^Zok, Xos^Zok, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos^Zok, Xos^Zok, Xos^Zok, Xos, Xos, Xol, Cud, Cud, Cud, Cud, Cud, Xol, Xos, Xos, Xos^Zok, Xos^Zok, Xos^Zok, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos^Zok, Re^Zok, Re^Zok, Re^Fds, Xos, Xol, Xol, Cud, Cud^Bz, 2 Kud^Ii, Cud^Bz, Cud, Xol, Xol, Xos, Re^Gvs, Re^Zok, Re^Zok, Xos^Zok, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos^Zok, Xos, Re^Gvs, Rp^Emf, Rp, Cud, Cud, Xos, Cud, Cud, Cud, Xos, Cud, Cud, Rp, Rp^Em, Re^Gvs, Xos, Xos^Zok, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Cud, Cud, Xos, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Xos, Cud, Cud, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Cud, Wog, Wog, Rb, Rr, Rrc^Bz, Rrc, Rrc, Rrc, Rrc^Bz, Rr, Rb, Wog, Wog, Cud, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos^Zok, Xos, Rp, Cud, Wog, Wog, Xos, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Xos, Wog, Wog, Cud, Rp, Xos, Xos^Zok, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos^Zok, Re^Zok, Re^Gvs, Rp^Em, Cud, Wog, Wog, Rb, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Rb, Wog, Wog, Cud, Rp^Emf, Re^Gvs, Re^Zok, Xos^Zok, Xos, Xos, Xos
-Xos, Xos, Xos, Xos^Zok, Re^Zok, Re^Gvs, Rp^Em, Cud, Wog, Wog, Rb, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Rb, Wog, Wog, Cud, Rp^Em, Re^Fds, Re^Zok, Xos^Zok, Xos, Xos, Xos
-Xos, Xos, Xos, Xos^Zok, Xos^Zok, Re^Fds, Rp^Emf, Cud, Wog, Wog, Xos, Rr, Rrc, Rrc, 1 Rrc, Rrc, Rrc, Rr, Xos, Wog, Wog, Cud, Rp^Fds, Re^Gvs, Xos^Zok, Xos^Zok, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Cud, Wog, Wog, Rb, Rr, Rrc^Bz, Rrc, Rrc, Rrc, Rrc^Bz, Rr, Rb, Wog, Wog, Cud, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos^Zok, Xos, Rp^Fdw, Cud, Wog, Wog, Xos, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Xos, Wog, Wog, Cud, Rp, Xos, Xos^Zok, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos^Zok, Re^Zok, Re^Gvs, Rp^Em, Cud, Wog, Wog, Rb, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Rb, Wog, Wog, Cud, Rp^Fds, Re^Fds, Re^Zok, Xos^Zok, Xos, Xos, Xos
-Xos, Xos, Xos, Xos^Zok, Re^Zok, Re^Gvs, Rp^Emf, Cud, Wog, Wog, Rb, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Rb, Wog, Wog, Cud, Rp^Emf, Re^Fds, Re^Zok, Xos^Zok, Xos, Xos, Xos
-Xos, Xos, Xos, Xos^Zok, Xos^Zok, Re^Gvs, Rp, Cud, Wog, Wog, Xos, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Xos, Wog, Wog, Cud, Rp^Em, Re^Gvs, Xos^Zok, Xos^Zok, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Cud, Wog, Wog, Rb, Rr, Rrc^Bz, Rrc, Rrc, Rrc, Rrc^Bz, Rr, Rb, Wog, Wog, Cud, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos^Zok, Xos, Rp, Cud, Wog, Wog, Xos, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Xos, Wog, Wog, Cud, Rp^Em, Xos, Xos^Zok, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos^Zok, Re^Zok, Re^Gvs, Rp^Emf, Cud, Wog, Wog, Rb, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Rb, Wog, Wog, Cud, Rp^Emf, Re^Gvs, Re^Zok, Xos^Zok, Xos, Xos, Xos
-Xos, Xos, Xos, Xos^Zok, Re^Zok, Re^Fds, Rp^Emf, Cud, Wog, Wog, Rb, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Rb, Wog, Wog, Cud, Rp^Em, Re^Fds, Re^Zok, Xos^Zok, Xos, Xos, Xos
-Xos, Xos, Xos, Xos^Zok, Xos^Zok, Re^Fds, Rp^Em, Cud, Wog, Wog, Xos, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Xos, Wog, Wog, Cud, Rp, Re^Gvs, Xos^Zok, Xos^Zok, Xos, Xos, Xos
+Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc^Zok, Xoc^Zok, Xoc^Zok, Xoc^Zok, Xoc^Zok, Xoc^Zok, Xoc^Zok, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc^Zok, Cud^Zok, Xoc^Zok, Cud^Zok, Xoc^Zok, Cud^Zok, Xoc^Zok, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc^Zok, Cud^Zok, Cud^Zok, Cud^Zok, Cud^Zok, Cud^Zok, Xoc^Zok, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xos^Zok, Xos^Zok, Xos^Zok, Xoc, Xoc, Xoc, Cud, Cud, Cud, Cud, Cud, Xoc, Xoc, Xoc, Xoc^Zok, Xoc^Zok, Xoc^Zok, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Xoc, Xos^Zok, Re^Zok, Re^Zok, Re^Fds, Xoc, Xoc^Efs, Xoc, Cud, Cud^Ebn, 2 Kud^Ii, Cud^Ebn, Cud, Xoc, Xoc^Efs, Xoc, Re^Gvs, Re^Zok, Re^Zok, Xoc^Zok, Xoc, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Xoc, Xos^Zok, Xoc, Re^Gvs, Rp^Emf, Rp, Cud, Cud, Xoc, Cud, Cud, Cud, Xoc, Cud, Cud, Rp, Rp^Em, Re^Gvs, Xoc, Xoc^Zok, Xoc, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Cud, Cud, Xoc, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Xoc, Cud, Cud, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Cud, Wog, Wog, Rb, Rr, Rrc^Ebn, Rrc, Rrc, Rrc, Rrc^Ebn, Rr, Rb, Wog, Wog, Cud, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Xoc^Zok, Xoc, Rp, Cud, Wog, Wog, Xoc, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Xoc, Wog, Wog, Cud, Rp, Xoc, Xoc^Zok, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc^Zok, Re^Zok, Re^Gvs, Rp^Em, Cud, Wog, Wog, Rb, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Rb, Wog, Wog, Cud, Rp^Emf, Re^Gvs, Re^Zok, Xoc^Zok, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc^Zok, Re^Zok, Re^Gvs, Rp^Em, Cud, Wog, Wog, Rb, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Rb, Wog, Wog, Cud, Rp^Em, Re^Fds, Re^Zok, Xoc^Zok, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc^Zok, Xoc^Zok, Re^Fds, Rp^Emf, Cud, Wog, Wog, Xoc, Rr, Rrc, Rrc, 1 Rrc, Rrc, Rrc, Rr, Xoc, Wog, Wog, Cud, Rp^Fds, Re^Gvs, Xoc^Zok, Xoc^Zok, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Cud, Wog, Wog, Rb, Rr, Rrc^Ebn, Rrc, Rrc, Rrc, Rrc^Ebn, Rr, Rb, Wog, Wog, Cud, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Xoc^Zok, Xoc, Rp^Fdw, Cud, Wog, Wog, Xoc, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Xoc, Wog, Wog, Cud, Rp, Xoc, Xoc^Zok, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc^Zok, Re^Zok, Re^Gvs, Rp^Em, Cud, Wog, Wog, Rb, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Rb, Wog, Wog, Cud, Rp^Fds, Re^Fds, Re^Zok, Xoc^Zok, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc^Zok, Re^Zok, Re^Gvs, Rp^Emf, Cud, Wog, Wog, Rb, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Rb, Wog, Wog, Cud, Rp^Emf, Re^Fds, Re^Zok, Xoc^Zok, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc^Zok, Xoc^Zok, Re^Gvs, Rp, Cud, Wog, Wog, Xoc, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Xoc, Wog, Wog, Cud, Rp^Em, Re^Gvs, Xoc^Zok, Xoc^Zok, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Cud, Wog, Wog, Rb, Rr, Rrc^Ebn, Rrc, Rrc, Rrc, Rrc^Ebn, Rr, Rb, Wog, Wog, Cud, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Xoc^Zok, Xoc, Rp, Cud, Wog, Wog, Xoc, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Xoc, Wog, Wog, Cud, Rp^Em, Xoc, Xoc^Zok, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc^Zok, Re^Zok, Re^Gvs, Rp^Emf, Cud, Wog, Wog, Rb, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Rb, Wog, Wog, Cud, Rp^Emf, Re^Gvs, Re^Zok, Xoc^Zok, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc^Zok, Re^Zok, Re^Fds, Rp^Emf, Cud, Wog, Wog, Rb, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Rb, Wog, Wog, Cud, Rp^Em, Re^Fds, Re^Zok, Xoc^Zok, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc^Zok, Xoc^Zok, Re^Fds, Rp^Em, Cud, Wog, Wog, Xoc, Rr, Rrc, Rrc, Rrc, Rrc, Rrc, Rr, Xoc, Wog, Wog, Cud, Rp, Re^Gvs, Xoc^Zok, Xoc^Zok, Xoc, Xoc, Xoc
