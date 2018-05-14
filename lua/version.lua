@@ -23,13 +23,15 @@ local v = wesnoth.compare_versions
 -- #textdomain wesnoth-Invasion_from_the_Unknown
 local _ = wesnoth.textdomain "wesnoth-Invasion_from_the_Unknown"
 
-if v(ver, '<', '1.12.0') then
-	do_bug( _ "Invasion from the Unknown requires Wesnoth 1.12.0 or later.", false)
+if v(ver, '<', '1.13.12') then
+	do_bug( _ "Invasion from the Unknown requires Wesnoth 1.13.12 - 1.14.x.", false)
 end
 
-if v(ver, '>=', '1.13.0') then
-	do_bug( _ "Invasion from the Unknown has not been tested with Wesnoth 1.13.x and there may be broken functionality. Please use version 1.12.0 or later.", false)
+if v(ver, '>=', '1.15.0') then
+	do_bug( _ "Invasion from the Unknown has not been tested with Wesnoth 1.15.x and there may be broken functionality.", false)
 end
+
+do_bug( _ "This is an experimental port of Invasion from the Unknown to Wesnoth 1.14.x. If you choose to continue, you must report any issues to the author on the project’s bug tracker:\n\n    <https://github.com/project-ethea/Invasion from the Unknown/issues>", true)
 
 ---
 -- The following add-ons are known to case balancing issues with this campaign
