@@ -28,7 +28,7 @@ Installing Invasion from the Unknown
 --------------------------------------------------------------------------------
 
 Requirements:
- * Battle for Wesnoth 1.12.0 or later 1.12.x versions
+ * Battle for Wesnoth 1.14.x.
  * *Invasion from the Unknown Music* add-on from the Wesnoth add-ons server
    (optional, includes additional music used throughout the campaign).
 
@@ -41,6 +41,14 @@ in the Wesnoth.org wiki for information on locating your user data directory.
 [2]: <https://github.com/project-ethea/Invasion_from_the_Unknown>
 [3]: <https://wiki.wesnoth.org/EditingWesnoth#Where_is_my_user_data_directory.3F>
 
+For using the Git version, you will also need to install [Naia][4] into
+`<user data>/data/add-ons`, or into `<user data>/data/add-ons/Invasion_from_the_Unknown`
+so that there is a `Naia` directory in either location. The version of Naia
+installed directly to the add-ons directory will override any found inside the
+campaign’s own directory.
+
+[4]: <https://github.com/project-ethea/Naia>
+
 A game screen resolution of **800x600 or greater** is recommended. Some
 sequences make use of floating labels, halos, and standing unit animations, so
 you might want to make sure these options are enabled under
@@ -51,11 +59,11 @@ Reporting issues
 --------------------------------------------------------------------------------
 
 If you encounter any issues, you may report them at the campaign’s
-[development topic][4] on the Wesnoth.org forums or its [issue tracker][5] on
+[development topic][5] on the Wesnoth.org forums or its [issue tracker][6] on
 GitHub.
 
-[4]: <https://r.wesnoth.org/t35356>
-[5]: <https://github.com/project-ethea/Invasion_from_the_Unknown/issues>
+[5]: <https://r.wesnoth.org/t35356>
+[6]: <https://github.com/project-ethea/Invasion_from_the_Unknown/issues>
 
 Be aware that depending on the nature of the problem, you may be asked to
 provide a saved game file to reproduce it.
@@ -65,6 +73,7 @@ Contacting the author
 --------------------------------------------------------------------------------
 
 You may contact the author of this campaign via forum PM to shadowm on the
-[Wesnoth.org forums][6] or the IRC channel ##shadowm on chat.freenode.net.
+[Wesnoth.org forums][7], or through her personal [Discord server][8].
 
-[6]: <https://forums.wesnoth.org/>
+[7]: <https://forums.wesnoth.org/>
+[8]: <https://discord.gg/smJY9aK>
