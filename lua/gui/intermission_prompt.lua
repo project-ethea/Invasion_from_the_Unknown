@@ -1,4 +1,4 @@
-local T = helper.set_wml_tag_metatable {}
+local T = wml.tag {}
 
 function wesnoth.wml_actions.intermission_prompt(cfg)
 	local W = wesnoth.wml_actions
