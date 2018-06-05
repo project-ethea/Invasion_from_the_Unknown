@@ -1,6 +1,6 @@
 --#textdomain wesnoth-Invasion_from_the_Unknown
 
-local T = wml.tag {}
+local T = wml.tag
 
 function wesnoth.wml_actions.character_descriptions_prompt(cfg)
 	local _ = wesnoth.textdomain "wesnoth-Invasion_from_the_Unknown"
