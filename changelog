@@ -2,9 +2,67 @@
 INVASION FROM THE UNKNOWN - CHANGELOG
 =====================================
 
-Version 2.0.1+dev:
+Version 2.1.0-dev:
 ------------------
+* General:
+  * Wesnoth 1.14 support implememented, raising the minimum version requirement
+    to Wesnoth 1.13.12 (Wesnoth 1.15.x is *not* supported yet). Some large
+    chunks of code (in particular FOREACH loops) were rewritten in the
+    process.
+  * Shared units, assets, code, and translations are now part of the Naia
+    library, also used by AtS version 0.10.0 and later.
 
+* Language and i18n:
+  * Removed empty Dutch translation.
+
+* Music:
+  * Added Aleksi's gameplay06.ogg to IftU Music 0.3.1.
+
+* Scenarios:
+  * General:
+    * Revised a few maps to use 1.14 terrains.
+    * The old IftU/AtS gates have been replaced with the new mainline gates.
+      Special event gates are now recolored mainline rusty gates. While the
+      open version does exist, it's not currently used since event gates are
+      handled as barriers that get completely removed by scenarios.
+    * Added wall moss overlays from Naia/AtS to hive maps.
+    * Unit loyalty in boss/finale scenarios is now controlled using temporary
+      or permanent [object] modifications instead of direct attribute
+      manipulation, as the latter causes issues in 1.14. The same applies to
+      the hidden loyal trait for special characters such as Mal Keshar,
+      Anlindë, and Elynia (issue #27).
+  * S2 - A Real Confrontation:
+    * Lédinor's supporter now starts with 0 moves and outside his castle (see
+      issue #29).
+  * S7 - Goliath:
+    * Removed demon embedded in a wall (issue #36).
+    * Kill all Automaton-line units at the same time at the end (issue #36).
+  * S10 - The Source of Light:
+    * Disallow IftU's special brand of Elvish Enchantress from using the
+      Berserker Potion, for what little good it does.
+  * S13 - Face Your Fate:
+    * Dwarvish Ulfserkers can no longer be recruited once the Warlord arrives
+      (issue #44).
+  * S20 - The Heart:
+    * Unhide side 6 as its leader arrives to the battlefield after turn 1
+      (issue #54).
+  * S23A - Into the Lair:
+    * Now using Aleksi's gameplay06.ogg as the initial track.
+  * S23B - Until Death:
+    * Using mainline's frantic.ogg during the last part of stage 1.
+    * Fixed issues with team color ellipses when Galas gets possessed during
+      stage 1 (issue #60).
+  * S24 - Epilogue:
+    * Minor music and UI tweaks.
+
+* Units:
+  * Balancing:
+    * Elynia's Thorns I base damage increased by 1 (9-3), Thorns II increase by
+      2 instead of 1 (fully upgraded total is now 11-3).
+  * Synced descriptions with AtS for a few units that were somehow not already
+    synced between IftU 2.0.1 and AtS 0.9.17+.
+  * Fixed female Elvish Civilian making male sounds when hit (not killed).
+  * Staff-wielding units use the new staff sounds in 1.14.
 
 
 Version 2.0.1:
