@@ -4,7 +4,26 @@ INVASION FROM THE UNKNOWN - CHANGELOG
 
 Version 2.1.0+dev:
 ------------------
-
+* Units:
+  * Revised Elvish Avatar (Anlindë)'s AMLA tree:
+    * XP increase for all AMLAs is 15%.
+  * Revised Lady of Light (Elynia)'s AMLA tree:
+    * XP increase for all AMLAs is 15%.
+    * Base XP decreased from 90 XP to 70 XP.
+    * Strength I: HP +4, melee dmg +1.
+    * Strength II: HP +4, melee str +1.
+    * Strength III: HP +5.
+    * Strength IV: HP +5, melee dmg +1.
+    * Strength V: HP +5.
+    * Focus I: faerie fire dmg +1, requires Strength I.
+    * Focus II: faerie fire str +1, requires Strength III.
+    * Focus III: ensnare str +1, requires Strength IV.
+    * Shielding I: arcane res +10%, requires Focus I.
+    * Shielding II: arcane res +10%, impact res +10%, requires Focus II.
+    * Shielding III: arcane res +10%, cold res +10%, requires Strength IV.
+    * Thorns I: new attack - ranged pierce magical+drain 10-2.
+    * Thorns II: thorns str +1.
+    * Thorns III: thorns dmg +2.
 
 
 Version 2.1.0:
