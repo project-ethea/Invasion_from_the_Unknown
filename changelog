@@ -14,7 +14,7 @@ Version 2.1.0+dev:
     * Strength II: HP +4, melee str +1.
     * Strength III: HP +5.
     * Strength IV: HP +5, melee dmg +1.
-    * Strength V: HP +5.
+    * Strength V: HP +7.
     * Focus I: faerie fire dmg +1, requires Strength I.
     * Focus II: faerie fire str +1, requires Strength III.
     * Focus III: ensnare str +1, requires Strength IV.
