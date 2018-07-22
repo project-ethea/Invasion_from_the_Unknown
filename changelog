@@ -2,8 +2,11 @@
 INVASION FROM THE UNKNOWN - CHANGELOG
 =====================================
 
-Version 2.1.0+dev:
-------------------
+Version 2.1.1:
+--------------
+* General:
+  * Update to Naia 20180722.
+
 * Units:
   * Revised Elvish Avatar (Anlindë)'s AMLA tree:
     * XP increase for all AMLAs is 15%.
