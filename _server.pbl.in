@@ -1,6 +1,6 @@
 title="Invasion from the Unknown"
 type="campaign"
-version="@VERSION@"
+version="@ PBLPOST:VERSION @"
 dependencies="IftU_Music"
 
 translate="true"
@@ -23,7 +23,7 @@ Discussion threads in the Wesnoth.org forums:
  • Main discussion thread: ‹https://r.wesnoth.org/t43309›
  • Feedback thread: ‹https://r.wesnoth.org/t43307›"
 
-passphrase="@PASSPHRASE@"
+passphrase="@ PBLPOST:PASSPHRASE Invasion_from_the_Unknown @"
 
 [feedback]
     topic_id=43309
