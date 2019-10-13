@@ -78,13 +78,13 @@ function wesnoth.wml_actions.deactivate_and_serialize_sides(cfg)
 	local variable = cfg.variable or "sides"
 	local array_index = 0
 
-	wesnoth.set_variable(variable, {})
+	wml.variables[variable] = {}
 
 	for t, side_number in helper.get_sides(cfg) do
 		-- wesnoth.message("WML", string.format("store side %u", side_number))
 		local side_store = string.format("%s[%u]", variable, array_index)
 
-		wesnoth.set_variable(side_store, {})
+		wml.variables[side_store] = {}
 
 		wesnoth.wml_actions.store_side {
 			variable = side_store, side = side_number
@@ -139,7 +139,7 @@ function wesnoth.wml_actions.update_escape_objectives(cfg)
 		if id == obj.id then
 			obj.active = true
 			obj.completed = completed
-			wesnoth.set_variable(("escape_objectives[%d]"):format(k - 1), obj)
+			wml.variables[("escape_objectives[%d]"):format(k - 1)] = obj
 			break
 		end
 	end
@@ -196,8 +196,8 @@ function wesnoth.wml_actions.store_relative_location(cfg)
 		p = q
 	end
 
-	wesnoth.set_variable(variable .. ".x", p[1])
-	wesnoth.set_variable(variable .. ".y", p[2])
+	wml.variables[variable .. ".x"] = p[1]
+	wml.variables[variable .. ".y"] = p[2]
 end
 
 local function scroll(x, y)
