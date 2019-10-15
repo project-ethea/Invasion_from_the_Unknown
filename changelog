@@ -17,6 +17,7 @@ Version 2.1.1+dev:
   * Use 1.14 rodent fangs icon for the Rabbit's incisors attack.
   * Chaos Hound line is now considered part of the wolves race and receives
     names and traits accordingly.
+  * Implemented a more elegant way to disable Enchantress advancement to Sylph
 
 
 Version 2.1.1:
@@ -509,7 +510,7 @@ Version 1.99.0 (codename Reconstruction RC 1):
     issues in Pango contexts (e.g. sidebar tooltips).
   * Removed references to nonexistent image files in the defense animations for
     female Elvish Trapper and Elvish Prowler units.
-  * Fixed recruited elvish units from scenario 4 onwards belonging to hidden 
+  * Fixed recruited elvish units from scenario 4 onwards belonging to hidden
     unit types.
   * New unit type descriptions:
     * Demon, Demon Zephyr, Demon Grunt, Demon Warrior

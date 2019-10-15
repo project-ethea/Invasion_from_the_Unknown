@@ -186,24 +186,19 @@ end
 -- GLOBAL EVENTS --
 -------------------
 
-function wesnoth.wml_actions.hook_elvish_enchantress_adv_override(cfg)
+on_event("post advance", function()
 	local ecx = wesnoth.current.event_context
 	local u = wesnoth.get_unit(ecx.x1, ecx.y1) or
 		helper.wml_error("[hook_elvish_enchantress_adv_override] No unit at x1,y1 on post advance!")
 
-	wesnoth.transform_unit(u, "Elvish Enchantress 2")
+	if u.side == 1 and u.type == "Elvish Enchantress" then
+		u:add_modification("object", {
+			wml.tag.effect {
+				apply_to = "remove_advancement",
+				types = "Elvish Sylph"
+			}
+		})
 
-	wprintf(W_INFO, "Sylph advancement disabled for Enchantress '%s' at %d,%d", u.id, u.x, u.y)
-end
-
-wesnoth.wml_actions.event {
-	id = "enchantress adv override",
-	name = "post advance",
-	first_time_only = false,
-	{ "filter", {
-		side = 1,
-		type = "Elvish Enchantress"
-	} },
-
-	{ "hook_elvish_enchantress_adv_override", {} }
-}
+		wprintf(W_INFO, "Sylph advancement disabled for Enchantress '%s' at %d,%d", u.id, u.x, u.y)
+	end
+end)
