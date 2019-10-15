@@ -23,7 +23,7 @@ function wesnoth.wml_actions.setup_recruitment_cost(cfg)
 
 		for i = 5, 18 do
 			for k,s in ipairs(names) do
-				disallowed = disallowed .. string.format(",%s scenario%d", s, i)
+				disallowed = ("%s,%s scenario%d"):format(disallowed, s, i)
 			end
 		end
 
@@ -35,7 +35,7 @@ function wesnoth.wml_actions.setup_recruitment_cost(cfg)
 		local allowed = ""
 
 		for k,s in ipairs(names) do
-			allowed = allowed .. string.format(",%s scenario%d", s, sid)
+			allowed = ("%s,%s scenario%d"):format(allowed, s, sid)
 		end
 
 		wesnoth.wml_actions.allow_recruit {
