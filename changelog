@@ -8,11 +8,11 @@ Version 2.1.1+dev:
   * Added Telaron's Climactic Contemplation and Western_Theme2 to IftU Music
     0.3.2.
 
-* S2 - A Real Confrontation:
-  * Don't scroll back to Lédinor when he remarks on the newly recruited demon
-
-* S7 - Goliath:
-  * Made it more practical to find and obtain the Void Armor item.
+* Scenarios:
+  * S2 - A Real Confrontation:
+    * Don't scroll back to Lédinor when he remarks on the newly recruited demon
+  * S7 - Goliath:
+    * Made it more practical to find and obtain the Void Armor item.
 
 * Units:
   * Chaos Cardinal migrated to Naia and expanded with a new baseframe by VYNLT
@@ -20,7 +20,7 @@ Version 2.1.1+dev:
   * Use 1.14 rodent fangs icon for the Rabbit's incisors attack.
   * Chaos Hound line is now considered part of the wolves race and receives
     names and traits accordingly.
-  * Implemented a more elegant way to disable Enchantress advancement to Sylph
+  * Implemented a more elegant way to disable Enchantress advancement to Sylph.
 
 
 Version 2.1.1:
