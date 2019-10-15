@@ -13,6 +13,11 @@ Version 2.1.1+dev:
     * Don't scroll back to Lédinor when he remarks on the newly recruited demon
   * S7 - Goliath:
     * Made it more practical to find and obtain the Void Armor item.
+  * S16 - Dawn of War
+    * Properly displayed gold carryover bonus in the objectives after defeating
+      enemies.
+  * S19 - Under the Sands
+    * Clarified objectives.
 
 * Units:
   * Chaos Cardinal migrated to Naia and expanded with a new baseframe by VYNLT
