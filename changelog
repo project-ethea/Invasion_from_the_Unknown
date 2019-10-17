@@ -14,6 +14,9 @@ Version 2.1.1+dev:
       (fixes #64)
   * S7 - Goliath:
     * Made it more practical to find and obtain the Void Armor item.
+  * S10 - The Source of Light:
+    * Fixed Berserker Potion increasing the unit's HP pool without increasing
+      its current HP as well.
   * S16 - Dawn of War
     * Properly displayed gold carryover bonus in the objectives after defeating
       enemies (fixes #50).
