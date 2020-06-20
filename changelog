@@ -4,6 +4,12 @@ INVASION FROM THE UNKNOWN - CHANGELOG
 
 Version 2.1.1+dev:
 ------------------
+* General:
+  * Update to Naia 20200620.
+
+* Language and i18n:
+  * Updated translations: French, Russian.
+
 * Music:
   * Added Telaron's Climactic Contemplation and Western_Theme2 to IftU Music
     0.3.2.
@@ -31,6 +37,7 @@ Version 2.1.1+dev:
     names and traits accordingly.
   * Implemented a more elegant way to disable Enchantress advancement to Sylph
     (fixes #38).
+  * Terror ability no longer affects same-level units.
 
 
 Version 2.1.1:
