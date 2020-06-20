@@ -72,7 +72,7 @@ provide a saved game file to reproduce it.
 Contacting the author
 ---------------------
 
-You may contact the author of this campagn via forum PM to Iris on the
+You may contact the author of this campaign via forum PM to Iris on the
 [Wesnoth.org forums][7], or through the official Wesnoth [Discord server][8].
 
 [7]: <https://forums.wesnoth.org/>
