@@ -1,5 +1,4 @@
-=====================================
-INVASION FROM THE UNKNOWN - CHANGELOG
+Invasion from the Unknown - Changelog
 =====================================
 
 Version 2.1.1+dev:
