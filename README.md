@@ -1,5 +1,5 @@
 Invasion from the Unknown
-================================================================================
+=========================
 
 **Invasion from the Unknown** (**IftU**) is an add-on campaign for the
 **[Battle for Wesnoth][1]**.
@@ -25,7 +25,7 @@ and  *Under the Burning Suns* before playing this campaign.
 
 
 Installing Invasion from the Unknown
---------------------------------------------------------------------------------
+------------------------------------
 
 Requirements:
  * Battle for Wesnoth 1.14.x.
@@ -56,7 +56,7 @@ you might want to make sure these options are enabled under
 
 
 Reporting issues
---------------------------------------------------------------------------------
+----------------
 
 If you encounter any issues, you may report them at the campaign’s
 [development topic][5] on the Wesnoth.org forums or its [issue tracker][6] on
@@ -70,10 +70,10 @@ provide a saved game file to reproduce it.
 
 
 Contacting the author
---------------------------------------------------------------------------------
+---------------------
 
-You may contact the author of this campaign via forum PM to shadowm on the
-[Wesnoth.org forums][7], or through her personal [Discord server][8].
+You may contact the author of this campagn via forum PM to Iris on the
+[Wesnoth.org forums][7], or through the official Wesnoth [Discord server][8].
 
 [7]: <https://forums.wesnoth.org/>
-[8]: <https://discord.gg/smJY9aK>
+[8]: <https://discord.gg/battleforwesnoth>
