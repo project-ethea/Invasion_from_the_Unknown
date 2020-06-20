@@ -12,6 +12,8 @@ PACKS                := \
 	CAMPAIGN_INVASION_FROM_THE_UNKNOWN_EPISODE_I \
 	CAMPAIGN_INVASION_FROM_THE_UNKNOWN_EPISODE_II
 
+SCENARIO_DIRS        := scenarios
+
 include ../Naia/tools/Makefile.wmltools
 
 normalize-textdomains:
