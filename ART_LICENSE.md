@@ -40,7 +40,7 @@ Argan unit sprites:
  * images/units/shaxthal/master-drone+bloated.png
  * images/units/shaxthal/master-drone+unmasked.png
 
-Elvish unit sprites:
+Anlindë unit sprites:
 
  * images/units/elves-wood/anlinde-ascetic.png
  * images/units/elves-wood/anlinde-avatar.png
