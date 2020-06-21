@@ -4,7 +4,8 @@ Invasion from the Unknown - Changelog
 Version 2.1.1+dev:
 ------------------
 * General:
-  * Update to Naia 20200620.
+  * Update to Naia 20200621.
+  * Updated art licenses for CC BY-NC-ND 4.0, CC BY-SA 4.0 and CC0 content.
 
 * Graphics:
   * New or updated unit graphics: Anlindë Elvish Avatar.
