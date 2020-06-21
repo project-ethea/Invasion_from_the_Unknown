@@ -1,8 +1,8 @@
 Invasion from the Unknown - Changelog
 =====================================
 
-Version 2.1.1+dev:
-------------------
+Version 2.1.2:
+--------------
 * General:
   * Update to Naia 20200621.
   * Updated art licenses for CC BY-NC-ND 4.0, CC BY-SA 4.0 and CC0 content.
