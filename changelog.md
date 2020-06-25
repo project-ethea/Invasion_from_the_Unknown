@@ -1,8 +1,8 @@
 Invasion from the Unknown - Changelog
 =====================================
 
-Version 2.1.2+dev:
-------------------
+Version 2.1.3:
+--------------
 * General:
   * Update to Naia 20200625.
   * Fixed OOS errors caused by Naia's cutscene skip functionality, first
