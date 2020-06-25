@@ -3,6 +3,10 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.2+dev:
 ------------------
+* Scenarios:
+  * Added a hint to all scenarios about browsing through unit AMLAs. This is
+    only displayed once per save and it is triggered by Anlindë reaching level
+    4 for the first time, or by Elynia existing on the game map.
 
 
 Version 2.1.2:
