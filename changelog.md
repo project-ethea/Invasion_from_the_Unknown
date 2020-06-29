@@ -3,7 +3,8 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.3+dev:
 ------------------
-
+* General:
+  * Replaced deprecated Lua API calls.
 
 
 Version 2.1.3:
