@@ -6,6 +6,10 @@ Version 2.1.3+dev:
 * General:
   * Replaced deprecated Lua API calls.
 
+* Scenarios:
+  * S23A - Into the Lair:
+    * Added snowfall effect to the starting area.
+
 
 Version 2.1.3:
 --------------
