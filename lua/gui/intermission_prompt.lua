@@ -93,7 +93,7 @@ function wesnoth.wml_actions.intermission_prompt(cfg)
 					T.label {
 						id = "caption",
 						definition = "default",
-						label = ("<span color='#fff' font='20'>%s\n<span size='xx-small'>%s</span></span>"):
+						label = ("<span color='#BCB088' font='24'>%s\n<span font='16'>%s</span></span>"):
 								format( _ "Invasion from the Unknown", _ "Intermission" )
 					}
 				}
