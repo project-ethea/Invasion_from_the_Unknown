@@ -65,9 +65,9 @@ function wesnoth.wml_actions.intermission_prompt(cfg)
 		e(r( _ "IftU", "S1", "S13"), f:format( _ "Invasion from the Unknown", _ "Episode I: Seeking the Light")),
 		e("", _ "Intermission", true),
 		e(r( _ "IftU", "S14", "S24"), f:format( _ "Invasion from the Unknown", _ "Episode II: Armageddon")),
-		e(r( _ "AtS", "E1S1", "E1S13"), f:format( _ "After the Storm", "Episode I: Fear")),
-		e(r( _ "AtS", "E2S0", "E2S12"), f:format( _ "After the Storm", "Episode II: Fate")),
-		e(r( _ "AtS", "E3S0", "E3S12"), f:format( _ "After the Storm", "Final")),
+		e(r( _ "AtS", "E1S1", "E1S13"), f:format( _ "After the Storm", _ "Episode I: Fear")),
+		e(r( _ "AtS", "E2S0", "E2S12"), f:format( _ "After the Storm", _ "Episode II: Fate")),
+		e(r( _ "AtS", "E3S0", "E3S12"), f:format( _ "After the Storm", _ "Final")),
 		e("", _ "Epilogue")
 	}
 
