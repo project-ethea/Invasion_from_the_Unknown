@@ -9,6 +9,8 @@ Version 2.1.3+dev:
 * Scenarios:
   * S23A - Into the Lair:
     * Added snowfall effect to the starting area.
+  * S24 - Epilogue:
+    * Minor UI tweaks.
 
 
 Version 2.1.3:
