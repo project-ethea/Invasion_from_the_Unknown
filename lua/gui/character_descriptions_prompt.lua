@@ -72,8 +72,9 @@ function wesnoth.wml_actions.character_descriptions_prompt(cfg)
 		}
 	}
 
-	-- 1 on Yes, -1 on [Enter], 2 on No, -2 on [Escape].
-	local result = math.abs(wesnoth.show_dialog(main_window))
+	local res = wesnoth.synchronize_choice(function()
+		return { value = wesnoth.show_dialog(main_window) }
+	end)
 
-	wml.variables.character_1st_time_help = (result == 1)
+	wml.variables.character_1st_time_help = (math.abs(res.value) == 1)
 end

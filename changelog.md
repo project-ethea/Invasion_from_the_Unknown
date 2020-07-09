@@ -5,6 +5,7 @@ Version 2.1.3+dev:
 ------------------
 * General:
   * Replaced deprecated Lua API calls.
+  * Made first-time character introductions prompt replay-safe.
 
 * Scenarios:
   * S23A - Into the Lair:
