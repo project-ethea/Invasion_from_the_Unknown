@@ -9,7 +9,8 @@ Version 2.1.3+dev:
 
 * Scenarios:
   * Cosmetic changes to the maps for the following scenarios: S1, S2, S3, S4,
-    S5a, S5b, S6, S7, S8, S8x, S9, S10, S10x, S11, S12, S13.
+    S5a, S5b, S6, S7, S8, S8x, S9, S10, S10x, S11, S12, S13, S14, S15, S16,
+    S17, S19.
   * S23A - Into the Lair:
     * Added snowfall effect to the starting area.
   * S24 - Epilogue:
