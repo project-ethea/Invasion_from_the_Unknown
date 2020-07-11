@@ -8,7 +8,8 @@ Version 2.1.3+dev:
   * Made first-time character introductions prompt replay-safe.
 
 * Scenarios:
-  * Cosmetic changes to the maps for the following scenarios: S1, S2, S3.
+  * Cosmetic changes to the maps for the following scenarios: S1, S2, S3, S4,
+    S5a, S5b.
   * S23A - Into the Lair:
     * Added snowfall effect to the starting area.
   * S24 - Epilogue:
