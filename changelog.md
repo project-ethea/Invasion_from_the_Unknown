@@ -4,6 +4,7 @@ Invasion from the Unknown - Changelog
 Version 2.1.3+dev:
 ------------------
 * General:
+  * Update to Naia 20200724.
   * Replaced deprecated Lua API calls.
   * Made first-time character introductions prompt replay-safe.
 
