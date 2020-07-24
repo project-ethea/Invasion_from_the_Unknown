@@ -216,7 +216,7 @@ function wesnoth.wml_actions.outro_teaser()
 			_("And thus, the group embarked upon a new quest.\n\nA quest not for blood, but for knowledge.")
 		)
 
-		local big_text = ("%s\n<span font='120' style='italic'>%s</span>"):format(
+		local big_text = ("%s\n<span font='120'>%s</span>"):format(
 			_("Continued in..."), _("After the Storm")
 		)
 
