@@ -3,7 +3,11 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.4+dev:
 ------------------
+* General:
+  * Update to Naia 20200724.1.
 
+* Language and i18n:
+  * Updated translations: Russian (complete).
 
 
 Version 2.1.4:
