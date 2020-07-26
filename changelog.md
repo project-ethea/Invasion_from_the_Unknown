@@ -3,7 +3,10 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.4.1+dev:
 --------------------
-
+* Scenarios:
+  * S8 - Errand of Hope:
+    * Fixed the poisonous bow animation using the unit's original baseframe
+      even after leveling up (issue #69).
 
 
 Version 2.1.4.1:
