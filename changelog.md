@@ -7,6 +7,10 @@ Version 2.1.4.1+dev:
   * S8 - Errand of Hope:
     * Fixed the poisonous bow animation using the unit's original baseframe
       even after leveling up (issue #69).
+  * S14 - Bye and Behold:
+    * Fixed "turns run out" not being listed as a loss condition.
+  * S15 - Shadows of Time:
+    * Fixed "turns run out" not being listed as a loss condition.
 
 
 Version 2.1.4.1:
