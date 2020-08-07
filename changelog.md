@@ -11,6 +11,9 @@ Version 2.1.4.1+dev:
     * Fixed "turns run out" not being listed as a loss condition.
   * S15 - Shadows of Time:
     * Fixed "turns run out" not being listed as a loss condition.
+  * S23Bx/S23By - Do Us Part:
+    * Merged scenarios (issue #66).
+    * Minor UI and scripting refinements.
 
 
 Version 2.1.4.1:
