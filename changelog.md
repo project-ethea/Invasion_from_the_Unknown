@@ -3,6 +3,10 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.4.1+dev:
 --------------------
+* General:
+  * Replaced instances of `[unit] placement=` deprecated in 1.14 with newer
+    syntax.
+
 * Scenarios:
   * Updated maps for the following scenarios to use (or not use) the sconce
     terrain overlay instead of the Lit Stone Wall terrain deprecated in 1.16:
