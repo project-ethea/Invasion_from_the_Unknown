@@ -4,6 +4,9 @@ Invasion from the Unknown - Changelog
 Version 2.1.4.1+dev:
 --------------------
 * Scenarios:
+  * Updated maps for the following scenarios to use (or not use) the sconce
+    terrain overlay instead of the Lit Stone Wall terrain deprecated in 1.16:
+    S7, S21, S22A, S23B.
   * S8 - Errand of Hope:
     * Fixed the poisonous bow animation using the unit's original baseframe
       even after leveling up (issue #69).
