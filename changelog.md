@@ -4,6 +4,7 @@ Invasion from the Unknown - Changelog
 Version 2.1.4.1+dev:
 --------------------
 * General:
+  * Update to Naia 20200808.
   * Replaced instances of `[unit] placement=` deprecated in 1.14 with newer
     syntax.
 
