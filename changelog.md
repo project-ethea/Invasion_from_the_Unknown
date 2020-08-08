@@ -7,6 +7,9 @@ Version 2.1.4.1+dev:
   * Replaced instances of `[unit] placement=` deprecated in 1.14 with newer
     syntax.
 
+* Language and i18n:
+  * Updated translations: Russian.
+
 * Scenarios:
   * Updated maps for the following scenarios to use (or not use) the sconce
     terrain overlay instead of the Lit Stone Wall terrain deprecated in 1.16:
