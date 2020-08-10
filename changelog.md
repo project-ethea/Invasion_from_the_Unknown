@@ -3,7 +3,8 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.5+dev:
 ------------------
-
+* Scenarios:
+  * Removed no-op `recruitment_ignore_bad_combat` AI aspect.
 
 
 Version 2.1.5:
