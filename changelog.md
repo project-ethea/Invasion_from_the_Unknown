@@ -3,8 +3,16 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.5+dev:
 ------------------
+* General:
+  * Update to Naia 20200810.
+
+* Language and i18n:
+  * Updated translations: Russian.
+
 * Scenarios:
   * Removed no-op `recruitment_ignore_bad_combat` AI aspect.
+  * S24 - Epilogue:
+    * Record hero units' final stats.
 
 
 Version 2.1.5:
