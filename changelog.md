@@ -1,9 +1,10 @@
 Invasion from the Unknown - Changelog
 =====================================
 
-Version 2.1.7+dev:
-------------------
-
+Version 2.1.8:
+--------------
+* General:
+  * Update to Naia 20200816.
 
 
 Version 2.1.7:
