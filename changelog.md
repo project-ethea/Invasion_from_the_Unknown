@@ -3,6 +3,10 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.8+dev:
 ------------------
+* General:
+  * Update to Naia 20200825.
+  * Initial version with Wesnoth 1.16 (1.15.4) support (issue #71, Naia #4).
+
 * Language and i18n:
   * Updated translations: Russian.
 
