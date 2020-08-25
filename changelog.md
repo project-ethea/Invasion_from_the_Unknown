@@ -4,6 +4,8 @@ Invasion from the Unknown - Changelog
 Version 2.1.8+dev:
 ------------------
 * Scenarios:
+  * Made boss sides use the mainline `gold` color range instead of `yellow`
+    (AtS issue #73).
   * S13 - Face Your Fate:
     * Fixed incorrect references to the western keep in prose and code.
 
