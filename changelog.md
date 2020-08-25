@@ -3,8 +3,8 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.8+dev:
 ------------------
-
-
+* S13 - Face Your Fate:
+  * Fixed incorrect references to the western keep in prose and code.
 
 
 Version 2.1.8:
