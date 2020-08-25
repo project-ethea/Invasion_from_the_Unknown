@@ -3,6 +3,9 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.8+dev:
 ------------------
+* Language and i18n:
+  * Updated translations: Russian.
+
 * Scenarios:
   * Made boss sides use the mainline `gold` color range instead of `yellow`
     (AtS issue #73).
