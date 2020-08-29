@@ -1,3 +1,13 @@
-_server.pbl
+# IDE cruft
 *.kate-swp
-*.map.cfg
+.vscode/
+.vstags
+
+# Intermediate output of Naia test target
+.preprocessor.out/
+
+# pbl output
+_server.pbl
+
+# Maintenance mode toggle
+base-maint.cfg
