@@ -3,7 +3,8 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.9+dev:
 ------------------
-
+* Graphics:
+  * Moved Igor's portrait from IftU to Naia.
 
 
 Version 2.1.9:
