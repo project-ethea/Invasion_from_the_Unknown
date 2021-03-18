@@ -191,13 +191,49 @@ on_event("post advance", function()
 	local u = wesnoth.get_unit(ecx.x1, ecx.y1) or
 		helper.wml_error("[hook_elvish_enchantress_adv_override] No unit at x1,y1 on post advance!")
 
-	if u.side == 1 and u.type == "Elvish Enchantress" then
+	if u.side == 1 and u.type == "Elvish Enchantress" and not u.variables.nerfed_enchantress then
 		u:add_modification("object", {
+			wml.tag.effect {
+				apply_to = "max_experience",
+				increase = -30, -- Down to AMLA req for level 3 units
+			},
 			wml.tag.effect {
 				apply_to = "remove_advancement",
 				types = "Elvish Sylph"
+			},
+			wml.tag.effect {
+				apply_to = "new_advancement",
+				replace = false,
+				-- AMLA_DEFAULT in mainline
+				wml.tag.advancement {
+					strict_amla = true,
+					max_times = 100,
+					id = "amla_default",
+					description = wgettext("Max HP bonus +3, Max XP +20%", "wesnoth-help"),
+					image = "icons/amla-default.png",
+					wml.tag.effect {
+						apply_to = "hitpoints",
+						increase_total = 3,
+						heal_full = true
+					},
+					wml.tag.effect {
+						apply_to = "max_experience",
+						increase = "20%"
+					},
+					wml.tag.effect {
+						apply_to = "status",
+						remove = "poisoned"
+					},
+					wml.tag.effect {
+						apply_to = "status",
+						remove = "slowed"
+					}
+				}
 			}
 		})
+
+		-- Makes it impossible to readd the same [object] on subsequent level ups.
+		u.variables.nerfed_enchantress = true
 
 		wprintf(W_INFO, "Sylph advancement disabled for Enchantress '%s' at %d,%d", u.id, u.x, u.y)
 	end

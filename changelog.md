@@ -6,6 +6,9 @@ Version 2.1.9+dev:
 * Graphics:
   * Moved Igor's portrait from IftU to Naia.
 
+* Units:
+  * Fixed Elvish Enchantress lacking an AMLA and XP display (issue #81).
+
 
 Version 2.1.9:
 --------------
