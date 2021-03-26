@@ -6,6 +6,12 @@ Version 2.1.9+dev:
 * Graphics:
   * Moved Igor's portrait from IftU to Naia.
 
+* Scenarios:
+  * S2 - A Real Confrontation:
+    * Fixed a rare situation where enemy AIs deciding to borrow one of their
+      allied villages would result in said villages' destruction and count
+      towards the human player's defeat condition.
+
 * Units:
   * Fixed Elvish Enchantress lacking an AMLA and XP display (issue #81).
 
