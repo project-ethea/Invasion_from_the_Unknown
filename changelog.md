@@ -11,6 +11,8 @@ Version 2.1.9+dev:
     * Fixed a rare situation where enemy AIs deciding to borrow one of their
       allied villages would result in said villages' destruction and count
       towards the human player's defeat condition.
+    * Instructed Lédinor to share his keep with the player if Galas is en
+      route.
 
 * Units:
   * Fixed Elvish Enchantress lacking an AMLA and XP display (issue #81).
