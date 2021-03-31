@@ -6,6 +6,11 @@ Version 2.1.9+dev:
 * Graphics:
   * Moved Igor's portrait from IftU to Naia.
 
+* Language and i18n:
+  * Removed obsolete translations below 80%: Spanish, French, Hungarian,
+    Italian, Japanese, Turkish.
+  * Updated translations: Russian.
+
 * Scenarios:
   * S2 - A Real Confrontation:
     * Fixed a rare situation where enemy AIs deciding to borrow one of their
