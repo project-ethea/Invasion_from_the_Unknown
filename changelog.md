@@ -1,8 +1,11 @@
 Invasion from the Unknown - Changelog
 =====================================
 
-Version 2.1.9+dev:
-------------------
+Version 2.1.10:
+---------------
+* General:
+  * Update to Naia 20210401.
+
 * Graphics:
   * Moved Igor's portrait from IftU to Naia.
 
