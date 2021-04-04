@@ -10,6 +10,9 @@ Version 2.1.10+dev:
   * S8 - Errand of Hope:
     * Rephrased Poisonous Bow dialogue.
 
+* Units:
+  * Eyestalk's alignment changed from lawful to chaotic.
+
 
 Version 2.1.10:
 ---------------
