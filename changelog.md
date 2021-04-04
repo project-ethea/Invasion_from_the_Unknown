@@ -3,6 +3,10 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.10+dev:
 -------------------
+* Scenarios:
+  * S7 - Goliath:
+    * Clarified the Potion of Strength's description to make its duration more
+      obvious.
 
 
 Version 2.1.10:
