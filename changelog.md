@@ -7,6 +7,8 @@ Version 2.1.10+dev:
   * S7 - Goliath:
     * Clarified the Potion of Strength's description to make its duration more
       obvious.
+  * S8 - Errand of Hope:
+    * Rephrased Poisonous Bow dialogue.
 
 
 Version 2.1.10:
