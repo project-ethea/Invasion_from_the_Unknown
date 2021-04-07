@@ -9,6 +9,8 @@ Version 2.1.10+dev:
       obvious.
   * S8 - Errand of Hope:
     * Rephrased Poisonous Bow dialogue.
+  * S15 - Shadows of Time:
+    * Fixed ally leader not having a portrait in Wesnoth 1.15.x.
 
 * Units:
   * Eyestalk's alignment changed from lawful to chaotic.
