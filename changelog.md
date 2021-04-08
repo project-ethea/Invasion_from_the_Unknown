@@ -14,6 +14,7 @@ Version 2.1.10+dev:
 
 * Units:
   * Eyestalk's alignment changed from lawful to chaotic.
+  * Reduced Shadow Minion's XP requirement from 80 to 50.
 
 
 Version 2.1.10:
