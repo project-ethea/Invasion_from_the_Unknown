@@ -11,6 +11,8 @@ Version 2.1.10+dev:
     * Rephrased Poisonous Bow dialogue.
   * S15 - Shadows of Time:
     * Fixed ally leader not having a portrait in Wesnoth 1.15.x.
+  * S20 - The Heart:
+    * Fixed Galas' death not being listed as a defeat condition.
 
 * Units:
   * Eyestalk's alignment changed from lawful to chaotic.
