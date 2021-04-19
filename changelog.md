@@ -13,6 +13,8 @@ Version 2.1.10+dev:
     * Fixed ally leader not having a portrait in Wesnoth 1.15.x.
   * S20 - The Heart:
     * Fixed Galas' death not being listed as a defeat condition.
+  * S21 - Innuendo:
+    * Minor map changes to the northeastern dungeon.
   * S22B - The Dark Hive:
     * Fix exploit allowing level 2 undead to escape the boss unscathed on Hard
       difficuly while making dialogues inconsistent.
