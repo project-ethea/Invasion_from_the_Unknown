@@ -17,6 +17,7 @@ Version 2.1.10+dev:
     * Minor map changes to the northeastern dungeon.
   * S22B - The Dark Hive:
     * Added Ring of the Revenant item.
+    * Increased turn limit.
     * Fix exploit allowing level 2 undead to escape the boss unscathed on Hard
       difficuly while making dialogues inconsistent.
 
