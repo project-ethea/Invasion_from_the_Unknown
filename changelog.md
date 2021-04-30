@@ -1,8 +1,8 @@
 Invasion from the Unknown - Changelog
 =====================================
 
-Version 2.1.10+dev:
--------------------
+Version 2.1.11:
+---------------
 * General:
   * Dropped support for Wesnoth versions 1.13.12 through 1.14.2, and 1.15.4
     through 1.15.11.
