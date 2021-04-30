@@ -6,6 +6,7 @@ Version 2.1.10+dev:
 * General:
   * Dropped support for Wesnoth versions 1.13.12 through 1.14.2, and 1.15.4
     through 1.15.11.
+  * Update to Naia 20210430.
 
 * Language and i18n:
   * Updated translations: Russian.
