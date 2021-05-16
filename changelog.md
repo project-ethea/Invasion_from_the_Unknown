@@ -1,8 +1,8 @@
 Invasion from the Unknown - Changelog
 =====================================
 
-Version 2.1.11+dev:
--------------------
+Version 2.1.12:
+---------------
 * General:
   * Update to Naia 20210430.
 
