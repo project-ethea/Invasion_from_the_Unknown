@@ -8,7 +8,7 @@ email="shadowm@wesnoth.org"
 
 icon="items/bones.png~O(0)~BLIT(terrain/village/elven2.png~FL()~CROP(0,0,72,72)~SCALE(60,60))~BLIT(scenery/flames08.png)~BLIT(units/human-loyalists/shocktrooper-attack-2.png~CROP(10,0,45,72)~RC(magenta>orange)~FL(),0,0)~BLIT(units/human-outlaws/thug-idle-5.png~CROP(20,0,29,64)~RC(magenta>purple)~FL(),42,8)"
 
-tags="IftU,AtS,UtBS,sequel,DiD,undead,Chaos,demons,faeries,fairy,fairies,desert,cave,dungeon crawl,hell,inferno"
+tags="IftU,AtS,UtBS,sequel,DiD,elves,undead,faeries,fairies,Chaos,demons,dungeon crawl"
 
 description="Long after the Fall, the last forest elves on the Great Continent are forced to abandon their secluded home and forge an unprecedented alliance in hopes of retaliating against the great evil that has befallen Irdya. But even then, they will require more than one ancient power to aid them in their quest...
 
