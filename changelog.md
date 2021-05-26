@@ -3,6 +3,14 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.12+dev:
 -------------------
+* Units:
+  * Balancing:
+    * Decreased Death Baron's hitpoints from 55 to 51.
+    * Gave Death Baron the Submerge ability.
+    * Gave Death Baron identical resistances to Skeleton:
+      * Increased blade resistance from 10% to 40%.
+      * Reduced impact resistance from -10% to -20%.
+      * Increased pierce resistance from 30% to 60%.
 
 
 Version 2.1.12:
