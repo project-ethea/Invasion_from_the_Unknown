@@ -1,10 +1,76 @@
 Invasion from the Unknown - Changelog
 =====================================
 
-Version 2.1.9+dev:
-------------------
+Version 2.1.12+dev:
+-------------------
+* Units:
+  * Balancing:
+    * Decreased Death Baron's hitpoints from 55 to 51.
+    * Gave Death Baron the Submerge ability.
+    * Gave Death Baron identical resistances to Skeleton:
+      * Increased blade resistance from 10% to 40%.
+      * Reduced impact resistance from -10% to -20%.
+      * Increased pierce resistance from 30% to 60%.
+
+
+Version 2.1.12:
+---------------
+* General:
+  * Update to Naia 20210430.
+
+* Language and i18n:
+  * Updated translations: Russian.
+
+
+Version 2.1.11:
+---------------
+* General:
+  * Dropped support for Wesnoth versions 1.13.12 through 1.14.2, and 1.15.4
+    through 1.15.11.
+  * Update to Naia 20210430.
+
+* Language and i18n:
+  * Updated translations: Russian.
+
+* Scenarios:
+  * Made it so map labels are removed before specific cutscenes.
+  * S7 - Goliath:
+    * Clarified the Potion of Strength's description to make its duration more
+      obvious.
+  * S8 - Errand of Hope:
+    * Rephrased Poisonous Bow dialogue.
+  * S15 - Shadows of Time:
+    * Fixed ally leader not having a portrait in Wesnoth 1.15.x.
+  * S20 - The Heart:
+    * Fixed Galas' death not being listed as a defeat condition.
+  * S21 - Innuendo:
+    * Minor map changes to the northeastern dungeon.
+  * S22B - The Dark Hive:
+    * Added Ring of the Revenant item.
+    * Added healing glyphs throughout the track for the second and third boss
+      stages.
+    * Increased turn limit.
+    * Fix exploit allowing level 2 undead to escape the boss unscathed on Hard
+      difficuly while making dialogues inconsistent.
+
+* Units:
+  * Eyestalk's alignment changed from lawful to chaotic.
+  * Reduced Shadow Minion's XP requirement from 80 to 50.
+  * Fixed Lady of Light's Shielding III AMLA not requiring Shielding II.
+
+
+Version 2.1.10:
+---------------
+* General:
+  * Update to Naia 20210401.
+
 * Graphics:
   * Moved Igor's portrait from IftU to Naia.
+
+* Language and i18n:
+  * Removed obsolete translations below 80%: Spanish, French, Hungarian,
+    Italian, Japanese, Turkish.
+  * Updated translations: Russian.
 
 * Scenarios:
   * S2 - A Real Confrontation:
