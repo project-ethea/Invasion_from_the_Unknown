@@ -3,7 +3,7 @@ type="campaign"
 version="@ PBLPOST:VERSION @"
 dependencies="IftU_Music"
 
-author="Iris Morelle (shadowm)"
+author="Iris Morelle (Irydacea/shadowm)"
 email="shadowm@wesnoth.org"
 
 icon="items/bones.png~O(0)~BLIT(terrain/village/elven2.png~FL()~CROP(0,0,72,72)~SCALE(60,60))~BLIT(scenery/flames08.png)~BLIT(units/human-loyalists/shocktrooper-attack-2.png~CROP(10,0,45,72)~RC(magenta>orange)~FL(),0,0)~BLIT(units/human-outlaws/thug-idle-5.png~CROP(20,0,29,64)~RC(magenta>purple)~FL(),42,8)"
