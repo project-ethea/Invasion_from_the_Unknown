@@ -3,6 +3,9 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.12+dev:
 -------------------
+* Language and i18n:
+  * Updated translations: Russian.
+
 * Units:
   * Balancing:
     * Decreased Death Baron's hitpoints from 55 to 51.
