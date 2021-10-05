@@ -693,7 +693,7 @@ Version 1.99.0 (codename Reconstruction RC 1):
     * Increased Elynia's resistance to impact damage from -10% to 0%.
     * Decreased the Chaos Emperor's max moves from 6 to 5.
     * Removed skirmisher ability from the Chaos Emperor.
-  * Applied changes from bumbadadabum's "The Aragwaithi" add-on, versions 1.0.6
+  * Applied changes from Astrid's "The Aragwaithi" add-on, versions 1.0.6
     through 1.0.9, and "Era of Chaos" version 1.3.1+dev up to commit
     9dedeba7cddc2a027745c9994a917fdcb78ed341:
     * Archer HP increased from 26 to 28.
