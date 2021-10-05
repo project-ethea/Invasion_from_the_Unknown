@@ -3,6 +3,9 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.12+dev:
 -------------------
+* General:
+  * Update to Naia 20211005.
+
 * Language and i18n:
   * Updated translations: Russian.
 
