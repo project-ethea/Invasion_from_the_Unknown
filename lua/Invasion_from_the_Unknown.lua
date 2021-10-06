@@ -54,7 +54,7 @@ end
 ---
 function wesnoth.wml_actions.mood_music(cfg)
 	local mus = cfg.name or
-		helper.wml_error("[mood_music] No track specified!")
+		wml.error("[mood_music] No track specified!")
 
 	-- NOTE: Hardcoded for performance.
 	if #wesnoth.units.find_on_map({
@@ -75,7 +75,7 @@ end
 ---------
 
 function wesnoth.wml_actions.update_escape_objectives(cfg)
-	local id = cfg.id or helper.wml_error("[update_escape_objectives]: Missing id")
+	local id = cfg.id or wml.error("[update_escape_objectives]: Missing id")
 	local completed = cfg.completed
 	if completed == nil then completed = false end
 
@@ -113,11 +113,11 @@ function wesnoth.wml_actions.store_relative_location(cfg)
 	local from_slf = wml.get_child(cfg, "from")
 	local variable = cfg.variable or "location"
 	local direction = cfg.direction or
-		helper.wml_error "[store_relative_location] no direction specified!"
+		wml.error "[store_relative_location] no direction specified!"
 	local distance = math.max(1, (cfg.distance or 1))
 
 	local p = wesnoth.get_locations(from_slf)[1] or
-		helper.wml_error "[store_relative_location] missing or bad SLF!"
+		wml.error "[store_relative_location] missing or bad SLF!"
 
 	local mapw, maph = wesnoth.get_map_size()
 
@@ -189,7 +189,7 @@ end
 on_event("post advance", function()
 	local ecx = wesnoth.current.event_context
 	local u = wesnoth.units.get(ecx.x1, ecx.y1) or
-		helper.wml_error("[hook_elvish_enchantress_adv_override] No unit at x1,y1 on post advance!")
+		wml.error("[hook_elvish_enchantress_adv_override] No unit at x1,y1 on post advance!")
 
 	if u.side == 1 and u.type == "Elvish Enchantress" and not u.variables.nerfed_enchantress then
 		u:add_modification("object", {
