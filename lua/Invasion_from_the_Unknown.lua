@@ -154,7 +154,7 @@ function wesnoth.wml_actions.quake_heavy(cfg)
 	local sound = cfg.sound
 
 	if sound then
-		wesnoth.play_sound(sound)
+		wesnoth.audio.play(sound)
 	end
 
 	scroll( 20,   0)
@@ -172,7 +172,7 @@ function wesnoth.wml_actions.quake_heavier(cfg)
 	local sound = cfg.sound
 
 	if sound then
-		wesnoth.play_sound(sound)
+		wesnoth.audio.play(sound)
 	end
 
 	scroll( 40,   0)
