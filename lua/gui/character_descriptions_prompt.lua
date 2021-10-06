@@ -72,7 +72,7 @@ function wesnoth.wml_actions.character_descriptions_prompt(cfg)
 		}
 	}
 
-	local res = wesnoth.synchronize_choice(function()
+	local res = wesnoth.sync.evaluate_single(function()
 		return { value = wesnoth.show_dialog(main_window) }
 	end)
 
