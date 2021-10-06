@@ -99,7 +99,7 @@ local outro_text_canvas = {
 	}
 }
 
-wesnoth.add_widget_definition("label", "iftu_teaser_outro", {
+gui.add_widget_definition("label", "iftu_teaser_outro", {
 	id = "iftu_teaser_outro",
 	description = "gui2 sucks",
 
@@ -176,7 +176,7 @@ local function beeg_button_canvas_factory(state_name)
 	}
 end
 
-wesnoth.add_widget_definition("button", "iftu_beeg_button", {
+gui.add_widget_definition("button", "iftu_beeg_button", {
 	id = "iftu_beeg_button",
 	description = "gui2 still sucks",
 
