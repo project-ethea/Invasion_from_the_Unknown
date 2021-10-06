@@ -57,7 +57,7 @@ function wesnoth.wml_actions.mood_music(cfg)
 		helper.wml_error("[mood_music] No track specified!")
 
 	-- NOTE: Hardcoded for performance.
-	if #wesnoth.get_units({
+	if #wesnoth.units.find_on_map({
 		id = "Goliath,Chaos Warlord,Mal Hekuba,Kalazar,Elyssa,Chaos Emperor,Argan,Tux"
 	}) > 0 then
 		return
@@ -188,7 +188,7 @@ end
 
 on_event("post advance", function()
 	local ecx = wesnoth.current.event_context
-	local u = wesnoth.get_unit(ecx.x1, ecx.y1) or
+	local u = wesnoth.units.get(ecx.x1, ecx.y1) or
 		helper.wml_error("[hook_elvish_enchantress_adv_override] No unit at x1,y1 on post advance!")
 
 	if u.side == 1 and u.type == "Elvish Enchantress" and not u.variables.nerfed_enchantress then
