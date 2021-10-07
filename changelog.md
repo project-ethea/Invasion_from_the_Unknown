@@ -8,6 +8,9 @@ Version 2.2.0-dev:
     later.
   * Removed all compatibility code for Wesnoth 1.15.13 and earlier.
 
+* Scenarios:
+  * Cosmetic changes to scenario maps: S18.
+
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
     notes syntax.
