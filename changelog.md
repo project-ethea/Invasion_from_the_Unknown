@@ -10,7 +10,7 @@ Version 2.2.0-dev:
 
 * Scenarios:
   * Cosmetic changes to scenario maps: S18, S10, S10x, S3, S6, S5b, S7, S8, S9,
-    S14, S14y, S15.
+    S14, S14y, S15, S12.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
