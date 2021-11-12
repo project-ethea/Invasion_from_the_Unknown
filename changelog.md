@@ -3,7 +3,8 @@ Invasion from the Unknown - Changelog
 
 Version 2.1.13+dev:
 -------------------
-
+* General:
+  * Accept Wesnoth 1.16.x.
 
 
 Version 2.1.13:
