@@ -1,8 +1,8 @@
 Invasion from the Unknown - Changelog
 =====================================
 
-Version 2.1.13+dev:
--------------------
+Version 2.1.13.1:
+-----------------
 * General:
   * Accept Wesnoth 1.16.x.
   * Update to Naia 20211005.1.
