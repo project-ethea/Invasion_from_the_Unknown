@@ -5,6 +5,7 @@ Version 2.1.13+dev:
 -------------------
 * General:
   * Accept Wesnoth 1.16.x.
+  * Update to Naia 20211005.1.
 
 
 Version 2.1.13:
