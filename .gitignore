@@ -1,7 +1,8 @@
-# IDE cruft
+# IDE/texteditor cruft
 *.kate-swp
 .vscode/
 .vstags
+*.swp
 
 # Intermediate output of Naia test target
 .preprocessor.out/
