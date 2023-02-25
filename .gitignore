@@ -1,7 +1,8 @@
-# IDE cruft
+# IDE/texteditor cruft
 *.kate-swp
 .vscode/
 .vstags
+*.swp
 
 # Intermediate output of Naia test target
 .preprocessor.out/
@@ -11,3 +12,6 @@ _server.pbl
 
 # Maintenance mode toggle
 base-maint.cfg
+
+# Comes from applying patches
+*.orig
