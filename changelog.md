@@ -16,6 +16,8 @@ Version 2.2.0-dev:
   * Switched all units, abilities, and weapon specials to the 1.16 special
     notes syntax.
   * Removed Skeleton Rider and Bone Knight as they have been mainlined.
+  * Removed Death Baron, enabling an optional advancement from Skeleton to the
+    game's built-in Death Squire, which lacks a ranged attack (sorry).
 
 
 Version 2.1.13:
