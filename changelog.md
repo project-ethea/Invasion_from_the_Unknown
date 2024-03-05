@@ -15,6 +15,7 @@ Version 2.2.0-dev:
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
     notes syntax.
+  * Removed Skeleton Rider and Bone Knight as they have been mainlined.
 
 
 Version 2.1.13:
