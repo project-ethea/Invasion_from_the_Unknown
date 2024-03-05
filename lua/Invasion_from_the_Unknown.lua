@@ -116,17 +116,17 @@ function wesnoth.wml_actions.store_relative_location(cfg)
 		wml.error "[store_relative_location] no direction specified!"
 	local distance = math.max(1, (cfg.distance or 1))
 
-	local p = wesnoth.get_locations(from_slf)[1] or
+	local p = wesnoth.map.find(from_slf)[1] or
 		wml.error "[store_relative_location] missing or bad SLF!"
 
 	local mapw, maph = wesnoth.get_map_size()
 
 	for i = 1, distance do
-		local q = wesnoth.get_locations({
+		local q = wesnoth.map.find({
 			{ "filter_adjacent_location", {
 				adjacent = "-" .. direction,
-				x = p[1],
-				y = p[2]
+				x = p.x,
+				y = p.y
 			} },
 			-- Must exclude map borders since we want to use this information
 			-- to place units.
@@ -142,8 +142,8 @@ function wesnoth.wml_actions.store_relative_location(cfg)
 		p = q
 	end
 
-	wml.variables[variable .. ".x"] = p[1]
-	wml.variables[variable .. ".y"] = p[2]
+	wml.variables[variable .. ".x"] = p.x
+	wml.variables[variable .. ".y"] = p.y
 end
 
 local function scroll(x, y)
