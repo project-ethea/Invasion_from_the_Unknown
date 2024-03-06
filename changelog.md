@@ -7,6 +7,8 @@ Version 2.2.0-dev:
   * First fully-supported Wesnoth 1.18 release, supporting Wesnoth 1.17.23 and
     later.
   * Removed all compatibility code for Wesnoth 1.15.13 and earlier.
+  * Removed the option to start from Episode II (issue #76). See the forum
+    post at <https://r.wesnoth.org/p656538> for the background on this.
 
 * Scenarios:
   * Cosmetic changes to scenario maps: S18, S10, S10x, S3, S6, S5b, S7, S8, S9,
