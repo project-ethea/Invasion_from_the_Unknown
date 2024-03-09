@@ -1,10 +1,9 @@
 --#textdomain wesnoth-Invasion_from_the_Unknown
 
 local T = wml.tag
+local _ = wesnoth.textdomain "wesnoth-Invasion_from_the_Unknown"
 
 function wesnoth.wml_actions.character_descriptions_prompt(cfg)
-	local _ = wesnoth.textdomain "wesnoth-Invasion_from_the_Unknown"
-
 	local main_window = {
 		maximum_height = 400,
 		maximum_width = 500,
@@ -73,7 +72,7 @@ function wesnoth.wml_actions.character_descriptions_prompt(cfg)
 	}
 
 	local res = wesnoth.sync.evaluate_single(function()
-		return { value = wesnoth.show_dialog(main_window) }
+		return { value = gui.show_dialog(main_window) }
 	end)
 
 	wml.variables.character_1st_time_help = (math.abs(res.value) == 1)
