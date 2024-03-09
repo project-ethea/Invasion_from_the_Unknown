@@ -72,6 +72,8 @@ local teaser_dlg = {
 }
 
 local outro_text_attrs = {
+	-- NOTE: the engine scales this for different device resolutions for us,
+	--       no need to use relative measurements like in Pango markup.
 	size = 64,
 	family = "script",
 	style = "",
@@ -201,8 +203,8 @@ gui.add_widget_definition("button", "iftu_beeg_button", {
 })
 
 function wesnoth.wml_actions.outro_teaser()
-	wesnoth.show_dialog(teaser_dlg, function()
-		wesnoth.set_dialog_canvas(1, {
+	gui.show_dialog(teaser_dlg, function(self)
+		self:set_canvas(1, {
 			T.rectangle {
 				x = 0,
 				y = 0,
@@ -212,17 +214,11 @@ function wesnoth.wml_actions.outro_teaser()
 			}
 		})
 
-		local text = ("<span font='24'>%s</span>"):format(
+		self.text.marked_up_text = ("<span size='larger'>%s</span>"):format(
 			_("And thus, the group embarked upon a new quest.\n\nA quest not for blood, but for knowledge.")
 		)
-
-		local big_text = ("%s\n<span font='120'>%s</span>"):format(
+		self.big_text.marked_up_text = ("%s\n<span size='larger'><span size='larger'>%s</span></span>"):format(
 			_("Continued in..."), _("After the Storm")
 		)
-
-		wesnoth.set_dialog_markup(true,    "text")
-		wesnoth.set_dialog_value(text,     "text")
-		wesnoth.set_dialog_markup(true,    "big_text")
-		wesnoth.set_dialog_value(big_text, "big_text")
 	end)
 end
