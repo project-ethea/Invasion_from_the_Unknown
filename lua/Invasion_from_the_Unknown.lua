@@ -119,7 +119,8 @@ function wesnoth.wml_actions.store_relative_location(cfg)
 	local p = wesnoth.map.find(from_slf)[1] or
 		wml.error "[store_relative_location] missing or bad SLF!"
 
-	local mapw, maph = wesnoth.get_map_size()
+	local mapw = wesnoth.current.map.playable_width
+	local maph = wesnoth.current.map.playable_height
 
 	for i = 1, distance do
 		local q = wesnoth.map.find({
