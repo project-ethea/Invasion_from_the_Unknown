@@ -24,6 +24,8 @@ Version 2.2.0-dev:
   * Removed Death Baron, enabling an optional advancement from Skeleton to the
     game's built-in Death Squire, which lacks a ranged attack (sorry).
   * Removed Crow, replaced with mainline Raven line.
+  * Implemented new unit lines and AMLAs for Galas and Mal Keshar (see Naia
+    changelog).
 
 
 Version 2.1.13:
