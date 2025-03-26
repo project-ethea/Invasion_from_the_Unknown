@@ -90,7 +90,7 @@ function wesnoth.wml_actions.update_escape_objectives(cfg)
 		end
 	end
 
-	wesnoth.fire_event("reset objectives")
+	wesnoth.game_events.fire("reset objectives")
 end
 
 ----------
