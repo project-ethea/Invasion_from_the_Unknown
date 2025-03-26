@@ -15,6 +15,9 @@ Version 2.2.0-dev:
     S14, S14y, S15, S12, S19, S21, S22A, S22B, S23A, S23B, S11, S13, S23C.
   * S1 - Border Patrol:
     * Increased player gold on Normal and Hard.
+  * S4 - Over the Sands:
+    * Fixed dehydration effect being unexpectedly applied on neutral tiles that
+      have an overlay applied (e.g. stones on grassland).
   * S9 - The Library:
     * Selecting Hard difficulty no longer prevents Galas from getting his cave
       movement cost decrease.
