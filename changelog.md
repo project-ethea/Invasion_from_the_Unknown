@@ -16,6 +16,7 @@ Version 2.2.0-dev:
   * S1 - Border Patrol:
     * Increased player gold on Normal and Hard.
   * S4 - Over the Sands:
+    * Added Staff of Petrichor item.
     * Fixed dehydration effect being unexpectedly applied on neutral tiles that
       have an overlay applied (e.g. stones on grassland).
   * S9 - The Library:
