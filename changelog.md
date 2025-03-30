@@ -21,6 +21,8 @@ Version 2.2.0-dev:
     * Fixed dehydration effect being unexpectedly applied on neutral tiles that
       have an overlay applied (e.g. stones on grassland).
     * Increased turn limit.
+  * S5a - Crossfire:
+    * Added neutral mobs.
   * S9 - The Library:
     * Selecting Hard difficulty no longer prevents Galas from getting his cave
       movement cost decrease.
