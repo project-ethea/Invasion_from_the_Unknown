@@ -23,6 +23,8 @@ Version 2.2.0-dev:
     * Increased turn limit.
   * S5a - Crossfire:
     * Added neutral mobs.
+  * S6 - The Moon Valley:
+    * Added easter egg.
   * S9 - The Library:
     * Selecting Hard difficulty no longer prevents Galas from getting his cave
       movement cost decrease.
