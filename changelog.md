@@ -27,6 +27,8 @@ Version 2.2.0-dev:
   * S6 - The Moon Valley:
     * Added neutral mobs.
     * Added easter egg.
+  * S7 - Goliath:
+    * Increased boss HP.
   * S9 - The Library:
     * Selecting Hard difficulty no longer prevents Galas from getting his cave
       movement cost decrease.
