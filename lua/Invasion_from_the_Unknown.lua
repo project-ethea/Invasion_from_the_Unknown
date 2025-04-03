@@ -46,6 +46,26 @@ function wesnoth.wml_actions.setup_recruitment_cost(cfg)
 	end
 end
 
+function wesnoth.wml_actions.light_up_rune(cfg)
+	local locs = wesnoth.map.find(cfg)
+
+	for i, loc in ipairs(locs) do
+		local items = wesnoth.interface.get_items(loc.x, loc.y)
+
+		wesnoth.interface.remove_item(loc.x, loc.y)
+		for j, item in ipairs(items) do
+			item.image = tostring(item.image):gsub(
+				"scenery/rune(%d)%.png",
+				"scenery/rune%1-glow.png")
+			wesnoth.wml_actions.item(item)
+		end
+
+		wesnoth.current.map[loc] = wesnoth.map.replace_overlay("^Ii")
+	end
+
+	wesnoth.wml_actions.redraw {}
+end
+
 ---
 -- Plays incidental mood music.
 --
