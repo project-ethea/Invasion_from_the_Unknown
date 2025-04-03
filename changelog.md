@@ -29,6 +29,10 @@ Version 2.2.0-dev:
     * Added easter egg.
   * S7 - Goliath:
     * Increased boss HP.
+  * S8 - Errand of Hope:
+    * Increased turn limit.
+    * Made it so the initial gate serves as a mini-tutorial for what's to come
+      in scenario 10.
   * S9 - The Library:
     * Selecting Hard difficulty no longer prevents Galas from getting his cave
       movement cost decrease.
