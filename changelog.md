@@ -36,6 +36,7 @@ Version 2.2.0-dev:
   * S9 - The Library:
     * Selecting Hard difficulty no longer prevents Galas from getting his cave
       movement cost decrease.
+    * Randomized story glyph locations.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
