@@ -50,6 +50,15 @@ Version 2.2.0-dev:
   * Removed Crow, replaced with mainline Raven line.
   * Implemented new unit lines and AMLAs for Galas and Mal Keshar (see Naia
     changelog).
+  * Revised unit descriptions for Giant Leech and Brain Drainer.
+  * Increased Giant Leech's arcane resistance from -20% to 10%.
+  * Increased Giant Leech's hitpoints from 39 to 41.
+  * Gave Giant Leech the Feeding ability.
+  * Gave Giant Leech's melee attack the poison weapon special.
+  * Increased Brain Drainer's arcane resistance from -20% to 10%.
+  * Increased Brain Drainer's hitpoints from 52 to 58.
+  * Gave Brain Drainer the Regenerates and Feeding abilities.
+  * Gave Brain Drainer's melee attack the poison weapon special.
 
 
 Version 2.1.13:
