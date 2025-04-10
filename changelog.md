@@ -11,6 +11,9 @@ Version 2.2.0-dev:
   * Removed the option to start from Episode II (issue #76). See the forum
     post at <https://r.wesnoth.org/p656538> for the background on this.
 
+* Graphics:
+  * New or updated unit graphics: Giant Leech, Brain Drainer.
+
 * Scenarios:
   * Cosmetic changes to scenario maps: S18, S10, S10x, S3, S6, S5b, S7, S8, S9,
     S14, S14y, S15, S12, S19, S21, S22A, S22B, S23A, S23B, S11, S13, S23C, S4,
