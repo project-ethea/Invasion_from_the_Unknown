@@ -41,6 +41,8 @@ Version 2.2.0-dev:
       movement cost decrease.
     * Randomized story glyph locations.
     * Tweaked enemy spawns.
+  * S14 - Clearing the Road:
+    * Renamed scenario (previously "Bye and Behold").
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
