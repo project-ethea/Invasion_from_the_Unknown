@@ -47,6 +47,8 @@ Version 2.2.0-dev:
       that even if the event type does not use the variables).
   * S14 - Clearing the Road:
     * Renamed scenario (previously "Bye and Behold").
+    * Added Fog of War.
+    * Partially remove shroud during the starting cutscene as Erathan departs.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
