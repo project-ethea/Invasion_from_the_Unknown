@@ -49,6 +49,7 @@ Version 2.2.0-dev:
     * Renamed scenario (previously "Bye and Behold").
     * Added Fog of War.
     * Partially remove shroud during the starting cutscene as Erathan departs.
+    * Various changes to distribution and behavior of initial enemy spawns.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
