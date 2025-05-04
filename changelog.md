@@ -54,6 +54,8 @@ Version 2.2.0-dev:
     * Changed player unit restrictions so that elvish units in the recall list
       and fresh recruits only become unavailable at the end of the scenario
       rather than after the first regular turn.
+  * S18 - Ashes of Wesmere:
+    * Revamped scenario.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special

@@ -99,6 +99,51 @@ end
 -- S18 --
 ---------
 
+function wesnoth.wml_actions._18_setup_hive(cfg)
+	local SPAWN_DISTANCE_NOMINAL = {
+		EASY   = 12,
+		NORMAL = 9,
+		HARD   = 7
+	}
+
+	local function maybe_ignore_distance()
+		return 0 == (mathx.random(100) % 3)
+	end
+
+	local max_distance = SPAWN_DISTANCE_NOMINAL[wesnoth.scenario.difficulty]
+	local locs = wesnoth.map.find({ terrain = "*^Xp" }) or
+		wml.error("[_iftu_setup_wesmere_hive] No locations!")
+	local setup_locs = {}
+
+	-- The API does not guarantee a specific sorting for locs, so we need to
+	-- slowly check the distance from locations we've already selected for each
+	-- candidate location to make sure to space spawns apart somewhat.
+
+	for i, candidate in ipairs(locs) do
+		local commit = true
+		local ignore_distance = maybe_ignore_distance()
+		if not ignore_distance then
+			for j, sample in ipairs(setup_locs) do
+				local dist = wesnoth.map.distance_between(candidate, sample)
+
+				if dist < max_distance then
+					wprintf(W_DBG, "ignore %s because within nominal range of %s and not ignoring distance right now", loc2str(candidate), loc2str(sample))
+					commit = false
+					break
+				end
+			end
+		end
+		if commit then
+			local n = wml.variables["wesmere_hive.length"]
+			table.insert(setup_locs, candidate)
+			wml.variables[("wesmere_hive[%d]"):format(n)] = {
+				x = candidate.x,
+				y = candidate.y,
+			}
+		end
+	end
+end
+
 -- Taint status effect functionality
 
 local TAINT_LABEL = {
@@ -278,6 +323,71 @@ function wesmere_unit_within_hero_range(unit)
 		wesnoth.map.distance_between(me, malin) <= TAINT_RANGE or
 		wesnoth.map.distance_between(me, elynia) <= TAINT_RANGE
 	)
+end
+
+function wesnoth.wml_actions._18_spawn_crawlers(cfg)
+	local side = cfg.side or
+		wml.error("no unit side specified")
+	local parent_type = cfg.parent_type or
+		wml.error("no parent unit type specified")
+	local child_type = cfg.child_type or
+		wml.error("no child unit type specified")
+	local limit = math.max(1, cfg.count or 1)
+	local max_distance = cfg.max_distance or 999999
+
+	local player_locs = wesnoth.map.find({ T.filter { side = 1 }})
+
+	local function unit_to_player_dist_helper(unit)
+		local smallest = 999999
+		for _, loc in ipairs(player_locs) do
+			local here = { unit.x, unit.y }
+			local player = { loc.x, loc.y }
+			smallest = math.min(smallest, wesnoth.map.distance_between(here, player))
+		end
+		return smallest
+	end
+
+	local candidates = {}
+
+	for i, u in ipairs(wesnoth.units.find_on_map({ side = side, type = parent_type })) do
+		local d = unit_to_player_dist_helper(u)
+		if d <= max_distance then
+			table.insert(candidates, { d, u })
+		end
+	end
+
+	if #candidates == 0 then
+		wprintf(W_DBG, "[_18_spawn_crawlers] no parent unit locations available, did you kill everything?? >_<")
+		return
+	elseif #candidates > 1 then
+		-- Make sure we start with units closer to the player
+		table.sort(candidates, function(a, b) return a[1] < b[1] end)
+	end
+
+	local spawn_count = 0
+	-- If we run out of parent units to select, we loop back over the list
+	while spawn_count < limit do
+		for i = 1, limit do
+			if i > #candidates then
+				break
+			end
+			wesnoth.wml_actions.unit {
+				side = side,
+				type = child_type,
+				x = candidates[i][2].x,
+				y = candidates[i][2].y,
+				-- This is effectively a fake recruit action
+				random_traits = true,
+				generate_name = true,
+				random_gender = true,
+				-- Only supported by [unit], not .create()
+				animate = true,
+				moves = 0,
+				attacks_left = 0,
+			}
+			spawn_count = spawn_count + 1
+		end
+	end
 end
 
 ---------
