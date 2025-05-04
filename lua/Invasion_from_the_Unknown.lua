@@ -3,6 +3,11 @@
 -- the Unknown campaign.
 ---
 
+-- #textdomain wesnoth-Invasion_from_the_Unknown
+local _ = wesnoth.textdomain "wesnoth-Invasion_from_the_Unknown"
+
+local T = wml.tag
+
 ---
 -- Sets up the standard recruits' costs across IftU scenarios. This
 -- is really a campaign-specific function (might be reusable in UtBS).
@@ -88,6 +93,191 @@ function wesnoth.wml_actions.mood_music(cfg)
 		immediate = true,
 		play_once = true
 	}
+end
+
+---------
+-- S18 --
+---------
+
+-- Taint status effect functionality
+
+local TAINT_LABEL = {
+	male   = _ "tainted",
+	female = _ "female^tainted",
+	color  = "128, 64, 172",
+}
+
+local UNTAINT_LABEL = {
+	male   = _ "untainted",
+	female = _ "female^untainted",
+	color  = "0, 255, 0",
+}
+
+local function taint_label(unit, untaint)
+	local list = TAINT_LABEL
+	if untaint then
+		list = UNTAINT_LABEL
+	end
+	wesnoth.interface.float_label(
+		unit.x,
+		unit.y,
+		list[unit.gender] or list["male"],
+		list.color
+	)
+end
+
+local function taint_level(unit)
+	local level = 0
+	if unit.status.taint_4 then
+		level = 4
+	elseif unit.status.taint_3 then
+		level = 3
+	elseif unit.status.taint_2 then
+		level = 2
+	elseif unit.status.taint_1 then
+		level = 1
+	end
+	return level
+end
+
+local function taint_modifier_factory(level)
+	local modifier = ("%d%%"):format(-level * 10)
+	local image_func = ("BLEND(128, 64, 172, %.2f)"):format(level * 10.0 / 100.0)
+	return {
+		id = "wesmere_taint_mod",
+		-- Safeguard just in case, but ideally these mods should be cleared by
+		-- us and not Wesnoth since we don't let it manage statuses directly
+		-- right now.
+		duration = "scenario",
+		T.effect {
+			apply_to = "hitpoints",
+			increase_total = modifier,
+		},
+		T.effect {
+			apply_to = "attack",
+			increase_damage = modifier,
+		},
+		T.effect {
+			apply_to = "image_mod",
+			add = image_func,
+		}
+	}
+end
+
+local function update_taint_mod_impl(unit, level)
+	unit:remove_modifications({ id = "wesmere_taint_mod" }, "object")
+	level = in_range(level, 0, 4)
+	if level > 0 then
+		unit:add_modification("object", taint_modifier_factory(level))
+	end
+end
+
+local function apply_taint_impl(unit, taint_side)
+	local level = taint_level(unit)
+
+	--wprintf(W_DBG, "wanna apply taint %s (current %d)", unit.id, level)
+	if level >= 4 then
+		unit.side = taint_side
+	elseif level == 3 then
+		unit.status.taint_4 = true
+		unit.status.taint_3 = nil
+	elseif level == 2 then
+		unit.status.taint_3 = true
+		unit.status.taint_2 = nil
+	elseif level == 1 then
+		unit.status.taint_2 = true
+		unit.status.taint_1 = nil
+	else
+		unit.status.taint_1 = true
+	end
+
+	update_taint_mod_impl(unit, level + 1)
+
+	taint_label(unit)
+end
+
+local function remove_taint_impl(unit, full, silent)
+	-- This code is a little more verbose than it needs to be so that other
+	-- levels of taint always get cleared in case they end up stuck because of
+	-- code being buggy or aborted early.
+	local level = 0
+
+	--wprintf(W_DBG, "wanna remove taint %s", unit.id)
+	if full then
+		unit.status.taint_4 = nil
+		unit.status.taint_3 = nil
+		unit.status.taint_2 = nil
+		unit.status.taint_1 = nil
+	elseif unit.status.taint_4 then
+		unit.status.taint_4 = nil
+		unit.status.taint_3 = true
+		unit.status.taint_2 = nil
+		unit.status.taint_1 = nil
+		level = 3
+	elseif unit.status.taint_3 then
+		unit.status.taint_4 = nil
+		unit.status.taint_3 = nil
+		unit.status.taint_2 = true
+		unit.status.taint_1 = nil
+		level = 2
+	elseif unit.status.taint_2 then
+		unit.status.taint_4 = nil
+		unit.status.taint_3 = nil
+		unit.status.taint_2 = nil
+		unit.status.taint_1 = true
+		level = 1
+	elseif unit.status.taint_1 then
+		remove_taint_impl(unit, true, silent)
+	end
+
+	update_taint_mod_impl(unit, level)
+
+	if not silent then
+		taint_label(unit, true)
+	end
+end
+
+function wesnoth.wml_actions._apply_taint(cfg)
+	local units = wesnoth.units.find_on_map(cfg)
+	local taint_side = cfg.taint_side or 2
+
+	for i, unit in ipairs(units) do
+		apply_taint_impl(unit, taint_side)
+	end
+end
+
+function wesnoth.wml_actions._remove_taint(cfg)
+	local full = cfg.full or false
+	local silent = cfg.silent or false
+	local units = wesnoth.units.find_on_map(cfg)
+
+	for i, unit in ipairs(units) do
+		remove_taint_impl(unit, full, silent)
+	end
+end
+
+local TAINT_RANGE = 6
+
+-- Public SUF function used in taint-utils.cfg
+
+local function unit_loc_helper(id)
+	local unit = wesnoth.units.get(id)
+	return { unit.x, unit.y }
+end
+
+function wesmere_unit_within_hero_range(unit)
+	local malin = unit_loc_helper("Mal Keshar")
+	local elynia = unit_loc_helper("Elynia")
+	local me = { unit.x, unit.y }
+	--[[
+	wprintf(W_DBG, "is %s close to malin or elynia?", unit.id)
+	wprintf(W_DBG, "  dist to malin = %d", wesnoth.map.distance_between(me, malin))
+	wprintf(W_DBG, "  dist to elynia = %d", wesnoth.map.distance_between(me, elynia))
+	]]--
+	return (
+		wesnoth.map.distance_between(me, malin) <= TAINT_RANGE or
+		wesnoth.map.distance_between(me, elynia) <= TAINT_RANGE
+	)
 end
 
 ---------
