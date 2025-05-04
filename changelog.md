@@ -50,6 +50,8 @@ Version 2.2.0-dev:
     * Added Fog of War.
     * Partially remove shroud during the starting cutscene as Erathan departs.
     * Various changes to distribution and behavior of initial enemy spawns.
+  * S15 - Shadows of Time:
+    * Various changes to enemy distribution.
   * S16 - Dawn of War:
     * Changed player unit restrictions so that elvish units in the recall list
       and fresh recruits only become unavailable at the end of the scenario
