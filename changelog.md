@@ -58,6 +58,11 @@ Version 2.2.0-dev:
       rather than after the first regular turn.
   * S18 - Ashes of Wesmere:
     * Revamped scenario.
+  * S19 - Under the Sands:
+    * Increased player gold.
+    * Tweaked global lighting.
+    * Various changes to the initial and final cutscenes, as well as some of
+      the dialogue found later in the scenarios.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
