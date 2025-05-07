@@ -63,6 +63,8 @@ Version 2.2.0-dev:
     * Tweaked global lighting.
     * Various changes to the initial and final cutscenes, as well as some of
       the dialogue found later in the scenarios.
+  * S20 - The Heart:
+    * Fixed possibility of Galas speaking the wrong line.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
