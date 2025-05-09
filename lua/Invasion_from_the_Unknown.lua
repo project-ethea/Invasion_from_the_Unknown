@@ -51,6 +51,34 @@ function wesnoth.wml_actions.setup_recruitment_cost(cfg)
 	end
 end
 
+local function is_loyal_upkeep(unit)
+	return unit.upkeep == "loyal" or
+		   unit.upkeep == "free" or
+		   unit.canrecruit
+end
+
+function free_recruitment_hook(context)
+	local unit = wesnoth.units.get(context.x1, context.y1) or
+		wml.error("free_recruitment_hook(): Bad unit")
+
+	if unit.side ~= 1 or is_loyal_upkeep(unit) then
+		return
+	end
+
+	unit:add_modification("object", {
+		duration = "scenario",
+		T.effect {
+			apply_to = "loyal"
+		}
+	})
+
+	wprintf(W_INFO, "free_recruitment_hook(): Made loyal: '%s'", unit.id)
+end
+
+function wesnoth.wml_actions._free_recruitment()
+	on_event("unit placed", free_recruitment_hook)
+end
+
 function wesnoth.wml_actions.light_up_rune(cfg)
 	local locs = wesnoth.map.find(cfg)
 
