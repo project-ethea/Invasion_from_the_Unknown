@@ -69,6 +69,9 @@ Version 2.2.0-dev:
   * S20 - The Heart:
     * Increased player gold.
     * Fixed possibility of Galas speaking the wrong line.
+  * S21 - Innuendo:
+    * Fixed a couple of lore notes being unable to be displayed more than
+      once.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
