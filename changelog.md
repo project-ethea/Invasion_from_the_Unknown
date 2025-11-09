@@ -72,6 +72,18 @@ Version 2.2.0-dev:
   * S21 - Innuendo:
     * Fixed a couple of lore notes being unable to be displayed more than
       once.
+  * S22B - Dark Hive:
+    * Major changes to the Union:
+      * Increased damage from 29-3 to 32-3.
+      * Damage type is now 'union' instead of 'arcane'. All units have 0%
+        resistance to it.
+      * Removed magical weapon special.
+      * Chance-to-hit is always 80% regardless of defensive capabilities.
+      * Successful hits apply a 'mark' effect, reducing resistances until the
+        end of the opponent's turn.
+      * Lower level opponents have their number of defensive strikes decreased
+        by 1.
+
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
