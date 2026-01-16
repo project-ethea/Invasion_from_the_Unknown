@@ -85,7 +85,7 @@ Version 2.2.0-dev:
         by 1.
   * S23A - Into the Lair:
     * Fully delay playing main playlist until the player was entered the lair.
-
+    * Final gate glyph can now be triggered by any player unit.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
