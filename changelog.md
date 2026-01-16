@@ -83,6 +83,8 @@ Version 2.2.0-dev:
         end of the opponent's turn.
       * Lower level opponents have their number of defensive strikes decreased
         by 1.
+  * S23A - Into the Lair:
+    * Fully delay playing main playlist until the player was entered the lair.
 
 
 * Units:
