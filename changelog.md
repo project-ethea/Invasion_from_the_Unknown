@@ -86,6 +86,9 @@ Version 2.2.0-dev:
   * S23A - Into the Lair:
     * Fully delay playing main playlist until the player was entered the lair.
     * Final gate glyph can now be triggered by any player unit.
+    * Fixed a rare bug where Galas could be removed from the game in an
+      abnormal fashion if he was standing next to Elynia when she struck Mal
+      Keshar.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
