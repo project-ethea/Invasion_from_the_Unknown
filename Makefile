@@ -7,7 +7,10 @@ CAMPAIGNSYM          := CAMPAIGN_INVASION_FROM_THE_UNKNOWN
 DIST_VERSION_FILE    := dist/VERSION
 
 DIFFICULTIES         := EASY NORMAL HARD
-PACKS                :=
+# FIXME: We need this in order to be able to test more than just the wmlunits
+# version because Naia's Makefile.wmltools isn't designed for single-episode
+# campaigns right now (oopsies)
+PACKS                := DEFAULT
 
 SCENARIO_DIRS        := scenarios
 
