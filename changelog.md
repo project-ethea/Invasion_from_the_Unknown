@@ -6,10 +6,12 @@ Version 2.2.0-dev:
 * General:
   * First fully-supported Wesnoth 1.18 release, supporting Wesnoth 1.17.23 and
     later.
-  * Implemented achievements.
   * Removed all compatibility code for Wesnoth 1.15.13 and earlier.
   * Removed the option to start from Episode II (issue #76). See the forum
     post at <https://r.wesnoth.org/p656538> for the background on this.
+  * Implemented achievements.
+  * Implemented JourneyLog system for collecting character profiles, world
+    lore entries, and a dialogue journal.
   * Simplified implementation of free player recruitment setup used in S6 and
     the finale scenarios (S21 onward), which fixes plague units costing upkeep
     during those scenarios.
