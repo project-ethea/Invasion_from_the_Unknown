@@ -77,6 +77,9 @@ Version 2.2.0-dev:
   * S21 - Innuendo:
     * Fixed a couple of lore notes being unable to be displayed more than
       once.
+  * S22A - Face of the Enemy:
+    * Fixed boss exit gates not being opened fully under specific
+      circumstances.
   * S22B - Dark Hive:
     * Major changes to the Union:
       * Increased damage from 29-3 to 32-3.
