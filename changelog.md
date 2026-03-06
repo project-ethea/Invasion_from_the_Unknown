@@ -24,6 +24,8 @@ Version 2.2.0-dev:
     S14, S14y, S15, S12, S19, S21, S22A, S22B, S23A, S23B, S11, S13, S23C, S4,
     S5a, S12x, S17, S18, S18x, S20, S19x.
   * Added night-time firefly visuals to several maps.
+  * Cutscene-mandated opening of gates now replaces the affected tiles with
+    open gates instead of removing them entirely.
   * S1 - Border Patrol:
     * Increased player gold on Normal and Hard.
   * S4 - Over the Sands:
