@@ -53,6 +53,9 @@ Version 2.2.0-dev:
     * Fixed `failed to auto-store $unit` console log spam on prestart caused
       by using "unit" as the name of a `[for]/[foreach]` variable (don't do
       that even if the event type does not use the variables).
+  * S12 - The Escape:
+    * Gradually reveal enemy sides on the Status Table as their respective
+      encounters are triggered (issue #83).
   * S14 - Clearing the Road:
     * Renamed scenario (previously "Bye and Behold").
     * Added Fog of War.
