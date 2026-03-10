@@ -33,6 +33,7 @@ Version 2.2.0-dev:
     * Fixed dehydration effect being unexpectedly applied on neutral tiles that
       have an overlay applied (e.g. stones on grassland).
     * Increased turn limit.
+    * Make Neryan's capture event less visually confusing (issue #98).
   * S5a - Crossfire:
     * Added neutral mobs.
   * S6 - The Moon Valley:
