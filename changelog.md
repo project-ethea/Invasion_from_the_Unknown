@@ -57,6 +57,7 @@ Version 2.2.0-dev:
   * S12 - The Escape:
     * Gradually reveal enemy sides on the Status Table as their respective
       encounters are triggered (issue #83).
+    * Added end of turns as a defeat condition (issue #123).
   * S14 - Clearing the Road:
     * Renamed scenario (previously "Bye and Behold").
     * Added Fog of War.
