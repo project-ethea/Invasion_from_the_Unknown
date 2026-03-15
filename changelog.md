@@ -101,6 +101,8 @@ Version 2.2.0-dev:
     * Fixed a rare bug where Galas could be removed from the game in an
       abnormal fashion if he was standing next to Elynia when she struck Mal
       Keshar.
+    * Fixed a bug which allowed the player to significantly reduce the boss HP
+      after the transition to the last phase (issue #89).
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
