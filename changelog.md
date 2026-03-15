@@ -103,6 +103,8 @@ Version 2.2.0-dev:
       Keshar.
     * Fixed a bug which allowed the player to significantly reduce the boss HP
       after the transition to the last phase (issue #89).
+    * Fixed a bug which allowed the player to complete the second phase of the
+      boss with any attack instead of the intended one (issue #20).
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
