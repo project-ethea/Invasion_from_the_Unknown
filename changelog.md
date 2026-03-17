@@ -50,6 +50,9 @@ Version 2.2.0-dev:
       movement cost decrease.
     * Randomized story glyph locations.
     * Tweaked enemy spawns.
+  * S10 - The Source of Light:
+    * Fixed Dark Adept unit line being able to pick up the Berserker Potion
+      (issue #133).
   * S10y - The Fall:
     * Fixed `failed to auto-store $unit` console log spam on prestart caused
       by using "unit" as the name of a `[for]/[foreach]` variable (don't do
