@@ -41,6 +41,11 @@ Version 2.2.0-dev:
     * Added easter egg.
   * S7 - Goliath:
     * Increased boss HP.
+    * Changed Void Armor stats to provide +15/15/20/10% resistance to blade,
+      pierce, impact, and fire damage; as opposed to the previous replacement
+      of blade/pierce/impact with 50/50/60% and increase of fire by 10%; this
+      means fire resistance remains unchanged from the previous versions (cf.
+      issue #116.)
   * S8 - Errand of Hope:
     * Increased turn limit.
     * Made it so the initial gate serves as a mini-tutorial for what's to come
