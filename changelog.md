@@ -79,6 +79,7 @@ Version 2.2.0-dev:
     * Tweaked global lighting.
     * Various changes to the initial and final cutscenes, as well as some of
       the dialogue found later in the scenarios.
+    * Rephrased victory objective for clarity (issue #134).
   * S20 - The Heart:
     * Increased player gold.
     * Fixed possibility of Galas speaking the wrong line.
