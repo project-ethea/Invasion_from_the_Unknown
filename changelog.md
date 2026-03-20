@@ -135,6 +135,8 @@ Version 2.2.0-dev:
   * Increased Brain Drainer's hitpoints from 52 to 58.
   * Gave Brain Drainer the Regenerates and Feeding abilities.
   * Gave Brain Drainer's melee attack the poison weapon special.
+  * Fixed discrepancy in Sylvan Warden's attacks and stats between IftU and
+    AtS E1 (issue #150).
 
 
 Version 2.1.13:
