@@ -28,7 +28,8 @@ Installing Invasion from the Unknown
 ------------------------------------
 
 Requirements:
- * Battle for Wesnoth 1.18 (version 1.17.23 or later).
+ * Battle for Wesnoth 1.18 (version 1.17.23 or later), or 1.20 (version 1.9.22
+   or later).
  * *Invasion from the Unknown Music* add-on from the Wesnoth add-ons server
    (optional, includes additional music used throughout the campaign).
 

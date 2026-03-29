@@ -5,7 +5,7 @@ Version 2.2.0-dev:
 ------------------
 * General:
   * First fully-supported Wesnoth 1.18 release, supporting Wesnoth 1.17.23 and
-    later.
+    later; as well as Wesnoth 1.19.22 through 1.20.x.
   * Removed all compatibility code for Wesnoth 1.15.13 and earlier.
   * Removed the option to start from Episode II (issue #76). See the forum
     post at <https://r.wesnoth.org/p656538> for the background on this.
