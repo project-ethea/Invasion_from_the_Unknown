@@ -3,6 +3,8 @@ Invasion from the Unknown - Changelog
 
 Version 2.2.0+dev:
 ------------------
+* General:
+  * Refresh of bundled Naia version to snapshot 20261010.
 
 
 Version 2.2.0:
