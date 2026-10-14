@@ -3,6 +3,8 @@ Invasion from the Unknown - Changelog
 
 Version 2.2.0.1+dev:
 --------------------
+* Language and i18n:
+  * Updated translations: Spanish.
 
 
 Version 2.2.0.1:
