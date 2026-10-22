@@ -7,6 +7,9 @@ Version 2.2.0.1+dev:
   * Updated translations: Spanish.
 
 * Scenarios:
+  * S8 - Errand of Hope:
+    * Skeleton and Elvish Fighter line units can no longer pick up the
+      Poisonous Bow.
   * S13 - Face your Fate:
     * Prevent the player from abusing flight to stall the boss fight (issue
       #153).
