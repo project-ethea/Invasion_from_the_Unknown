@@ -6,6 +6,11 @@ Version 2.2.0.1+dev:
 * Language and i18n:
   * Updated translations: Spanish.
 
+* Scenarios:
+  * S13 - Face your Fate:
+    * Prevent the player from abusing flight to stall the boss fight (issue
+      #153).
+
 
 Version 2.2.0.1:
 ----------------
